@@ -1,23 +1,29 @@
 .dropdown {
     position: relative;
     display: flex;
-    align-items: center;
     color: white;
-    border: 1px solid red;
+
+    min-width: 100px;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    height: 30px;
+  }
+
+  .dropdown span{
+    height: 30px;
   }
   
   .dropdown-content {
-    display: none;
-    position: absolute;
-    top:30px;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    /* padding: 12px 16px; */
     z-index: 1;
-    color: black;
+    color: white;
+  }
+
+  .dropdown_option{
+    height: 30px;
   }
   
-  .dropdown:hover .dropdown-content {
-    display: block;
+  .dropdown:hover{
+    height: 100%;
   }
