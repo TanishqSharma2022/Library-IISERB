@@ -25,15 +25,17 @@
 .logo-animation-wrapper h3 {
 	position: absolute;
 	top: 0;
-	white-space: nowrap;
-	/*overflow: hidden;*/
+	/* white-space: nowrap; */
+	height: 50px;
+	width: 300px;
+
+	/* overflow: hidden; */
 	opacity: 0;
 	filter:alpha(opacity=0);
-	font-size: 28px;
 	font-weight: bold;
 	color: #ffffff;
     
-	padding-left: 5px;
+	margin-left: 5px;
 	/*width: 172px*/
 }
 
@@ -431,5 +433,17 @@
 		filter:alpha(opacity=0);
 		-webkit-transform: translateY(-30px);
 		transform: translateY(-30px)
+	}
+}
+
+
+
+
+@media (max-width: 768px) {
+	.logo-animation-wrapper h3 {
+	
+	height: 50px;
+	width: 200px;
+
 	}
 }

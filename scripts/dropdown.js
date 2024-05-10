@@ -41,10 +41,9 @@ var dropDownMenu = document.querySelector(".dropdown_container");
 dropDown.forEach((item) => {
   const dropDownItem = document.createElement("div");
   dropDownItem.classList.add("dropdown");
-  dropDownItem.classList.add("bg-black/50");
   dropDownItem.innerHTML = `
 
-        <span class="flex items-center gap-2 justify-between p-2">
+        <span class="flex items-center gap-2 justify-between p-2" >
         
         
         ${item.label}
@@ -58,11 +57,11 @@ dropDown.forEach((item) => {
       
   
   
-      <div class="dropdown-content">
+      <div class="dropdown-content bg-black/50 rounded-md p-3">
       ${item.options
         .map(
           (option) =>
-            `<a href="${option.link}"><p  class="dropdown_option flex items-center p-2 hover:bg-black/70">${option.label}</p></a>`
+            `<a href="${option.link}"><p  class="dropdown_option rounded-md flex items-center p-2 hover:bg-black/70">${option.label}</p></a>`
         )
         .join("")}
         

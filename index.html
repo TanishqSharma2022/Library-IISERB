@@ -9,12 +9,12 @@
 
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/dropdown.css">
-  <script src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
-  <script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+  <link rel="stylesheet" href="css/countdown.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <div class="h-[100vh] w-full  relative z-0 transition-all duration-[5s]">
+  <div class="min-h-screen w-full  relative z-0 transition-all duration-[5s]">
     <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/60 z-[-1] "></div>
     <img src="images/slider/slide3.jpg" class=" carousel-container transition-all duration-[5s] object-cover w-full h-full absolute z-[-5]" alt="">
 
@@ -30,7 +30,7 @@
           <i class="fa-solid fa-calendar"></i>
           Calendar
         </li>
-        <li class="flex gap-1 items-center">
+        <li class="flex gap-1  items-center">
           <i class="fa-solid fa-magnifying-glass"></i>
           Web Opac
         </li>
@@ -39,7 +39,7 @@
           CC
         </li>
       </ul>
-      <ul class="flex md:gap-4 md:flex-row flex-col">
+      <ul class=" gap-4 md:grid-cols-4 grid grid-cols-2">
         <li>
           <i class="fa-brands fa-twitter "></i>
         </li>
@@ -53,10 +53,10 @@
           <i class="fa-solid fa-envelope"></i>
         </li>
       </ul>
-      <ul class="flex md:gap-4 md:flex-row flex-col">
+      <ul class="gap-4  justify-center grid grid-cols-2 md:flex">
         <li>A-</li>
         <li>A+</li>
-        <li class="flex gap-2 items-center">
+        <li class="flex gap-2 items-center col-span-2 md:col-span-1">
           <i class="fa-solid fa-address-book"></i>
           Contact Us
         </li>
@@ -68,48 +68,82 @@
     <!-- SECTION 2 -->
     <div class="w-full  py-4 flex items-center justify-center ">
       
-      <div class="w-[85%] relative flex items-center justify-between ">
-      <div class=" flex  gap-2 justify-center items-center ">
-      <img src="logo-iiserb.png" class="h-24"/>
+      <div class="w-[85%] relative flex items-center  justify-between ">
+      <div class=" flex relative  gap-2 justify-center items-center ">
+      <img src="logo-iiserb.png" class="h-12 md:h-24"/>
 
 
-      <div class="logo-animation-wrapper relative w-full ">
+      <div class="logo-animation-wrapper relative -mt-12  md:text-2xl text-md h-full  w-full">
         
         <h3>Central Library, IISER Bhopal</h3>
         <h3 class="ioe">Lumen, IISERB <i class="fa-solid fa-book-open-reader"></i></h3>
-        <h3 class="ar-fontfamily">केंद्रीय पुस्तकालय,आईआईएसईआर भोपाल</h3>
+        <h3 class="ar-fontfamily">केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल</h3>
       </div>
 
     </div>
-      Library App
+      <!-- Library App -->
     </div>
     </div>
 
     <!-- DROPDOWN SECTION -->
 
-<div class="w-[80%] mx-auto px-12 flex  justify-center gap-4 dropdown_container">
+      <div class="w-[80%] mx-auto px-12 flex md:flex-row flex-col  justify-center gap-4 dropdown_container">
 
 
-  
+        
 
-</div>
-
-
-
-
-
-
-
-
-
-
-
+      </div>
   </div>
 
+  <div class="min-h-screen w-full  p-4 justify-center">
+    <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+      <div class="md:col-span-2">
+      <h1 class="font-bold text-4xl ">About Library</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          <img class="shadow-lg rounded-lg" src="images/libimg/browsing_area.jpg" />
+          <p>
+            Welcome to Central Library, IISER Bhopal a very special place in the IISER Campus with its rich collection of books and journals in the field of Basic Sciences and related areas. Currently houses around 10,000 books, comprises of collection includes textbooks for the BS-MS and Ph.D curriculum in Biological Sciences, Chemistry, Earth and Environmental Sciences, Mathematics, Physics, Humanities and Social Sciences. Library collection also includes documents in Computer Science, History of Science, light reading materials, Fictions, Stories, General books, Encyclopaedias and Dictionaries, Magazines etc. Research books & Monographs are also included in the collection for labs & research purpose. EBSCO Discovery Service
+          </p>
+        </div>
+        </div>
+        <div>
+          <h1 class="font-semibold text-3xl">News and Updates</h1>
+        </div>
+    </div>
+
+
+    <div class="w-full md:p-12 grid grid-cols-2 md:flex  justify-center gap-4 items-center">
+      <div class="countdown">
+        <i class="fa-solid fa-2xl mt-6 mb-6 fa-book"></i>
+        <p class="countdown_value" id="counter"></p>
+       <p class="countdown_label"> Books</p>
+      </div>
+      <div class="countdown">
+        <i class="fa-solid fa-2xl mt-6 mb-6 fa-at"></i>
+        <p class="countdown_value" id="counter2"></p>
+        <p class="countdown_label">E-Resources</p>
+      </div>
+      <div class="countdown">
+        <i class="fa-solid fa-2xl mt-6 mb-6 fa-database"></i>
+        <p id="counter3" class="countdown_value"></p>
+        <p class="countdown_label">Databases</p>
+      </div>
+      <div class="countdown">
+        <i class="fa-solid fa-2xl mt-6 mb-6 fa-user-graduate"></i>
+        <p id="counter4" class="countdown_value"></p>
+        <p class="countdown_label">Students</p>
+      </div>
+    </div>
+   
+  
+  </div>
+
+  
 
   
   <script src="scripts/carousel.js"></script>
   <script src="scripts/dropdown.js"></script>
+  <script src="scripts/countdown.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 </body>
