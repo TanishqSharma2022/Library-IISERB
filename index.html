@@ -5,18 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" /> -->
 
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/dropdown.css">
   <link rel="stylesheet" href="css/countdown.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/splide.min.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="scripts/splide.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+
 </head>
 <body>
 
-  <div class="min-h-screen  w-full  relative z-0 transition-all duration-[5s]">
-    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/60 z-[-1] "></div>
-    <img src="images/slider/slide3.jpg" class=" carousel-container transition-all duration-[5s] object-cover w-full h-full absolute z-[-5]" alt="">
+  <div class="min-h-screen overflow-x-hidden  w-full  relative z-0 transition-all duration-[5s]">
+    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/80 from-0 to-40% z-[-1] "></div>
+    <!-- <img src="images/slider/slide3.jpg" class=" carousel-container transition-all duration-[5s] object-cover w-full h-full absolute z-[-5]" alt=""> -->
+    
+    
+    <!-- CAROUSEL BACKGROUND -->
+
+
+    <section class="splide absolute z-[-5]   brightness-75 top-0 left-0" aria-label="Slide Container Example">
+      <div class="splide__track">   
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="splide__slide__container">
+              <img src="images/libimg/Browsing area1.jpg">
+            </div>
+
+          </li>
+          <li class="splide__slide">
+            <div class="splide__slide__container">
+              <img src="images/libimg/library51.JPG">
+            </div>
+        
+          </li>
+          <li class="splide__slide">
+            <div class="splide__slide__container">
+              <img src="images/libimg/Reading Zone Library.jpg">
+            </div>
+        
+          </li>
+        </ul>
+      </div>
+
+
+
+      <div class="splide__progress ">
+        <div class="splide__progress__bar  ">
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- SECTION 1 -->
     <div class=" w-full py-4  flex items-center justify-center z-[10]">
@@ -80,13 +140,29 @@
         <h3 class="ar-fontfamily">केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल</h3>
       </div>
     </div>
-    <div class="ham_menu text-white" onclick="menubar_toggle()">
+    <div class="ham_menu text-white cursor-pointer" onclick="menubar_toggle()">
       <i class="fa-solid fa-bars fa-xl"></i>
     </div>
       <!-- Library App -->
     </div>
     </div>
 
+
+
+
+    <div class="w-full   grid place-items-center justify-center">
+
+      <h1 class="text-6xl text-white font-bold ">Welcome to the <br />IISERB Library</h1>
+    </div>
+    
+    
+
+
+
+
+
+
+    
     <!-- DROPDOWN SECTION -->
 
       <div class=" w-full md:w-[300px] min-h-screen absolute top-0 transition-all -right-[600px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_container">
@@ -97,57 +173,169 @@
         
 
       </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ABOUT LIBRARY -->
+      <div class="min-h-screen w-full  p-4 justify-center">
+        <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+          <div class="md:col-span-2">
+          <h1 class="font-bold text-4xl ">About Library</h1>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+              <img class="shadow-lg rounded-lg" src="images/libimg/browsing_area.jpg" />
+              <p>
+                Welcome to Central Library, IISER Bhopal a very special place in the IISER Campus with its rich collection of books and journals in the field of Basic Sciences and related areas. Currently houses around 10,000 books, comprises of collection includes textbooks for the BS-MS and Ph.D curriculum in Biological Sciences, Chemistry, Earth and Environmental Sciences, Mathematics, Physics, Humanities and Social Sciences. Library collection also includes documents in Computer Science, History of Science, light reading materials, Fictions, Stories, General books, Encyclopaedias and Dictionaries, Magazines etc. Research books & Monographs are also included in the collection for labs & research purpose. EBSCO Discovery Service
+              </p>
+            </div>
+            </div>
+            <div>
+              <h1 class="font-semibold text-3xl">News and Updates</h1>
+            </div>
+        </div>
+
+
+        <div class="w-full md:p-12 grid grid-cols-2 md:flex  justify-center gap-4 items-center">
+          <div class="countdown">
+            <i class="fa-solid fa-2xl mt-6 mb-6 fa-book"></i>
+            <p class="countdown_value" id="counter"></p>
+          <p class="countdown_label"> Books</p>
+          </div>
+          <div class="countdown">
+            <i class="fa-solid fa-2xl mt-6 mb-6 fa-at"></i>
+            <p class="countdown_value" id="counter2"></p>
+            <p class="countdown_label">E-Resources</p>
+          </div>
+          <div class="countdown">
+            <i class="fa-solid fa-2xl mt-6 mb-6 fa-database"></i>
+            <p id="counter3" class="countdown_value"></p>
+            <p class="countdown_label">Databases</p>
+          </div>
+          <div class="countdown">
+            <i class="fa-solid fa-2xl mt-6 mb-6 fa-user-graduate"></i>
+            <p id="counter4" class="countdown_value"></p>
+            <p class="countdown_label">Students</p>
+          </div>
+        </div>
+      
+
+        
+      
+      </div>
+
+  
+
+  
+
+
+
+
+
+<!-- FOOTER  -->
+<div class="w-full bg-black grid grid-cols-1 md:grid-cols-4  p-12 gap-6 text-white">
+  <div class="md:col-span-2">
+    <h1 class="footer_heading" >About Library</h1>
+    <p>
+      The Vikram Sarabhai Library (VSL) is named after Dr. Vikram Sarabhai, world renowned physicist and founding Director of IIMA. It was set up in 1962 and is one of the best management libraries in Asia. The library is open 24x7. Our mission is to facilitate convenient and user friendly access to current, global and relevant information by identifying, acquiring, organizing and retrieving information in various formats (print & non print) to serve the information needs of the academic fraternity of IIMA to meet their teaching, research, consulting, training and learning requirements.
+    </p>
   </div>
-
-  <div class="min-h-screen w-full  p-4 justify-center">
-    <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
-      <div class="md:col-span-2">
-      <h1 class="font-bold text-4xl ">About Library</h1>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-          <img class="shadow-lg rounded-lg" src="images/libimg/browsing_area.jpg" />
-          <p>
-            Welcome to Central Library, IISER Bhopal a very special place in the IISER Campus with its rich collection of books and journals in the field of Basic Sciences and related areas. Currently houses around 10,000 books, comprises of collection includes textbooks for the BS-MS and Ph.D curriculum in Biological Sciences, Chemistry, Earth and Environmental Sciences, Mathematics, Physics, Humanities and Social Sciences. Library collection also includes documents in Computer Science, History of Science, light reading materials, Fictions, Stories, General books, Encyclopaedias and Dictionaries, Magazines etc. Research books & Monographs are also included in the collection for labs & research purpose. EBSCO Discovery Service
-          </p>
-        </div>
-        </div>
-        <div>
-          <h1 class="font-semibold text-3xl">News and Updates</h1>
-        </div>
-    </div>
-
-
-    <div class="w-full md:p-12 grid grid-cols-2 md:flex  justify-center gap-4 items-center">
-      <div class="countdown">
-        <i class="fa-solid fa-2xl mt-6 mb-6 fa-book"></i>
-        <p class="countdown_value" id="counter"></p>
-       <p class="countdown_label"> Books</p>
-      </div>
-      <div class="countdown">
-        <i class="fa-solid fa-2xl mt-6 mb-6 fa-at"></i>
-        <p class="countdown_value" id="counter2"></p>
-        <p class="countdown_label">E-Resources</p>
-      </div>
-      <div class="countdown">
-        <i class="fa-solid fa-2xl mt-6 mb-6 fa-database"></i>
-        <p id="counter3" class="countdown_value"></p>
-        <p class="countdown_label">Databases</p>
-      </div>
-      <div class="countdown">
-        <i class="fa-solid fa-2xl mt-6 mb-6 fa-user-graduate"></i>
-        <p id="counter4" class="countdown_value"></p>
-        <p class="countdown_label">Students</p>
-      </div>
-    </div>
-   
-  
+  <div>
+    <h1 class="footer_heading">Useful Links</h1>
+    <ul>
+      <li class="flex ">IISER Bhopal</li>
+      <li>IISER Bhopal</li>
+      <li>IISER Bhopal</li>
+      <li>IISER Bhopal</li>
+      <li>IISER Bhopal</li>
+      <li>IISER Bhopal</li>
+      
+    </ul>
   </div>
+  <div>
+    <h1 class="footer_heading">Contact Us</h1>
+    <ul>
+      <li>IISER Bhopal</li>
+      <li>IISER Bhopal</li>
+      <li>IISER Bhopal</li>
+      <li>IISER Bhopal</li>
+      <li>IISER Bhopal</li>
+      <li>IISER Bhopal</li>
+      
+    </ul>
+  </div>
+</div>
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <script src="scripts/carousel.js"></script>
   <script src="scripts/dropdown.js"></script>
   <script src="scripts/countdown.js"></script>
+<script src="scripts/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<script>
+
+var splide = new Splide( '.splide', {
+  type    : 'fade',
+  autoplay: 'play',
+  perPage : 1,
+  arrows: false,
+  rewind: true,
+} );
+
+splide.mount()
+
+
+</script>
+
+
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 </body>
