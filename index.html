@@ -14,7 +14,7 @@
 </head>
 <body>
 
-  <div class="min-h-screen w-full  relative z-0 transition-all duration-[5s]">
+  <div class="min-h-screen  w-full  relative z-0 transition-all duration-[5s]">
     <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/60 z-[-1] "></div>
     <img src="images/slider/slide3.jpg" class=" carousel-container transition-all duration-[5s] object-cover w-full h-full absolute z-[-5]" alt="">
 
@@ -79,7 +79,9 @@
         <h3 class="ioe">Lumen, IISERB <i class="fa-solid fa-book-open-reader"></i></h3>
         <h3 class="ar-fontfamily">केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल</h3>
       </div>
-
+    </div>
+    <div class="ham_menu text-white" onclick="menubar_toggle()">
+      <i class="fa-solid fa-bars fa-xl"></i>
     </div>
       <!-- Library App -->
     </div>
@@ -87,8 +89,10 @@
 
     <!-- DROPDOWN SECTION -->
 
-      <div class="w-[80%] mx-auto px-12 flex md:flex-row flex-col  justify-center gap-4 dropdown_container">
-
+      <div class=" w-full md:w-[300px] min-h-screen absolute top-0 transition-all -right-[600px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_container">
+        <span class="absolute right-6 top-12" onclick="menubar_toggle()">
+          <i class="fa-solid fa-xmark fa-xl"></i>
+        </span>
 
         
 

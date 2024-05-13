@@ -1,7 +1,6 @@
 .dropdown {
     position: relative;
     display: flex;
-    color: white;
     min-width: 100px;
     position: relative;
     flex-direction: column;
@@ -18,7 +17,6 @@
   .dropdown-content {
     /* padding: 12px 16px; */
     z-index: 1;
-    color: white;
   }
 
   .dropdown_option{

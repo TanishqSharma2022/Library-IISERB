@@ -19,7 +19,7 @@ const dropDown = [
   },
   {
     id: 1,
-    label: "Second",
+    label: "Vision",
     options: [
       {
         label: "First 1",
@@ -41,9 +41,10 @@ var dropDownMenu = document.querySelector(".dropdown_container");
 dropDown.forEach((item) => {
   const dropDownItem = document.createElement("div");
   dropDownItem.classList.add("dropdown");
+
   dropDownItem.innerHTML = `
 
-        <span class="flex items-center gap-2 justify-between p-2" >
+        <span class="flex items-center justify-between  gap-4  border-b   " >
         
         
         ${item.label}
@@ -57,11 +58,11 @@ dropDown.forEach((item) => {
       
   
   
-      <div class="dropdown-content bg-black/50 rounded-md p-3">
+      <div class="dropdown-content   p-3">
       ${item.options
         .map(
           (option) =>
-            `<a href="${option.link}"><p  class="dropdown_option rounded-md flex items-center p-2 hover:bg-black/70">${option.label}</p></a>`
+            `<a href="${option.link}"><p  class="dropdown_option rounded-md flex items-center p-2 hover:underline ">${option.label}</p></a>`
         )
         .join("")}
         
@@ -80,3 +81,13 @@ dropDown.forEach((item) => {
     `;
   dropDownMenu.appendChild(dropDownItem);
 });
+
+
+
+
+function menubar_toggle(){
+  const menubar = document.querySelector('.dropdown_container');
+  const toggle_btn = document.querySelector('.ham_menu');
+
+  menubar.classList.toggle('right-0');
+}
