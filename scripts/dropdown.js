@@ -10,7 +10,7 @@ const dropDown = [
       },
       {
         label: "Vision",
-        link: "dropdown-pages-html/vission.html",
+        link: "dropdown-pages-html/about-us/vission-mission.html",
       },
       {
         label: "First 3",
