@@ -18,9 +18,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
 </head>
-<body>
+<body class="overflow-x-hidden bg-gray-100">
 
-  <div class="h-40% w-full overflow-x-hidden overflow-y-hidden relative z-0 transition-all duration-[500s]">
+  <div class="h-100 w-full overflow-x-hidden overflow-y-hidden relative z-0 transition-all duration-[500s]">
 
     <!-- <div class="absolute top-0 left-0 w-full h-40% bg-gradient-to-b from-black/80 from-0 to-40% z-[-1] "></div> -->
      <!-- CAROUSEL BACKGROUND -->
@@ -42,7 +42,7 @@
 
     <!-- NAVBAR -->
     <!-- SECTION 1 -->
-    <div class="w-full py-1 flex items-center justify-center z-[10]" style="background-color: #2c2c2c;">
+    <div class="w-full py-1 flex items-center justify-center z-[10] " style="background-color: #2c2c2c;">
       <div class="w-[85%] flex items-center text-white justify-between">
         <ul class="flex md:gap-6 md:flex-row flex-col">
           <li class="flex gap-1 items-center">
@@ -71,41 +71,36 @@
         </ul>
         <ul class="gap-4 justify-center grid grid-cols-2 md:flex">
        
-         <a href="../../contact.html">
-          <li class="flex gap-2 items-center col-span-2 md:col-span-1">
-          <i class="fa-solid fa-address-book"></i>
-          Contact Us
-          </li>
-         </a>
-
-         
+          <a href="../../dropdown-pages-html\about-us\Library-team.html" target="_blank"> <li>
+            <i class="fa-solid fa-address-book"></i>  </li></a>
+           
+           <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
+              <i class="fa-brands fa-twitter"></i>  </li></a>
+        
+  
+          <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
+            <i class="fa-brands fa-facebook"></i></li></a>
+        
          
          <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-            <i class="fa-brands fa-twitter"></i>  </li></a>
-      
-
-        <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-          <i class="fa-brands fa-facebook"></i></li></a>
-      
+        <i class="fa-brands fa-linkedin"></i> </li></a>
        
-       <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-      <i class="fa-brands fa-linkedin"></i> </li></a>
-     
-      <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-      <i class="fa-solid fa-envelope"></i></li></a>
-      
-         </ul>
-        </div>
-     </div>
+        <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
+        <i class="fa-solid fa-envelope"></i></li></a>
+        
+           </ul>
+          </div>
+       </div>
 
 
         <!-- SECTION 2 -->
     <div class="w-full py-4 flex items-center justify-center  ">
       <div class="w-[85%] relative flex items-center justify-between">
         <div class="flex relative gap-2 justify-center items-center">
-          <img src="../../logo-iiserb.png" class="h-12 md:h-24"/>
+          <img src="../../logo-iiserb.png" class="h-12 md:h-24" style=" box-shadow: rgb(0, 0, 0) 1px -1px 1px !important; border-radius: 50%; "/>
 
-          <div class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full w-full">
+          <div class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full w-full"
+          style=" text-shadow: rgb(0, 0, 0) 4px -1px 3px !important; ">
             <h3>Central Library,<br> IISER Bhopal</h3>
             <h3 class="ioe">Lumen, IISERB <i class="fa-solid fa-book-open-reader"></i></h3>
             <h3 class="ar-fontfamily">केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल</h3>
@@ -122,9 +117,13 @@
 
 
     <div class="mt-[1%] mb-[4%]">
-      <h1 class="text-4xl text-white font-bold text-center flex flex-col gap-1 text-shadow">
+      <h1 class="text-4xl text-white font-bold text-center flex flex-col gap-1 text-shadow"
+      style="z-index: 5;   white-space: normal; color: white; text-shadow: rgb(0, 0, 0) 6px -1px 5px !important; 
+       visibility: inherit; transition: none 0s ease 0s; text-align: center; line-height: 35px; border-width: 0px;
+       margin: 0px; padding: 0px;letter-spacing: 0px;font-weight: 700; min-height: 0px;min-width: 128px; max-height: none;
+       opacity: 1;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
        
-        About Us
+        About Library
       </h1>
     </div>
 
@@ -135,9 +134,84 @@
     </span>
   </div>
   <!-- ABOUT  -->
-  <div class="min-h-screen w-full p-4 justify-center">
+  <div class="h-100 w-full p-4 justify-center">
    
+    <section class="mb-8">
+     
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/3 mt-2 mb-1 px-6 md:mb-0">
+            <img src="../../images\carousal_img\carousel3b.JPG" alt="Mission Image" class="w-full h-auto rounded-lg-50 ">
+        </div>
+        <div class="md:w-1/2 md:pl-2 py-6 px-2  ">
+         <p class="text-lg">
+          Welcome to Central Library, IISER Bhopal a very special place in the IISER Campus with its rich collection of books
+           and journals in the field of Basic Sciences and related areas. Currently houses around 10,000 books, comprises of 
+           collection includes textbooks for the BS-MS and Ph.D curriculum in Biological Sciences, Chemistry, Earth and
+            Environmental Sciences, Mathematics, Physics, Humanities and Social Sciences. Library collection also includes 
+            documents in Computer Science, History of Science, light reading materials, Fictions, Stories, General books, 
+            Encyclopaedias and Dictionaries, Magazines etc. Research books & Monographs are also included in the collection
+             for labs & research purpose. <a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&group=main&profile=eds"><p class="text-#196297">EBSCO Discovery Service @ IISERB Library</p></a>
 
+
+            </p>
+        </div>
+     </div>
+
+
+      <div class="flex flex-col md:flex-row items-center ">
+       
+        <div class="md:w-1/2 md:pl-2 py-2 px-1 ">
+          <p class="text-lg">
+            Library is committeed to providing widest possible access to information and this commitment is reflected in the
+             range of services provided by it. Library website is linked to various online databases that are available from 
+             any networked PC within the library and the Institute. The Library spares no efforts to fulfill its mission by 
+             selecting, acquiring, organizing, reserving, maintaining, and providing access to a collection of materials and
+              electronic resources that address the needs of the academic community. <a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&group=main&profile=eds"><p class="text-#196297">EBSCO Discovery Service @ IISERB Library</p></a>
+
+
+          </p>
+       </div>
+       <div class="md:w-1/3 mb-1 px-2 md:mb-0">
+        <img src="../../images\library\IMG_4769.JPG" alt="Mission Image" class="w-full h-auto rounded-lg-50 ">
+      </div>
+     </div>
+     
+     <div class="flex flex-col md:flex-row items-center ">
+      <div class="md:w-1/3 mb-1 px-6 md:mb-0">
+          <img src="../../images\library\library51.JPG" alt="Mission Image" class="w-full h-auto rounded-lg-50 ">
+      </div>
+      <div class="md:w-1/2 md:pl-2 py-2 px-1  ">
+       <p class="text-lg">
+        On-line access to full text as well as bibliographic databases are being subscribed to facilitate research & teaching.
+         Plans for library expansion includes subscription to all major scientific research journals as well as e-books, 
+         e-journals & bibliographic databases etc. Library operations are automated using KOHA Library Management Software.
+          Central Library is now fully automated with all posible modern facilities. Web-OPAC (Online Public Access Catalogue)
+          is accessible at URL: http://webopac.iiserb.ac.in/</p></a>
+
+
+          </p>
+      </div>
+   </div>
+   <div class="flex flex-col md:flex-row items-center ">
+       
+    <div class="md:w-1/2 md:pl-2 py-2 px-1 ">
+      <p class="text-lg">
+        Library Services: At present, the Library offers services as Lending facility; Claims/Reservations; Renewals; 
+        Reading Room; Inter Library Loan; Document Delivery Services; SDI Services; CAS Services; Library website; 
+        Reprography Services; Orientation Program etc. In addition to the services mentined above, the Library has
+         started various Lib 2.0 initiatives in order to overcome the space and time constraints faced by all Libraries
+          when offering traditional services. The Library organizes various training programs / informative sessions
+           for e-resources and also for print resources.</p></a>
+
+
+      </p>
+   </div>
+   <div class="md:w-1/3 mb-1 px-2 md:mb-0 ">
+    <img src="../../images\library\library52.JPG" alt="Mission Image" class="w-full h-auto rounded-lg-50 ">
+  </div>
+ </div>
+     
+  </section>
    
   </div>
 
