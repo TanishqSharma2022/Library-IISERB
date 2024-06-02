@@ -147,7 +147,6 @@ const dropDown = [
       {
         label: "Standards",
         link: "../../dropdown-pages-html/online-resources/standards.html",
-        
       },
       {
         label: "Archives",
@@ -221,7 +220,6 @@ const dropDown = [
         label: "Fellowships & Scholarships",
         link: "https://www.iiserb.ac.in/doaa/scholarship",
       },
-
     ],
   },
   {
@@ -234,7 +232,6 @@ const dropDown = [
         label: "E-Jourals Usage Stats",
         link: "",
       },
-     
     ],
   },
 ];
@@ -242,11 +239,14 @@ const dropDown = [
 var dropDownMenu = document.querySelector(".dropdown_container");
 dropDown.forEach((item, index) => {
   const dropDownItem = document.createElement("div");
-  dropDownItem.classList.add("dropdown");
+
+  dropDownItem.classList.add("dropdown");  
+
+  dropDownItem.classList.add(`dropdown-${index}`);
 
   dropDownItem.innerHTML = `
-    <span class="flex items-center justify-between cursor-pointer gap-4 border-b" onclick="toggleDropdown(${index})">
-      <div class="flex gap-2 items-center">
+    <span class="flex rounded-xl shadow-sm hover:border-black hover:bg-black/90 transition-all hover:text-white items-center justify-between cursor-pointer  gap-4 border" onclick="toggleDropdown(${index})">
+      <div class="flex gap-2  items-center">
         <img src="${item.icon}" alt="icon" class="w-5 h-5" />
         ${item.label}
       </div>
@@ -258,7 +258,7 @@ dropDown.forEach((item, index) => {
       ${item.options
         .map(
           (option) =>
-            `<a href="${option.link}" target="_blank"><p class="dropdown_option rounded-md flex items-center p-2 hover:underline">${option.label}</p></a>`
+            `<a href="${option.link}" target="_blank"><p class="dropdown_option rounded-md shadow-lg flex items-center p-2 hover:underline">${option.label}</p></a>`
         )
         .join("")}
     </div>
@@ -266,16 +266,13 @@ dropDown.forEach((item, index) => {
   dropDownMenu.appendChild(dropDownItem);
 });
 
-function menubar_toggle(){
-  const menubar = document.querySelector('.dropdown_container');
-  menubar.classList.toggle('right-0');
+function menubar_toggle() {
+  const menubar = document.querySelector(".dropdown_container");
+  menubar.classList.toggle("right-0");
 }
 
 function toggleDropdown(index) {
-  const dropDownContent = document.getElementById(`dropdown-content-${index}`);
-  if (dropDownContent.style.display === 'block') {
-    dropDownContent.style.display = 'none';
-  } else {
-    dropDownContent.style.display = 'block';
-  }
+  const dropdownnewitem = document.querySelector(`.dropdown-${index}`);
+  dropdownnewitem.classList.toggle("active");
+  console.log(dropdownnewitem);
 }
