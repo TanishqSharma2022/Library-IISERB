@@ -130,7 +130,8 @@ const dropDown = [
       },
       {
         label: "A-Z List of Text Databases",
-        link: "../../dropdown-pages-html/online-resources/atozlist.html",
+        link: "../../dropdown-pages-html/online-resources/e_book_collections.html",
+      
       },
       {
         label: "Biblographic Resources",
@@ -236,16 +237,17 @@ const dropDown = [
   },
 ];
 
-var dropDownMenu = document.querySelector(".dropdown_container");
+var dropDownMenu = document.querySelector(".dropdown_option_container");
 dropDown.forEach((item, index) => {
   const dropDownItem = document.createElement("div");
 
   dropDownItem.classList.add("dropdown");  
+  // dropDownItem.classList.add("border");  
 
   dropDownItem.classList.add(`dropdown-${index}`);
 
   dropDownItem.innerHTML = `
-    <span class="flex rounded-xl shadow-sm hover:border-black hover:bg-black/90 transition-all hover:text-white items-center justify-between cursor-pointer  gap-4 border" onclick="toggleDropdown(${index})">
+    <span class="flex  shadow-sm hover:border-black border hover:bg-gray-300 transition-all duration-[0.5s] items-center justify-between cursor-pointer  gap-4 " onclick="toggleDropdown(${index})">
       <div class="flex gap-2  items-center">
         <img src="${item.icon}" alt="icon" class="w-5 h-5" />
         ${item.label}
@@ -258,7 +260,8 @@ dropDown.forEach((item, index) => {
       ${item.options
         .map(
           (option) =>
-            `<a href="${option.link}" target="_blank"><p class="dropdown_option rounded-md shadow-lg flex items-center p-2 hover:underline">${option.label}</p></a>`
+            `<a href="${option.link}" target="_blank">
+          <li class="dropdown_option rounded-md flex items-center p-2 hover:underline">${option.label}</li></a>`
         )
         .join("")}
     </div>

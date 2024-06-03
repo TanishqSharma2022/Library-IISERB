@@ -8,8 +8,6 @@
     overflow: hidden;
     box-sizing: border-box;
     height: 50px;
-    border: 1px solid black;
-    transition: all 0.5s;
     z-index: 999;
   }
 
@@ -19,7 +17,6 @@
 
 .active{
   height: 100%;
-  transition: all 0.5s;
 }
 
   .dropdown span{
@@ -27,13 +24,9 @@
     padding: 10px;
     cursor: pointer;
 
-
-    transition: all 0.5s;
-
   }
   
   .dropdown-content {
-  
     z-index: 10;
   }
 
@@ -44,3 +37,8 @@
   .dropdown:hover{
     height: 100%;
   } */
+  
+.dropdown_option_container{
+  position: absolute;
+  top:20%;
+}

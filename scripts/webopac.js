@@ -349,7 +349,7 @@ const BOOKS = [
     },
     {
         "id": 58,
-        "Publisher": " Cambridge Crystallographic Data Centre",
+        "Publisher": "Cambridge Crystallographic Data Centre",
         "Title": "Cambridge Structural Database (CSD) Enterprise Group License",
         "Hyperlink": "https:\/\/www.ccdc.cam.ac.uk\/solutions\/csd-core\/components\/csd\/"
     },
@@ -500,31 +500,31 @@ const BOOKS = [
     },
     {
         "id": 83,
-        "Publisher": " Company of Biologists",
+        "Publisher": "Company of Biologists",
         "Title": "Journal of Cell Science",
         "Hyperlink": "http:\/\/jcs.biologists.org\/"
     },
     {
         "id": 84,
-        "Publisher": " Company of Biologists",
+        "Publisher": "Company of Biologists",
         "Title": "Development",
         "Hyperlink": "https:\/\/journals.biologists.com\/dev"
     },
     {
         "id": 85,
-        "Publisher": " Company of Biologists",
+        "Publisher": "Company of Biologists",
         "Title": "Journal of Experimental Biology",
         "Hyperlink": "https:\/\/journals.biologists.com\/jeb"
     },
     {
         "id": 86,
-        "Publisher": " Company of Biologists",
+        "Publisher": "Company of Biologists",
         "Title": "Biology Open",
         "Hyperlink": "https:\/\/journals.biologists.com\/bio"
     },
     {
         "id": 87,
-        "Publisher": " Company of Biologists",
+        "Publisher": "Company of Biologists",
         "Title": "Disease Models and Mechanisms (DMM)",
         "Hyperlink": "https:\/\/journals.biologists.com\/dmm"
     },
@@ -774,7 +774,7 @@ const BOOKS = [
     {
         "id": 128,
         "Publisher": "International Centre for Diffraction Data",
-        "Title": " ICDD PDF4+Sub DVD (single user license version)",
+        "Title": "ICDD PDF4+Sub DVD (single user license version)",
         "Hyperlink": "http:\/\/www.icdd.com\/"
     },
     {
@@ -822,7 +822,7 @@ const BOOKS = [
     },
     {
         "id": 136,
-        "Publisher": " Mathematical Sciences Publishers (MSP)",
+        "Publisher": "Mathematical Sciences Publishers (MSP)",
         "Title": "Pacific Journal of Mathematics",
         "Remark": "New Subscription from 2023",
         "Hyperlink": "https:\/\/msp.org\/pjm\/2023\/323-2\/"
@@ -894,49 +894,49 @@ const BOOKS = [
     {
         "id": 147,
         "Publisher": "Royal Society Publishing",
-        "Title": "1. Philosophical Transactions of the Royal Soc. A : Mathematical, Physical and Engineering Sciences",
+        "Title": "Philosophical Transactions of the Royal Soc. A : Mathematical, Physical and Engineering Sciences",
         "Hyperlink": "https:\/\/royalsocietypublishing.org\/journal\/rsta"
     },
     {
         "id": 148,
         "Publisher": "Royal Society Publishing",
-        "Title": "2. Philosophical Transactions of the Royal Soc.B : Biological Sciences",
+        "Title": "Philosophical Transactions of the Royal Soc.B : Biological Sciences",
         "Hyperlink": "https:\/\/royalsocietypublishing.org\/journal\/rstb"
     },
     {
         "id": 149,
         "Publisher": "Royal Society Publishing",
-        "Title": "3. Proceedings of the Royal Society A",
+        "Title": "Proceedings of the Royal Society A",
         "Hyperlink": "https:\/\/royalsocietypublishing.org\/journal\/rspa"
     },
     {
         "id": 150,
         "Publisher": "Royal Society Publishing",
-        "Title": "4. Proceedings of the Royal Society B",
+        "Title": "Proceedings of the Royal Society B",
         "Hyperlink": "https:\/\/royalsocietypublishing.org\/journal\/rspb"
     },
     {
         "id": 151,
         "Publisher": "Royal Society Publishing",
-        "Title": "5. Biology Letters",
+        "Title": "Biology Letters",
         "Hyperlink": "https:\/\/royalsocietypublishing.org\/journal\/rsbl"
     },
     {
         "id": 152,
         "Publisher": "Royal Society Publishing",
-        "Title": "6. Jl. Of the Royal Society Interface",
+        "Title": "Jl. Of the Royal Society Interface",
         "Hyperlink": "https:\/\/royalsocietypublishing.org\/toc\/rsif\/6\/30"
     },
     {
         "id": 153,
         "Publisher": "Royal Society Publishing",
-        "Title": "7. Interface Focus",
+        "Title": "Interface Focus",
         "Hyperlink": "https:\/\/royalsocietypublishing.org\/toc\/rsfs\/7\/1"
     },
     {
         "id": 154,
         "Publisher": "Royal Society Publishing",
-        "Title": "8. Notes and Records of the Royal Society",
+        "Title": "Notes and Records of the Royal Society",
         "Hyperlink": "https:\/\/royalsocietypublishing.org\/journal\/rsnr"
     },
     {
@@ -1036,7 +1036,7 @@ const BOOKS = [
     {
         "id": 170,
         "Publisher": "Springer",
-        "Title": " Inventiones mathematicae",
+        "Title": "Inventiones mathematicae",
         "Hyperlink": "https:\/\/link.springer.com\/journal\/222"
     },
     {
@@ -2140,6 +2140,8 @@ const BOOKS = [
     }
 ]
 
+BOOKS.sort((a, b)=> a.Title.localeCompare(b.Title)) 
+
 const product_list = document.querySelector('.product_result')
 
     const INITIAL_BOOKS = BOOKS.filter((book) => book.Remark)
@@ -2166,8 +2168,16 @@ const filter_items = () => {
     
     const product_list = document.querySelector('.product_result')
     const search = document.querySelector('#input_search').value.toLowerCase();
-    product_list.innerHTML = ''
     const FILTERED_BOOKS = BOOKS.filter((book) => book.Title.toLowerCase().includes(search.toLowerCase())) || BOOKS.filter((book) => book.Publisher.toLowerCase().includes(search.toLowerCase()))
+    product_list.innerHTML = `
+    <h1 class="p-4 flex justify-center ">
+    <b>Total results:&nbsp;</b>
+        <span class="italic ">
+         ${FILTERED_BOOKS.length} resources found.
+        </span>
+    </h1>
+    `
+    
     FILTERED_BOOKS.forEach((book) => {
         const book_title = book.Title
         const book_publication = book.Publisher    
@@ -2182,7 +2192,6 @@ const filter_items = () => {
         // console.log(book)           
         product_list.appendChild(bookItem)
     })
-    console.log(FILTERED_BOOKS)
 
 
     if(product_list.innerHTML === ''){
