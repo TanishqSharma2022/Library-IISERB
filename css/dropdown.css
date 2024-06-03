@@ -10,9 +10,10 @@
     height: 50px;
     border: 1px solid black;
     transition: all 0.5s;
+    z-index: 999;
   }
 
-  .dropdown:hover{
+  .dropdown span:hover{
    text-decoration: underline; 
   }
 

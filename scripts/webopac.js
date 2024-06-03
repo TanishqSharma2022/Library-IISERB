@@ -2141,9 +2141,6 @@ const BOOKS = [
 ]
 
 const product_list = document.querySelector('.product_result')
-const search = document.querySelector('#input_search').value.toUpperCase();
-
-
 
     const INITIAL_BOOKS = BOOKS.filter((book) => book.Remark)
     INITIAL_BOOKS.forEach((book) => {
@@ -2166,6 +2163,9 @@ const search = document.querySelector('#input_search').value.toUpperCase();
 
 
 const filter_items = () => {
+    
+    const product_list = document.querySelector('.product_result')
+    const search = document.querySelector('#input_search').value.toLowerCase();
     product_list.innerHTML = ''
     const FILTERED_BOOKS = BOOKS.filter((book) => book.Title.toLowerCase().includes(search.toLowerCase())) || BOOKS.filter((book) => book.Publisher.toLowerCase().includes(search.toLowerCase()))
     FILTERED_BOOKS.forEach((book) => {
@@ -2175,14 +2175,24 @@ const filter_items = () => {
         bookItem.innerHTML = `
         <div class="max-w-[700px] border rounded-xl p-4 py-8 shadow m-4">
             <h1 class="hover:underline hover:text-blue-500 text-3xl mt-3">
-            <a target="_blank" href="${book.Hyperlink}">${book_title}</a></h1>
+            <a target="_blank" href="${book.Hyperlink}"> ${book_title}</a></h1>
             <h3 class="italic">${book_publication}</h3>
         </div>
         `
         // console.log(book)           
         product_list.appendChild(bookItem)
     })
+    console.log(FILTERED_BOOKS)
 
+
+    if(product_list.innerHTML === ''){
+        product_list.innerHTML = `
+        <div class="max-w-[700px] border rounded-xl p-4 py-8 shadow m-4">
+            <h1 class="text-3xl mt-3">
+            No results found</h1>
+        </div>
+        `
+    }   
 }
 
 
