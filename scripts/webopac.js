@@ -2141,8 +2141,64 @@ const BOOKS = [
 ]
 
 BOOKS.sort((a, b)=> a.Title.localeCompare(b.Title)) 
-
 const product_list = document.querySelector('.product_result')
+
+
+// A to Z buttons
+
+const AtoZ = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+const AtoZ_container = document.querySelector('.AtoZ_container')
+AtoZ.forEach((letter) => {  
+    const bookItem = document.createElement("button");
+    bookItem.classList.add('border', 'p-2', 'hover:border-black', 'rounded-xl', 'm-2')  
+    bookItem.addEventListener('click', () => {  
+        const FILTERED_BOOKS = BOOKS.filter((book) => book.Title.charAt(0).toLowerCase() === letter.toLowerCase())
+        product_list.innerHTML = ``
+        FILTERED_BOOKS.forEach((book) => {
+            
+            const book_title = book.Title
+            const book_publication = book.Publisher    
+            const bookItem = document.createElement("div");
+            bookItem.innerHTML = ` 
+            <div class="max-w-[700px] border rounded-xl p-4 py-8 shadow m-4">
+                <h1 class="hover:underline hover:text-blue-500 text-3xl mt-3">
+                <a target="_blank" href="${book.Hyperlink}">${book_title}</a></h1>
+                <h3 class="italic">${book_publication}</h3>
+            </div>
+            `
+            product_list.appendChild(bookItem)
+        }
+        )
+        
+    })
+    bookItem.innerHTML = `
+            ${letter}
+        
+    
+    `
+    AtoZ_container.appendChild(bookItem)
+
+})
+// product_list.appendChild(AtoZ_container)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     const INITIAL_BOOKS = BOOKS.filter((book) => book.Remark)
     INITIAL_BOOKS.forEach((book) => {
@@ -2161,6 +2217,8 @@ const product_list = document.querySelector('.product_result')
         // console.log(book)           
         product_list.appendChild(bookItem)
     }) 
+
+
 
 
 
