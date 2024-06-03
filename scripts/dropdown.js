@@ -237,7 +237,13 @@ const dropDown = [
   },
 ];
 
-var dropDownMenu = document.querySelector(".dropdown_option_container");
+var dropDownContainer = document.querySelector(".dropdown_container");
+var dropDownMenu = document.createElement("div");
+dropDownMenu.classList.add("dropdown_option_container");
+dropDownContainer.appendChild(dropDownMenu)
+
+
+
 dropDown.forEach((item, index) => {
   const dropDownItem = document.createElement("div");
 
