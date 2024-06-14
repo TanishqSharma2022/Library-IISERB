@@ -7,7 +7,7 @@
     flex-direction: column;
     overflow: hidden;
     box-sizing: border-box;
-    height: 50px;
+    height: 45px;
     z-index: 999;
 
   }
@@ -38,12 +38,13 @@
   .dropdown_option{
     height: 30px;
   }
-/*   
-  .dropdown:hover{
-    height: 100%;
-  } */
+
   
-.dropdown_option_container{
+.dropdown_mobile_view_option_container{
   position: absolute;
   top:20%;
+}
+
+.showHide{
+  display: none;
 }

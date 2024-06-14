@@ -8,68 +8,14 @@
     color: white;
     width: 200px;
     border-radius: 12px;
+    gap: 1rem;
 
 }
-.countdown_label{
-    font-weight: semibold;
-    font-size: 20px;
-}
-.countdown_value{
-    font-weight: bold;
-    font-size: 20px;
 
-}
 
 @media screen and (max-width: 600px){
     .countdown{
         width: 100%;
     }
-    .countdown_value{
-        font-weight: bold;
-        font-size: 40px;
-    
-    }
-    .countdown_label{
-        font-weight: semibold;
-        font-size: 15px;
-    }
+  
 }
-
-
-/* <div class="w-full md:p-12 grid grid-cols-2 md:flex  justify-center gap-4 items-center">
-<a href="https://www.iiserb.ac.in/assets/all_upload/library/List-of-e-Resources-2021.pdf"> 
-  <div class="countdown">
-    <i class="fa-solid fa-2xl mt-6 mb-6 fa-book"></i>
-  <p class="countdown_value" id="counter"></p>
-<p class="countdown_label"> Books</p>
-</div></a>  
-
-<a href="https://www.iiserb.ac.in/assets/all_upload/library/List-of-e-Resources-2023.pdf">
-
-<div class="countdown">
-  <i class="fa-solid fa-2xl mt-6 mb-6 fa-at"></i>
-  <p class="countdown_value" id="counter2"></p>
-  <p class="countdown_label">E-Resources</p>
-</div>
-
-<a href="http://idr.iiserb.ac.in:8080/jspui/"> 
-
-<div class="countdown">
-  <i class="fa-solid fa-2xl mt-6 mb-6 fa-database"></i>
-  <p id="counter3" class="countdown_value"></p>
-  <p class="countdown_label">Databases</p>
-</div>
-
-<a href="https://www.students.iiserb.ac.in">
-
-<div class="countdown">
-  <i class="fa-solid fa-2xl mt-6 mb-6 fa-user-graduate"></i>
-  <p id="counter4" class="countdown_value"></p>
-  <p class="countdown_label">Students</p>
-</div>
-</div>
-
-
-
-
-</div> */
