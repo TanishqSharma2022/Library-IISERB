@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
       newsItems.forEach(function(item, index) {
         item.style.animation = 'none';
         void item.offsetHeight; // Trigger reflow
-        item.style.animation = 'newsAnimation 5s ease ' + (index * 0.2) + 's forwards'; // Delay based on index
+        item.style.animation = 'newsAnimation 2s ease ' + (index * 0.2) + 's forwards'; // Delay based on index
       });
     }
   

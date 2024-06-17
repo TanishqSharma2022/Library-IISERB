@@ -181,13 +181,13 @@
 
 
   <!-- ABOUT LIBRARY -->
-  <div class="min-h-screen w-full  p-4 justify-center ">
-    <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+  <div class="min-h-screen w-full  p-4 lg:p-12 justify-center ">
+    <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-12 p-4">
       <div class="md:col-span-2">
-        <h1 class="font-bold text-4xl ">About Library</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-          <img class="shadow-lg rounded-lg" src="images/library/browsing_area.jpg" />
-          <p class="">
+        <h1 class="font-bold text-4xl lg:text-5xl  ">About Library</h1>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 mt-6">
+          <img class="shadow-lg rounded-lg col-span-2" src="images/library/browsing_area.jpg" />
+          <p class="col-span-3">
             Welcome to Central Library, IISER Bhopal a very special place in the IISER Campus with its rich collection
             of books and journals in the field of Basic Sciences and related areas. Currently houses around 10,000
             books, comprises of collection includes textbooks for the BS-MS and Ph.D curriculum in Biological Sciences,
@@ -208,9 +208,9 @@
     </div>
 
 
-    <div class="w-full md:p-12 grid grid-cols-2 md:flex  justify-center gap-4 items-center">
+    <div class="w-full md:p-12 grid grid-cols-1 md:flex  justify-center gap-4 items-center">
 
-      <a href="https://webopac.iiserb.ac.in/">
+      <!-- <a href="https://webopac.iiserb.ac.in/">
 
         <div class="countdown ">
           <i class="fa-solid fa-2xl mt-6 mb-6 fa-book"></i>
@@ -244,15 +244,37 @@
           <p id="counter4" class="countdown_value"></p>
           <p class="countdown_label">Students</p>
         </div>
-      </a>
-      <!-- <div class="w-fit grid grid-cols-2 "> -->
-        <!-- <i class="fa-solid fa-2xl fa-book"></i>
-        <div class="grid grid-cols-1 gap-1">
+      </a> -->
+      <div class=" grid grid-cols-2 shadow-lg rounded-xl border-black/20 border p-6 border-2 relative ">
+        <img src="images/countdown/open-book.png" class="h-[90px]" />
+        <div class="grid grid-cols-1 gap-1 ">
         <h1 class="font-bold text-5xl">15k+</h1>
         <p class="font-semibold text-lg text-blue-500">Books</p>
-      </div> -->
-    <!-- </div> -->
-
+      </div>
+    </div>
+      <div class=" grid grid-cols-2 border gap-4 p-6 rounded-xl border-black/20 shadow-lg border-2  ">
+        <img src="images/countdown/education.png" class="h-[90px]" />
+        <div class="grid grid-cols-1 gap-1 ">
+        <h1 class="font-bold text-5xl">5k+</h1>
+        <p class="font-semibold text-lg text-blue-500">E-Resources</p>
+      </div>
+    </div>
+      <div class=" grid grid-cols-2 gap-4 border p-6 rounded-xl border-black/20 shadow-lg border-2  ">
+        <img src="images/countdown/server.png" class="h-[90px]" />
+        <div class="grid grid-cols-1 gap-1 ">
+        <h1 class="font-bold text-5xl">10+</h1>
+        <p class="font-semibold text-lg text-blue-500">Databases</p>
+      </div>
+    </div>
+      <div class=" grid grid-cols-2 border gap-4 p-6 rounded-xl border-black/20 shadow-lg border-2  ">
+        <img src="images/countdown/cap.png" class="h-[90px]" />
+        <div class="grid grid-cols-1 gap-1 ">
+        <h1 class="font-bold text-5xl">2k+</h1>
+        <p class="font-semibold text-lg text-blue-500">Students</p>
+      </div>
+    </div>
+      
+      
     </div>  
 
 
@@ -266,6 +288,7 @@
 
 
   <!-- FOOTER -->
+   
   <div class="w-full bg-black grid grid-cols-1 md:grid-cols-4 p-12 gap-6 text-white  ">
     <div class="md:col-span-2">
       <h1 class="footer_heading">About Library</h1>
@@ -356,7 +379,7 @@
 
 
   </script>
-  <script src="../../scripts\news.js"></script>
+  <script src="scripts/news.js"></script>
   <script>
   </script>
 

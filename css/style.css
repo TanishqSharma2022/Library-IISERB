@@ -4,10 +4,13 @@
   font-family: 'Inter';
 }
 
+#news-container{
+  overflow: hidden;
+}
 
 @keyframes newsAnimation {
-    from { transform: translateY(100%); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
   }
 
   .news-item {
