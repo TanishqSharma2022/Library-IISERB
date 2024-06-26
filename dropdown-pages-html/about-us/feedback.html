@@ -20,134 +20,383 @@
 </head>
 <body class="overflow-x-hidden bg-gray-100">
 
-  <div class="h-100 w-full overflow-x-hidden overflow-y-hidden relative z-0 transition-all duration-[500s]">
+  <div class="min-h-screen overflow-x-hidden grid place-items-center w-full  relative z-0 transition-all duration-[5s]">
 
-    <!-- <div class="absolute top-0 left-0 w-full h-40% bg-gradient-to-b from-black/80 from-0 to-40% z-[-1] "></div> -->
-     <!-- CAROUSEL BACKGROUND -->
-
-     <section class="h-40%  splide overflow-x-hidden absolute z-[-5] h-screen overflow-hidden brightness-75 top-0 left-0" aria-label="Slide Container Example">
-        <div class="splide__track">   
-          <ul class="splide__list">
-             <li class="splide__slide">
-                <div class="splide__slide__container">
-                    <img src="../../images\library\bg.png">
-                </div>
-             </li>
-             
-           </ul>
-         </div>
-
-          
-       </section>
-
-    <!-- NAVBAR -->
-    <!-- SECTION 1 -->
-    <div class="w-full py-1 flex items-center justify-center z-[10]" style="background-color: #2c2c2c;">
-      <div class="w-[85%] flex items-center text-white justify-between">
-        <ul class="flex md:gap-6 md:flex-row flex-col">
-          <li class="flex gap-1 items-center">
-            <a href="../../index.html" target="_blank">
-               <i class="fa-solid fa-house"></i>
-                 Home
-          </li></a>
-          <a href="https://www.iiserb.ac.in/" target="_blank">
-          <li class="flex gap-1 items-center">
-            <i class="fa-solid fa-calendar"></i>
-            All Databases
-          </li></a>
-          <a href="https://www.iiserb.ac.in/" target="_blank">
-          <li class="flex gap-1 items-center">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            Web Opac
-           </li></a>
-           <a href="https://www.iiserb.ac.in/" target="_blank">
-           <li class="flex gap-1 items-center">
-          <i class="fa-solid fa-server"></i>
-           Publications
-          </li></a>
-        </ul>
-        <ul class="gap-4 md:grid-cols-4 grid grid-cols-2">
-         
-        </ul>
-        <ul class="gap-4 justify-center grid grid-cols-2 md:flex">
-       
-         <a href="../../contact.html">
-          <li class="flex gap-2 items-center col-span-2 md:col-span-1">
-          <i class="fa-solid fa-address-book"></i>
-          Contact Us
-          </li>
-         </a>
-
-         
-         
-         <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-            <i class="fa-brands fa-twitter"></i>  </li></a>
-      
-
-        <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-          <i class="fa-brands fa-facebook"></i></li></a>
-      
-       
-       <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-      <i class="fa-brands fa-linkedin"></i> </li></a>
-     
-      <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-      <i class="fa-solid fa-envelope"></i></li></a>
-      
-         </ul>
-        </div>
-     </div>
-
-
-        <!-- SECTION 2 -->
-    <div class="w-full py-4 flex items-center justify-center  ">
-      <div class="w-[85%] relative flex items-center justify-between">
-        <div class="flex relative gap-2 justify-center items-center">
-          <img src="../../logo-iiserb.png" class="h-12 md:h-24"  style=" box-shadow: rgb(0, 0, 0) 1px -1px 1px !important; border-radius: 50%; "/>
-
-          <div class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full w-full"
-          style=" text-shadow: rgb(0, 0, 0) 4px -1px 3px !important; ">
-            <h3>Central Library,<br> IISER Bhopal</h3>
-            <h3 class="ioe">Lumen, IISERB <i class="fa-solid fa-book-open-reader"></i></h3>
-            <h3 class="ar-fontfamily">केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल</h3>
-          </div>
-        </div>
-        <div class="ham_menu text-white cursor-pointer" onclick="menubar_toggle()">
-          <i class="fa-solid fa-bars fa-xl"></i>
-        </div>
-        <!-- Library App -->
-      </div>
-    </div>
-
-       <!-- DROPDOWN SECTION -->
-
-
-    <div class="mt-[1%] mb-[4%]">
-      <h1 class="text-4xl text-white font-bold text-center flex flex-col gap-1 text-shadow"
+   
+    <!-- CAROUSEL BACKGROUND -->
+    <div class="mt-[35%] mb-[4%] sm:mt-[22%] sm:mb-[3%] md:mt-[15%] md:mb-[2%] lg:mt-[15%] lg:mb-[1%] xl:mt-[15%] xl:mb-[3%]">
+          <h1 class="text-4xl text-white font-bold text-center flex flex-col gap-1 text-shadow"
       style="z-index: 5;   white-space: normal; color: white; text-shadow: rgb(0, 0, 0) 6px -1px 5px !important; 
        visibility: inherit; transition: none 0s ease 0s; text-align: center; line-height: 35px; border-width: 0px;
        margin: 0px; padding: 0px;letter-spacing: 0px;font-weight: 700; min-height: 0px;min-width: 128px; max-height: none;
        opacity: 1;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
        
-       
-       Questions for Library Feedback
+       Question for Library feedback
+
       </h1>
     </div>
 
+    <section
+      class="splide absolute  z-[-5] h-80 overflow-hidden brightness-75 top-0 left-0 transition-all ease-in-out duration-500"
+      aria-label="Slide Container Example">
+
+      <div class="splide__track">   
+        <ul class="splide__list">
+           <li class="splide__slide">
+              <div class="splide__slide__container">
+                  <img src="../../images\library\bg.png">
+              </div>
+           </li>
+           
+         </ul>
+       </div>
+
+
+      
+
+
+    </section>
+
+
+
+    <!-- NAVBAR  -->
+
+    <!-- SECTION 1 -->
+     <nav class="absolute top-0 left-0 w-full">
+    <div class=" w-full  py-4 hidden lg:flex items-center justify-center z-[10]">
+      <div class="w-[85%] flex items-center text-white text-sm justify-between header_container">
+        <div class="header_container flex justify-between p-4">
+          <ul class="flex md:flex-row md:gap-6 flex-col">
+              <li class="flex gap-2 items-center">
+                  <a href="https://iiserb.ac.in/" target="_blank" class="flex gap-2 items-center">
+                      <i class="fa-solid fa-house"></i>
+                      IISERB HOME
+                  </a>
+              </li>
+              <li class="flex gap-2 items-center">
+                  <a href="Library_Guide_Book.pdf" target="_blank" class="flex gap-2 items-center">
+                      <i class="fa-solid fa-signs-post"></i>
+                      Library Guide
+                  </a>
+              </li>
+              <li class="flex gap-2 items-center">
+                  <a href="https://webopac.iiserb.ac.in/" target="_blank" class="flex gap-2 items-center">
+                      <i class="fa-solid fa-search"></i>
+                      Web OPAC
+                  </a>
+              </li>
+              <li class="flex gap-2 items-center">
+                  <a href="https://iiserb.irins.org/" target="_blank" class="flex gap-2 items-center">
+                      <i class="fa-solid fa-lightbulb"></i>
+                      IRINS
+                  </a>
+              </li>
+          </ul>
+       
+      </div>
+      <div class="flex ml-auto">
+        <ul class="flex md:flex-row md:gap-8 flex-col">
+            <li>
+                <a href="../../dropdown-pages-html/about-us/Library-team.html" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-solid fa-address-book"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/libraryiiserb" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/cliiserb/" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+         <li>
+                <a href="https://play.google.com/store/apps/details?id=android1.example1.com.libraryapp&hl=en_IN" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-brands fa-google-play"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:library@iiserb.ac.in" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+      </div>
+    </div>
+
+
+    <!-- SECTION 2 -->
+    <div class="w-full   py-4 flex items-center justify-center ">
+
+      <div class="w-[85%] relative flex items-center   justify-between ">
+        <div class=" flex relative  gap-2 justify-center items-center ">
+          <img src="../../logo-iiserb.png" class="h-12 md:h-24"
+            style=" box-shadow: rgb(0, 0, 0) 1px -1px 1px !important; border-radius: 50%; " />
+
+
+          <div class="logo-animation-wrapper relative -mt-12  md:text-2xl text-md h-full drops-shadow-lg w-full">
+
+            <h3>Central Library,<br> IISER Bhopal</h3>
+            <h3 class="ioe">Indian Institute of Science Education&nbsp;&&nbsp;Research&nbsp;Bhopal</h3>
+            <h3 class="ar-fontfamily">केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल</h3>
+          </div>
+        </div>
+
+
+
+        <!-- DROP DOWN NAV OPTIONS -->
+        <div class="lg:hidden flex ham_menu text-white cursor-pointer" onclick="menubar_toggle()">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+
+        <div class="dropdown_web_view lg:flex hidden">
+
+        </div>
+        <!-- Library App -->
+      </div>
+    </div>
+
+  </nav>
+
+
+
+
+    <!-- DROPDOWN SECTION --> <!-- -scripts\dropdown.js -->
+<!-- Mobile View DropDOwn Section -->
+    <div class="z-[999] w-full md:w-[300px] min-h-screen absolute top-0  transition-all -right-[600px] 
+    mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_mobile_view_container">
+      <span class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100" onclick="menubar_toggle()">
+        <i class="fa-solid fa-xmark fa-xl "></i>
+      </span>
+
+      <div class="dropdown_mobile_view_option_container relative">
+
+      </div>
+      <i class="absolute bottom-4  ">Central Library, IISER Bhopal</i>
+
+
+    </div>
+   
+  <!-- questions  -->
+
+
+  <div class="min-h-screen w-full p-4 mt-0 justify-center">
+    <form id="feedbackForm">
+        <div class="max-w-4xl mx-auto p-6 bg-blue-50 rounded-lg shadow-md sm:mt-24 lg:mt-2">
+            <h1 class="text-2xl font-bold mb-6">Library Services Feedback Form</h1>
+            <form id="feedbackForm sm:mt-24 lg:mt-2">
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold font-bold">Who Are You?</label>
+                    <select class="block h-9 w-full mt-1  border-gray-300 rounded-md shadow-sm bg-blue-50" id="userType" required>
+                        <option disabled selected>Select</option>
+                        <option value="Research Scholar">Research Scholar</option>
+                        <option value="Administrative Staff">Administrative Staff</option>
+                        <option value="Faculty">Faculty</option>
+                        <option value="Student">Student</option>
+                        <option value="Other">Other (Please Specify)</option>
+                    </select>
+                </div>
+                <div class="mb-4" id="otherRoleContainer" style="display:none;">
+                    <label class="block text-gray-700">Please Specify</label>
+                    <input type="text" id="otherRole" class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold font-bold">Name</label>
+                    <input type="text" id="name" class="block h-9 w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold font-bold">Department</label>
+                    <select class="block  h-9 w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="userType" required>
+                      <option value="" disabled selected>Select</option>
+                      <option value="Research Scholar">Biological Sciences</option>
+                      <option value="Administrative Staff">Chemistry</option>
+                      <option value="Faculty">Earth and Environmental Sciences</option>
+                      <option value="Student">Mathematics</option>
+                      <option value="Student">Physics</option>
+                      <option value="Student">Chemical Engineering</option>
+                      <option value="Student"> Data Science & Engineering</option>
+                      <option value="Other"> Electrical Engineering & Computer Science</option>
+                      <option value="Student">Economic Sciences</option>
+                      <option value="Student">Humanities and Social Sciences</option>
+                      <option value="Student">Others</option>
+                     
+                  </select>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold font-bold">Email</label>
+                    <input type="email" id="email" class="block h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" required>
+                </div>
+    
+                <h2 class="text-xl font-semibold mt-6 mb-4 font-bold">Please give your opinion about library services.</h2>
+    
+                <div class="mb-4">
+                    <label class="block text-gray-700">1. Library staff treat me fairly and without discrimination.</label>
+                    <select class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="fairTreatment" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Always">Always</option>
+                        <option value="Mostly">Mostly</option>
+                        <option value="Sometime">Sometime</option>
+                        <option value="Few time">Few time</option>
+                        <option value="Never">Never</option>
+                        <option value="NA">NA</option>
+                    </select>
+                </div>
+    
+                <div class="mb-4">
+                  <label class="block text-gray-700">2. Library staff are professional in their dealings with me.</label>
+                  <select class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="fairTreatment" required>
+                      <option value="" disabled selected>Select</option>
+                      <option value="Always">Always</option>
+                      <option value="Mostly">Mostly</option>
+                      <option value="Sometime">Sometime</option>
+                      <option value="Few time">Few time</option>
+                      <option value="Never">Never</option>
+                      <option value="NA">NA</option>
+                  </select>
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700">3. Library staff are friendly.</label>
+                <select class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="fairTreatment" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Always">Always</option>
+                    <option value="Mostly">Mostly</option>
+                    <option value="Sometime">Sometime</option>
+                    <option value="Few time">Few time</option>
+                    <option value="Never">Never</option>
+                    <option value="NA">NA</option>
+                </select>
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700">4. Library staff take an interest in me and my needs.</label>
+              <select class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="fairTreatment" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="Always">Always</option>
+                  <option value="Mostly">Mostly</option>
+                  <option value="Sometime">Sometime</option>
+                  <option value="Few time">Few time</option>
+                  <option value="Never">Never</option>
+                  <option value="NA">NA</option>
+              </select>
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700">5.Library staff give my enquiries appropriate time and attention.</label>
+            <select class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="fairTreatment" required>
+                <option value="" disabled selected>Select</option>
+                <option value="Always">Always</option>
+                <option value="Mostly">Mostly</option>
+                <option value="Sometime">Sometime</option>
+                <option value="Few time">Few time</option>
+                <option value="Never">Never</option>
+                <option value="NA">NA</option>
+            </select>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">6. Library staff provide accurate answers.</label>
+          <select class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="fairTreatment" required>
+              <option value="" disabled selected>Select</option>
+              <option value="Always">Always</option>
+              <option value="Mostly">Mostly</option>
+              <option value="Sometime">Sometime</option>
+              <option value="Few time">Few time</option>
+              <option value="Never">Never</option>
+              <option value="NA">NA</option>
+          </select>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700">7. Library staff respond clearly and accurately to enquiries.</label>
+        <select class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="fairTreatment" required>
+            <option value="" disabled selected>Select</option>
+            <option value="Always">Always</option>
+            <option value="Mostly">Mostly</option>
+            <option value="Sometime">Sometime</option>
+            <option value="Few time">Few time</option>
+            <option value="Never">Never</option>
+            <option value="NA">NA</option>
+        </select>
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700">8. Library staff respond in a timely manner.</label>
+      <select class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="fairTreatment" required>
+          <option value="" disabled selected>Select</option>
+          <option value="Always">Always</option>
+          <option value="Mostly">Mostly</option>
+          <option value="Sometime">Sometime</option>
+          <option value="Few time">Few time</option>
+          <option value="Never">Never</option>
+          <option value="NA">NA</option>
+      </select>
   </div>
-  <div class=" w-full md:w-[300px] min-h-screen absolute top-0 transition-all -right-[600px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_container z-1000 ">
-    <span class="absolute right-6 top-12" onclick="menubar_toggle()">
-      <i class="fa-solid fa-xmark fa-xl"></i>
-    </span>
+  <div class="mb-4">
+    <label class="block text-gray-700">9. Library staff are difficult to approach.</label>
+    <select class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="fairTreatment" required>
+        <option value="" disabled selected>Select</option>
+        <option value="Always">Always</option>
+        <option value="Mostly">Mostly</option>
+        <option value="Sometime">Sometime</option>
+        <option value="Few time">Few time</option>
+        <option value="Never">Never</option>
+        <option value="NA">NA</option>
+    </select>
+</div>
+<div class="mb-4">
+  <label class="block text-gray-700">10. How often do you use the Reading Room.</label>
+  <select class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="fairTreatment" required>
+      <option value="" disabled selected>Select</option>
+      <option value="Always">Always</option>
+      <option value="Mostly">Mostly</option>
+      <option value="Sometime">Sometime</option>
+      <option value="Few time">Few time</option>
+      <option value="Never">Never</option>
+      <option value="NA">NA</option>
+  </select>
+</div>
+<div class="mb-4">
+  <label class="block text-gray-700">11. Do you find the environment of the reading room convenient for study.</label>
+  <select class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="fairTreatment" required>
+      <option value="" disabled selected>Select</option>
+      <option value="Always">Always</option>
+      <option value="Mostly">Mostly</option>
+      <option value="Sometime">Sometime</option>
+      <option value="Few time">Few time</option>
+      <option value="Never">Never</option>
+      <option value="NA">NA</option>
+  </select>
+</div>
+<div class="mb-4">
+  <label class="block text-gray-700">12. How long do you usually stay in the reading room.</label>
+  <select class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="fairTreatment" required>
+      <option value="" disabled selected>Select</option>
+      <option value="Always">Always</option>
+      <option value="Mostly">Mostly</option>
+      <option value="Sometime">Sometime</option>
+      <option value="Few time">Few time</option>
+      <option value="Never">Never</option>
+      <option value="NA">NA</option>
+  </select>
+</div>
+<div class="mb-4">
+  <label class="block text-gray-700 font-semibold font-bold">Write your queries, complains or concerns if any.</label>
+  <input type="text" id="answers" class="block h-9 w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" required>
+</div>
+
+
+
+    
+                <div class="flex justify-end mt-6">
+                    <button type="submit" class="px-6 py-2  text-white rounded-md shadow-sm hover:bg-blue-700" style="background-color:#196297 ;">Submit</button>
+                </div>
+            </form>
+        
+        </div>
+    </form>
+  </div>
+      
+  </div>
+    
+   
   
-
-  </div>
-  <!-- ABOUT  -->
-  <div class="min-h-screen w-full p-4 justify-center">
-   
-
-   
-  </div>
 
   <!-- FOOTER -->
   <div class="w-full bg-black grid grid-cols-1 md:grid-cols-4 p-12 gap-6 text-white  ">
@@ -161,17 +410,23 @@
     <div>
       <h1 class="footer_heading">Useful Links</h1>
       <ul class="footer_items">
-        <a href="https://www.iiserb.ac.in/library/about" target="_blank">
-          <li>IISER Bhopal <i class="fa-arrow-right fa-solid"></i></li></a>
-        <a href="https://www.iiserb.ac.in/library/about" target="_blank">
-          <li>IISER Bhopal <i class="fa-arrow-right fa-solid"></i></li></a>
-        <a href="https://www.iiserb.ac.in/library/about" target="_blank">
-          <li>IISER Bhopal <i class="fa-arrow-right fa-solid"></i></li></a>
-        <a href="https://www.iiserb.ac.in/library/about" target="_blank">
-          <li>IISER Bhopal <i class="fa-arrow-right fa-solid"></i></li></a>
-        <a href="https://www.iiserb.ac.in/library/about" target="_blank">
-          <li>IISER Bhopal <i class="fa-arrow-right fa-solid"></i></li></a>
-                  
+        <a href="dropdown-pages-html\about-us\library-timings.html" target="_blank">
+          <li>Library Timings <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="dropdown-pages-html\about-us\library-rules.html" target="_blank">
+          <li>Library Rules <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="dropdown-pages-html\about-us\feedback.html" target="_blank">
+          <li>Give us a feedback<i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="dropdown-pages-html\online-resources\e_book_collections.html" target="_blank">
+          <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="dropdown-pages-html\online-resources\video_resources.html" target="_blank">
+          <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+
+
       </ul>
 
     </div>
@@ -195,6 +450,32 @@
       </ul>
     </div>
   </div>
+  <script>
+    document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const formObject = Object.fromEntries(formData.entries());
+
+        fetch('/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formObject),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log("hello");
+            alert('Email sent successfully!');
+        })
+        .catch(error => {
+            console.log("hell");
+            console.error('Error:', error);
+        });
+    });
+</script>
+    
 
   <script src="../../scripts/carousel.js"></script>
   <script src="../../scripts/dropdown.js"></script>
@@ -215,5 +496,37 @@
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+      // Show/Hide the "Other" role input field
+      $('#userType').change(function() {
+          if ($(this).val() === 'Other') {
+              $('#otherRoleContainer').show();
+          } else {
+              $('#otherRoleContainer').hide();
+              $('#otherRole').val('');
+          }
+      });
+
+      // Form submission
+      $('#feedbackForm').submit(function(event) {
+          event.preventDefault();
+
+          const formData = {
+              userType: $('#userType').val(),
+              otherRole: $('#otherRole').val(),
+              name: $('#name').val(),
+              schoolName: $('#schoolName').val(),
+              email: $('#email').val(),
+              fairTreatment: $('#fairTreatment').val(),
+              // Add other fields similarly
+          };
+
+          console.log('Form Data:', formData);
+
+          // Implement AJAX to send form data to server or any other required actions
+      });
+  </script>
 </body>
 </html>

@@ -1,28 +1,29 @@
 const header_left_items = [
     {
         id: 0, 
-        title: "IISERB HOME",
-        icon: "fa-house",
-        link: ""
+        title: "IISERB ",
+        icon: "fa-building-columns",
+        link: "https://iiserb.ac.in/"
     },
     {
         id: 1, 
-        title: "All Databases",
-        icon: "fa-calendar",
-        link: ""
+        title: "Library Guide",
+        icon: "fa-signs-post",
+        link: "Library_Guide_Book.pdf"
     },
     {
         id: 2, 
-        title: "Web Opac",
-        icon: "fa-magnifying-glass",
-        link: ""
+        title: "Web OPAC",
+        icon: "fa-search",
+        link: "https://webopac.iiserb.ac.in/"
     },
     {
         id: 3, 
-        title: "Publications",
-        icon: "fa-server",
-        link: ""
+        title: "IRINS",
+        icon: "fa-lightbulb",
+        link: "https://iiserb.irins.org/"
     },
+   
 ]
 
 const header_right_items = [
@@ -34,23 +35,24 @@ const header_right_items = [
     {
         id: 1, 
         icon: "fa-brands fa-twitter",
-        link: "https://www.iiserb.ac.in/"
+        link: "https://x.com/libraryiiserb"
     },
     {
         id: 2, 
         icon: "fa-brands fa-facebook",
-        link: "https://www.iiserb.ac.in/"
+        link: "https://www.facebook.com/cliiserb/"
     },
     {
         id: 3, 
-        icon: "fa-brands fa-linkedin",
-        link: "https://www.iiserb.ac.in/"
+        icon: "fa-brands fa-google-play",
+        link: "https://play.google.com/store/apps/details?id=android1.example1.com.libraryapp&hl=en_IN"
     },
     {
         id: 4, 
         icon: "fa-solid fa-envelope",
-        link: "https://www.iiserb.ac.in/"
+        link: "mailto:library@iiserb.ac.in"
     }
+  
 ]
 const header_container =  document.querySelector(".header_container");
 const header_list_left = document.createElement("ul");
@@ -67,7 +69,7 @@ header_left_items.forEach((item, index) => {
     
 
     header_list.innerHTML += `
-    <a href="https://www.iiserb.ac.in/" target="_blank">
+    <a href="${item.link}" target="_blank">
         <li class="flex gap-2 items-center">
             <i class="fa-solid ${item.icon}"></i>
             ${item.title}
@@ -104,4 +106,3 @@ header_right_items.forEach((item, index) => {
     header_list_right.appendChild(header_list)
 })
 header_container.appendChild(header_list_right)
-

@@ -13,242 +13,329 @@
   <link rel="stylesheet" href="../../css/splide.min.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="../../scripts/splide.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
 </head>
 <body class="overflow-x-hidden bg-gray-100">
 
-  <div class="h-100 w-full overflow-x-hidden overflow-y-hidden relative z-0 transition-all duration-[500s]">
+  <div class="min-h-screen overflow-x-hidden grid place-items-center w-full  relative z-0 transition-all duration-[5s]">
 
+   
     <!-- CAROUSEL BACKGROUND -->
-    <section class="splide absolute z-[-5] h-screen overflow-hidden brightness-75 top-0 left-0" aria-label="Slide Container Example">
-      <div class="splide__track">
+    <div class="mt-[35%] mb-[4%] sm:mt-[22%] sm:mb-[3%] md:mt-[15%] md:mb-[2%] lg:mt-[15%] lg:mb-[1%] xl:mt-[15%] xl:mb-[0.5%]">
+          <h1 class="text-4xl text-white font-bold text-center flex flex-col gap-1 text-shadow"
+      style="z-index: 5;   white-space: normal; color: white; text-shadow: rgb(0, 0, 0) 6px -1px 5px !important; 
+       visibility: inherit; transition: none 0s ease 0s; text-align: center; line-height: 35px; border-width: 0px;
+       margin: 0px; padding: 0px;letter-spacing: 0px;font-weight: 700; min-height: 0px;min-width: 128px; max-height: none;
+       opacity: 1;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+       
+     Mission, Motto & Objective
+      </h1>
+    </div>
+
+    <section
+      class="splide absolute  z-[-5] h-80 overflow-hidden brightness-75 top-0 left-0 transition-all ease-in-out duration-500"
+      aria-label="Slide Container Example">
+
+      <div class="splide__track">   
         <ul class="splide__list">
-          <li class="splide__slide">
-            <div class="splide__slide__container">
-              <img src="../../images/library/bg.png" alt="Background Image">
-            </div>
-          </li>
-        </ul>
-      </div>
+           <li class="splide__slide">
+              <div class="splide__slide__container">
+                  <img src="../../images\library\bg.png">
+              </div>
+           </li>
+           
+         </ul>
+       </div>
+
+
+      
+
+
     </section>
 
-    <!-- NAVBAR -->
-    <div class="w-full py-1 flex items-center justify-center z-[10]" style="background-color: #2c2c2c;">
-      <div class="w-[85%] flex items-center text-white justify-between">
-        <ul class="flex md:gap-6 md:flex-row flex-col">
-          <li class="flex gap-1 items-center">
-            <a href="../../index.html" target="_blank">
-              <i class="fa-solid fa-house"></i> Home
-            </a>
-          </li>
-          <li class="flex gap-1 items-center">
-            <a href="https://www.iiserb.ac.in/" target="_blank">
-              <i class="fa-solid fa-calendar"></i> All Databases
-            </a>
-          </li>
-          <li class="flex gap-1 items-center">
-            <a href="https://www.iiserb.ac.in/" target="_blank">
-              <i class="fa-solid fa-magnifying-glass"></i> Web Opac
-            </a>
-          </li>
-          <li class="flex gap-1 items-center">
-            <a href="https://www.iiserb.ac.in/" target="_blank">
-              <i class="fa-solid fa-server"></i> Publications
-            </a>
-          </li>
-        </ul>
-        <ul class="gap-4 md:grid-cols-4 grid grid-cols-2">
-        </ul>
-        <ul class="gap-4 justify-center grid grid-cols-2 md:flex">
-          <li class="flex gap-2 items-center col-span-2 md:col-span-1">
-          
-         <a href="../../dropdown-pages-html\about-us\Library-team.html" target="_blank"> <li>
-          <i class="fa-solid fa-address-book"></i>  </li></a>
-         
-         <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-            <i class="fa-brands fa-twitter"></i>  </li></a>
-      
 
-        <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-          <i class="fa-brands fa-facebook"></i></li></a>
-      
+
+    <!-- NAVBAR  -->
+
+    <!-- SECTION 1 -->
+     <nav class="absolute top-0 left-0 w-full">
+    <div class=" w-full  py-4 hidden lg:flex items-center justify-center z-[10]">
+      <div class="w-[85%] flex items-center text-white text-sm justify-between header_container">
+        <div class="header_container flex justify-between p-4">
+          <ul class="flex md:flex-row md:gap-6 flex-col">
+              <li class="flex gap-2 items-center">
+                  <a href="https://iiserb.ac.in/" target="_blank" class="flex gap-2 items-center">
+                      <i class="fa-solid fa-house"></i>
+                      IISERB HOME
+                  </a>
+              </li>
+              <li class="flex gap-2 items-center">
+                  <a href="Library_Guide_Book.pdf" target="_blank" class="flex gap-2 items-center">
+                      <i class="fa-solid fa-signs-post"></i>
+                      Library Guide
+                  </a>
+              </li>
+              <li class="flex gap-2 items-center">
+                  <a href="https://webopac.iiserb.ac.in/" target="_blank" class="flex gap-2 items-center">
+                      <i class="fa-solid fa-search"></i>
+                      Web OPAC
+                  </a>
+              </li>
+              <li class="flex gap-2 items-center">
+                  <a href="https://iiserb.irins.org/" target="_blank" class="flex gap-2 items-center">
+                      <i class="fa-solid fa-lightbulb"></i>
+                      IRINS
+                  </a>
+              </li>
+          </ul>
        
-       <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-      <i class="fa-brands fa-linkedin"></i> </li></a>
-     
-      <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-      <i class="fa-solid fa-envelope"></i></li></a>
-      
-         </ul>
-        </div>
-     </div>
+      </div>
+      <div class="flex ml-auto">
+        <ul class="flex md:flex-row md:gap-8 flex-col">
+            <li>
+                <a href="../../dropdown-pages-html/about-us/Library-team.html" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-solid fa-address-book"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/libraryiiserb" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/cliiserb/" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+         <li>
+                <a href="https://play.google.com/store/apps/details?id=android1.example1.com.libraryapp&hl=en_IN" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-brands fa-google-play"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:library@iiserb.ac.in" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+      </div>
+    </div>
+
+
     <!-- SECTION 2 -->
-    <div class="w-full py-4 flex items-center justify-center">
-      <div class="w-[85%] relative flex items-center justify-between">
-        <div class="flex relative gap-2 justify-center items-center">
-          <img src="../../logo-iiserb.png" class="h-12 md:h-24" style="box-shadow: rgb(0, 0, 0) 1px -1px 1px !important; border-radius: 50%;" alt="IISERB Logo">
-          <div class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full w-full" style="text-shadow: rgb(0, 0, 0) 4px -1px 3px !important;">
+    <div class="w-full   py-4 flex items-center justify-center ">
+
+      <div class="w-[85%] relative flex items-center   justify-between ">
+        <div class=" flex relative  gap-2 justify-center items-center ">
+          <img src="../../logo-iiserb.png" class="h-12 md:h-24"
+            style=" box-shadow: rgb(0, 0, 0) 1px -1px 1px !important; border-radius: 50%; " />
+
+
+          <div class="logo-animation-wrapper relative -mt-12  md:text-2xl text-md h-full drops-shadow-lg w-full">
+
             <h3>Central Library,<br> IISER Bhopal</h3>
-                <!-- <h3 class="ioe"></h3> -->
+            <h3 class="ioe">Indian Institute of Science Education&nbsp;&&nbsp;Research&nbsp;Bhopal</h3>
             <h3 class="ar-fontfamily">केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल</h3>
           </div>
         </div>
-        <div class="ham_menu text-white cursor-pointer" onclick="menubar_toggle()">
+
+
+
+        <!-- DROP DOWN NAV OPTIONS -->
+        <div class="lg:hidden flex ham_menu text-white cursor-pointer" onclick="menubar_toggle()">
           <i class="fa-solid fa-bars fa-xl"></i>
         </div>
+
+        <div class="dropdown_web_view lg:flex hidden">
+
+        </div>
+        <!-- Library App -->
       </div>
     </div>
 
-    <!-- DROPDOWN SECTION -->
-    <div class="mt-[1%] mb-[4%]">
-      <h1 class="text-4xl text-white font-bold text-center flex flex-col gap-1 text-shadow" style="z-index: 5; white-space: normal; color: white; text-shadow: rgb(0, 0, 0) 6px -1px 5px !important;">
-        Vision, Mission & Objectives
-      </h1>
+  </nav>
+
+
+
+
+    <!-- DROPDOWN SECTION --> <!-- -scripts\dropdown.js -->
+<!-- Mobile View DropDOwn Section -->
+    <div class="z-[999] w-full md:w-[300px] min-h-screen absolute top-0  transition-all -right-[600px] 
+    mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_mobile_view_container">
+      <span class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100" onclick="menubar_toggle()">
+        <i class="fa-solid fa-xmark fa-xl "></i>
+      </span>
+
+      <div class="dropdown_mobile_view_option_container relative">
+
+      </div>
+      <i class="absolute bottom-4  ">Central Library, IISER Bhopal</i>
+
+
     </div>
-  </div>
-
-  <div class="w-full md:w-[300px] min-h-screen absolute top-0 transition-all -right-[600px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_container z-1000">
-    <span class="absolute right-6 top-12" onclick="menubar_toggle()">
-      <i class="fa-solid fa-xmark fa-xl"></i>
-    </span>
-  </div>
-
-  <!-- ABOUT -->
-  <div class="min-h-screen w-full p-4 justify-center">
-    <section class=" px-6 bg-gray-100 text-gray-900" >
-      <div class="container mx-auto px-4 py-8">
-
-        
-          <!-- Vision Section -->
-          <section class="mb-8">
-            <h2 class="text-2xl font-bold mb-1 px-6">Our Vision</h2>
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/6 mb-0 md:mb-0">
-                    <img src="../../images\page_elements\vm2.png" alt="Vision Image" class="w-full h-auto  ">
-                </div>
-                <div class="md:w-1/2 md:pl-2 py-6 px-2 border-r-4 border-b-4 border-blue-800 "
-                     style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important; ">
-                  <p class="text-lg">
-                    The Vision for Central Library is to provide seamless access to information to its users in a networked environment and to become a premier Learning Resource Centre with a state-of-the-art library resources and services in Research, Science & Technology and related areas.
-                  </p>
-              </div>
-           
-            </div>
-        </section>  
-
-
-          <!-- Mission Section -->
-          <section class="mb-8">
-              <h2 class="text-2xl font-bold mb-0 px-6">Our Mission</h2>
-              <div class="flex flex-col md:flex-row items-center">
-                  <div class="md:w-1/6 mb-1 md:mb-0">
-                      <img src="../../images\page_elements\vm1.png" alt="Mission Image" class="w-full h-auto rounded-lg ">
-                  </div>
-                  <div class="md:w-1/2 md:pl-2 py-6 px-2 border-r-4 border-b-4 border-blue-800 "
-                  style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important; ">
-               <p class="text-lg">
-                The mission of the Central Library, IISER Bhopal is to provide access to high quality information resources in all forms to the faculty, students and staff in support of teaching, learning, scholarship and research mission of the Institute. With a commitment to excellence in services, the Central Library offers information resources and innovative services to support the intellectual inquiry, research and lifelong learning needs of IISER Bhopal community.
-                      </p>
-                  </div>
-              </div>
-          </section>
-          
+    <div class=" inset-2 w-full h-full bg-cover bg-center" style="background-image: url('../../images/page_elements/secbg.png');">
+  <!-- ABOUT  -->
+  <div class="min-h-screen w-full p-4 mt-12 justify-center">
+   
+    <div class="min-h-screen w-full p-4 justify-center">
+      <section class=" px-6 text-gray-900" >
+        <div class="container mx-auto px-4 py-8">
   
-          <!-- Objective Section -->
-          <section class="mb-8">
-              <h2 class="text-2xl font-bold mb-0 px-6">Our Objective</h2>
-              <div class="flex flex-col md:flex-row items-center">
-                  <div class="md:w-1/6 mb-1 md:mb-0">
-                      <img src="../../images\page_elements\vm3.png" alt="Objective Image" class="w-full h-auto rounded-lg ">
-                  </div>
-                  <div class="md:w-1/2 md:pl-2 py-6 px-2 border-r-4 border-b-4 border-blue-800 "
-                  style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important; ">
+          
+           
+  
+  
+            <!-- Mission Section -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-0 px-6">Our Mission</h2>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/6 mb-1 md:mb-0">
+                        <img src="../../images\page_elements\vm1.png" alt="Mission Image" class="w-full h-auto rounded-lg ">
+                    </div>
+                    <div class="md:w-1/2 md:pl-2 py-6 px-2 border-r-4 border-b-4 border-blue-800 "
+                    style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important; ">
+                 <p class="text-lg">
+                  The mission of the Central Library, IISER Bhopal is to provide access to high quality information resources in all forms to the faculty, students and staff in support of teaching, learning, scholarship and research mission of the Institute. With a commitment to excellence in services, the Central Library offers information resources and innovative services to support the intellectual inquiry, research and lifelong learning needs of IISER Bhopal community.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+     <!-- Motto Section -->
+     <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-1 px-6">Our Motto</h2>
+      <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/6 mb-0 md:mb-0">
+              <img src="../../images\page_elements\vm2.png" alt="Vision Image" class="w-full h-auto  ">
+          </div>
+          <div class="md:w-1/2 md:pl-2 py-6 px-2 border-r-4 border-b-4 border-blue-800 "
+               style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important; ">
+               <p  class="text-lg">Achieve the objectives of the Five Laws of Library Science by Serving the Users:</p><br>
                <ul class="text-0.1xl ">
-                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To establish and maintain an effective relationship with the students, faculty, researchers and staff of the Institute to ensure an informed and integrated approach to the creation and delivery of information services.
+                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Documents are for use
                 </li><br>
-                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To select, collect, create, organize, preserve, manage and provide access to information sources in print, non-print and digital forms, regardless of physical location, to support scholarly pursuit, learning, teaching and research in the Institute.
+                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Every user his/her document
                 </li><br>
                 
-                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To facilitate and promote access to the fast growing and expanding collection of digital sources of primary and secondary information.
+                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Every document its user
                 </li><br>
 
-                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To develop and provide quality collections/resources, user facilities and library staff, to maintain an environment conducive to study and research.
+                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Save the time of the user
                 </li><br>
 
-                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To create and deliver a range of networked information and document delivery services that encourage the study, scholarship and collaborative learning.
+                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Library is a growing organism
                 </li><br>
-
-                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To manage the information resources effectively and actively promote the optimum usage.
-                </li><br>
-
-                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To serve as Learning Resource Centre for knowledge management development in the area of Engineering, Science & Technology and related areas.
-                </li><br>
-
-                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To collaborate with other libraries, networks and consortia to optimize the access to knowledge base.
-                </li><br>
-
-                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To continually evaluate services and resource provision to ensure relevance and cost effectiveness.
-                </li><br>
-
-                <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To serve as a community Resource Centre for professionals in Madhya Pradesh.
-                </li>
-
-
-
-                
-                         
-                    
                     </ul>
-              </div>
-          </section>
+        </div>
+     
       </div>
-    </section>
+  </section>  
+            <!-- Objective Section -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-0 px-6">Our Objective</h2>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/6 mb-1 md:mb-0">
+                        <img src="../../images\page_elements\vm3.png" alt="Objective Image" class="w-full h-auto rounded-lg ">
+                    </div>
+                    <div class="md:w-1/2 md:pl-2 py-6 px-2 border-r-4 border-b-4 border-blue-800 "
+                    style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important; ">
+                 <ul class="text-0.1xl ">
+                  <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To establish and maintain an effective relationship with the students, faculty, researchers and staff of the Institute to ensure an informed and integrated approach to the creation and delivery of information services.
+                  </li><br>
+                  <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To select, collect, create, organize, preserve, manage and provide access to information sources in print, non-print and digital forms, regardless of physical location, to support scholarly pursuit, learning, teaching and research in the Institute.
+                  </li><br>
+                  
+                  <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To facilitate and promote access to the fast growing and expanding collection of digital sources of primary and secondary information.
+                  </li><br>
+  
+                  <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To develop and provide quality collections/resources, user facilities and library staff, to maintain an environment conducive to study and research.
+                  </li><br>
+  
+                  <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To create and deliver a range of networked information and document delivery services that encourage the study, scholarship and collaborative learning.
+                  </li><br>
+  
+                  <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To manage the information resources effectively and actively promote the optimum usage.
+                  </li><br>
+  
+                  <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To serve as Learning Resource Centre for knowledge management development in the area of Engineering, Science & Technology and related areas.
+                  </li><br>
+  
+                  <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To collaborate with other libraries, networks and consortia to optimize the access to knowledge base.
+                  </li><br>
+  
+                  <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To continually evaluate services and resource provision to ensure relevance and cost effectiveness.
+                  </li><br>
+  
+                  <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;To serve as a community Resource Centre for professionals in Madhya Pradesh.
+                  </li>
+  
+  
+  
+                  
+                           
+                      
+                      </ul>
+                </div>
+            </section>
+        </div>
+      </section>
+    </div>
+   </div>
   </div>
 
   <!-- FOOTER -->
-  <div class="w-full bg-black grid grid-cols-1 md:grid-cols-4 p-12 gap-6 text-white">
+  <div class="w-full bg-black grid grid-cols-1 md:grid-cols-4 p-12 gap-6 text-white  ">
     <div class="md:col-span-2">
       <h1 class="footer_heading">About Library</h1>
       <p>
         Welcome to Central Library, IISER Bhopal, a hub of knowledge within the campus, boasting a diverse collection of over 10,000 books and journals spanning the spectrum of Basic Sciences and related disciplines. Catering to the academic needs of BS-MS and Ph.D. students, our repository includes textbooks, research materials, and enriching reads across Biological Sciences, Chemistry, Earth and Environmental Sciences, Mathematics, Physics, Humanities, and Social Sciences. Dive into our curated assortment featuring documents in Computer Science, History of Science, light reading materials, fiction, encyclopedias, dictionaries, magazines, and more. Committed to facilitating seamless access, our library offers online databases, research journals, and modern amenities, ensuring a conducive environment for learning and exploration.
       </p>
+
     </div>
     <div>
       <h1 class="footer_heading">Useful Links</h1>
       <ul class="footer_items">
-        <li>
-          <a href="https://www.iiserb.ac.in/library/about" target="_blank">IISER Bhopal <i class="fa-arrow-right fa-solid"></i></a>
-        </li>
-        <li>
-          <a href="https://www.iiserb.ac.in/library/about" target="_blank">IISER Bhopal <i class="fa-arrow-right fa-solid"></i></a>
-        </li>
-        <li>
-          <a href="https://www.iiserb.ac.in/library/about" target="_blank">IISER Bhopal <i class="fa-arrow-right fa-solid"></i></a>
-        </li>
-        <li>
-          <a href="https://www.iiserb.ac.in/library/about" target="_blank">IISER Bhopal <i class="fa-arrow-right fa-solid"></i></a>
-        </li>
-        <li>
-          <a href="https://www.iiserb.ac.in/library/about" target="_blank">IISER Bhopal <i class="fa-arrow-right fa-solid"></i></a>
-        </li>
+        <a href="dropdown-pages-html\about-us\library-timings.html" target="_blank">
+          <li>Library Timings <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="dropdown-pages-html\about-us\library-rules.html" target="_blank">
+          <li>Library Rules <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="dropdown-pages-html\about-us\feedback.html" target="_blank">
+          <li>Give us a feedback<i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="dropdown-pages-html\online-resources\e_book_collections.html" target="_blank">
+          <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="dropdown-pages-html\online-resources\video_resources.html" target="_blank">
+          <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+
+
       </ul>
+
     </div>
     <div>
       <h1 class="footer_heading">Contact Us</h1>
-      <ul>
-        <li>
-          The Librarian<br>
+      <ul >
+  
+        <li>The Librarian<br>
           Central Library,<br>
-          Indian Institute of Science Education<br>
-          & Research Bhopal-462066<br><br>
-          Phone : +91 755 269 2307<br>
-          Email : skpathak@iiserb.ac.in<br><br>
-          <i class="fa-brands fa-x-twitter"></i>&nbsp;&nbsp;
-          <i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;
-          <i class="fa-brands fa-linkedin-in"></i>&nbsp;&nbsp;
-          <i class="fa-brands fa-youtube"></i>
-        </li>
+        Indian Institute of Scince Education<br>
+      & Research Bhopal-462066<br><br>
+        Phone : +91 755 269 2307<br>
+        Email &nbsp; : skpathak@iiserb.ac.in<br><br>
+        <i class="fa-brands fa-x-twitter"></i>&nbsp;&nbsp;
+        <i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;
+        <i class="fa-brands fa-linkedin-in"></i></i>&nbsp;&nbsp;
+        <i class="fa-brands fa-youtube"></i>
+    
+      </li>
+  
       </ul>
     </div>
   </div>
@@ -258,6 +345,7 @@
   <script src="../../scripts/countdown.js"></script>
   <script src="../../scripts/splide.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
   <script>
     var splide = new Splide('.splide', {
       type: 'fade',
@@ -267,7 +355,7 @@
       rewind: true,
     });
 
-    splide.mount();
+    splide.mount()
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>

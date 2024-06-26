@@ -20,126 +20,330 @@
 </head>
 <body class="overflow-x-hidden bg-gray-100">
 
-  <div class="h-100 w-full overflow-x-hidden overflow-y-hidden relative z-0 transition-all duration-[500s]">
+  <div class="min-h-screen overflow-x-hidden grid place-items-center w-full  relative z-0 transition-all duration-[5s]">
 
-    <!-- <div class="absolute top-0 left-0 w-full h-40% bg-gradient-to-b from-black/80 from-0 to-40% z-[-1] "></div> -->
-     <!-- CAROUSEL BACKGROUND -->
-
-     <section class="h-40%  splide overflow-x-hidden absolute z-[-5] h-screen overflow-hidden brightness-75 top-0 left-0" aria-label="Slide Container Example">
-        <div class="splide__track">   
-          <ul class="splide__list">
-             <li class="splide__slide">
-                <div class="splide__slide__container">
-                    <img src="../../images\library\bg.png">
-                </div>
-             </li>
-             
-           </ul>
-         </div>
-
-          
-       </section>
-
-    <!-- NAVBAR -->
-    <!-- SECTION 1 -->
-    <div class="w-full py-1 flex items-center justify-center z-[10]" style="background-color: #2c2c2c;">
-      <div class="w-[85%] flex items-center text-white justify-between">
-        <ul class="flex md:gap-6 md:flex-row flex-col">
-          <li class="flex gap-1 items-center">
-            <a href="../../index.html" target="_blank">
-               <i class="fa-solid fa-house"></i>
-                 Home
-          </li></a>
-          <a href="https://www.iiserb.ac.in/" target="_blank">
-          <li class="flex gap-1 items-center">
-            <i class="fa-solid fa-calendar"></i>
-            All Databases
-          </li></a>
-          <a href="https://www.iiserb.ac.in/" target="_blank">
-          <li class="flex gap-1 items-center">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            Web Opac
-           </li></a>
-           <a href="https://www.iiserb.ac.in/" target="_blank">
-           <li class="flex gap-1 items-center">
-          <i class="fa-solid fa-server"></i>
-           Publications
-          </li></a>
-        </ul>
-        <ul class="gap-4 md:grid-cols-4 grid grid-cols-2">
-         
-        </ul>
-        <ul class="gap-4 justify-center grid grid-cols-2 md:flex">
-       
-      
-          <a href="../../contact.html" target="_blank"> <li>
-            <i class="fa-solid fa-address-book"></i>  </li></a>
-           
-           <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-              <i class="fa-brands fa-twitter"></i>  </li></a>
-        
-  
-          <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-            <i class="fa-brands fa-facebook"></i></li></a>
-        
-         
-         <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-        <i class="fa-brands fa-linkedin"></i> </li></a>
-       
-        <a href="https://www.iiserb.ac.in/" target="_blank"> <li>
-        <i class="fa-solid fa-envelope"></i></li></a>
-        
-           </ul>
-          </div>
-       </div>
-
-
-        <!-- SECTION 2 -->
-    <div class="w-full py-4 flex items-center justify-center  ">
-      <div class="w-[85%] relative flex items-center justify-between">
-        <div class="flex relative gap-2 justify-center items-center">
-          <img src="../../logo-iiserb.png" class="h-12 md:h-24"  style=" box-shadow: rgb(0, 0, 0) 1px -1px 1px !important; border-radius: 50%; "/>
-
-          <div class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full w-full"
-          style=" text-shadow: rgb(0, 0, 0) 4px -1px 3px !important; ">
-            <h3>Central Library,<br> IISER Bhopal</h3>
-            <h3 class="ioe">Lumen, IISERB <i class="fa-solid fa-book-open-reader"></i></h3>
-            <h3 class="ar-fontfamily">केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल</h3>
-          </div>
-        </div>
-        <div class="ham_menu text-white cursor-pointer" onclick="menubar_toggle()">
-          <i class="fa-solid fa-bars fa-xl"></i>
-        </div>
-        <!-- Library App -->
-      </div>
-    </div>
-
-       <!-- DROPDOWN SECTION -->
-
-
-    <div class="mt-[1%] mb-[4%]">
-      <h1 class="text-4xl text-white font-bold text-center flex flex-col gap-1 text-shadow"
+   
+    <!-- CAROUSEL BACKGROUND -->
+    <div class="mt-[35%] mb-[4%] sm:mt-[22%] sm:mb-[3%] md:mt-[15%] md:mb-[2%] lg:mt-[15%] lg:mb-[1%] xl:mt-[15%] xl:mb-[0.5%]">
+          <h1 class="text-4xl text-white font-bold text-center flex flex-col gap-1 text-shadow"
       style="z-index: 5;   white-space: normal; color: white; text-shadow: rgb(0, 0, 0) 6px -1px 5px !important; 
        visibility: inherit; transition: none 0s ease 0s; text-align: center; line-height: 35px; border-width: 0px;
        margin: 0px; padding: 0px;letter-spacing: 0px;font-weight: 700; min-height: 0px;min-width: 128px; max-height: none;
        opacity: 1;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
        
+      Library Rules
+      </h1>
+      <h1 class="text-1xl text-white font-Italic text-center flex flex-col gap-1 text-shadow mt-4"
+      style="z-index: 5;   white-space: normal; color: white; ; 
+       visibility: inherit; transition: none 0s ease 0s; text-align: center; line-height: 35px; border-width: 0px;
+       margin: 0px; padding: 0px;letter-spacing: 0px;font-weight: 700; min-height: 0px;min-width: 128px; max-height: none;
+       opacity: 1;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
        
-       Library Rules
+       General, Circulation, Lost Book Cases & Borrowing of books Rules
       </h1>
     </div>
 
-  </div>
-  <div class=" w-full md:w-[300px] min-h-screen absolute top-0 transition-all -right-[600px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_container z-1000 ">
-    <span class="absolute right-6 top-12" onclick="menubar_toggle()">
-      <i class="fa-solid fa-xmark fa-xl"></i>
-    </span>
-  </div>
-  <!-- ABOUT  -->
-  <div class="min-h-screen w-full p-4 justify-center">
-   
+    <section
+      class="splide absolute  z-[-5] h-80 overflow-hidden brightness-75 top-0 left-0 transition-all ease-in-out duration-500"
+      aria-label="Slide Container Example">
 
+      <div class="splide__track">   
+        <ul class="splide__list">
+           <li class="splide__slide">
+              <div class="splide__slide__container">
+                  <img src="../../images\library\bg.png">
+              </div>
+           </li>
+           
+         </ul>
+       </div>
+
+
+      
+
+
+    </section>
+
+
+
+    <!-- NAVBAR  -->
+
+    <!-- SECTION 1 -->
+     <nav class="absolute top-0 left-0 w-full">
+    <div class=" w-full  py-4 hidden lg:flex items-center justify-center z-[10]">
+      <div class="w-[85%] flex items-center text-white text-sm justify-between header_container">
+        <div class="header_container flex justify-between p-4">
+          <ul class="flex md:flex-row md:gap-6 flex-col">
+              <li class="flex gap-2 items-center">
+                  <a href="https://iiserb.ac.in/" target="_blank" class="flex gap-2 items-center">
+                      <i class="fa-solid fa-house"></i>
+                      IISERB HOME
+                  </a>
+              </li>
+              <li class="flex gap-2 items-center">
+                  <a href="Library_Guide_Book.pdf" target="_blank" class="flex gap-2 items-center">
+                      <i class="fa-solid fa-signs-post"></i>
+                      Library Guide
+                  </a>
+              </li>
+              <li class="flex gap-2 items-center">
+                  <a href="https://webopac.iiserb.ac.in/" target="_blank" class="flex gap-2 items-center">
+                      <i class="fa-solid fa-search"></i>
+                      Web OPAC
+                  </a>
+              </li>
+              <li class="flex gap-2 items-center">
+                  <a href="https://iiserb.irins.org/" target="_blank" class="flex gap-2 items-center">
+                      <i class="fa-solid fa-lightbulb"></i>
+                      IRINS
+                  </a>
+              </li>
+          </ul>
+       
+      </div>
+      <div class="flex ml-auto">
+        <ul class="flex md:flex-row md:gap-8 flex-col">
+            <li>
+                <a href="../../dropdown-pages-html/about-us/Library-team.html" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-solid fa-address-book"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/libraryiiserb" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/cliiserb/" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+         <li>
+                <a href="https://play.google.com/store/apps/details?id=android1.example1.com.libraryapp&hl=en_IN" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-brands fa-google-play"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:library@iiserb.ac.in" target="_blank" class="flex gap-2 items-center">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+      </div>
+    </div>
+
+
+    <!-- SECTION 2 -->
+    <div class="w-full   py-4 flex items-center justify-center ">
+
+      <div class="w-[85%] relative flex items-center   justify-between ">
+        <div class=" flex relative  gap-2 justify-center items-center ">
+          <img src="../../logo-iiserb.png" class="h-12 md:h-24"
+            style=" box-shadow: rgb(0, 0, 0) 1px -1px 1px !important; border-radius: 50%; " />
+
+
+          <div class="logo-animation-wrapper relative -mt-12  md:text-2xl text-md h-full drops-shadow-lg w-full">
+
+            <h3>Central Library,<br> IISER Bhopal</h3>
+            <h3 class="ioe">Indian Institute of Science Education&nbsp;&&nbsp;Research&nbsp;Bhopal</h3>
+            <h3 class="ar-fontfamily">केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल</h3>
+          </div>
+        </div>
+
+
+
+        <!-- DROP DOWN NAV OPTIONS -->
+        <div class="lg:hidden flex ham_menu text-white cursor-pointer" onclick="menubar_toggle()">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+
+        <div class="dropdown_web_view lg:flex hidden">
+
+        </div>
+        <!-- Library App -->
+      </div>
+    </div>
+
+  </nav>
+
+
+
+
+    <!-- DROPDOWN SECTION --> <!-- -scripts\dropdown.js -->
+<!-- Mobile View DropDOwn Section -->
+    <div class="z-[999] w-full md:w-[300px] min-h-screen absolute top-0  transition-all -right-[600px] 
+    mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_mobile_view_container">
+      <span class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100" onclick="menubar_toggle()">
+        <i class="fa-solid fa-xmark fa-xl "></i>
+      </span>
+
+      <div class="dropdown_mobile_view_option_container relative">
+
+      </div>
+      <i class="absolute bottom-4  ">Central Library, IISER Bhopal</i>
+
+
+    </div>
+    <div class=" inset-2 w-full h-full bg-cover bg-center" style="background-image: url('../../images/page_elements/secbg.png');">
+  <!-- ABOUT  -->
+  <div class="min-h-screen w-full p-4 mt-12 justify-center">
    
+    <div class="min-h-screen w-full p-4 justify-center">
+      <section class="  text-gray-900" >
+        <div class="container mx-auto  py-2">
+  
+          
+           
+  
+  
+          
+            <section class="mb-8">
+               
+                <div class="flex flex-col md:flex-row items-left">
+                   
+                    <div class=" md:pl-2 py-2 px-2 mt-12 border-b-4 border-blue-800 "
+                    style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important; ">
+                    <h2 class="text-2xl font-bold mb-0 px-6 text-center">General Rules</h2>
+
+                    <ul class="text-0.1xl ">
+                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Entry to the Library is restricted to the bona fide members on production of Institute I-Card only.
+                      </li><br>
+                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;All members are requested to keep their personal belongings at the Property Counter at their risks. Library is not responsible for loss of or damage
+                      </li><br>
+                      
+                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;No Library material including books, CDs, newspapers, magazines etc. should be taken out of the Library until it is issued.
+                      </li><br>
+      
+                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Members are requested to handle the Library reading materials with utmost care. Mutilation, writing, scribbling, marking, cutting pages will be severely dealt with.
+                      </li><br>
+      
+                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;The use of personal stereos, music sets, walkmans in the Library is not permitted.
+                      </li><br>
+      
+                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp; The audible use of mobile phones is not permitted in the Library Study Room.
+                      </li><br>
+      
+                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Suggestions for procurement of new books & other reading materials, if any, from student members may be sent to the Dy. Librarian.
+                      </li><br>
+      
+                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Members are requested to leave the reading materials on the reading tables. The Library staff will shelve these materials.
+                      </li><br>
+      
+                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Smoking, food and drinks are not allowed in the Library Reading Room.
+                      </li><br>
+      
+                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Members are required to show the Institute I-Card to Library staff at the Circulation Desk the items being taken out, when requested.
+                      </li><br>
+                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Members are allowed to bring in their personal books and other reading materials inside the Library. These items should bear the respective members name and ID Number. Members will have to produce these items at the Circulation Desk/Property Counter every time while entering in, and leaving the Library.
+                      </li>
+       
+                          </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="mb-8">
+               
+              <div class="flex flex-col md:flex-row items-left">
+                 
+                  <div class=" md:pl-2 py-2 px-2 mt-12 border-b-4 border-blue-800 "
+                  style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important; ">
+                  <h2 class="text-2xl font-bold mb-0 px-6 text-center">Circulation Rules</h2>
+
+                  <ul class="text-0.1xl ">
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Circulation of Library materials will be handled from the Circulation Desk during its working hours.
+                    </li><br>
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Borrowers are requested to make sure that the books are properly issued or returned.
+                    </li><br>
+                    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Library users are requested to bring their I Card while coming to the Library.
+                    </li><br>
+    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;The borrowers are advised to check the books & other reading materials thoroughly for missing pages, chapters, any damages, markings etc. before borrowing. No book in damaged conditions will be accepted from the borrower at the time of return. Mutilated or spoiled books may have to be replaced by the borrower.
+                    </li><br>
+    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Library materials will be issued/returned, only if borrower shows the I Card at the circulation Desk. The Institute ID Card used for borrowing Library materials is not transferable and must be produced whenever requested by Library staff.
+                    </li><br>
+    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Materials designated as Newspapers are not issued out.
+                    </li><br>
+    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Faculty and staff going on long leave, with or without salary, deputation, study leave, or extraordinary leave will have to return all borrowed materials before leaving the institute.
+                    </li><br>
+    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;No material from the Library should be taken out without proper issue/ recording. Any type of violation may lead to a disciplinary action.
+                    </li><br>
+    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Print books are issued to a user for a specified time period, for example BS-MS students are entitled to have issue period for 15 days. Users has to returned the concerned book within 15 days otherwise fine @ Rs. 2/- per day, per book till the date they are returned.
+                    </li><br>
+    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;As the overdue charges calculation formula is already shared with you, you are also requested to bring the change for submission of overdue charges/late return fine.
+                    </li><br>
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Membership shall be suspended for repeated delay in returning the books.
+                    </li><br>
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Book can be reissue to the borrower, if hold request is not put by any other user on the same.
+                    </li>
+     
+                        </ul>
+                  </div>
+              </div>
+          </section>
+            <!-- Objective Section -->
+            <section class="mb-8">
+               
+              <div class="flex flex-col md:flex-row items-left">
+                 
+                  <div class=" md:pl-2 py-2 px-2 mt-12 border-b-4 border-blue-800 "
+                  style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important; ">
+                  <h2 class="text-2xl font-bold mb-0 px-6 text-center">Book Lost Cases</h2>
+
+                  <ul class="text-0.1xl ">
+                    <li>If a user loses a library book, then he/she has to make an application informing the Deputy Librarian about the lost of the book and comply with the librry rules, as follow:
+                    </li><br>
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Replace the lost book by a new copy (latest one), and pay a processing fee of Rs. 100/- and overdue charges, if any, as per the library rules.
+                    </li><br>
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;If you are not able to replace the new book then pay the double amount of the procured price of the lost book and an amount of Rs. 100/- as processing fee and the overdue charges, if any.
+                    </li><br>
+                    
+                    <h2 class="text-2xl font-bold mb-0 px-6 text-center">Rules related to borrowing of books</h2>
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Library borrowed books are not transferable and hence should not be lent to others.
+                    </li><br>
+    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Library borrowed books are not transferable and hence should not be lent to others.
+                    </li><br>
+    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;If the damaged book belongs to a set, then the user is responsible for the entire set.
+                    </li><br>
+    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Users should check the physical condition of a book while borrowing the same.
+                    </li><br>
+    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Immediately after the issue of a book, the user is required to take out the same from the library.
+                    </li><br>
+    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;While going out of the library, users should ensure that they do not carry book(s) that are duly not issued on their name(s), failing which disciplinary action will be taken against them.
+                    </li><br>
+    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Every user is requested to check the status of book(s) outstanding against his/her name soon after a transaction is over at the counter. Discrepancy, if any, should be brought to the notice of the counter person immediately. Any complaint thereafter is not likely to be entertained.
+                    </li><br>
+    
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;When there is demand for a borrowed book, the same must be returned to the Library.
+                    </li><br>
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Users are responsible for complying with copyright act while photocopying library document.
+                    </li><br>
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;All outstanding dues in form of overdue charges or lost book must be cleared within the current academic year falling which membership will be treated as delinquency.
+                    </li>
+     
+                        </ul>
+                  </div>
+              </div>
+          </section>
+        </div>
+      </section>
+    </div>
+   </div>
   </div>
 
   <!-- FOOTER -->
@@ -154,17 +358,23 @@
     <div>
       <h1 class="footer_heading">Useful Links</h1>
       <ul class="footer_items">
-        <a href="https://www.iiserb.ac.in/library/about" target="_blank">
-          <li>IISER Bhopal <i class="fa-arrow-right fa-solid"></i></li></a>
-        <a href="https://www.iiserb.ac.in/library/about" target="_blank">
-          <li>IISER Bhopal <i class="fa-arrow-right fa-solid"></i></li></a>
-        <a href="https://www.iiserb.ac.in/library/about" target="_blank">
-          <li>IISER Bhopal <i class="fa-arrow-right fa-solid"></i></li></a>
-        <a href="https://www.iiserb.ac.in/library/about" target="_blank">
-          <li>IISER Bhopal <i class="fa-arrow-right fa-solid"></i></li></a>
-        <a href="https://www.iiserb.ac.in/library/about" target="_blank">
-          <li>IISER Bhopal <i class="fa-arrow-right fa-solid"></i></li></a>
-                  
+        <a href="dropdown-pages-html\about-us\library-timings.html" target="_blank">
+          <li>Library Timings <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="dropdown-pages-html\about-us\library-rules.html" target="_blank">
+          <li>Library Rules <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="dropdown-pages-html\about-us\feedback.html" target="_blank">
+          <li>Give us a feedback<i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="dropdown-pages-html\online-resources\e_book_collections.html" target="_blank">
+          <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="dropdown-pages-html\online-resources\video_resources.html" target="_blank">
+          <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+
+
       </ul>
 
     </div>

@@ -1,6 +1,18 @@
 const dropDown = [
   {
-    id: 0,
+    id: 1,
+    label: "Home",
+    icon: "../../images/menubar/home.png",
+
+    options: [
+      {
+        label: "HomePage",
+        link: "../../index.html",
+      },
+    ],
+  },
+  {
+    id: 1,
     label: "About Us",
     icon: "../../../../images/menubar/info-button.png",
     options: [
@@ -25,17 +37,22 @@ const dropDown = [
         link: "../../dropdown-pages-html/about-us/library-rules.html",
       },
       {
-        label: "Committee",
-        link: "../../dropdown-pages-html/about-us/library-rules.html",
+        label: "Library Committee",
+        link: "../../dropdown-pages-html/about-us/Committee.html",
       },
       {
         label: "Feedback",
         link: "../../dropdown-pages-html/about-us/feedback.html",
       },
+      {
+        label: "Usage Stats",
+        link: "../../dropdown-pages-html/about-us/e-journals_usage_stats.html",
+      },
     ],
   },
+
   {
-    id: 1,
+    id: 2,
     label: "Services",
     icon: "../../images/menubar/customer-support.png",
 
@@ -54,7 +71,7 @@ const dropDown = [
       },
       {
         label: "Photocopy Facility",
-        link: "../../dropdown-pages-html/services/Photocopy_facility.html.",
+        link: "../../dropdown-pages-html/services/Photocopy_facility.html",
       },
       {
         label: "Library Orientation",
@@ -70,7 +87,7 @@ const dropDown = [
       },
       {
         label: "Faculty Publication Details",
-        link: "",
+        link: "https://iiserb.irins.org/",
       },
       {
         label: "Arrival of New Books",
@@ -84,14 +101,11 @@ const dropDown = [
         label: "Video Guides",
         link: "",
       },
-      {
-        label: "Moodle Services",
-        link: "",
-      },
+    
     ],
   },
   {
-    id: 2,
+    id: 3,
     label: "Print Resources",
     icon: "../../images/menubar/printer.png",
 
@@ -111,7 +125,7 @@ const dropDown = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     label: "Online-Resources",
     icon: "../../images/menubar/device.png",
 
@@ -180,7 +194,7 @@ const dropDown = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     label: "Research Support",
     icon: "../../images/menubar/research.png",
 
@@ -223,18 +237,20 @@ const dropDown = [
       },
     ],
   },
-  {
-    id: 5,
-    label: "Usage Stats",
-    icon: "../../images/menubar/pie-chart.png",
 
-    options: [
-      {
-        label: "E-Jourals Usage Stats",
-        link: "",
-      },
-    ],
-  },
+
+  // {
+  //   id: 5,
+  //   label: "Usage Stats",
+  //   icon: "../../images/menubar/pie-chart.png",
+
+  //   options: [
+  //     {
+  //       label: "E-Jourals Usage Stats",
+  //       link: "",
+  //     },
+  //   ],
+  // },
 ];
 
 var dropDownMobileViewContainer = document.querySelector(".dropdown_mobile_view_container");
