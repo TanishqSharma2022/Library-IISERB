@@ -6,6 +6,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
+  <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/navbar.css">
   <link rel="stylesheet" href="../../css/dropdown.css">
   <link rel="stylesheet" href="../../css/countdown.css">
@@ -13,12 +14,13 @@
   <link rel="stylesheet" href="../../css/splide.min.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="../../scripts/splide.min.js"></script>
+  <script src="../../scripts/feedback.js" defer></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
 </head>
-<body class="overflow-x-hidden bg-gray-100">
+<body class="overflow-x-hidden bg-gray-100 ">
 
   <div class="min-h-screen overflow-x-hidden grid place-items-center w-full  relative z-0 transition-all duration-[5s]">
 
@@ -200,11 +202,11 @@
                 </div>
                 <div class="mb-4" id="otherRoleContainer" style="display:none;">
                     <label class="block text-gray-700">Please Specify</label>
-                    <input type="text" id="otherRole" class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50">
+                    <input type="text" id="otherRole"  class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50">
                 </div>
                 <div class="mb-4">
                     <label class="block text-gray-700 font-semibold font-bold">Name</label>
-                    <input type="text" id="name" class="block h-9 w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" required>
+                    <input type="text" id="name" placeholder="Enter your full name" class="block h-9 w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" required>
                 </div>
                 <div class="mb-4">
                     <label class="block text-gray-700 font-semibold font-bold">Department</label>
@@ -230,8 +232,11 @@
                 </div>
     
                 <h2 class="text-xl font-semibold mt-6 mb-4 font-bold">Please give your opinion about library services.</h2>
+                <ol 
+                style="list-style-type: decimal;"
+                class="opinions_container p-4"></ol>
     
-                <div class="mb-4">
+                <!-- <div class="mb-4">
                     <label class="block text-gray-700">1. Library staff treat me fairly and without discrimination.</label>
                     <select class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="fairTreatment" required>
                         <option value="" disabled selected>Select</option>
@@ -355,7 +360,7 @@
 <div class="mb-4">
   <label class="block text-gray-700">11. Do you find the environment of the reading room convenient for study.</label>
   <select class="block  h-9  w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" id="fairTreatment" required>
-      <option value="" disabled selected>Select</option>
+      <option value="" disabled selected  >Select</option>
       <option value="Always">Always</option>
       <option value="Mostly">Mostly</option>
       <option value="Sometime">Sometime</option>
@@ -375,7 +380,7 @@
       <option value="Never">Never</option>
       <option value="NA">NA</option>
   </select>
-</div>
+</div> -->
 <div class="mb-4">
   <label class="block text-gray-700 font-semibold font-bold">Write your queries, complains or concerns if any.</label>
   <input type="text" id="answers" class="block h-9 w-full mt-1 border-gray-300 rounded-md shadow-sm bg-blue-50" required>
@@ -456,23 +461,23 @@
 
         const formData = new FormData(event.target);
         const formObject = Object.fromEntries(formData.entries());
-
-        fetch('/send-email', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formObject),
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log("hello");
-            alert('Email sent successfully!');
-        })
-        .catch(error => {
-            console.log("hell");
-            console.error('Error:', error);
-        });
+      console.log(formObject)
+        // fetch('/send-email', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify(formObject),
+        // })
+        // .then(response => response.json())
+        // .then(data => {
+        //     console.log("hello");
+        //     alert('Email sent successfully!');
+        // })
+        // .catch(error => {
+        //     console.log("hell");
+        //     console.error('Error:', error);
+        // });
     });
 </script>
     

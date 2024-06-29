@@ -238,19 +238,6 @@ const dropDown = [
     ],
   },
 
-
-  // {
-  //   id: 5,
-  //   label: "Usage Stats",
-  //   icon: "../../images/menubar/pie-chart.png",
-
-  //   options: [
-  //     {
-  //       label: "E-Jourals Usage Stats",
-  //       link: "",
-  //     },
-  //   ],
-  // },
 ];
 
 var dropDownMobileViewContainer = document.querySelector(".dropdown_mobile_view_container");

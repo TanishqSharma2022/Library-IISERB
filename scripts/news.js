@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     ];
 
-
+    newsData = newsData.slice(0, 5)
     
     var currentIndex = 0;
     var newsLimit = 10; // Display all news items at once
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function displayNews() {
       var html = '';
       for (var i = 0; i < newsData.length; i++) {
-        html += '<div class="news-item" onclick="window.location.href=\'' + newsData[i].link + '\'">' + newsData[i].icon + ' ' + newsData[i].text + '</div>';
+        html += `<div class="news-item" onclick=window.location.href=${newsData[i].link}>  ${newsData[i].icon}  ${newsData[i].text} </div>`;
       }
       newsContainer.innerHTML = html;
   
