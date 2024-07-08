@@ -205,27 +205,27 @@ const dropDown = [
       },
       {
         label: "Style Manual",
-        link: "index.html",
+        link: "../../dropdown-pages-html/research-support/style_manual.html",
       },
       {
         label: "Reference Management Tools",
-        link: "index.html",
+        link: "../../dropdown-pages-html/research-support/reference_management_tools.html",
       },
       {
         label: "Data Analysis Tools",
-        link: "index.html",
+        link: "../../dropdown-pages-html/research-support/data_analysis.html",
       },
       {
         label: "Research ID Creation",
-        link: "index.html",
+        link: "../../dropdown-pages-html/research-support/research_id_creaction.html",
       },
-      {
-        label: "Request For",
-        link: "index.html",
-      },
+      // {
+      //   label: "Request For",
+      //   link: "../../dropdown-pages-html/research-support/request_for.html.html",
+      // },
       {
         label: "Research Databases",
-        link: "index.html",
+        link: "../../dropdown-pages-html/research-support/research_database.html",
       },
       {
         label: "Grammarly",
