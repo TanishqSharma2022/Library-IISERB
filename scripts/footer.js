@@ -43,7 +43,7 @@ const useful_links_footer = [
 const contact_us_footer = [
     {
         title: "CONTACT US",
-        content: `The Librarian <br /> Central Library, Indian Institute of Scince Education & Research Bhopal-462066`
+        content: `The Librarian <br /> Central Library, Indian Institute of Science Education & Research Bhopal-462066`
         ,phone: "",
         email: "",
         twitter: "",

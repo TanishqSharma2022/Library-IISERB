@@ -77,10 +77,10 @@ const dropDown = [
         label: "Library Orientation",
         link: "../../dropdown-pages-html/services/library_orientation.html",
       },
-      {
-        label: "Reserve A Book",
-        link: "",
-      },
+      // {
+      //   label: "Reserve A Book",
+      //   link: "",
+      // },
       {
         label: "Recommend A Book",
         link: "",
@@ -94,8 +94,8 @@ const dropDown = [
         link: "../../dropdown-pages-html/services/arrival_of_new_books.html",
       },
       {
-        label: "Remote Access For Resources",
-        link: "",
+        label: "Remote Access For Resources - MyLOFT",
+        link: "https://app.myloft.xyz/",
       },
       {
         label: "Video Guides",
@@ -118,10 +118,10 @@ const dropDown = [
         label: "Thesis Database",
         link: "../../dropdown-pages-html/print-resources/thises_database.html",
       },
-      {
-        label: "Print Periodicals",
-        link: "../../dropdown-pages-html/print-resources/print_periodical.html",
-      },
+      // {
+      //   label: "Print Periodicals",
+      //   link: "../../dropdown-pages-html/print-resources/print_periodical.html",
+      // },
     ],
   },
   {
@@ -135,7 +135,7 @@ const dropDown = [
         link: "http://idr.iiserb.ac.in:8080/jspui/",
       },
       {
-        label: "Digital Archives",
+        label: "Subscribed Archives of e-Resources",
         link: "../../dropdown-pages-html/online-resources/digital_Archives.html",
       },
       {
@@ -175,14 +175,14 @@ const dropDown = [
         label: "CD-ROM Database",
         link: "../../dropdown-pages-html/online-resources/cd_rom_database.html",
       },
-      {
-        label: "Downloaded E-Books",
-        link: "../../dropdown-pages-html/online-resources/downloaded_e_books.html",
-      },
-      {
-        label: "Trail Access Detail",
-        link: "../../dropdown-pages-html/online-resources/trail_accesss_detail.html",
-      },
+      // {
+      //   label: "Downloaded E-Books",
+      //   link: "../../dropdown-pages-html/online-resources/downloaded_e_books.html",
+      // },
+      // {
+      //   label: "Trail Access Detail",
+      //   link: "../../dropdown-pages-html/online-resources/trail_accesss_detail.html",
+      // },
       {
         label: "Open Access Resources",
         link: "../../dropdown-pages-html/online-resources/open_access_resources.html",
