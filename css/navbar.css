@@ -447,3 +447,12 @@
 
 	}
 }
+
+.header_container{
+	display: flex;
+	color: white;
+	width: 90%;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+}

@@ -101,7 +101,6 @@ const dropDown = [
         label: "Video Guides",
         link: "",
       },
-    
     ],
   },
   {
@@ -145,7 +144,6 @@ const dropDown = [
       {
         label: "A-Z List of Text Databases",
         link: "../../dropdown-pages-html/online-resources/e_book_collections.html",
-      
       },
       {
         label: "Biblographic Resources",
@@ -237,23 +235,20 @@ const dropDown = [
       },
     ],
   },
-
 ];
 
-var dropDownMobileViewContainer = document.querySelector(".dropdown_mobile_view_container");
+var dropDownMobileViewContainer = document.querySelector(
+  ".dropdown_mobile_view_container"
+);
 var dropDownMobileMenu = document.createElement("div");
 dropDownMobileMenu.classList.add("dropdown_mobile_view_option_container");
-dropDownMobileViewContainer.appendChild(dropDownMobileMenu)
-
-
-
-
+dropDownMobileViewContainer.appendChild(dropDownMobileMenu);
 
 dropDown.forEach((item, index) => {
   const dropDownItem = document.createElement("div");
 
-  dropDownItem.classList.add("dropdown");  
-  // dropDownItem.classList.add("border");  
+  dropDownItem.classList.add("dropdown");
+  // dropDownItem.classList.add("border");
 
   dropDownItem.classList.add(`dropdown-${index}`);
 
@@ -290,19 +285,12 @@ function toggleMobileDropdown(index) {
   dropdownnewitem.classList.toggle("active");
 }
 
-
-
-
-
-
-var dropdownWebView = document.querySelector('.dropdown_web_view')
+var dropdownWebView = document.querySelector(".dropdown_web_view");
 
 dropDown.forEach((item, index) => {
   const dropDownWebItem = document.createElement("div");
 
-
   dropDownWebItem.classList.add(`dropdown-web-${index}`);
-
 
   dropDownWebItem.innerHTML = `
   <div class="relative inline-block text-left">
@@ -322,26 +310,25 @@ dropDown.forEach((item, index) => {
   <div class="absolute dropdownWebContent-${index} showHide right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" >
     <div class="py-1" role="none">
        ${item.options
-        .map(
-          (option) =>
-            `
+         .map(
+           (option) =>
+             `
           <a href="${option.link}" target="_blank" class=" hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-2">${option.label}</a>
           `
-        )
-        .join("")}
+         )
+         .join("")}
       
     </div>
   </div>
 </div>
   `;
 
-
   // dropDownWebItem.innerHTML = `
   //   <span class="flex items-center  justify-between shadow-sm hover:border-black border hover:bg-gray-300 transition-all duration-[1.5s]  cursor-pointer " onclick="toggleWebDropdown(${index})">
   //     <div class="flex items-center text-white  ">
   //       ${item.label}
   //     </div>
-       
+
   //   </span>
   //   <div class="dropdown-content py-2 h-fit rounded-xl text-black bg-white transition-all duration-[1.5s]" id="dropdown-content-${index}">
   //     ${item.options
@@ -357,15 +344,28 @@ dropDown.forEach((item, index) => {
 });
 
 function toggleWebDropdown(index) {
-//  Onclick function for web view drop
-var dropDownMenuButton = document.querySelector(`.dropdown-web-${index}`)
-var dropDownWebContent = document.querySelector(`.dropdownWebContent-${index}`)
+  //  Onclick function for web view drop
+  var dropDownMenuButton = document.querySelector(`.dropdown-web-${index}`);
+  
+  var heroContainer = document.querySelector(".heroContainer");
+  // heroContainer.classList.remove("showHide");
+  // [0, 1, 2, 3, 4].forEach((item, idx) => {
 
-dropDownWebContent.classList.toggle("showHide");
-
-
-// dropDownMenuButton.addEventListener('click', function(){
-//   dropDownWebContent.classList.toggle("hidden");
-// })
-}
+    // var dropDownWebContent = document.querySelector(
+    //   `.dropdownWebContent-${index}`
+    // );
+    // if(idx === index){
+      
+      document.querySelector(
+        `.dropdownWebContent-${index}`
+      ).classList.toggle("showHide");
+    console.log(index)
+    
+    document.querySelector(
+      `.dropdownWebContent-${index+1}`
+    ).classList.remove("showHide");
+    
+  }
+    
+  // })
 
