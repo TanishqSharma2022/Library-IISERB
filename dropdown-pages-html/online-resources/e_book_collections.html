@@ -1,204 +1,235 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="../../css/navbar.css">
-  <link rel="stylesheet" href="../../css/dropdown.css">
-  <link rel="stylesheet" href="../../css/countdown.css">
-  <link rel="stylesheet" href="../../css/footer.css">
-  <link rel="stylesheet" href="../../css/splide.min.css">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="../../scripts/splide.min.js"></script>
+    <link rel="stylesheet" href="../../css/navbar.css" />
+    <link rel="stylesheet" href="../../css/dropdown.css" />
+    <link rel="stylesheet" href="../../css/countdown.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/splide.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../scripts/splide.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-  <title> E-Resources|Library IISERB</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <title>E-Resources|Library IISERB</title>
     <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
-</head>
-<body class="overflow-x-hidden bg-gray-100">
-
-  <div class="min-h-screen overflow-x-hidden grid place-items-center w-full  relative z-0 transition-all duration-[5s]">
- <div class="w-full h-82 bg-[url(../../images/library/bg2.png)] bg-cover border-red-500 border p-4 ">
-
-      
-    <!-- Navbar -->
-     <nav class=" top-0 left-0 w-full">
-      <div class=" w-full  py-4 hidden lg:flex items-center justify-center z-[10]">
-        <div class="w-[85%] flex items-center text-white text-sm justify-between header_container">
-        
+  </head>
+  <body class="overflow-x-hidden bg-gray-100">
+    <!-- CAROUSEL BACKGROUND -->
+    <div class="w-full bg-[url(../../images/library/bg2.png)] bg-cover p-4">
+      <!-- Navbar -->
+      <nav class="top-0 left-0 w-full">
+        <div
+          class="w-full p-4 hidden lg:flex items-center justify-center z-[10]"
+        >
+          <div
+            class="w-[85%] flex items-center text-white text-sm justify-between header_container"
+          ></div>
         </div>
-      </div>
-  
-  
-      <!-- SECTION 2 -->
-      <div class="w-full   py-4 flex items-center justify-center ">
-  
-        <div class="w-[85%] relative flex items-center   justify-between ">
-          <div class=" flex relative  gap-2 justify-center items-center  ">
-            <img src="/images/logo-iiserb.png" class="h-12 md:h-24"
-              style=" box-shadow: rgb(0, 0, 0) 1px -1px 1px !important; border-radius: 50%; " />
-  
-  
-            <div class="logo-animation-wrapper relative -mt-[70px] flex items-center  border  md:text-2xl text-md h-full drops-shadow-lg w-full">
-  
-              <h3>Central Library,<br> IISER Bhopal</h3>
-              <h3 class="ioe">Indian Institute of Science Education&nbsp;&&nbsp;Research&nbsp;Bhopal</h3>
-              <h3 class="ar-fontfamily">केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल</h3>
+
+        <!-- SECTION 2 -->
+        <div class="w-full py-4 flex items-center justify-center">
+          <div class="w-[85%] relative flex items-center justify-between">
+            <div class="flex relative gap-2 justify-center items-center">
+              <img
+                src="../../logo-iiserb.png"
+                class="h-12 md:h-24"
+                style="
+                  box-shadow: rgb(0, 0, 0) 1px -1px 1px !important;
+                  border-radius: 50%;
+                "
+              />
+
+              <div
+                class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full"
+              >
+                <h3>
+                  Central Library,<br />
+                  IISER Bhopal
+                </h3>
+                <h3 class="ioe">
+                  Indian Institute of Science
+                  Education&nbsp;&&nbsp;Research&nbsp;Bhopal
+                </h3>
+                <h3 class="ar-fontfamily">
+                  केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
+                </h3>
+              </div>
             </div>
+
+            <!-- DROP DOWN NAV OPTIONS -->
+            <div
+              class="lg:hidden flex ham_menu text-white cursor-pointer"
+              onclick="menubar_toggle()"
+            >
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
+
+            <div class="dropdown_web_view lg:flex hidden"></div>
           </div>
-  
-  
-  
-          <!-- DROP DOWN NAV OPTIONS -->
-          <div class="lg:hidden flex ham_menu text-white cursor-pointer" onclick="menubar_toggle()">
-            <i class="fa-solid fa-bars fa-xl"></i>
-          </div>
-  
-          <div class="dropdown_web_view lg:flex hidden">
-  
-          </div>
-         
         </div>
-      </div>
-  
-    </nav>
-  
-  
-  
-  
-      <!-- DROPDOWN SECTION --> <!-- -scripts\dropdown.js -->
-  <!-- Mobile View DropDOwn Section -->
-      <div class="z-[999] w-full md:w-[300px] min-h-screen absolute top-0 overflow-scroll transition-all -right-[600px] 
-      mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6  dropdown_mobile_view_container">
-      
-        <span class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100" onclick="menubar_toggle()">
-          <i class="fa-solid fa-xmark fa-xl "></i>
-        </span>
-       
-        <div class="dropdown_mobile_view_option_container z-[999] min-h-screen  overflow-scroll relative">
-  
+
+        <!-- Mobile View DropDOwn Section -->
+        <div
+          class="z-[999] w-full md:w-[300px] min-h-screen absolute top-0 overflow-scroll transition-all -right-[600px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_mobile_view_container"
+        >
+          <span
+            class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100 z-[9999]"
+            onclick="menubar_toggle()"
+          >
+            <i class="fa-solid fa-xmark fa-xl"></i>
+          </span>
+
+          <div
+            class="dropdown_mobile_view_option_container z-[999] min-h-screen overflow-scroll relative"
+          ></div>
+          <!-- <i class="absolute bottom-4  ">Central Library, IISER Bhopal</i> -->
         </div>
-        <!-- <i class="absolute bottom-4  ">Central Library, IISER Bhopal</i> -->
-      
-  
-  
+
+        <h1
+          class="text-5xl text-white font-bold m-6 p-6 text-center flex flex-col gap-1 drop-shadow-lg"
+          style="
+            z-index: 5;
+            white-space: normal;
+            color: white;
+            visibility: inherit;
+            border-width: 0px;
+            letter-spacing: 0px;
+            font-weight: 700;
+            min-height: 0px;
+            min-width: 128px;
+            max-height: none;
+            opacity: 1;
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+          "
+        >
+          E-Book Collections
+        </h1>
+      </nav>
+    </div>
+
+    <!-- ABOUT  -->
+    <div class="font-sans flex items-center justify-center flex-col w-full">
+      <form class="w-full p-2 mt-20 flex items-center justify-center">
+        <input
+          class="input_search rounded-lg shadow-lg w-full lg:w-[500px] border border-black/30 p-4"
+          type="text"
+          id="input_search"
+          placeholder="Search E-Books here.."
+        />
+      </form>
+      <div class="AtoZ_container"></div>
+
+      <div class="product_result"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <div
+      class="w-full bg-black grid grid-cols-1 md:grid-cols-4 p-12 gap-6 text-white"
+    >
+      <div class="md:col-span-2">
+        <h1 class="footer_heading">About Library</h1>
+        <p>
+          Welcome to Central Library, IISER Bhopal, a hub of knowledge within
+          the campus, boasting a diverse collection of over 10,000 books and
+          journals spanning the spectrum of Basic Sciences and related
+          disciplines. Catering to the academic needs of BS-MS and Ph.D.
+          students, our repository includes textbooks, research materials, and
+          enriching reads across Biological Sciences, Chemistry, Earth and
+          Environmental Sciences, Mathematics, Physics, Humanities, and Social
+          Sciences. Dive into our curated assortment featuring documents in
+          Computer Science, History of Science, light reading materials,
+          fiction, encyclopedias, dictionaries, magazines, and more. Committed
+          to facilitating seamless access, our library offers online databases,
+          research journals, and modern amenities, ensuring a conducive
+          environment for learning and exploration.
+        </p>
       </div>
-  
-  
-
-
-    <h1 class="text-5xl text-white font-bold m-6  p-6 text-center flex flex-col gap-1 drop-shadow-lg"
-    style="z-index: 5;   white-space: normal; color: white;  
-     visibility: inherit; transition: none 0s ease 0s; border-width: 0px;
-     letter-spacing: 0px;font-weight: 700; min-height: 0px;min-width: 128px; max-height: none;
-     opacity: 1;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
-     
-                
-       E-Resources
-     </h1>
-                <!-- <img Fimages\library\bg2.png" /> -->
+      <div>
+        <h1 class="footer_heading">Useful Links</h1>
+        <ul class="footer_items">
+          <a
+            href="dropdown-pages-html\about-us\library-timings.html"
+            target="_blank"
+          >
+            <li>Library Timings <i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+          <a
+            href="dropdown-pages-html\about-us\library-rules.html"
+            target="_blank"
+          >
+            <li>Library Rules <i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+          <a href="dropdown-pages-html\about-us\feedback.html" target="_blank">
+            <li>Give us a feedback<i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+          <a
+            href="dropdown-pages-html\online-resources\e_book_collections.html"
+            target="_blank"
+          >
+            <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+          <a
+            href="dropdown-pages-html\online-resources\video_resources.html"
+            target="_blank"
+          >
+            <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+        </ul>
       </div>
-  
-  </section>
-
-   
-  <!-- ABOUT  -->
-  <div class="font-sans flex items-center justify-center flex-col w-full ">
-    <form class="w-full p-2 mt-20 flex items-center justify-center">
-    <input 
-    class="input_search rounded-lg shadow-lg w-full lg:w-[500px] border border-black/30 p-4 "
-type="text"
-id="input_search" 
-
-placeholder="Search E-Books here.." 
- />
-</form>
-    <div class="AtoZ_container"></div>
-
-    <div class="product_result ">
-
+      <div>
+        <h1 class="footer_heading">Contact Us</h1>
+        <ul>
+          <li>
+            The Librarian<br />
+            Central Library,<br />
+            Indian Institute of Science Education<br />
+            & Research Bhopal-462066<br /><br />
+            Phone : +91 755 269 2307<br />
+            Email &nbsp; : skpathak@iiserb.ac.in<br /><br />
+            <i class="fa-brands fa-x-twitter"></i>&nbsp;&nbsp;
+            <i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;
+            <i class="fa-brands fa-linkedin-in"></i>&nbsp;&nbsp;
+            <i class="fa-brands fa-youtube"></i>
+          </li>
+        </ul>
+      </div>
     </div>
 
-</div>
+    <script src="../../scripts/carousel.js"></script>
+    <script src="../../scripts/header.js"></script>
+    <script src="../../scripts/dropdown.js"></script>
+    <script src="../../scripts/countdown.js"></script>
+    <script src="../../scripts/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
+    <script>
+      var splide = new Splide(".splide", {
+        type: "fade",
+        autoplay: "play",
+        perPage: 1,
+        arrows: false,
+        rewind: true,
+      });
 
-  
-
-  <!-- FOOTER -->
-  <div class="w-full bg-black grid grid-cols-1 md:grid-cols-4 p-12 gap-6 text-white  ">
-    <div class="md:col-span-2">
-      <h1 class="footer_heading">About Library</h1>
-      <p>
-        Welcome to Central Library, IISER Bhopal, a hub of knowledge within the campus, boasting a diverse collection of over 10,000 books and journals spanning the spectrum of Basic Sciences and related disciplines. Catering to the academic needs of BS-MS and Ph.D. students, our repository includes textbooks, research materials, and enriching reads across Biological Sciences, Chemistry, Earth and Environmental Sciences, Mathematics, Physics, Humanities, and Social Sciences. Dive into our curated assortment featuring documents in Computer Science, History of Science, light reading materials, fiction, encyclopedias, dictionaries, magazines, and more. Committed to facilitating seamless access, our library offers online databases, research journals, and modern amenities, ensuring a conducive environment for learning and exploration.
-      </p>
-
-    </div>
-    <div>
-      <h1 class="footer_heading">Useful Links</h1>
-      <ul class="footer_items">
-        <a href="dropdown-pages-html\about-us\library-timings.html" target="_blank">
-          <li>Library Timings <i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\about-us\library-rules.html" target="_blank">
-          <li>Library Rules <i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\about-us\feedback.html" target="_blank">
-          <li>Give us a feedback<i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\online-resources\e_book_collections.html" target="_blank">
-          <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\online-resources\video_resources.html" target="_blank">
-          <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-
-
-      </ul>
-
-    </div>
-    <div>
-      <h1 class="footer_heading">Contact Us</h1>
-      <ul >
-  
-        <li>The Librarian<br>
-          Central Library,<br>
-        Indian Institute of Science Education<br>
-      & Research Bhopal-462066<br><br>
-        Phone : +91 755 269 2307<br>
-        Email &nbsp; : skpathak@iiserb.ac.in<br><br>
-        <i class="fa-brands fa-x-twitter"></i>&nbsp;&nbsp;
-        <i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;
-        <i class="fa-brands fa-linkedin-in"></i></i>&nbsp;&nbsp;
-        <i class="fa-brands fa-youtube"></i>
-    
-      </li>
-  
-      </ul>
-    </div>
-  </div>
-
-  <script src="../../scripts/carousel.js"></script>
-  <script src="../../scripts/dropdown.js"></script>
-  <script src="../../scripts/countdown.js"></script>
-  <script src="../../scripts/splide.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-
-  <script>
-    var splide = new Splide('.splide', {
-      type: 'fade',
-      autoplay: 'play',
-      perPage: 1,
-      arrows: false,
-      rewind: true,
-    });
-
-    splide.mount()
-  </script>
-<script src="../../scripts/webopac.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-</body>
+      splide.mount();
+    </script>
+    <script src="../../scripts/webopac.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
 </html>
