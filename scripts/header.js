@@ -9,7 +9,7 @@ const header_left_items = [
         id: 1, 
         title: "Library Guide",
         icon: "fa-signs-post",
-        link: "Library_Guide_Book.pdf"
+        link: "Library Guide.pdf"
     },
     {
         id: 2, 
@@ -23,6 +23,12 @@ const header_left_items = [
         icon: "fa-lightbulb",
         link: "https://iiserb.irins.org/"
     },
+    {
+        id: 4, 
+        title: "MyLOFT",
+        icon: "fa-book-open",
+        link: "https://app.myloft.xyz/"
+    },
    
 ]
 
@@ -34,7 +40,7 @@ const header_right_items = [
     },
     {
         id: 1, 
-        icon: "fa-brands fa-twitter",
+        icon: "fa-brands fa-square-x-twitter",
         link: "https://x.com/libraryiiserb"
     },
     {
@@ -44,14 +50,16 @@ const header_right_items = [
     },
     {
         id: 3, 
-        icon: "fa-brands fa-google-play",
-        link: "https://play.google.com/store/apps/details?id=android1.example1.com.libraryapp&hl=en_IN"
+        icon: "fa-brands fa-linkedin",
+        link: ""
+       
     },
     {
         id: 4, 
-        icon: "fa-solid fa-envelope",
-        link: "mailto:library@iiserb.ac.in"
-    }
+        icon: "fa-brands fa-google-play",
+        link: "https://play.google.com/store/apps/details?id=android1.example1.com.libraryapp&hl=en_IN"
+    },
+  
   
 ]
 const header_container =  document.querySelector(".header_container");

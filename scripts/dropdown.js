@@ -94,12 +94,12 @@ const dropDown = [
         link: "../../dropdown-pages-html/services/arrival_of_new_books.html",
       },
       {
-        label: "Remote Access For Resources - MyLOFT",
+        label: "MyLOFT - Remote Login Access",
         link: "https://app.myloft.xyz/",
       },
       {
         label: "Video Guides",
-        link: "",
+        link: "../../dropdown-pages-html/services/video_guides.html",
       },
     
     ],
@@ -116,7 +116,7 @@ const dropDown = [
       },
       {
         label: "Thesis Database",
-        link: "../../dropdown-pages-html/print-resources/thises_database.html",
+        link: "../../dropdown-pages-html/print-resources/thesis_database.html",
       },
       // {
       //   label: "Print Periodicals",
@@ -169,7 +169,7 @@ const dropDown = [
       },
       {
         label: "Video Resources",
-        link: "../../dropdown-pages-html/online-resources/video_resources.html",
+        link: "../../dropdown-pages-html/services/video_guides.html",
       },
       {
         label: "CD-ROM Database",
@@ -230,6 +230,10 @@ const dropDown = [
       {
         label: "Grammarly",
         link: "https://www.grammarly.com/",
+      },
+      {
+        label: "QuillBot",
+        link: "https://quillbot.com/",
       },
       {
         label: "Fellowships & Scholarships",

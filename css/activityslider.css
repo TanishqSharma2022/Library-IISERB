@@ -1,0 +1,34 @@
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-slide {
+    flex: 0 0 33.3333%;
+    box-sizing: border-box;
+}
+.carousel-slide img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+}
+.carousel-description {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .carousel-slide {
+        flex: 0 0 100%;
+    }
+    .prev, .next {
+        
+        transform: translateY(-50%);
+    }
+}
+
+.z-999 {
+    z-index: 999;
+  }

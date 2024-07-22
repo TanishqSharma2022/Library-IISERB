@@ -1,3 +1,16 @@
+/* background of all pages */
+
+
+.bg-cover-except-header-footer {
+      background-image: url('');
+      background-size: cover;
+      background-position: center;
+    }
+
+
+
+
+
 .logo-wrapper:active .logo-animation-wrapper h3,
 .logo-wrapper:active h3,
 .logo-wrapper:focus .logo-animation-wrapper h3,
