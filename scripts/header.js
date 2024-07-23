@@ -102,7 +102,7 @@ header_list_right.classList.add(
 header_right_items.forEach((item, index) => {
     const header_list = document.createElement("li");
 
-    
+  
 
     header_list.innerHTML += `
         <a href="${item.link}" target="_blank">
