@@ -1,212 +1,231 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
-<head>
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/activityslider.css" />
+    <link rel="stylesheet" href="css/dropdown.css" />
+    <link rel="stylesheet" href="css/countdown.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <title>Central Library | IISER BHOPAL</title>
+    <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
 
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/activityslider.css">
-  <link rel="stylesheet" href="css/dropdown.css">
-  <link rel="stylesheet" href="css/countdown.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/splide.min.css">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="scripts/splide.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-  <link rel="stylesheet" href="../../css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
 
-  <title>Central Library | IISER BHOPAL</title>
-  <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
+  <body class="overflow-x-hidden bg-gray-100 bg-cover-except-header-footer">
+    <div
+      class="min-h-screen overflow-hidden grid place-items-center w-full relative z-0 transition-all duration-[5s]"
+    >
+      <div class="absolute top-0 left-0 w-full h-full bg-black/40 z-[-1]"></div>
+      <!-- CAROUSEL BACKGROUND -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    
-  </style>
+      <section
+        class="splide absolute z-[-5] h-screen overflow-hidden brightness-75 top-0 left-0 transition-all ease-in-out duration-500"
+        aria-label="Slide Container Example"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="images/carousal_img/carousel3b.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="images/carousal_img/carousel1b.jpg" />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="images/carousal_img/carousel2b.JPG" />
+              </div>
+            </li>
 
-</head>
-
-<body class="overflow-x-hidden bg-gray-100 bg-cover-except-header-footer">
-
-  <div class="min-h-screen overflow-hidden grid place-items-center w-full  relative z-0 transition-all duration-[5s]">
-
-    <div class="absolute top-0 left-0 w-full h-full bg-black/40 z-[-1] "></div>
-    <!-- CAROUSEL BACKGROUND -->
-
-
-    <section
-      class="splide absolute  z-[-5] h-screen overflow-hidden brightness-75 top-0 left-0 transition-all ease-in-out duration-500"
-      aria-label="Slide Container Example">
-
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <div class="splide__slide__container">
-              <img src="images/carousal_img/carousel3b.jpg">
-            </div>
-
-          </li>
-          <li class="splide__slide">
-            <div class="splide__slide__container">
-              <img src="images/carousal_img/carousel1b.jpg">
-            </div>
-
-          </li>
-          <li class="splide__slide">
-            <div class="splide__slide__container">
-              <img src="images/carousal_img/carousel2b.JPG">
-            </div>
-
-          </li>
-
-          <li class="splide__slide">
-            <div class="splide__slide__container">
-              <img src="images/carousal_img/carousel4b.jpg">
-            </div>
-
-          </li>
-        </ul>
-      </div>
-
-
-
-      <div class="splide__progress ">
-        <div class="splide__progress__bar  ">
+            <li class="splide__slide">
+              <div class="splide__slide__container">
+                <img src="images/carousal_img/carousel4b.jpg" />
+              </div>
+            </li>
+          </ul>
         </div>
-      </div>
 
-    </section>
-
-
-
-    <!-- NAVBAR  -->
-
-    <!-- SECTION 1 -->
-    <nav class="absolute top-0 left-0 w-full">
-      <div class=" w-full  py-4 hidden lg:flex items-center justify-center z-[10]">
-        <div class="w-[85%] flex items-center text-white text-sm justify-between header_container">
-
+        <div class="splide__progress">
+          <div class="splide__progress__bar"></div>
         </div>
-      </div>
+      </section>
 
+      <!-- NAVBAR  -->
 
-      <!-- SECTION 2 -->
-      <div class="w-full   py-4 flex items-center justify-center ">
+      <!-- SECTION 1 -->
+      <nav class="absolute top-0 left-0 w-full">
+        <div
+          class="w-full py-4 hidden lg:flex items-center justify-center z-[10]"
+        >
+          <div
+            class="w-[85%] flex items-center text-white text-sm justify-between header_container"
+          ></div>
+        </div>
 
-        <div class="w-[85%] relative flex items-center   justify-between ">
-          <div class=" flex relative  gap-2 justify-center items-center ">
-            <img src="logo-iiserb.png" class="h-12 md:h-24"
-              style=" box-shadow: rgb(0, 0, 0) 1px -1px 1px !important; border-radius: 50%; " />
+        <!-- SECTION 2 -->
+        <div class="w-full py-4 flex items-center justify-center">
+          <div class="w-[85%] relative flex items-center justify-between">
+            <div class="flex relative gap-2 justify-center items-center">
+              <img
+                src="logo-iiserb.png"
+                class="h-12 md:h-24"
+                style="
+                  box-shadow: rgb(0, 0, 0) 1px -1px 1px !important;
+                  border-radius: 50%;
+                "
+              />
 
+              <div
+                class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drops-shadow-lg w-full"
+              >
+                <h3>
+                  Central Library,<br />
+                  IISER Bhopal
+                </h3>
+                <h3 class="ioe">
+                  Indian&nbsp;Institute&nbsp;of&nbsp;Science
+                  Education&nbsp;&&nbsp;Research Bhopal
+                </h3>
 
-            <div class="logo-animation-wrapper relative -mt-12  md:text-2xl text-md h-full drops-shadow-lg w-full">
-
-              <h3>Central Library,<br> IISER Bhopal</h3>
-              <h3 class="ioe">Indian&nbsp;Institute&nbsp;of&nbsp;Science Education&nbsp;&&nbsp;Research Bhopal</h3>
-
-              <h3 class="ar-fontfamily">केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल</h3>
+                <h3 class="ar-fontfamily">
+                  केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
+                </h3>
+              </div>
             </div>
+
+            <!-- DROP DOWN NAV OPTIONS -->
+            <div
+              class="lg:hidden flex ham_menu text-white cursor-pointer"
+              onclick="menubar_toggle()"
+            >
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
+
+            <div class="dropdown_web_view lg:flex hidden"></div>
           </div>
-
-
-
-          <!-- DROP DOWN NAV OPTIONS -->
-          <div class="lg:hidden flex ham_menu text-white cursor-pointer" onclick="menubar_toggle()">
-            <i class="fa-solid fa-bars fa-xl"></i>
-          </div>
-
-          <div class="dropdown_web_view lg:flex hidden">
-
-          </div>
-
         </div>
-      </div>
+      </nav>
 
-    </nav>
-
-
-
-
-    <!-- DROPDOWN SECTION --> <!-- -scripts\dropdown.js -->
-    <!-- Mobile View DropDOwn Section -->
-    <div class="z-[999] w-full md:w-[300px] min-h-screen absolute top-0 overflow-scroll transition-all -right-[600px] 
-    mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6  dropdown_mobile_view_container">
-
-      <span class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100" onclick="menubar_toggle()">
-        <i class="fa-solid fa-xmark fa-xl "></i>
-      </span>
-
-      <div class="dropdown_mobile_view_option_container z-[999] min-h-screen  overflow-scroll relative">
-
-      </div>
-      <!-- <i class="absolute bottom-4  ">Central Library, IISER Bhopal</i> -->
-
-
-
-    </div>
-
-
-
-    <!-- MAIN HEADING ON HERO CONTAINER -->
-
-
-    <div class=" w-full  ">
-      <h1
-        class="lg:text-7xl text-5xl  text-white font-bold drop-shadow-lg whitespace-normal  text-center flex flex-col gap-1 border"
-        style="z-index: 5; white-space: normal; color: white; 
-       visibility: inherit; transition: none 0s ease 0s; text-align: center;  border-width: 0px;
-       margin: 0px; padding: 0px;letter-spacing: 0px;font-weight: 700; min-height: 0px; max-height: none;
-       opacity: 1;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
-
-
-        <span class="italic text-lg lg:text-2xl mb-3 lg:py-5 font-light  ">
-          Welcome to the -->
+      <!-- DROPDOWN SECTION -->
+      <!-- -scripts\dropdown.js -->
+      <!-- Mobile View DropDOwn Section -->
+      <div
+        class="z-[99999] w-[80%] md:w-[300px] min-h-screen absolute top-0 overflow-scroll font-sans -right-[100%] mx-auto px-6  bg-white text-black gap-6 dropdown_mobile_view_container"
+      >
+        <span
+          class="absolute right-6 top-12 z-[999999] cursor-pointer border opacity-50 hover:opacity-100"
+          onclick="menubar_toggle()"
+        >
+          <i class="fa-solid fa-xmark fa-xl"></i>
         </span>
+      </div>
 
-        CENTRAL LIBRARY<span class="lg:text-5xl text-3xl mt-4 lg:mt-8  font-semibold text-shadow ">IISER BHOPAL </span>
-      </h1>
+      <!-- MAIN HEADING ON HERO CONTAINER -->
+
+      <div class="w-full">
+        <h1
+          class="lg:text-7xl text-5xl text-white font-bold drop-shadow-lg whitespace-normal text-center flex flex-col gap-1 border"
+          style="
+            z-index: 5;
+            white-space: normal;
+            color: white;
+            visibility: inherit;
+            transition: none 0s ease 0s;
+            text-align: center;
+            border-width: 0px;
+            margin: 0px;
+            padding: 0px;
+            letter-spacing: 0px;
+            font-weight: 700;
+            min-height: 0px;
+            max-height: none;
+            opacity: 1;
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+          "
+        >
+          <span class="italic text-lg lg:text-2xl mb-3 lg:py-5 font-light">
+            Welcome to the -->
+          </span>
+
+          CENTRAL LIBRARY<span
+            class="lg:text-5xl text-3xl mt-4 lg:mt-8 font-semibold text-shadow"
+            >IISER BHOPAL
+          </span>
+        </h1>
+      </div>
     </div>
-  </div>
 
+    <!-- ABOUT LIBRARY -->
+    <div class="min-h-screen w-full p-4 lg:p-12 justify-center">
+      <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-12 p-4">
+        <div class="md:col-span-2">
+          <h1 class="font-bold text-2xl lg:text-3xl">About Library</h1>
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-6 mt-6">
+            <img
+              class="shadow-lg rounded-lg col-span-2"
+              src="images/library/browsing_area.jpg"
+            />
+            <p class="col-span-3">
+              Welcome to Central Library, IISER Bhopal a very special place in
+              the IISER Campus with its rich collection of books and journals in
+              the field of Basic Sciences and related areas. Currently houses
+              around 10,000 books, comprises of collection includes textbooks
+              for the BS-MS and Ph.D curriculum in Biological Sciences,
+              Chemistry, Earth and Environmental Sciences, Mathematics, Physics,
+              Humanities and Social Sciences. Library collection also includes
+              documents in Computer Science, History of Science, light reading
+              materials, Fictions, Stories, General books, Encyclopaedias and
+              Dictionaries, Magazines etc. Research books & Monographs are also
+              included in the collection for labs & research purpose.
+            </p>
+          </div>
+        </div>
+        <div>
+          <h1 class="font-semibold text-3xl mb-6">News & Updates</h1>
 
-
-
-  <!-- ABOUT LIBRARY -->
-  <div class="min-h-screen w-full  p-4 lg:p-12 justify-center ">
-    <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-12 p-4">
-      <div class="md:col-span-2">
-        <h1 class="font-bold text-4xl lg:text-5xl  ">About Library</h1>
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 mt-6">
-          <img class="shadow-lg rounded-lg col-span-2" src="images/library/browsing_area.jpg" />
-          <p class="col-span-3">
-            Welcome to Central Library, IISER Bhopal a very special place in the IISER Campus with its rich collection
-            of books and journals in the field of Basic Sciences and related areas. Currently houses around 10,000
-            books, comprises of collection includes textbooks for the BS-MS and Ph.D curriculum in Biological Sciences,
-            Chemistry, Earth and Environmental Sciences, Mathematics, Physics, Humanities and Social Sciences. Library
-            collection also includes documents in Computer Science, History of Science, light reading materials,
-            Fictions, Stories, General books, Encyclopaedias and Dictionaries, Magazines etc. Research books &
-            Monographs are also included in the collection for labs & research purpose.
-          </p>
+          <div
+            id="news-container"
+            class="px-4 py-4 h-800 border border-gray-300 rounded-lg shadow-lg"
+          >
+            <!-- News will be dynamically added here -->
+          </div>
         </div>
       </div>
-      <div>
-        <h1 class="font-semibold text-3xl mb-6  ">News & Updates</h1>
 
-        <div id="news-container" class=" px-4 py-4 h-800 border border-gray-300 rounded-lg shadow-lg">
-          <!-- News will be dynamically added here -->
-        </div>
-      </div>
-    </div>
-
-
-    <div class="w-full md:p-12 grid grid-cols-1 md:flex  justify-center gap-4 items-center">
-
-      <!-- <a href="https://webopac.iiserb.ac.in/">
+      <div
+        class="w-full md:p-12 grid grid-cols-1 md:flex justify-center gap-4 items-center"
+      >
+        <!-- <a href="https://webopac.iiserb.ac.in/">
 
         <div class="countdown ">
           <i class="fa-solid fa-2xl mt-6 mb-6 fa-book"></i>
@@ -241,310 +260,425 @@
           <p class="countdown_label">Students</p>
         </div>
       </a> -->
-      <a href="https://webopac.iiserb.ac.in/">
-        <div class=" grid grid-cols-2 shadow-lg rounded-xl border-black/20 border p-6 border-2 relative ">
-          <img src="images/countdown/open-book.png" class="h-[90px]" />
-          <div class="grid grid-cols-1 gap-1 ">
-            <h1 class="font-bold text-5xl">15k+</h1>
-            <p class="font-semibold text-lg text-blue-500">Books</p>
+        <a href="https://webopac.iiserb.ac.in/">
+          <div
+            class="grid grid-cols-2 shadow-lg rounded-xl border-black/20 border p-6 border-2 relative"
+          >
+            <img src="images/countdown/open-book.png" class="h-[90px]" />
+            <div class="grid grid-cols-1 gap-1">
+              <h1 class="font-bold text-5xl">15k+</h1>
+              <p class="font-semibold text-lg text-blue-500">Books</p>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
 
-      <a href="dropdown-pages-html\online-resources\e_book_collections.html">
-        <div class=" grid grid-cols-2 border gap-4 p-6 rounded-xl border-black/20 shadow-lg border-2  ">
-          <img src="images/countdown/education.png" class="h-[90px]" />
-          <div class="grid grid-cols-1 gap-1 ">
-            <h1 class="font-bold text-5xl">5k+</h1>
-            <p class="font-semibold text-lg text-blue-500">E-Resources</p>
+        <a href="dropdown-pages-html\online-resources\e_book_collections.html">
+          <div
+            class="grid grid-cols-2 border gap-4 p-6 rounded-xl border-black/20 shadow-lg border-2"
+          >
+            <img src="images/countdown/education.png" class="h-[90px]" />
+            <div class="grid grid-cols-1 gap-1">
+              <h1 class="font-bold text-5xl">5k+</h1>
+              <p class="font-semibold text-lg text-blue-500">E-Resources</p>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
 
-      <a href="http://idr.iiserb.ac.in:8080/jspui/">
-        <div class=" grid grid-cols-2 gap-4 border p-6 rounded-xl border-black/20 shadow-lg border-2  ">
-          <img src="images/countdown/server.png" class="h-[90px]" />
-          <div class="grid grid-cols-1 gap-1 ">
-            <h1 class="font-bold text-5xl">10+</h1>
-            <p class="font-semibold text-lg text-blue-500">Databases</p>
+        <a href="http://idr.iiserb.ac.in:8080/jspui/">
+          <div
+            class="grid grid-cols-2 gap-4 border p-6 rounded-xl border-black/20 shadow-lg border-2"
+          >
+            <img src="images/countdown/server.png" class="h-[90px]" />
+            <div class="grid grid-cols-1 gap-1">
+              <h1 class="font-bold text-5xl">10+</h1>
+              <p class="font-semibold text-lg text-blue-500">Databases</p>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
 
-      <a href="https://students.iiserb.ac.in/">
-        <div class=" grid grid-cols-2 border gap-4 p-6 rounded-xl border-black/20 shadow-lg border-2  ">
-          <img src="images/countdown/cap.png" class="h-[90px]" />
-          <div class="grid grid-cols-1 gap-1 ">
-            <h1 class="font-bold text-5xl">2k+</h1>
-            <p class="font-semibold text-lg text-blue-500">Students</p>
+        <a href="https://students.iiserb.ac.in/">
+          <div
+            class="grid grid-cols-2 border gap-4 p-6 rounded-xl border-black/20 shadow-lg border-2"
+          >
+            <img src="images/countdown/cap.png" class="h-[90px]" />
+            <div class="grid grid-cols-1 gap-1">
+              <h1 class="font-bold text-5xl">2k+</h1>
+              <p class="font-semibold text-lg text-blue-500">Students</p>
+            </div>
           </div>
-        </div>
-      </a>
-
-
+        </a>
+      </div>
     </div>
 
+    <!-- Start of Activity-Slider -->
+     <div class="p-8">
+    <h1 class="font-bold text-3xl  mb-6 text-center">Recent Activities</h1>
 
-
-
-
+    <div class="container mx-auto ">
+      <div class="carousel-container">
+        <button
+          class="prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-999"
+        >
+          Prev
+        </button>
+        <div class="carousel-track">
+          <div class="carousel-slide p-2">
+            <img
+              src="../../images/library/activity/activity1.jpg"
+              alt="Activity 1"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <p class="carousel-description font-semibold">
+              Description for Activity 1
+            </p>
+          </div>
+          <div class="carousel-slide p-2">
+            <img
+              src="../../images/library/activity/actvity2.jpg"
+              alt="Activity 2"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <p class="carousel-description font-semibold">
+              Description for Activity 2
+            </p>
+          </div>
+          <div class="carousel-slide p-2">
+            <img
+              src="../../images/library/activity/activity3.jpg"
+              alt="Activity 3"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <p class="carousel-description font-semibold">
+              Description for Activity 3
+            </p>
+          </div>
+          <div class="carousel-slide p-2">
+            <img
+              src="../../images\library\IMG_4735.JPG"
+              alt="Activity 4"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <p class="carousel-description font-semibold">
+              Description for Activity 4
+            </p>
+          </div>
+          <div class="carousel-slide p-2">
+            <img
+              src="../../images\library\IMG_4738.JPG"
+              alt="Activity 5"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <p class="carousel-description font-semibold">
+              Description for Activity 5
+            </p>
+          </div>
+          <div class="carousel-slide p-2">
+            <img
+              src="../../images\library\IMG_4743.JPG"
+              alt="Activity 6"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <p class="carousel-description font-semibold">
+              Description for Activity 6
+            </p>
+          </div>
+          <div class="carousel-slide p-2">
+            <img
+              src="../../images\library\IMG_4744.JPG"
+              alt="Activity 7"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <p class="carousel-description font-semibold">
+              Description for Activity 7
+            </p>
+          </div>
+          <div class="carousel-slide p-2">
+            <img
+              src="../../images\library\IMG_4746.JPG"
+              alt="Activity 8"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <p class="carousel-description font-semibold">
+              Description for Activity 8
+            </p>
+          </div>
+          <div class="carousel-slide p-2">
+            <img
+              src="../../images\library\IMG_4747.JPG"
+              alt="Activity 9"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <p class="carousel-description font-semibold">
+              Description for Activity 9
+            </p>
+          </div>
+          <div class="carousel-slide p-2">
+            <img
+              src="../../images\library\IMG_4749.JPG"
+              alt="Activity 10"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <p class="carousel-description font-semibold">
+              Description for Activity 10
+            </p>
+          </div>
+          <div class="carousel-slide p-2">
+            <img
+              src="../../images\library\IMG_4756.JPG"
+              alt="Activity 10"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <p class="carousel-description font-semibold">
+              Description for Activity 11
+            </p>
+          </div>
+          <div class="carousel-slide p-2">
+            <img
+              src="../../images\library\IMG_4758.JPG"
+              alt="Activity 10"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+            <p class="carousel-description font-semibold font-semibold">
+              Description for Activity 12
+            </p>
+          </div>
+        </div>
+        <button
+          class="next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2"
+        >
+          Next
+        </button>
+      </div>
+    </div>
   </div>
+    <!-- End of Activity-Slider -->
 
+    <!-- Testimonial -start -->
 
-  <!-- Start of Activity-Slider -->
-  <h1 class="font-semibold text-3xl mb-6 text-center">Recent Activites</h1>
-
-
-  <div class="container mx-auto p-4">
-    <div class="carousel-container">
-      <button
-        class="prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-999">Prev</button>
-      <div class="carousel-track">
-        <div class="carousel-slide p-2">
-          <img src="../../images/library/activity/activity1.jpg" alt="Activity 1"
-            class="w-full h-48 object-cover rounded-lg">
-          <p class="carousel-description font-semibold">Description for Activity 1</p>
+    <div class="container mx-auto p-8 border ">
+      <h1 class="text-3xl font-bold text-center mb-8">Library Testimonials</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-white rounded-lg shadow-lg p-4">
+          <div class="aspect-w-16 aspect-h-9 mb-4">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/example1"
+              title="Testimonial 1"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="text-center">
+            <p class="text-xl font-semibold">Student Name 1</p>
+            <p class="text-gray-600">Batch 2021</p>
+          </div>
         </div>
-        <div class="carousel-slide p-2">
-          <img src="../../images/library/activity/actvity2.jpg" alt="Activity 2"
-            class="w-full h-48 object-cover rounded-lg">
-          <p class="carousel-description font-semibold">Description for Activity 2</p>
+        <!-- Testimonial 2 -->
+        <div class="bg-white rounded-lg shadow-lg p-4">
+          <div class="aspect-w-16 aspect-h-9 mb-4">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/example2"
+              title="Testimonial 2"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="text-center">
+            <p class="text-xl font-semibold">Student Name 2</p>
+            <p class="text-gray-600">Batch 2022</p>
+          </div>
         </div>
-        <div class="carousel-slide p-2">
-          <img src="../../images/library/activity/activity3.jpg" alt="Activity 3"
-            class="w-full h-48 object-cover rounded-lg">
-          <p class="carousel-description font-semibold">Description for Activity 3</p>
-        </div>
-        <div class="carousel-slide p-2">
-          <img src="../../images\library\IMG_4735.JPG" alt="Activity 4" class="w-full h-48 object-cover rounded-lg">
-          <p class="carousel-description font-semibold">Description for Activity 4</p>
-        </div>
-        <div class="carousel-slide p-2">
-          <img src="../../images\library\IMG_4738.JPG" alt="Activity 5" class="w-full h-48 object-cover rounded-lg">
-          <p class="carousel-description font-semibold">Description for Activity 5</p>
-        </div>
-        <div class="carousel-slide p-2">
-          <img src="../../images\library\IMG_4743.JPG" alt="Activity 6" class="w-full h-48 object-cover rounded-lg">
-          <p class="carousel-description font-semibold">Description for Activity 6</p>
-        </div>
-        <div class="carousel-slide p-2">
-          <img src="../../images\library\IMG_4744.JPG" alt="Activity 7" class="w-full h-48 object-cover rounded-lg">
-          <p class="carousel-description font-semibold">Description for Activity 7</p>
-        </div>
-        <div class="carousel-slide p-2">
-          <img src="../../images\library\IMG_4746.JPG" alt="Activity 8" class="w-full h-48 object-cover rounded-lg">
-          <p class="carousel-description font-semibold">Description for Activity 8</p>
-        </div>
-        <div class="carousel-slide p-2">
-          <img src="../../images\library\IMG_4747.JPG" alt="Activity 9" class="w-full h-48 object-cover rounded-lg">
-          <p class="carousel-description font-semibold">Description for Activity 9</p>
-        </div>
-        <div class="carousel-slide p-2">
-          <img src="../../images\library\IMG_4749.JPG" alt="Activity 10" class="w-full h-48 object-cover rounded-lg">
-          <p class="carousel-description font-semibold">Description for Activity 10</p>
-        </div>
-        <div class="carousel-slide p-2">
-          <img src="../../images\library\IMG_4756.JPG" alt="Activity 10" class="w-full h-48 object-cover rounded-lg">
-          <p class="carousel-description font-semibold">Description for Activity 11</p>
-        </div>
-        <div class="carousel-slide p-2">
-          <img src="../../images\library\IMG_4758.JPG" alt="Activity 10" class="w-full h-48 object-cover rounded-lg">
-          <p class="carousel-description font-semibold font-semibold">Description for Activity 12</p>
-        </div>
-      </div>
-      <button
-        class="next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2">Next</button>
-    </div>
-  </div>
-
-  <!-- End of Activity-Slider -->
-
-  <!-- Testimonial -start -->
-
-  <div class="container mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold text-center mb-8">Library Testimonials</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Testimonial 1 -->
-      <div class="bg-white rounded-lg shadow-lg p-4">
-        <div class="aspect-w-16 aspect-h-9 mb-4">
-          <iframe class="w-full h-full" src="https://www.youtube.com/embed/example1" title="Testimonial 1"
-            frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="text-center">
-          <p class="text-xl font-semibold">Student Name 1</p>
-          <p class="text-gray-600">Batch 2021</p>
-        </div>
-      </div>
-      <!-- Testimonial 2 -->
-      <div class="bg-white rounded-lg shadow-lg p-4">
-        <div class="aspect-w-16 aspect-h-9 mb-4">
-          <iframe class="w-full h-full" src="https://www.youtube.com/embed/example2" title="Testimonial 2"
-            frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="text-center">
-          <p class="text-xl font-semibold">Student Name 2</p>
-          <p class="text-gray-600">Batch 2022</p>
-        </div>
-      </div>
-      <!-- Testimonial 3 -->
-      <div class="bg-white rounded-lg shadow-lg p-4">
-        <div class="aspect-w-16 aspect-h-9 mb-4">
-          <iframe class="w-full h-full" src="https://www.youtube.com/embed/example3" title="Testimonial 3"
-            frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="text-center">
-          <p class="text-xl font-semibold">Student Name 3</p>
-          <p class="text-gray-600">Batch 2023</p>
+        <!-- Testimonial 3 -->
+        <div class="bg-white rounded-lg shadow-lg p-4">
+          <div class="aspect-w-16 aspect-h-9 mb-4">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/example3"
+              title="Testimonial 3"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="text-center">
+            <p class="text-xl font-semibold">Student Name 3</p>
+            <p class="text-gray-600">Batch 2023</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- end -Testimonials  -->
+    <!-- end -Testimonials  -->
 
-  <!-- FOOTER -->
+    <!-- FOOTER -->
 
-  <div class="w-full bg-black grid grid-cols-1 md:grid-cols-4 p-12 gap-6 text-white  ">
-    <div>
-      <h1 class="footer_heading">Quick Links</h1>
-      <ul class="footer_items">
-        <a href="dropdown-pages-html\about-us\library-timings.html" target="_blank">
-          <li>Discussion Room Booking<i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\about-us\library-rules.html" target="_blank">
-          <li>Book Requisition Form<i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\about-us\feedback.html" target="_blank">
-          <li>Give us a feedback<i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\online-resources\e_book_collections.html" target="_blank">
-          <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\online-resources\video_resources.html" target="_blank">
-          <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-
-
-      </ul>
-
-    </div> <div>
-      <h1 class="footer_heading">Useful Links</h1>
-      <ul class="footer_items">
-        <a href="dropdown-pages-html\about-us\library-timings.html" target="_blank">
-          <li>Library Timings <i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\about-us\library-rules.html" target="_blank">
-          <li>Library Rules <i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\about-us\feedback.html" target="_blank">
-          <li>Give us a feedback<i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\online-resources\e_book_collections.html" target="_blank">
-          <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\online-resources\video_resources.html" target="_blank">
-          <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-
-
-      </ul>
-
-    </div>
-    <div>
-      <h1 class="footer_heading">Useful Links</h1>
-      <ul class="footer_items">
-        <a href="dropdown-pages-html\about-us\library-timings.html" target="_blank">
-          <li>Library Timings <i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\about-us\library-rules.html" target="_blank">
-          <li>Library Rules <i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\about-us\feedback.html" target="_blank">
-          <li>Give us a feedback<i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\online-resources\e_book_collections.html" target="_blank">
-          <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-        <a href="dropdown-pages-html\online-resources\video_resources.html" target="_blank">
-          <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
-        </a>
-
-
-      </ul>
-
-    </div>
-    <div>
-      <h1 class="footer_heading">Contact Us</h1>
-      <ul>
-
-        <li>The Librarian<br>
-          Central Library,<br>
-          Indian Institute of Science Education<br>
-          & Research Bhopal-462066<br><br>
-          Phone : +91 755 269 2307<br>
-          Email &nbsp; : skpathak@iiserb.ac.in<br><br>
-          <a href="https://x.com/LibraryIISERB"> <i class="fa-brands fa-x-twitter"></i></a>&nbsp;&nbsp;
-          <a href="https://www.facebook.com/cliiserb/"> <i class="fa-brands fa-facebook-f"></i></a>&nbsp;&nbsp;
-          <!-- <a href="https://x.com/LibraryIISERB">--> 
+    <div
+      class="w-full bg-zinc-800 grid grid-cols-1 md:grid-cols-4 p-12 gap-6 text-white"
+    >
+      <div>
+        <h1 class="footer_heading">Quick Links</h1>
+        <ul class="footer_items">
+          <a
+            href="dropdown-pages-html\about-us\library-timings.html"
+            target="_blank"
+          >
+            <li>
+              Discussion Room Booking<i class="fa-arrow-right fa-solid"></i>
+            </li>
+          </a>
+          <a
+            href="dropdown-pages-html\about-us\library-rules.html"
+            target="_blank"
+          >
+            <li>
+              Book Requisition Form<i class="fa-arrow-right fa-solid"></i>
+            </li>
+          </a>
+          <a href="dropdown-pages-html\about-us\feedback.html" target="_blank">
+            <li>Give us a feedback<i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+          <a
+            href="dropdown-pages-html\online-resources\e_book_collections.html"
+            target="_blank"
+          >
+            <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+          <a
+            href="dropdown-pages-html\online-resources\video_resources.html"
+            target="_blank"
+          >
+            <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+        </ul>
+      </div>
+      <div>
+        <h1 class="footer_heading">Useful Links</h1>
+        <ul class="footer_items">
+          <a
+            href="dropdown-pages-html\about-us\library-timings.html"
+            target="_blank"
+          >
+            <li>Library Timings <i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+          <a
+            href="dropdown-pages-html\about-us\library-rules.html"
+            target="_blank"
+          >
+            <li>Library Rules <i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+          <a href="dropdown-pages-html\about-us\feedback.html" target="_blank">
+            <li>Give us a feedback<i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+          <a
+            href="dropdown-pages-html\online-resources\e_book_collections.html"
+            target="_blank"
+          >
+            <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+          <a
+            href="dropdown-pages-html\online-resources\video_resources.html"
+            target="_blank"
+          >
+            <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+        </ul>
+      </div>
+      <div>
+        <h1 class="footer_heading">Useful Links</h1>
+        <ul class="footer_items">
+          <a
+            href="dropdown-pages-html\about-us\library-timings.html"
+            target="_blank"
+          >
+            <li>Library Timings <i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+          <a
+            href="dropdown-pages-html\about-us\library-rules.html"
+            target="_blank"
+          >
+            <li>Library Rules <i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+          <a href="dropdown-pages-html\about-us\feedback.html" target="_blank">
+            <li>Give us a feedback<i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+          <a
+            href="dropdown-pages-html\online-resources\e_book_collections.html"
+            target="_blank"
+          >
+            <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+          <a
+            href="dropdown-pages-html\online-resources\video_resources.html"
+            target="_blank"
+          >
+            <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
+          </a>
+        </ul>
+      </div>
+      <div>
+        <h1 class="footer_heading">Contact Us</h1>
+        <ul>
+          <li>
+            The Librarian<br />
+            Central Library,<br />
+            Indian Institute of Science Education<br />
+            & Research Bhopal-462066<br /><br />
+            Phone : +91 755 269 2307<br />
+            Email &nbsp; : skpathak@iiserb.ac.in<br /><br />
+            <a href="https://x.com/LibraryIISERB">
+              <i class="fa-brands fa-x-twitter"></i></a
+            >&nbsp;&nbsp;
+            <a href="https://www.facebook.com/cliiserb/">
+              <i class="fa-brands fa-facebook-f"></i></a
+            >&nbsp;&nbsp;
+            <!-- <a href="https://x.com/LibraryIISERB">-->
             <i class="fa-brands fa-linkedin-in"></i>
-          <!-- </a> -->
-          &nbsp;&nbsp;
-          <!-- <a href="https://x.com/LibraryIISERB"> -->
+            <!-- </a> -->
+            &nbsp;&nbsp;
+            <!-- <a href="https://x.com/LibraryIISERB"> -->
             <i class="fa-brands fa-brands fa-youtube"></i>
-          <!-- </a> -->
-          &nbsp;&nbsp;
-          <a href="https://play.google.com/store/apps/details?id=android1.example1.com.libraryapp&hl=en_IN"> <i
-              class="fa-brands fa-google-play"></i></a>&nbsp;&nbsp;
-        </li>
-
-      </ul>
+            <!-- </a> -->
+            &nbsp;&nbsp;
+            <a
+              href="https://play.google.com/store/apps/details?id=android1.example1.com.libraryapp&hl=en_IN"
+            >
+              <i class="fa-brands fa-google-play"></i></a
+            >&nbsp;&nbsp;
+          </li>
+        </ul>
+      </div>
+      <div class="md:col-span-4">
+        <p class="text-center">
+          © 2024 Central Library, IISER Bhopal | All Rights Reserved
+        </p>
+      </div>
     </div>
-    <div class="md:col-span-4">
 
-      <p class="text-center">
-        © 2024 Central Library, IISER Bhopal | All Rights Reserved
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/countdown.js"></script>
+    <script src="scripts/splide.min.js"></script>
+    <script src="scripts/webopac.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
-    </div>
-  </div>
+    <script>
+      var splide = new Splide(".splide", {
+        type: "fade",
+        autoplay: "play",
+        perPage: 1,
+        arrows: false,
+        rewind: true,
+      });
 
+      splide.mount();
+    </script>
+    <script src="scripts/news.js"></script>
+    <script src="scripts/activityslider.js"></script>
 
+    <style></style>
 
-
-  <script src="scripts/carousel.js"></script>
-  <script src="scripts/dropdown.js"></script>
-  <script src="scripts/countdown.js"></script>
-  <script src="scripts/splide.min.js"></script>
-  <script src="scripts/webopac.js"></script>
-  <script src="scripts/header.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-
-  <script>
-
-    var splide = new Splide('.splide', {
-      type: 'fade',
-      autoplay: 'play',
-      perPage: 1,
-      arrows: false,
-      rewind: true,
-    });
-
-    splide.mount()
-
-
-  </script>
-  <script src="scripts/news.js"></script>
-  <script src="scripts/activityslider.js">
-  </script>
-
-  <style>
-
-  </style>
-
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
 </html>

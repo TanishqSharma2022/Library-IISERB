@@ -10,7 +10,7 @@ function updateCarousel() {
 }
 
 function showNextSlide() {
-    if (currentIndex < slides.length - 1) {
+    if (currentIndex < slides.length - 3) {
         currentIndex++;
     } else {
         currentIndex = 0;

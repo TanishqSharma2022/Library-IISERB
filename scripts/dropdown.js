@@ -223,8 +223,8 @@
     dropDownItem.classList.add(`dropdown-${index}`);
 
     dropDownItem.innerHTML = `
-      <span class="flex z-[9999]  shadow-sm hover:border-black border hover:bg-gray-300 transition-all duration-[0.5s] items-center justify-between cursor-pointer  gap-4 " onclick="toggleMobileDropdown(${index})">
-        <div class="flex gap-2  items-center">
+      <span class="flex z-[9999]  shadow-sm py-4  w-full border-b border-zinc-400 hover:bg-gray-300 items-center justify-between cursor-pointer  gap-4 " onclick="toggleMobileDropdown(${index})">
+        <div class="flex gap-2  items-center text-xl ">
           <img src="${item.icon}" alt="icon" class="w-5 h-5" />
           ${item.label}
         </div>
@@ -232,15 +232,17 @@
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
         </svg>
       </span>
-      <div class="dropdown-content p-3" id="dropdown-content-${index}">
-        ${item.options !== null && item.options
+      <div class="dropdown-content " id="dropdown-content-${index}">
+        ${item.options !== null ? item.options
           .map(
             (option) =>
               `<a href="${option.link}" target="_blank">
             <li class="dropdown_option rounded-md flex items-center p-2 hover:underline">
             ${option.label}</li></a>`
           )
-          .join("")}
+          .join("")
+        : (``)
+        }
       </div>
     `;
     dropDownMobileMenu.appendChild(dropDownItem);
