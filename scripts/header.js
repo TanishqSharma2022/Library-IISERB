@@ -29,6 +29,18 @@ const header_left_items = [
         icon: "fa-book-open",
         link: "https://app.myloft.xyz/"
     },
+    {
+        id: 5, 
+        title: "Virtual Tour",
+        icon: "fa-circle-play",
+        link: "../../dropdown-pages-html/services/video_guides.html"
+    },
+    {
+        id: 6, 
+        title: "Discussion Room Booking",
+        icon: "fa-people-roof",
+        link: "pages-html/services/video_guides.html"
+    },
    
 ]
 

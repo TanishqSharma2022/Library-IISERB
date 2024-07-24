@@ -68,7 +68,43 @@
 .carousel-container img.show {
 	opacity: 1;
   }
-   
+   /* publication css */
+   @keyframes publicationAnimation {
+	from {
+	  opacity: 0;
+	  transform: translateY(20px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  .publication-item {
+	/* Other styles for publication item */
+	animation: none; /* Reset animation */
+  }
+
+
+  /* testimonial css */
+  #testimonial-slider {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+  }
+  
+  .testimonial-slide {
+	flex: 0 0 100%; /* Ensure each slide takes up 100% of the container width */
+	box-sizing: border-box;
+  }
+  
+  @media (min-width: 768px) {
+	.testimonial-slide {
+	  flex: 0 0 33.3333%; /* Adjust the width for larger screens to fit multiple slides */
+	}
+  }
+  
+  
+  
 /* navabar css starts here */
 
 .logo-wrapper:active .logo-animation-wrapper h3,
