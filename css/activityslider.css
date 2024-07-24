@@ -1,6 +1,7 @@
 .carousel-container {
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 .carousel-track {
     display: flex;
@@ -32,3 +33,4 @@
 .z-999 {
     z-index: 999;
   }
+

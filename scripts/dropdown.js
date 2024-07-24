@@ -35,8 +35,8 @@
           link: "../../dropdown-pages-html/about-us/Committee.html",
         },
         {
-          label: "Feedback",
-          link: "../../dropdown-pages-html/about-us/feedback.html",
+          label: "FAQs",
+          link: "../../dropdown-pages-html/about-us/faq.html",
         },
         {
           label: "Usage Stats",

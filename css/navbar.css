@@ -7,9 +7,69 @@
       background-position: center;
     }
 
-
-
-
+/* about carousel */
+.about-carousel-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+  }
+  
+  .about-carousel-container img {
+	width: 100%;
+	height: auto;
+	display: block;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+  }
+  
+  .about-carousel-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 1em;
+  }
+  
+  #about-carousel {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  #about-next, #about-prev {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 30%;
+  }
+  
+  #about-next {
+	right: 10px;
+  }
+  
+  #about-prev {
+	left: 10px;
+  }
+  
+  #about-next:hover, #about-prev:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+.carousel-container img.show {
+	opacity: 1;
+  }
+   
+/* navabar css starts here */
 
 .logo-wrapper:active .logo-animation-wrapper h3,
 .logo-wrapper:active h3,

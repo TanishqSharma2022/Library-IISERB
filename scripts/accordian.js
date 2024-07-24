@@ -28,21 +28,21 @@ const faqs = [
     question:
       "Does the Library provide any orientation program to the fresher?",
     answer:
-      "Yes, the Library at the Institute offers an orientation program to the students and others at the beginning of every academic year and also on demand from a group of students. Write to librarian@iitgn.ac.in for more details.",
+      "Yes, the Library at the Institute offers an orientation program to the students and others at the beginning of every academic year and also on demand from a group of students. Write to library@iiserb.ac.in for more details.",
   },
   {
     id: 7,
     question:
       "I am a new student/staff/faculty member. How do I get the library membership card?",
     answer:
-      "You have to apply for the library membership by filling out the membership form. Institute identity card acts as the library card. Visit https://library.iitgn.ac.in/brrr.php for more details.",
+      "You have to apply for the library membership by filling out the membership form. Institute identity card acts as the library card. Visit https://library.iiserb.ac.in/brrr.php for more details.",
   },
   {
     id: 8,
     question:
       "I am a visitor or general member of the public. Is it possible for me to use your Library?",
     answer:
-      "For those related to IITGN faculty/staff/students, they may apply for Family Membership. External users may apply for Individual membership, which will be granted if their research interests align with that of the Institution. Visitors are welcome to visit the library. It is advised that they may take prior permission by writing at librarycirculation@iitgn.ac.in.",
+      "For those related to IISERB faculty/staff/students, they may apply for Family Membership. External users may apply for Individual membership, which will be granted if their research interests align with that of the Institution. Visitors are welcome to visit the library. It is advised that they may take prior permission by writing at library@iiserb.ac.in.",
   },
   {
     id: 9,

@@ -20,7 +20,7 @@
     transition: all 0.5s;
 }
 .footer_items li:hover{
-    background: rgba(90, 88, 88, 0.448);
+    background: #1B72B2;
     cursor: pointer;
 
 }

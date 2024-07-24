@@ -47,6 +47,8 @@ body{
   overflow: hidden;
   transition: max-height .3s ease-in-out;
   border: 0.1px solid #aaaaaaff;
+  background-color: #b1deff;
+  border-radius: 6px;
 }
 
 .accordion-single-content p {
