@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const testimonialSlide = document.createElement('div');
       testimonialSlide.className = 'testimonial-slide bg-white rounded-lg shadow-lg p-16 flex-none w-full md:w-1/3 relative ml-2 mr-2';
       testimonialSlide.innerHTML = `
-        <p class="text-gray-800 mb-12">${testimonial.message}</p>
+        <p class="text-gray-800 mb-12"><i class="fa-solid fa-quote-left"></i>${testimonial.message}<i class="fa-solid fa-quote-right"></i></p>
         <div class="absolute bottom-4 right-4 flex items-center">
           <img src="${testimonial.imgSrc}" alt="${testimonial.name}" class="w-12 h-12 object-cover rounded-full mr-2">
           <div class="text-left">
@@ -81,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         index = 0;
       }
-      updateSlider();
-    }, 30000);
+      updateSlider();}, 300000000);
   });
   
