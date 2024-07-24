@@ -37,9 +37,9 @@ const header_left_items = [
     },
     {
         id: 6, 
-        title: "Discussion Room Booking",
+        title: "Discussion Room ",
         icon: "fa-people-roof",
-        link: "pages-html/services/video_guides.html"
+        link: "https://web.iiserb.ac.in/crbs/clsbooking.php"
     },
    
 ]
