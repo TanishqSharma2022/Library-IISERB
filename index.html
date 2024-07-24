@@ -140,7 +140,7 @@
       <!-- -scripts\dropdown.js -->
       <!-- Mobile View DropDOwn Section -->
       <div
-        class="z-[99999] w-[80%] md:w-[300px] min-h-screen absolute top-0 overflow-scroll font-sans -right-[100%] mx-auto px-6  bg-white text-black gap-6 dropdown_mobile_view_container"
+        class="z-[99999] w-[80%] md:w-[300px] min-h-screen absolute top-0 overflow-scroll font-sans -right-[100%] mx-auto px-6 bg-white text-black gap-6 dropdown_mobile_view_container"
       >
         <span
           class="absolute right-6 top-12 z-[999999] cursor-pointer border opacity-50 hover:opacity-100"
@@ -185,162 +185,195 @@
       </div>
     </div>
 
- <!-- ABOUT LIBRARY -->
-<div class="h-full w-full p-4 lg:p-12 justify-center">
-  <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-12 p-4">
-    <div class="md:col-span-2">
-      <h1 class="font-bold text-2xl lg:text-3xl">About Library</h1>
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-6 mt-6">
-        <div class="relative col-span-2">
-          <!-- Carousel Container -->
-          <div id="about-carousel" class="relative overflow-hidden shadow-lg rounded-lg">
-            <!-- Images and captions will be dynamically added here -->
+    <!-- ABOUT LIBRARY -->
+    <div
+      class="w-full px-6 md:px-12 lg:px-24 py-8 grid grid-cols-2 lg:grid-cols-4 justify-center gap-4 md:gap-12 lg:gap-24 items-center"
+    >
+      <a href="https://webopac.iiserb.ac.in/">
+        <div class="flex items-center justify-evenly gap-6 float-left">
+          <img
+            src="images/countdown/open-book.png"
+            class="h-[40px] md:h-[70px]"
+          />
+          <div class="grid grid-cols-1">
+            <h1 class="font-bold text-2xl md:text-4xl">15k+</h1>
+            <p class="font-semibold text-sm md:text-md text-blue-500">Books</p>
           </div>
-          <!-- Navigation Buttons -->
-          <button id="about-prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
-            &#10094;
-          </button>
-          <button id="about-next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
-            &#10095;
-          </button>
         </div>
-        <p class="col-span-3">
-          Welcome to Central Library, IISER Bhopal a very special place in
-          the IISER Campus with its rich collection of books and journals in
-          the field of Basic Sciences and related areas. Currently houses
-          around 10,000 books, comprises of collection includes textbooks
-          for the BS-MS and Ph.D curriculum in Biological Sciences,
-          Chemistry, Earth and Environmental Sciences, Mathematics, Physics,
-          Humanities and Social Sciences. Library collection also includes
-          documents in Computer Science, History of Science, light reading
-          materials, Fictions, Stories, General books, Encyclopaedias and
-          Dictionaries, Magazines etc. Research books & Monographs are also
-          included in the collection for labs & research purpose.
-        </p>
-      </div>
-    </div>
-    <div>
-      <h1 class="font-semibold text-3xl mb-6">News & Updates</h1>
-
-      <div
-        id="news-container"
-        class="px-4 py-4 h-800 border border-gray-300 rounded-lg shadow-lg"
-      >
-        <!-- News will be dynamically added here -->
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-      <div
-        class="w-full md:p-12 grid grid-cols-1 md:flex justify-center gap-4 items-center"
-      >
-        <!-- <a href="https://webopac.iiserb.ac.in/">
-
-        <div class="countdown ">
-          <i class="fa-solid fa-2xl mt-6 mb-6 fa-book"></i>
-          <div class="grid grid-cols-1 gap-2">
-          <p class="countdown_value" id="counter"></p>
-          <p class="countdown_label"> Books</p>
-        </div>
-      </div>
       </a>
 
       <a href="dropdown-pages-html\online-resources\e_book_collections.html">
-        <div class="countdown">
-          <i class="fa-solid fa-2xl mt-6 mb-6 fa-at"></i>
-          <p class="countdown_value" id="counter2"></p>
-          <p class="countdown_label">E-Resources</p>
+        <div class="flex items-center justify-evenly float-left gap-6">
+          <img
+            src="images/countdown/education.png"
+            class="h-[40px] md:h-[70px]"
+          />
+          <div class="grid grid-cols-1">
+            <h1 class="font-bold text-2xl md:text-4xl">5k+</h1>
+            <p class="font-semibold text-sm md:text-md text-blue-500">
+              E-Resources
+            </p>
+          </div>
         </div>
       </a>
-
 
       <a href="http://idr.iiserb.ac.in:8080/jspui/">
-        <div class="countdown">
-          <i class="fa-solid fa-2xl mt-6 mb-6 fa-database"></i>
-          <p id="counter3" class="countdown_value"></p>
-          <p class="countdown_label">Databases</p>
+        <div class="flex items-center justify-evenly gap-6 float-left">
+          <img src="images/countdown/server.png" class="h-[40px] md:h-[70px]" />
+          <div class="grid grid-cols-1">
+            <h1 class="font-bold text-2xl md:text-4xl">10+</h1>
+            <p class="font-semibold text-sm md:text-md text-blue-500">
+              Databases
+            </p>
+          </div>
         </div>
       </a>
 
-      <a href="https://www.students.iiserb.ac.in">
-        <div class="countdown">
-          <i class="fa-solid fa-2xl mt-6 mb-6 fa-user-graduate"></i>
-          <p id="counter4" class="countdown_value"></p>
-          <p class="countdown_label">Students</p>
+      <a href="https://students.iiserb.ac.in/">
+        <div class="flex items-center justify-evenly float-left gap-6">
+          <img src="images/countdown/cap.png" class="h-[40px] md:h-[70px]" />
+          <div class="grid grid-cols-1">
+            <h1 class="font-bold text-2xl md:text-4xl">2k+</h1>
+            <p class="font-semibold text-sm md:text-md text-blue-500">
+              Students
+            </p>
+          </div>
         </div>
-      </a> -->
-        <a href="https://webopac.iiserb.ac.in/">
-          <div
-            class="grid grid-cols-2 shadow-lg rounded-xl border-black/20 border p-6 border-2 relative"
-          >
-            <img src="images/countdown/open-book.png" class="h-[90px]" />
-            <div class="grid grid-cols-1 gap-1">
-              <h1 class="font-bold text-5xl">15k+</h1>
-              <p class="font-semibold text-lg text-blue-500">Books</p>
-            </div>
-          </div>
-        </a>
+      </a>
+    </div>
 
-        <a href="dropdown-pages-html\online-resources\e_book_collections.html">
-          <div
-            class="grid grid-cols-2 border gap-4 p-6 rounded-xl border-black/20 shadow-lg border-2"
-          >
-            <img src="images/countdown/education.png" class="h-[90px]" />
-            <div class="grid grid-cols-1 gap-1">
-              <h1 class="font-bold text-5xl">5k+</h1>
-              <p class="font-semibold text-lg text-blue-500">E-Resources</p>
+    <div class="mx-auto h-[1.5px] w-[60%] bg-zinc-200"></div>
+    <div class="h-full w-full p-4 lg:py-12 lg:px-24 justify-center">
+      <div
+        class="w-full flex lg:flex-row flex-col mt-12 items-start gap-12 justify-center"
+      >
+        <div class="w-full lg:w-[80%] mx-auto">
+          <h1 class="font-bold font-semibold mb-3 text-3xl">About Library</h1>
+          <div class="w-[30%] h-[1px] bg-zinc-300 mb-6"></div>
+          <div class="grid grid-cols-1 gap-6 mt-6">
+            <div class="relative">
+              <!-- Carousel Container -->
+              <div
+                id="about-carousel"
+                class="relative overflow-hidden aspect-video shadow-lg rounded-lg"
+              >
+                <!-- Images and captions will be dynamically added here -->
+              </div>
+              <!-- Navigation Buttons -->
+              <button
+                id="about-prev"
+                class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+              >
+                &#10094;
+              </button>
+              <button
+                id="about-next"
+                class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+              >
+                &#10095;
+              </button>
             </div>
           </div>
-        </a>
+          <p class="mt-6 text-sm">
+            Welcome to Central Library, IISER Bhopal a very special place in the
+            IISER Campus with its rich collection of books and journals in the
+            field of Basic Sciences and related areas. Currently houses around
+            10,000 books, comprises of collection includes textbooks for the
+            BS-MS and Ph.D curriculum in Biological Sciences, Chemistry, Earth
+            and Environmental Sciences, Mathematics, Physics, Humanities and
+            Social Sciences. Library collection also includes documents in
+            Computer Science, History of Science, light reading materials,
+            Fictions, Stories, General books, Encyclopaedias and Dictionaries,
+            Magazines etc. Research books & Monographs are also included in the
+            collection for labs & research purpose.
+          </p>
+        </div>
+        <!-- <div class="w-[2px] mt-4 h-[100vh] bg-zinc-300"></div> -->
+        <div class="w-full lg:w-[40%]">
+          <h1 class="font-semibold text-3xl mb-3">News & Updates</h1>
+          <div class="w-[50%] h-[1px] bg-zinc-300 mb-6"></div>
+          <div id="news-container" class="h-800">
+            <!-- News will be dynamically added here -->
+          </div>
 
-        <a href="http://idr.iiserb.ac.in:8080/jspui/">
-          <div
-            class="grid grid-cols-2 gap-4 border p-6 rounded-xl border-black/20 shadow-lg border-2"
-          >
-            <img src="images/countdown/server.png" class="h-[90px]" />
-            <div class="grid grid-cols-1 gap-1">
-              <h1 class="font-bold text-5xl">10+</h1>
-              <p class="font-semibold text-lg text-blue-500">Databases</p>
-            </div>
+          <h1 class="font-semibold text-3xl mb-6 mt-12">
+            Latest Research Publications
+          </h1>
+          <div class="w-[50%] h-[1px] bg-zinc-300 mb-6"></div>
+          <div id="research-container" class="h-800">
+            <!-- News will be dynamically added here -->
           </div>
-        </a>
-
-        <a href="https://students.iiserb.ac.in/">
-          <div
-            class="grid grid-cols-2 border gap-4 p-6 rounded-xl border-black/20 shadow-lg border-2"
-          >
-            <img src="images/countdown/cap.png" class="h-[90px]" />
-            <div class="grid grid-cols-1 gap-1">
-              <h1 class="font-bold text-5xl">2k+</h1>
-              <p class="font-semibold text-lg text-blue-500">Students</p>
-            </div>
-          </div>
-        </a>
+        </div>
       </div>
     </div>
 
-<!-- Start of Activity-Slider -->
-<div class="p-8">
-  <h1 class="font-bold text-3xl mb-6 text-center">Recent Activities</h1>
-  <div class="container mx-auto">
-    <div class="carousel-container">
-      <button class="prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10">&#9664;</button>
-      <div class="carousel-track"></div>
-      <button class="next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10">&#9654;</button>
-    </div>
-  </div>
-</div>
-<!-- End of Activity-Slider -->
+    <!-- search any documents -->
 
+    <div
+      class="w-full grid grid-cols-1 place-items-center bg-zinc-200 py-12 justify-center"
+    >
+      <h1 class="font-bold text-4xl p-6 text-center">Search for any documents</h1>
+      <div
+        class="flex flex-col md:flex-row items-center p-4 justify-center gap-4"
+      >
+        <div class="grid-cols-2 grid items-center gap-4">
+          <select name="" id="" class="px-4 py-2 rounded-md">
+            <option>Title</option>
+            <option>Author</option>
+            <option>Subject</option>
+            <option>Issue</option>
+            <option>Volume</option>
+          </select>
+          <select name="" id="" class="px-4 py-2 rounded-md">
+            <option>All Item types</option>
+            <option>Article</option>
+            <option>Bibliography</option>
+            <option>Book</option>
+            <option>Volume</option>
+          </select>
+        </div>
+        <input
+          type="search"
+          class="px-4 py-2 rounded-md"
+          placeholder="Enter any document.."
+        />
+        <button
+          type="submit"
+          class="px-4 py-2 rounded-md text-white bg-blue-500"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+
+    <!-- Start of Activity-Slider -->
+    <div class="md:px-24 py-12">
+      <h1 class="font-bold text-4xl py-6 mb-6 text-center">
+        Recent Activities
+      </h1>
+      <div class="px-4 container mx-auto">
+        <div class="carousel-container">
+          <button
+            class="prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10"
+          >
+            &#9664;
+          </button>
+          <div class="carousel-track"></div>
+          <button
+            class="next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10"
+          >
+            &#9654;
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- End of Activity-Slider -->
 
     <!-- Testimonial -start -->
 
-    <div class="container mx-auto p-8 border ">
-      <h1 class="text-3xl font-bold text-center mb-8">Library Testimonials</h1>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="container mx-auto p-24">
+      <h1 class="text-4xl font-bold text-center mb-12">Library Testimonials</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         <!-- Testimonial 1 -->
         <div class="bg-white rounded-lg shadow-lg p-4">
           <div class="aspect-w-16 aspect-h-9 mb-4">
@@ -393,156 +426,16 @@
     </div>
 
     <!-- end -Testimonials  -->
-
     <!-- FOOTER -->
-
-    <div
-      class="w-full bg-zinc-800 grid grid-cols-1 md:grid-cols-4 p-12 gap-6 text-white"
-    >
-      <div>
-        <h1 class="footer_heading">Quick Links</h1>
-        <ul class="footer_items">
-          <a
-            href="dropdown-pages-html\about-us\library-timings.html"
-            target="_blank"
-          >
-            <li>
-              Discussion Room Booking<i class="fa-arrow-right fa-solid"></i>
-            </li>
-          </a>
-          <a
-            href="dropdown-pages-html\about-us\library-rules.html"
-            target="_blank"
-          >
-            <li>
-              Book Requisition Form<i class="fa-arrow-right fa-solid"></i>
-            </li>
-          </a>
-          <a href="dropdown-pages-html\about-us\feedback.html" target="_blank">
-            <li>Give us a feedback<i class="fa-arrow-right fa-solid"></i></li>
-          </a>
-          <a
-            href="dropdown-pages-html\online-resources\e_book_collections.html"
-            target="_blank"
-          >
-            <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
-          </a>
-          <a
-            href="dropdown-pages-html\online-resources\video_resources.html"
-            target="_blank"
-          >
-            <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
-          </a>
-        </ul>
-      </div>
-      <div>
-        <h1 class="footer_heading">Useful Links</h1>
-        <ul class="footer_items">
-          <a
-            href="dropdown-pages-html\about-us\library-timings.html"
-            target="_blank"
-          >
-            <li>Library Timings <i class="fa-arrow-right fa-solid"></i></li>
-          </a>
-          <a
-            href="dropdown-pages-html\about-us\library-rules.html"
-            target="_blank"
-          >
-            <li>Library Rules <i class="fa-arrow-right fa-solid"></i></li>
-          </a>
-          <a href="dropdown-pages-html\about-us\feedback.html" target="_blank">
-            <li>Give us a feedback<i class="fa-arrow-right fa-solid"></i></li>
-          </a>
-          <a
-            href="dropdown-pages-html\online-resources\e_book_collections.html"
-            target="_blank"
-          >
-            <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
-          </a>
-          <a
-            href="dropdown-pages-html\online-resources\video_resources.html"
-            target="_blank"
-          >
-            <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
-          </a>
-        </ul>
-      </div>
-      <div>
-        <h1 class="footer_heading">Useful Links</h1>
-        <ul class="footer_items">
-          <a
-            href="dropdown-pages-html\about-us\library-timings.html"
-            target="_blank"
-          >
-            <li>Library Timings <i class="fa-arrow-right fa-solid"></i></li>
-          </a>
-          <a
-            href="dropdown-pages-html\about-us\library-rules.html"
-            target="_blank"
-          >
-            <li>Library Rules <i class="fa-arrow-right fa-solid"></i></li>
-          </a>
-          <a href="dropdown-pages-html\about-us\faq.html" target="_blank">
-            <li>FAQs<i class="fa-arrow-right fa-solid"></i></li>
-          </a>
-          <a
-            href="dropdown-pages-html\online-resources\e_book_collections.html"
-            target="_blank"
-          >
-            <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
-          </a>
-          <a
-            href="dropdown-pages-html\online-resources\video_resources.html"
-            target="_blank"
-          >
-            <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
-          </a>
-        </ul>
-      </div>
-      <div>
-        <h1 class="footer_heading">Contact Us</h1>
-        <ul>
-          <li>
-            The Librarian<br />
-            Central Library,<br />
-            Indian Institute of Science Education<br />
-            & Research Bhopal-462066<br /><br />
-            Phone : +91 755 269 2307<br />
-            Email &nbsp; : skpathak@iiserb.ac.in<br /><br />
-            <a href="https://x.com/LibraryIISERB">
-              <i class="fa-brands fa-x-twitter"></i></a
-            >&nbsp;&nbsp;
-            <a href="https://www.facebook.com/cliiserb/">
-              <i class="fa-brands fa-facebook-f"></i></a
-            >&nbsp;&nbsp;
-            <!-- <a href="https://x.com/LibraryIISERB">-->
-            <i class="fa-brands fa-linkedin-in"></i>
-            <!-- </a> -->
-            &nbsp;&nbsp;
-            <!-- <a href="https://x.com/LibraryIISERB"> -->
-            <i class="fa-brands fa-brands fa-youtube"></i>
-            <!-- </a> -->
-            &nbsp;&nbsp;
-            <a
-              href="https://play.google.com/store/apps/details?id=android1.example1.com.libraryapp&hl=en_IN"
-            >
-              <i class="fa-brands fa-google-play"></i></a
-            >&nbsp;&nbsp;
-          </li>
-        </ul>
-      </div>
-      <div class="md:col-span-4">
-        <p class="text-center">
-          © 2024 Central Library, IISER Bhopal | All Rights Reserved
-        </p>
-      </div>
-    </div>
-
+<footer class="footer">
+    
+  </footer>
     <script src="scripts/carousel.js"></script>
     <script src="scripts/dropdown.js"></script>
     <script src="scripts/countdown.js"></script>
     <script src="scripts/splide.min.js"></script>
     <script src="scripts/webopac.js"></script>
+    <script src="scripts/footer.js"></script>
     <script src="scripts/header.js"></script>
     <script src="scripts/aboutlibcarousel.js"></script>
     <script src="scripts/news.js"></script>
@@ -560,7 +453,6 @@
 
       splide.mount();
     </script>
-   
 
     <style></style>
 

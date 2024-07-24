@@ -2,6 +2,7 @@
   
   const aboutCarousel = (function() {
     const carousel = document.getElementById("about-carousel");
+
     let currentIndex = 0;
 
     const images = [
@@ -34,6 +35,7 @@
     function createImageElement(src, caption) {
         const img = document.createElement("img");
         img.src = src;
+        img.classList.add('object-cover')
 
         const captionElement = document.createElement("div");
         captionElement.className = "about-carousel-caption";
@@ -69,7 +71,15 @@
 
     document.getElementById("about-next").addEventListener("click", nextImage);
     document.getElementById("about-prev").addEventListener("click", prevImage);
-
+    // document.getElementById("about-next").classList.add("invisible")
+    carousel.addEventListener('mouseover', (event) => {
+      document.getElementById("about-next").classList.remove("invisible")
+      document.getElementById("about-prev").classList.remove("invisible")
+    })
+    carousel.addEventListener('mouseleave', (event) => {
+      document.getElementById("about-next").classList.add("invisible");
+      document.getElementById("about-prev").classList.add("invisible");
+    })
     setInterval(nextImage, 3000); // Change image every 3 seconds
 
     // Initial display

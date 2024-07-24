@@ -1,26 +1,25 @@
 .footer_heading{
-    font-weight:500;
-    font-size: 20px;
+    font-weight:600;
+    font-size: 18px;
     margin-bottom: 20px;
-    border-bottom: 1px solid grey;
+    border-bottom: 0.8px solid rgba(255, 255, 255, 0.1);
     text-transform: uppercase;
     padding-bottom: 10px;
-    
+        
 }
 
 .footer_items li{
+    font-weight: 300;
     display: flex;
-    padding-inline: 10px;
     padding-block: 5px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 5px;
-    border-bottom: 0.1px solid rgba(128, 128, 128, 0.388);
-    transition: all 0.5s;
+    transition: all 0.2s;
+    opacity: 0.6;
 }
 .footer_items li:hover{
-    background: #1B72B2;
+    opacity: 1;
     cursor: pointer;
 
 }
