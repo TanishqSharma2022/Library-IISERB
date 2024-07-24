@@ -26,21 +26,15 @@
     <title>Orientation | Library IISERB</title>
     <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"  rel="stylesheet"/>
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-    }
-
-  </style>
+ 
   </head>
   <body class="overflow-x-hidden bg-gray-100">
       <!-- CAROUSEL BACKGROUND -->
       <div
-        class="w-full  bg-[url(../../images/library/bg2.png)] bg-cover border border-4 border-black p-4"
+        class="w-full  bg-[url(../../images/library/bg2.png)] bg-cover  p-4"
       >
         <!-- Navbar -->
-        <nav class="top-0 left-0 w-full border border-red-500 border-4">
+        <nav class="top-0 left-0 w-full ">
           <div class=" w-full  p-4 hidden lg:flex items-center justify-center  z-[10]">
             <div class="w-[85%] flex items-center text-white text-sm justify-between header_container">
             </div>
@@ -90,7 +84,7 @@
 
           
                   <h1
-                    class="text-5xl text-white font-bold m-6 p-6 text-center flex flex-col gap-1 drop-shadow-lg"
+                    class="text-4xl text-white font-bold m-6 p-6 text-center flex flex-col gap-1 drop-shadow-lg"
                     style="
                       z-index: 5;
                       white-space: normal;
@@ -116,7 +110,8 @@
     </nav>
     </div>
 
-      <!-- ABOUT  -->
+    <div class="w-full h-full bg-cover bg-center" style="background-image: url('../../images/page_elements/secbg.png');">
+  <!-- ABOUT  -->
       <section class="text-gray-900 w-full p-4 mt-12">
         <section class="mb-8">
           <div class="flex flex-col md:flex-row items-center">
@@ -141,90 +136,31 @@
                 information effectively. Central Library would like to promote
                 the role of the library as a resource for lifelong learning,
                 through this program.
-              </p>
+              </p><br>
+              
+              <a target="_blank"
+            href="../../dropdown-pages-html/about-us/library_team_members.html"
+            class="block rounded-lg "
+            
+          >
+            <div class="shadow-lg rounded-xl p-2">
+              <div class="flex flex-col items-center justify-center gap-2">
+                <p class="font-semibold text-lg text-white bg-transparent hover:text-white transition-colors p-2 rounded "style=" color: #1b72b2">
+                 View our Library Guide
+                </p>
+              </div>
             </div>
+          </a>
+            </div>
+            
           </div>
+          
         </section>
       </section>
 
       <!-- FOOTER -->
-      <div
-        class="w-full bg-black grid grid-cols-1 md:grid-cols-4 p-12 gap-6 text-white"
-      >
-        <div class="md:col-span-2">
-          <h1 class="footer_heading">About Library</h1>
-          <p>
-            Welcome to Central Library, IISER Bhopal, a hub of knowledge within
-            the campus, boasting a diverse collection of over 10,000 books and
-            journals spanning the spectrum of Basic Sciences and related
-            disciplines. Catering to the academic needs of BS-MS and Ph.D.
-            students, our repository includes textbooks, research materials, and
-            enriching reads across Biological Sciences, Chemistry, Earth and
-            Environmental Sciences, Mathematics, Physics, Humanities, and Social
-            Sciences. Dive into our curated assortment featuring documents in
-            Computer Science, History of Science, light reading materials,
-            fiction, encyclopedias, dictionaries, magazines, and more. Committed
-            to facilitating seamless access, our library offers online
-            databases, research journals, and modern amenities, ensuring a
-            conducive environment for learning and exploration.
-          </p>
-        </div>
-        <div>
-          <h1 class="footer_heading">Useful Links</h1>
-          <ul class="footer_items">
-            <a
-              href="dropdown-pages-html\about-us\library-timings.html"
-              target="_blank"
-            >
-              <li>Library Timings <i class="fa-arrow-right fa-solid"></i></li>
-            </a>
-            <a
-              href="dropdown-pages-html\about-us\library-rules.html"
-              target="_blank"
-            >
-              <li>Library Rules <i class="fa-arrow-right fa-solid"></i></li>
-            </a>
-            <a
-              href="dropdown-pages-html\about-us\feedback.html"
-              target="_blank"
-            >
-              <li>Give us a feedback<i class="fa-arrow-right fa-solid"></i></li>
-            </a>
-            <a
-              href="dropdown-pages-html\online-resources\e_book_collections.html"
-              target="_blank"
-            >
-              <li>A-Z Library <i class="fa-arrow-right fa-solid"></i></li>
-            </a>
-            <a
-              href="dropdown-pages-html\online-resources\video_resources.html"
-              target="_blank"
-            >
-              <li>Library Tour <i class="fa-arrow-right fa-solid"></i></li>
-            </a>
-          </ul>
-        </div>
-        <div>
-          <h1 class="footer_heading">Contact Us</h1>
-          <ul>
-            <li>
-              The Librarian<br />
-              Central Library,<br />
-              Indian Institute of Science Education<br />
-              & Research Bhopal-462066<br /><br />
-              Phone : +91 755 269 2307<br />
-              Email &nbsp; : skpathak@iiserb.ac.in<br /><br />
-              <i class="fa-brands fa-x-twitter"></i>&nbsp;&nbsp;
-              <i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;
-              <i class="fa-brands fa-linkedin-in"></i>&nbsp;&nbsp;
-              <i class="fa-brands fa-youtube"></i>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <script defer async src="../../scripts/carousel.js"></script>
+      <div id="footer-container">    <!-- Footer will be dynamically added here --></div>
+      <script src="../../scripts/footer.js"></script>
     <script defer async src="../../scripts/dropdown.js"></script>
     <script defer async src="../../scripts/countdown.js"></script>
     <script defer async src="../../scripts/splide.min.js"></script>

@@ -38,10 +38,10 @@
           label: "FAQs",
           link: "../../dropdown-pages-html/about-us/faq.html",
         },
-        {
-          label: "Usage Stats",
-          link: "../../dropdown-pages-html/about-us/e-journals_usage_stats.html",
-        },
+        // {
+        //   label: "Usage Stats",
+        //   link: "../../dropdown-pages-html/about-us/e-journals_usage_stats.html",
+        // },
       ],
     },
 
@@ -73,7 +73,7 @@
         },
         {
           label: "Recommend A Book",
-          link: "",
+          link: "Faculty Book Recommendation Form .pdf",
         },
         {
           label: "Faculty Publication Details",
@@ -99,10 +99,10 @@
       icon: "../../images/menubar/device.png",
 
       options: [
-        {
-          label: "Institutional Repository",
-          link: "http://idr.iiserb.ac.in:8080/jspui/",
-        },
+        // {
+        //   label: "Institutional Repository",
+        //   link: "http://idr.iiserb.ac.in:8080/jspui/",
+        // },
         {
           label: "Subscribed Archives of e-Resources",
           link: "../../dropdown-pages-html/online-resources/digital_Archives.html",
@@ -112,37 +112,51 @@
           link: "../../dropdown-pages-html/online-resources/full_text_databses.html",
         },
         {
-          label: "A-Z List of Text Databases",
-          link: "../../dropdown-pages-html/online-resources/e_book_collections.html",
+          label: "A-Z List of Subscribed E-Resources",
+          link: "../../dropdown-pages-html/online-resources/az_list_of_subs_e_resources.html",
         },
         {
           label: "Biblographic Resources",
           link: "../../dropdown-pages-html/online-resources/bibliographic_resources.html",
         },
         {
-          label: "E-Books Collection",
-          link: "../../dropdown-pages-html/online-resources/e_book_collections.html",
+          label: "Open Access Resources",
+          link: "../../dropdown-pages-html/online-resources/open_access_resources.html",
         },
         {
-          label: "Thesis & Dissertations",
-          link: "../../dropdown-pages-html/online-resources/thesis_dissertations.html",
+          label: "Open Textbook Library",
+          link: "../../dropdown-pages-html/online-resources/open_textbooks.html",
         },
+        // {
+        //   label: "Video Resources",
+        //   link: "../../dropdown-pages-html/services/video_guides.html",
+        // },
         {
-          label: "Standards",
-          link: "../../dropdown-pages-html/online-resources/standards.html",
-        },
-        {
-          label: "Archives",
-          link: "../../dropdown-pages-html/online-resources/archives.html",
-        },
-        {
-          label: "Video Resources",
-          link: "../../dropdown-pages-html/services/video_guides.html",
+          label: "Theses Database",
+          link: "../../dropdown-pages-html/online-resources/thesis_database.html",
         },
         {
           label: "CD-ROM Database",
           link: "../../dropdown-pages-html/online-resources/cd_rom_database.html",
         },
+        {
+          label: "E-Resource Usage Policy",
+          link: "../../dropdown-pages-html/online-resources/e-resources_usage_policy.html",
+        },
+        // {
+        //   label: "E-Books Collection",
+        //   link: "../../dropdown-pages-html/online-resources/e_book_collections.html",
+        // },
+      
+        // {
+        //   label: "Standards",
+        //   link: "../../dropdown-pages-html/online-resources/standards.html",
+        // },
+        // {
+        //   label: "Archives",
+        //   link: "../../dropdown-pages-html/online-resources/archives.html",
+        // },
+       
         // {
         //   label: "Downloaded E-Books",
         //   link: "../../dropdown-pages-html/online-resources/downloaded_e_books.html",
@@ -151,14 +165,7 @@
         //   label: "Trail Access Detail",
         //   link: "../../dropdown-pages-html/online-resources/trail_accesss_detail.html",
         // },
-        {
-          label: "Open Access Resources",
-          link: "../../dropdown-pages-html/online-resources/open_access_resources.html",
-        },
-        {
-          label: "E-Resource Usage Policy",
-          link: "../../dropdown-pages-html/online-resources/e-resources_usage_policy.html",
-        },
+       
       ],
     },
     {
@@ -168,13 +175,13 @@
 
       options: [
         {
-          label: "About Plagiarism",
-          link: "https://www.plagiarism.org/",
+          label: "Turnitin",
+          link: "https://in.turnitin.com/",
         },
-        {
-          label: "Style Manual",
-          link: "../../dropdown-pages-html/research-support/style_manual.html",
-        },
+        // {
+        //   label: "Style Manual",
+        //   link: "../../dropdown-pages-html/research-support/style_manual.html",
+        // },
         {
           label: "Reference Management Tools",
           link: "../../dropdown-pages-html/research-support/reference_management_tools.html",
@@ -187,10 +194,10 @@
           label: "Research ID Creation",
           link: "../../dropdown-pages-html/research-support/research_id_creaction.html",
         },
-        {
-          label: "Research Databases",
-          link: "../../dropdown-pages-html/research-support/research_database.html",
-        },
+        // {
+        //   label: "Research Databases",
+        //   link: "../../dropdown-pages-html/research-support/research_database.html",
+        // },
         {
           label: "Grammarly",
           link: "https://www.grammarly.com/",
@@ -199,10 +206,10 @@
           label: "QuillBot",
           link: "https://quillbot.com/",
         },
-        {
-          label: "Fellowships & Scholarships",
-          link: "https://www.iiserb.ac.in/doaa/scholarship",
-        },
+        // {
+        //   label: "Fellowships & Scholarships",
+        //   link: "https://www.iiserb.ac.in/doaa/scholarship",
+        // },
       ],
     },
   ];

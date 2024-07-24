@@ -7,40 +7,41 @@ const header_left_items = [
     },
     {
         id: 1, 
+        title: "Discussion Room ",
+        icon: "fa-comments",
+        link: "https://web.iiserb.ac.in/crbs/clsbooking.php"
+    },
+    {
+        id: 2, 
         title: "Library Guide",
         icon: "fa-signs-post",
         link: "Library Guide.pdf"
     },
     {
-        id: 2, 
+        id: 3, 
         title: "Web OPAC",
         icon: "fa-search",
         link: "https://webopac.iiserb.ac.in/"
     },
     {
-        id: 3, 
+        id: 4, 
         title: "IRINS",
         icon: "fa-lightbulb",
         link: "https://iiserb.irins.org/"
     },
     {
-        id: 4, 
+        id: 5, 
         title: "MyLOFT",
         icon: "fa-book-open",
         link: "https://app.myloft.xyz/"
     },
     {
-        id: 5, 
+        id: 6, 
         title: "Virtual Tour",
         icon: "fa-circle-play",
         link: "../../dropdown-pages-html/services/video_guides.html"
     },
-    {
-        id: 6, 
-        title: "Discussion Room ",
-        icon: "fa-people-roof",
-        link: "https://web.iiserb.ac.in/crbs/clsbooking.php"
-    },
+ 
    
 ]
 
@@ -108,7 +109,9 @@ header_list_right.classList.add(
     "flex",
     "md:flex-row",
     "md:gap-6",
-    "flex-col"
+    "flex-col",
+    "item-size-"
+
 )
 
 header_right_items.forEach((item, index) => {
@@ -119,7 +122,7 @@ header_right_items.forEach((item, index) => {
     header_list.innerHTML += `
         <a href="${item.link}" target="_blank">
             <li>
-              <i class="${item.icon}"></i>
+              <i class="${item.icon} icon-size"></i>
             </li>
         </a>
     `;
