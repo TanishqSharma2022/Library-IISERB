@@ -1,7 +1,7 @@
 const activities = [
-    { src: 'images/library/activity/activity1.jpg', alt: 'Activity 1', description: 'Training Session on JoVE Resources on May 27 2024' },
-    { src: 'images/library/activity/actvity2.jpg', alt: 'Activity 2', description: 'Springer-Nature Editorial Workshop at L-3, LHC on May 16, 2024' },
-    { src: 'images/library/activity/activity3.jpg', alt: 'Activity 3', description: 'Training Session on SciFinder on May 08, 2024' },
+    { src: 'images/library/activity/1.jpg', alt: 'Activity 1', description: 'Training Session on JoVE Resources on May 27 2024' },
+    { src: 'images/library/activity/2.jpg', alt: 'Activity 2', description: 'Springer-Nature Editorial Workshop at L-3, LHC on May 16, 2024' },
+    { src: 'images/library/activity/3.jpg', alt: 'Activity 3', description: 'Training Session on SciFinder on May 08, 2024' },
     { src: 'images/library/activity/4.jpg', alt: 'Activity 4', description: 'Visit of Professor Anand Ranganathan on April 13, 2024 ' },
     { src: 'images/library/activity/5.jpg', alt: 'Activity 5', description: 'Institute Day Celebration on March 07, 2024' },
     { src: 'images/library/activity/6.jpg', alt: 'Activity 6', description: 'Visit of Prof. Abhay Karandikar, Secretary, Department of Science and Technology (DST), Government of India on Feb 03,2024' },
@@ -25,9 +25,9 @@ const activities = [
     const track = document.querySelector('.carousel-track');
     activities.forEach(activity => {
       const slide = document.createElement('div');
-      slide.className = 'carousel-slide p-2';
+      slide.className = 'carousel-slide p-2 ';
       slide.innerHTML = `
-        <img src="${activity.src}" alt="${activity.alt}" class="w-full h-48 object-cover rounded-lg" />
+        <img src="${activity.src}" alt="${activity.alt}" class="w-full  h-48 object-cover rounded-lg" />
         <p class="carousel-description font-semibold">${activity.description}</p>
       `;
       track.appendChild(slide);
