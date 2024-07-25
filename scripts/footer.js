@@ -2,12 +2,12 @@ const quick_links = [
   {
     id: 0,
     title: "About",
-    link: "",
+    link: "dropdown-pages-html/about-us/about-us.html",
   },
   {
     id: 1,
     title: "FAQs",
-    link: "",
+    link: "dropdown-pages-html/about-us/faq.html",
   },
   {
     id: 2,
@@ -17,12 +17,12 @@ const quick_links = [
   {
     id: 3,
     title: "Institute Website",
-    link: "",
+    link: "https://www.iiserb.ac.in",
   },
   {
     id: 4,
     title: "Contact",
-    link: "",
+    link: "dropdown-pages-html/about-us/Library-team.html",
   },
 ];
 
@@ -35,7 +35,7 @@ const useful_links = [
   {
     id: 1,
     title: "E-Resources",
-    link: "https://iiserb.ac.in",
+    link: "dropdown-pages-html/online-resources/az_list_of_subs_e_resources.html",
   },
   {
     id: 2,
@@ -44,40 +44,40 @@ const useful_links = [
   },
   {
     id: 3,
-    title: "Institutional Repository",
-    link: "https://iiserb.ac.in",
+    title: "Arrival of New Books",
+    link: "dropdown-pages-html/services/arrival_of_new_books.html",
   },
   {
     id: 4,
-    title: "Video Resources",
-    link: "https://iiserb.ac.in",
+    title: "MyLOFT",
+    link: "https://app.myloft.xyz/user/login",
   },
 ];
 const services_links = [
   {
     id: 0,
     title: "OPAC/Book Searching",
-    link: "https://iiserb.ac.in",
+    link: "https://webopac.iiserb.ac.in/",
   },
   {
     id: 1,
     title: "Photocopy Library",
-    link: "https://iiserb.ac.in",
+    link: "dropdown-pages-html/services/Photocopy_facility.html",
   },
   {
     id: 2,
     title: "Discussion Room Booking",
-    link: "https://iiserb.ac.in",
+    link: "https://web.iiserb.ac.in/crbs/index.php",
   },
   {
     id: 3,
     title: "Arrival of New Books",
-    link: "https://iiserb.ac.in",
+    link: "dropdown-pages-html/services/arrival_of_new_books.html",
   },
   {
     id: 4,
     title: "Video Guides",
-    link: "https://iiserb.ac.in",
+    link: "dropdown-pages-html/services/video_guides.html",
   },
 ];
 

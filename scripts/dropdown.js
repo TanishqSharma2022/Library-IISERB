@@ -56,6 +56,10 @@
           link: "../../dropdown-pages-html/services/Borrowing_facilities.html",
         },
         {
+          label: "Discussion Room Booking",
+          link: "https://web.iiserb.ac.in/crbs/index.php",
+        },
+        {
           label: "Inter Library Loan",
           link: "../../dropdown-pages-html/services/Inter_library_loan.html",
         },
@@ -69,7 +73,7 @@
         },
         {
           label: "Recommend A Book",
-          link: "Faculty Book Recommendation Form.pdf",
+          link: "Faculty_Book_Recommendation_Form.pdf",
         },
         {
           label: "Faculty Publication Details",
@@ -100,8 +104,8 @@
         //   link: "http://idr.iiserb.ac.in:8080/jspui/",
         // },
         {
-          label: "Subscribed Archives of E-Resources",
-          link: "../../dropdown-pages-html/online-resources/digital_Archives.html",
+          label: "List of Archives of Subscribed E-Resources",
+          link: "IISERB_Archive_Collection.pdf",
         },
         {
           label: "Full Text Databases",
