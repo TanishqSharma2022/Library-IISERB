@@ -10,6 +10,8 @@
     />
 
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aboutcarousel.css" />
     <link rel="stylesheet" href="css/activityslider.css" />
     <link rel="stylesheet" href="css/dropdown.css" />
     <link rel="stylesheet" href="css/countdown.css" />
@@ -30,12 +32,6 @@
 
     <title>Central Library | IISER BHOPAL</title>
     <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <style></style>
   </head>
 
   <body class="overflow-x-hidden bg-gray-100 bg-cover-except-header-footer">
@@ -106,7 +102,7 @@
               />
 
               <div
-                class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drops-shadow-lg w-full"
+                class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full"
               >
                 <h3>
                   Central Library,<br />
@@ -125,7 +121,7 @@
 
             <!-- DROP DOWN NAV OPTIONS -->
             <div
-              class="lg:hidden flex ham_menu text-white cursor-pointer"
+              class="lg:hidden flex ham_menu z-[9999999] text-white cursor-pointer"
               onclick="menubar_toggle()"
             >
               <i class="fa-solid fa-bars fa-xl"></i>
@@ -140,10 +136,11 @@
       <!-- -scripts\dropdown.js -->
       <!-- Mobile View DropDOwn Section -->
       <div
-        class="z-[99999] w-[80%] md:w-[300px] min-h-screen absolute top-0 overflow-scroll font-sans -right-[100%] mx-auto px-6 bg-white text-black gap-6 dropdown_mobile_view_container"
+        class="z-[9999] w-full min-h-screen md:w-[300px] absolute overflow-scroll font-sans -top-[100%] mx-auto px-6 bg-white text-black gap-6 dropdown_mobile_view_container"
       >
+        <!-- <h1 class="font-bold text-2xl left-6 top-6 absolute ">Central Library</h1> -->
         <span
-          class="absolute right-6 top-12 z-[999999] cursor-pointer border opacity-50 hover:opacity-100"
+          class="absolute border right-6 top-6 z-[999999] border-red-500 cursor-pointer border opacity-90 hover:opacity-100"
           onclick="menubar_toggle()"
         >
           <i class="fa-solid fa-xmark fa-xl"></i>
@@ -248,45 +245,48 @@
         class="w-full flex lg:flex-row flex-col mt-12 items-start gap-12 justify-center"
       >
         <div class="w-full lg:w-[80%] mx-auto">
-          <h1 class="font-bold font-semibold mb-3 text-3xl">About Library</h1>
+          <h1 class="font-semibold mb-3 text-3xl">About Library</h1>
           <div class="w-[30%] h-[1px] bg-zinc-300 mb-6"></div>
-          <div class="grid grid-cols-1 gap-6 mt-6">
-            <div class="relative">
+          <div class="mt-6">
+            <div class="relative mr-4 mb-4 float-left w-full lg:w-[50%]">
               <!-- Carousel Container -->
               <div
                 id="about-carousel"
-                class="relative  overflow-hidden aspect-video shadow-lg rounded-lg"
+                class="relative overflow-hidden aspect-video shadow-lg rounded-lg"
               >
                 <!-- Images and captions will be dynamically added here -->
               </div>
-              <!-- Navigation Buttons -->
               <button
                 id="about-prev"
-                class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+                class="absolute top-1/2 left-5 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
               >
                 &#10094;
               </button>
               <button
                 id="about-next"
-                class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+                class="absolute top-1/2 right-5 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
               >
                 &#10095;
               </button>
+              <!-- Navigation Buttons -->
             </div>
+            <p class="mt-6 text-md">
+              Welcome to Central Library, IISER Bhopal a very special place in
+              the IISER Campus with its rich collection of books and journals in
+              the field of Basic Sciences and related areas. Currently houses
+              around 10,000 books, comprises of collection includes textbooks
+              for the BS/BS-MS, M.Sc. and iPh.D/Ph.D curriculum in Biological
+              Sciences, Chemistry, Earth and Environmental Sciences,
+              Mathematics, Physics, Humanities and Social Sciences, Electrical
+              Engineering & Computer Science, Data Science & Engineering,
+              Chemical Engineering & Economic Sciences. Library collection also
+              includes documents in Computer Science, History of Science, light
+              reading materials, Fictions, Stories, General books,
+              Encyclopaedias and Dictionaries, Magazines etc. Research books &
+              Monographs are also included in the collection for labs & research
+              purpose.
+            </p>
           </div>
-          <p class="mt-6 text-sm">
-            Welcome to Central Library, IISER Bhopal a very special place in the
-            IISER Campus with its rich collection of books and journals in the
-            field of Basic Sciences and related areas. Currently houses around
-            10,000 books, comprises of collection includes textbooks for the
-            BS-MS and Ph.D curriculum in Biological Sciences, Chemistry, Earth
-            and Environmental Sciences, Mathematics, Physics, Humanities and
-            Social Sciences. Library collection also includes documents in
-            Computer Science, History of Science, light reading materials,
-            Fictions, Stories, General books, Encyclopaedias and Dictionaries,
-            Magazines etc. Research books & Monographs are also included in the
-            collection for labs & research purpose.
-          </p>
         </div>
         <!-- <div class="w-[2px] mt-4 h-[100vh] bg-zinc-300"></div> -->
         <div class="w-full lg:w-[40%]">
@@ -312,7 +312,9 @@
     <div
       class="w-full grid grid-cols-1 place-items-center bg-zinc-200 py-12 justify-center"
     >
-      <h1 class="font-bold text-4xl p-6 text-center">Search for any documents</h1>
+      <h1 class="font-bold text-4xl p-6 text-center">
+        Search for any documents
+      </h1>
       <div
         class="flex flex-col md:flex-row items-center p-4 justify-center gap-4"
       >
@@ -371,7 +373,7 @@
 
     <!-- Testimonial -start -->
 
-    <div class="container mx-auto p-24">
+    <div class="container mx-auto lg:p-24">
       <h1 class="text-4xl font-bold text-center mb-12">Library Testimonials</h1>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         <!-- Testimonial 1 -->
@@ -423,16 +425,13 @@
           </div>
         </div>
 
-      </a>
+        <!-- </a> -->
+      </div>
     </div>
-  </div>
 
-  
     <!-- end -Testimonials  -->
     <!-- FOOTER -->
-<footer class="footer">
-    
-  </footer>
+    <footer class="footer"></footer>
     <script src="scripts/carousel.js"></script>
     <script src="scripts/dropdown.js"></script>
     <script src="scripts/countdown.js"></script>

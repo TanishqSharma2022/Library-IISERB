@@ -1,16 +1,15 @@
 
-  
-  const aboutCarousel = (function() {
-    const carousel = document.getElementById("about-carousel");
+  document.addEventListener('DOMContentLoaded', () => {
+    const carouselContainer = document.getElementById("about-carousel");
 
     let currentIndex = 0;
 
     const images = [
         { src: '../../images/aboutcarousel/1.jpg', caption: 'Library Help Desk' },
-        { src: '../../images/aboutcarousel/2.jpg', caption: 'Browsing Area Ground Floor' },
-        { src: '../../images/aboutcarousel/3.jpg', caption: 'Browsing Area Ground Floor' },
-        { src: '../../images/aboutcarousel/4.jpg', caption: 'RFID COMPONENTS (GROUD FLOOR) ' },
-        { src: '../../images/aboutcarousel/5.jpg', caption: 'Reading zone (GROUD FLOOR) ' },
+        { src: '../../images/aboutcarousel/2.jpg', caption: 'Browsing Area (Ground Floor)' },
+        { src: '../../images/aboutcarousel/3.jpg', caption: 'Browsing Area (Ground Floor)' },
+        { src: '../../images/aboutcarousel/4.jpg', caption: 'RFID COMPONENTS (Ground Floor) ' },
+        { src: '../../images/aboutcarousel/5.jpg', caption: 'Reading zone (Ground Floor) ' },
         { src: '../../images/aboutcarousel/6.jpg', caption: 'Book Stack Area (Ground Floor) ' },
         { src: '../../images/aboutcarousel/7.jpg', caption: 'Reading Zone (Ground Floor) ' },
         { src: '../../images/aboutcarousel/8.jpg', caption: 'Book Stack Area (Ground Floor) ' },
@@ -32,45 +31,39 @@
         { src: '../../images/aboutcarousel/24.jpg', caption: 'E-Library  (Second Floor) ' },
         { src: '../../images/aboutcarousel/25.jpg', caption: 'E-Library  (Second Floor) ' },
       ];
-    function createImageElement(src, caption) {
-        const img = document.createElement("img");
-        img.src = src;
-        img.classList.add('object-cover')
-
-        const captionElement = document.createElement("div");
-        captionElement.className = "about-carousel-caption";
-        captionElement.textContent = caption;
-
-        const container = document.createElement("div");
-        container.className = "about-carousel-container";
-        container.appendChild(img);
-        container.appendChild(captionElement);
-
-        return container;
-    }
-
+    
     function showImage(index) {
-        carousel.innerHTML = "";
-        const container = createImageElement(images[index].src, images[index].caption);
-        carousel.appendChild(container);
-
-        // Force reflow to restart the CSS animation
-        container.querySelector("img").offsetHeight;
-        container.querySelector("img").style.opacity = 1;
+      carouselContainer.innerHTML = `
+        <div class="carousel-item">
+          <img src="${images[index].src}" alt="Carousel Image ${index + 1}" class="w-full object-cover">
+          <div class="font-semibold mb-2">${images[index].caption}</div>
+        </div>
+      `;
     }
 
-    function nextImage() {
+    function showNextImage() {
         currentIndex = (currentIndex + 1) % images.length;
         showImage(currentIndex);
     }
 
-    function prevImage() {
+    function showPrevImage() {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         showImage(currentIndex);
     }
 
-    document.getElementById("about-next").addEventListener("click", nextImage);
-    document.getElementById("about-prev").addEventListener("click", prevImage);
+    // document.getElementById("about-next").addEventListener("click", nextImage);
+    // document.getElementById("about-prev").addEventListener("click", prevImage);
+    
+  document.getElementById('about-next').addEventListener('click', showNextImage);
+  document.getElementById('about-prev').addEventListener('click', showPrevImage);
+
+  // Initialize the carousel with the first image
+  showImage(currentIndex);
+
+  // Auto-slide every 5 seconds
+  setInterval(showNextImage, 5000);
+
+
     // document.getElementById("about-next").classList.add("invisible")
     carousel.addEventListener('mouseover', (event) => {
       document.getElementById("about-next").classList.remove("invisible")
@@ -80,8 +73,8 @@
       document.getElementById("about-next").classList.add("invisible");
       document.getElementById("about-prev").classList.add("invisible");
     })
-    setInterval(nextImage, 3000); // Change image every 3 seconds
+    // setInterval(nextImage, 3000); // Change image every 3 seconds
 
     // Initial display
     showImage(currentIndex);
-})();
+  })

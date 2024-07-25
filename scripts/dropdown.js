@@ -69,7 +69,7 @@
         },
         {
           label: "Recommend A Book",
-          link: "",
+          link: "Faculty Book Recommendation Form.pdf",
         },
         {
           label: "Faculty Publication Details",
@@ -95,10 +95,10 @@
       icon: "../../images/menubar/device.png",
 
       options: [
-        {
-          label: "Institutional Repository",
-          link: "http://idr.iiserb.ac.in:8080/jspui/",
-        },
+        // {
+        //   label: "Institutional Repository",
+        //   link: "http://idr.iiserb.ac.in:8080/jspui/",
+        // },
         {
           label: "Subscribed Archives of E-Resources",
           link: "../../dropdown-pages-html/online-resources/digital_Archives.html",
@@ -109,7 +109,7 @@
         },
         {
           label: "A-Z List of Subscribed E-Resources",
-          link: "../../dropdown-pages-html/online-resources/e_book_collections.html",
+          link: "../../dropdown-pages-html/online-resources/az_list_of_subs_e_resources.html",
         },
         {
           label: "Biblographic Resources",
@@ -117,7 +117,7 @@
         },
         {
           label: "Theses & Dissertations",
-          link: "../../dropdown-pages-html/online-resources/thesis_dissertations.html",
+          link: "../../dropdown-pages-html/online-resources/thesis_database.html",
         },
         {
           label: "Video Resources",
@@ -145,7 +145,7 @@
       options: [
         {
           label: "About Turnitin",
-          link: "https://www.plagiarism.org/",
+          link: "https://in.turnitin.com/",
         },
         {
           label: "Reference Management Tools",
@@ -187,7 +187,7 @@
     dropDownItem.classList.add(`dropdown-${index}`);
 
     dropDownItem.innerHTML = `
-      <span class="flex z-[9999]  shadow-sm py-4  w-full border-b border-zinc-400 hover:bg-gray-300 items-center justify-between cursor-pointer  gap-4 " onclick="toggleMobileDropdown(${index})">
+      <span class="flex z-[99999] shadow-sm py-4  w-full border-b border-zinc-400 hover:bg-gray-300 items-center justify-between cursor-pointer  gap-4 " onclick="toggleMobileDropdown(${index})">
         <div class="flex gap-2  items-center text-xl ">
           <img src="${item.icon}" alt="icon" class="w-5 h-5" />
           ${item.label}
@@ -214,7 +214,7 @@
 
   function menubar_toggle() {
     // const menubar = document.querySelector(".dropdown_container");
-    dropDownMobileViewContainer.classList.toggle("right-0");
+    dropDownMobileViewContainer.classList.toggle("top-0");
   }
 
   function toggleMobileDropdown(index) {
@@ -259,8 +259,8 @@
       ${
         item.options !== null ?
         `
-        <div class="absolute dropdownWebContent-${index} hidden w-[200px] group-hover:flex right-0 z-10 mt-0 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" >
-          <div class="py-1" role="none">
+        <div class="absolute z-[999999]  dropdownWebContent-${index} hidden w-[200px] group-hover:flex top-0  mt-9 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" >
+          <div class="py-1 " role="none">
             ${
               item.options !== null  &&
               item.options

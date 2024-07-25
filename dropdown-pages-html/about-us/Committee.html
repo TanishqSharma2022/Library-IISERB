@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="../../css/navbar.css" />
+<link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/dropdown.css" />
     <link rel="stylesheet" href="../../css/countdown.css" />
     <link rel="stylesheet" href="../../css/footer.css" />
@@ -26,23 +30,23 @@
     />
     <title>Committee|Library IISERB</title>
     <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
-
- 
   </head>
   <body class="overflow-x-hidden bg-gray-100">
+    <div class="">
     <!-- CAROUSEL BACKGROUND -->
-    <div class="w-full bg-[url(../../images/library/bg2.png)] bg-cover p-4">
+    <div
+      class="w-full relative py-4 bg-[url(../../images/library/bg2.png)] bg-cover "
+    >
       <!-- Navbar -->
-      <nav class="top-0 left-0 w-full">
+      <nav class="top-0 left-0 w-full relative">
         <div
-          class="w-full p-4 hidden lg:flex items-center justify-center z-[10]"
+          class="w-full  hidden  overflow-x-hidden lg:flex relative items-center justify-center"
         >
           <div
-            class="w-[85%] flex items-center text-white text-sm justify-between header_container"
+            class="w-[85%]  flex items-center text-white text-sm relative justify-between header_container"
           ></div>
         </div>
 
-        <!-- SECTION 2 -->
         <div class="w-full py-4 flex items-center justify-center">
           <div class="w-[85%] relative flex items-center justify-between">
             <div class="flex relative gap-2 justify-center items-center">
@@ -63,7 +67,8 @@
                   IISER Bhopal
                 </h3>
                 <h3 class="ioe">
-                  Indian&nbsp;Institute&nbsp;of&nbsp;Science Education&nbsp;&&nbsp;Research Bhopal
+                  Indian Institute of Science
+                  Education&nbsp;&&nbsp;Research&nbsp;Bhopal
                 </h3>
                 <h3 class="ar-fontfamily">
                   केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
@@ -71,9 +76,8 @@
               </div>
             </div>
 
-            <!-- DROP DOWN NAV OPTIONS -->
             <div
-              class="lg:hidden flex ham_menu text-white cursor-pointer"
+              class="lg:hidden flex ham_menu text-white z-[9999999] cursor-pointer"
               onclick="menubar_toggle()"
             >
               <i class="fa-solid fa-bars fa-xl"></i>
@@ -83,9 +87,8 @@
           </div>
         </div>
 
-        <!-- Mobile View DropDOwn Section -->
         <div
-          class="z-[999] w-full md:w-[300px] min-h-screen absolute top-0 overflow-scroll transition-all -right-[600px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_mobile_view_container"
+          class="z-[999999] w-full min-h-screen absolute  overflow-scroll transition-all -top-[1000px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_mobile_view_container"
         >
           <span
             class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100 z-[9999]"
@@ -97,7 +100,6 @@
           <div
             class="dropdown_mobile_view_option_container z-[999] min-h-screen overflow-scroll relative"
           ></div>
-          <!-- <i class="absolute bottom-4  ">Central Library, IISER Bhopal</i> -->
         </div>
 
         <h1
@@ -117,232 +119,224 @@
             transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
           "
         >
-          Library Management & <br> Avisory Committee
+          Library Management & Advisory Committee
         </h1>
       </nav>
     </div>
 
-  <div class="w-full h-full bg-cover bg-center" style="background-image: url('../../images/page_elements/secbg.png');">
-  <!-- ABOUT  -->
-    <div class="min-h-screen w-full flex justify-center items-center">
-      <div class="container mx-auto py-8 px-8 lg:px-36">
-        <div
-          class="bg-white shadow-md rounded-lg overflow-hidden sm:mt-32 lg:mt-2"
-        >
-          <table class="w-full bg-white">
-            <thead>
-              <tr>
-                <th
-                  class="px-6 py-3 border-b-2 border-gray-300 text-left leading-4 text-gray-700 tracking-wider"
-                >
-                  Committee
-                </th>
-                <th
-                  class="px-6 py-3 border-b-2 border-gray-300 text-left leading-4 text-gray-700 tracking-wider"
-                >
-                  Designations
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://www.iiserb.ac.in/doaa"
-                    target="_blank"
-                    class="text-gray-600 hover:underline"
-                    >Dean, Academic Affairs</a
+
+    
+    
+    
+    <div
+      class="w-full h-full bg-cover bg-center"
+      style="background-image: url('../../images/page_elements/secbg.png')"
+    >
+      <!-- ABOUT  -->
+      <div class="min-h-screen w-full flex justify-center items-center">
+        <div class="container mx-auto py-8 px-8 lg:px-36">
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden sm:mt-32 lg:mt-2"
+          >
+            <table class="w-full bg-white">
+              <thead>
+                <tr>
+                  <th
+                    class="px-6 py-3 border-b-2 border-gray-300 text-left leading-4 text-gray-700 tracking-wider"
                   >
-                </td>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://www.iiserb.ac.in/doaa"
-                    class="text-gray-600 hover:underline"
-                    >Chairperson</a
+                    Committee
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b-2 border-gray-300 text-left leading-4 text-gray-700 tracking-wider"
                   >
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://www.iiserb.ac.in/doaa"
-                    target="_blank"
-                    class="text-gray-600 hover:underline"
-                    >Associate Dean, Academic Affairs</a
+                    Designations
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://www.iiserb.ac.in/doaa"
-                    target="_blank"
-                    class="text-gray-600 hover:underline"
-                    >Member</a
+                    <a
+                      
+                      target="_blank"
+                      class="text-gray-600 hover:underline"
+                      >Dean, Academic Affairs</a
+                    >
+                  </td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://www.iiserb.ac.in/dord"
-                    target="_blank"
-                    class="text-gray-600 hover:underline"
-                    >Dean, Research and Development</a
+                    <a
+                      class="text-gray-600 hover:underline"
+                      >Chairperson</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://www.iiserb.ac.in/dord"
-                    target="_blank"
-                    class="text-gray-600 hover:underline"
-                    >Member</a
+                    <a
+                      target="_blank"
+                      class="text-gray-600 hover:underline"
+                      >Associate Dean, Academic Affairs</a
+                    >
+                  </td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://www.iiserb.ac.in/dofa"
-                    target="_blank"
-                    class="text-gray-600 hover:underline"
-                    >Dean, Faculty Affairs</a
+                    <a
+                      target="_blank"
+                      class="text-gray-600 hover:underline"
+                      >Member</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://www.iiserb.ac.in/dofa"
-                    class="text-gray-600 hover:underline"
-                    >Member</a
+                    <a
+                      target="_blank"
+                      class="text-gray-600 hover:underline"
+                      >Dean, Research and Development</a
+                    >
+                  </td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://chm.iiserb.ac.in/faculty_profile/NQ==/c2FuZ2l0a3VtYXI="
-                    target="_blank"
-                    class="text-gray-600 hover:underline"
-                    >Prof. Sanjit Kumar, Dept. of Chemistry</a
+                    <a
+                      target="_blank"
+                      class="text-gray-600 hover:underline"
+                      >Member</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://chm.iiserb.ac.in/faculty_profile/NQ==/c2FuZ2l0a3VtYXI="
-                    class="text-gray-600 hover:underline"
-                    >Member</a
+                    <a
+                      target="_blank"
+                      class="text-gray-600 hover:underline"
+                      >Dean, Faculty Affairs</a
+                    >
+                  </td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://phy.iiserb.ac.in/faculty_details?sebastian"
-                    target="_blank"
-                    class="text-gray-600 hover:underline"
-                    >Dr. Sebastian Wuster, Dept. of Physics</a
+                    <a
+                      class="text-gray-600 hover:underline"
+                      >Member</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://phy.iiserb.ac.in/faculty_details?sebastian"
-                    class="text-gray-600 hover:underline"
-                    >Member</a
+                    <a
+                      target="_blank"
+                      class="text-gray-600 hover:underline"
+                      >Prof. Sanjit Kumar, Dept. of Chemistry</a
+                    >
+                  </td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://bio.iiserb.ac.in/faculty_profile.php?id=MTU=&lname=YWppdGc="
-                    target="_blank"
-                    class="text-gray-600 hover:underline"
-                    >Dr. Ajit Chande, Dept. of Biological Sciences</a
+                    <a
+                      class="text-gray-600 hover:underline"
+                      >Member</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://bio.iiserb.ac.in/faculty_profile.php?id=MTU=&lname=YWppdGc="
-                    class="text-gray-600 hover:underline"
-                    >Member</a
+                    <a
+                      target="_blank"
+                      class="text-gray-600 hover:underline"
+                      >Dr. Sebastian Wuster, Dept. of Physics</a
+                    >
+                  </td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://www.iiserb.ac.in/financeoffice/people"
-                    target="_blank"
-                    class="text-gray-600 hover:underline"
-                    >Deputy Registrar, Finance and Accounts</a
+                    <a
+                      class="text-gray-600 hover:underline"
+                      >Member</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://www.iiserb.ac.in/financeoffice/people"
-                    class="text-gray-600 hover:underline"
-                    >Member</a
+                    <a
+                      target="_blank"
+                      class="text-gray-600 hover:underline"
+                      >Dr. Ajit Chande, Dept. of Biological Sciences</a
+                    >
+                  </td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://www.iiserb.ac.in/library/people"
-                    target="_blank"
-                    class="text-gray-600 hover:underline"
-                    >Librarian</a
+                    <a
+                      class="text-gray-600 hover:underline"
+                      >Member</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-                <td
-                  class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                >
-                  <a
-                    href="https://www.iiserb.ac.in/library/people"
-                    class="text-gray-600 hover:underline"
-                    >Member Secretary</a
+                    <a
+                      target="_blank"
+                      class="text-gray-600 hover:underline"
+                      >Deputy Registrar, Finance and Accounts</a
+                    >
+                  </td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                   >
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                    <a
+                      class="text-gray-600 hover:underline"
+                      >Member</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
+                  >
+                    <a
+                      target="_blank"
+                      class="text-gray-600 hover:underline"
+                      >Librarian</a
+                    >
+                  </td>
+                  <td
+                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
+                  >
+                    <a
+                      class="text-gray-600 hover:underline"
+                      >Member Secretary</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
+      <!-- FOOTER -->
     </div>
-    <!-- FOOTER -->
-    <footer class="footer"></footer>
+  </div>
+      <footer class="footer"></footer>
 
     <script src="../../scripts/carousel.js"></script>
     <script src="../../scripts/dropdown.js"></script>

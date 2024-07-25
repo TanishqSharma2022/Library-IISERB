@@ -1,6 +1,6 @@
 #about-carousel {
     position: relative;
-    width: 100%;
+    width:  100%;
     height: 100%; /* Adjust the height as needed */
   }
   
@@ -16,7 +16,7 @@
   
   .carousel-item img {
     width: 100%;
-    height: 80%; /* Adjust the height percentage as needed */
+    height: 90%; /* Adjust the height percentage as needed */
     object-fit: cover;
     border-radius: 0.5rem;
   }
