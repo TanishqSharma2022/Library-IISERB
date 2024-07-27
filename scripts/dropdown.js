@@ -31,7 +31,7 @@
           link: "../../dropdown/about-us/library-rules.html",
         },
         {
-          label: "Library Committee",
+          label: "Library Advisory Committee",
           link: "../../dropdown/about-us/Committee.html",
         },
         {
@@ -99,10 +99,10 @@
       icon: "../../images/menubar/device.png",
 
       options: [
-        // {
-        //   label: "Institutional Repository",
-        //   link: "http://idr.iiserb.ac.in:8080/jspui/",
-        // },
+        {
+          label: "Institutional Repository",
+          link: "http://idr.iiserb.ac.in:8080/jspui/",
+        },
         {
           label: "List of Archives of Subscribed E-Resources",
           link: "IISERB_Archive_Collection.pdf",
@@ -134,6 +134,10 @@
         {
           label: "Open Educational Resources",
           link: "../../dropdown/online-resources/open_access_resources.html",
+        },
+        {
+          label: "Open Textbook Library",
+          link: "../../dropdown/online-resources/open_textbooks.html",
         },
         {
           label: "E-Resource Usage Policy",

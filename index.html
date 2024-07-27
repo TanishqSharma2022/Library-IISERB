@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/aboutcarousel.css" />
+    <link rel="stylesheet" href="css/newbookcarousel.css" />
     <link rel="stylesheet" href="css/activityslider.css" />
     <link rel="stylesheet" href="css/dropdown.css" />
     <link rel="stylesheet" href="css/countdown.css" />
@@ -110,7 +111,7 @@
                 </h3>
                 <h3 class="ioe">
                   Indian&nbsp;Institute&nbsp;of&nbsp;Science
-                  Education&nbsp;&&nbsp;Research&nbsp;Bhopal
+                  Education and Research Bhopal
                 </h3>
 
                 <h3 class="ar-fontfamily">
@@ -242,13 +243,13 @@
     <div class="mx-auto h-[1.5px] w-[60%] bg-zinc-200"></div>
     <div class="h-full w-full p-4 lg:py-12 lg:px-24 justify-center">
       <div
-        class="w-full flex lg:flex-row flex-col mt-12 items-start gap-12 justify-center"
+        class="w-full flex lg:flex-row flex-col  items-start gap-12 justify-center "
       >
-        <div class="w-full lg:w-[80%] mx-auto">
+        <div class="w-full lg:w-[80%] mx-auto ">
           <h1 class="font-semibold mb-3 text-3xl">About Library</h1>
-          <div class="w-[30%] h-[1px] bg-zinc-300 mb-6"></div>
-          <div class="mt-6">
-            <div class="relative mr-4 mb-4 float-left w-full lg:w-[50%]">
+          <div class="w-[30%] h-[1px] bg-zinc-300 mb-6 " ></div>
+          <div class="mt-6 ">
+            <div class="relative mr-4 mb-4 float-left w-full lg:w-[100%]">
               <!-- Carousel Container -->
               <div
                 id="about-carousel"
@@ -270,10 +271,31 @@
               </button>
               <!-- Navigation Buttons -->
             </div>
-            <p class="mt-6 text-md">
-              Welcome to Central Library, IISER Bhopal a very special place in the IISER Campus with its rich collection of books and journals in the field of Basic Sciences and related areas. Currently houses around 10,000 books, comprises of collection includes textbooks for the BS-MS and Ph.D curriculum in Biological Sciences, Chemistry, Earth and Environmental Sciences, Mathematics, Physics, Humanities and Social Sciences. Library collection also includes documents in Computer Science, History of Science, light reading materials, Fictions, Stories, General books, Encyclopaedias and Dictionaries, Magazines etc. Research books & Monographs are also included in the collection for labs & research purpose.
+            <p class="col-span-3">
+              Welcome to Central Library, IISER Bhopal a very special place in
+              the IISER Campus with its rich collection of books and journals in
+              the field of Basic Sciences and related areas.<br><br> Currently houses
+              around 15,000 books, comprises of collection includes textbooks
+              for the BS/BS-MS, M.Sc. and iPh.D/Ph.D curriculum in 
+              Biological Sciences,
+              Chemistry,
+              Earth and Environmental Sciences,
+              Mathematics,
+              Physics,
+              Humanities and Social Sciences,
+              Electrical Engineering & Computer Science,
+               Data Science & Engineering,
+              Chemical Engineering &
+              Economic Sciences.<br><br>
+              Library collection also includes
+              documents in Computer Science, History of Science, light reading
+              materials, Fictions, Stories, General books, Encyclopaedias and
+              Dictionaries, Magazines etc. Research books & Monographs are also
+              included in the collection for labs & research purpose.
             </p>
           </div>
+         
+
         </div>
         <!-- <div class="w-[2px] mt-4 h-[100vh] bg-zinc-300"></div> -->
         <div class="w-full lg:w-[40%]">
@@ -293,7 +315,20 @@
         </div>
       </div>
     </div>
-
+  <!-- New book carousel -->     
+  <div class="md:px-24 py-4">
+    <h1 class="font-bold text-4xl py-4  text-center">Featured Books    </h1>  
+       <div class="px-4 container mx-auto">
+          <div class="bookcarousel-container relative overflow-hidden">
+            <button class="prevbook absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10"> &#9664; </button>
+               <div class="newbookcarousel-track flex transition-transform duration-500">
+                  <!-- carousel images will be dynamically added here -->
+                </div>
+             <button class="nextbook absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10"> &#9654; </button>
+          </div>
+       </div>
+   </div>
+       <!--end New book carousel -->  
     <!-- search any documents -->
 
     <div
@@ -419,6 +454,7 @@
     <!-- end -Testimonials  -->
     <!-- FOOTER -->
     <footer class="footer"></footer>
+    <script src="scripts/newbookscarousel.js"></script>
     <script src="scripts/carousel.js"></script>
     <script src="scripts/dropdown.js"></script>
     <script src="scripts/countdown.js"></script>

@@ -7,7 +7,7 @@ const header_left_items = [
     },
     {
         id: 1, 
-        title: "Discussion Room ",
+        title: "Book-Discussion Room ",
         icon: "fa-comments",
         link: "https://web.iiserb.ac.in/crbs/clsbooking.php"
     },
@@ -15,7 +15,7 @@ const header_left_items = [
         id: 2, 
         title: "Library Guide",
         icon: "fa-signs-post",
-        link: "Library Guide.pdf"
+        link: "Library_Guide.pdf"
     },
     {
         id: 3, 
