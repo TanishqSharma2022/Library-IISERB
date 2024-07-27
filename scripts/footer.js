@@ -1,83 +1,85 @@
 const quick_links = [
-  {
+  { 
     id: 0,
-    title: "About",
-    link: "dropdown-pages-html/about-us/about-us.html",
+    title: "Discussion Room Booking ",
+    link: "https://web.iiserb.ac.in/crbs/index.php",
   },
   {
     id: 1,
-    title: "FAQs",
-    link: "dropdown-pages-html/about-us/faq.html",
+    title: "Book Recommendation Form",
+    link: "Faculty_Book_Recommendation_Form.pdf",
   },
   {
     id: 2,
-    title: "Downloads",
-    link: "",
+    title: "A-Z (Subscribed E-Resources)",
+    link: "../../dropdown/online-resources/az_list_of_subs_e_resources.html",
   },
   {
     id: 3,
-    title: "Institute Website",
-    link: "https://www.iiserb.ac.in",
+    title: " Library Virtual Tour",
+    link: "../../dropdown/services/video_guides.html",
   },
   {
     id: 4,
-    title: "Contact",
-    link: "dropdown-pages-html/about-us/Library-team.html",
+    title: " FAQs",
+    link: "../../dropdown/services/video_guides.html",
   },
+ 
 ];
 
 const useful_links = [
   {
     id: 0,
-    title: "Online Catalogue",
-    link: "https://iiserb.ac.in",
+    title: "Library Timings ",
+    link: "../../dropdown/about-us/library-timings.html",
   },
   {
     id: 1,
-    title: "E-Resources",
-    link: "dropdown-pages-html/online-resources/az_list_of_subs_e_resources.html",
+    title: "Library Rules ",
+    link: "../../dropdown-pages-html/about-us/library-rules.html",
   },
   {
     id: 2,
-    title: "Research Publications",
-    link: "https://iiserb.ac.in",
-  },
-  {
-    id: 3,
-    title: "Arrival of New Books",
-    link: "dropdown-pages-html/services/arrival_of_new_books.html",
-  },
-  {
-    id: 4,
-    title: "MyLOFT",
-    link: "https://app.myloft.xyz/user/login",
-  },
-];
-const services_links = [
-  {
-    id: 0,
-    title: "OPAC/Book Searching",
+    title: "Online Catalogue (Web OPAC) ",
     link: "https://webopac.iiserb.ac.in/",
   },
   {
-    id: 1,
-    title: "Photocopy Library",
-    link: "dropdown-pages-html/services/Photocopy_facility.html",
-  },
-  {
-    id: 2,
-    title: "Discussion Room Booking",
-    link: "https://web.iiserb.ac.in/crbs/index.php",
-  },
-  {
     id: 3,
-    title: "Arrival of New Books",
-    link: "dropdown-pages-html/services/arrival_of_new_books.html",
+    title: "Faculty Book Publication",
+    link: "https://iiserb.irins.org/",
   },
   {
     id: 4,
-    title: "Video Guides",
-    link: "dropdown-pages-html/services/video_guides.html",
+    title: "Institutional Digital Repository",
+    link: "http://idr.iiserb.ac.in:8080/jspui/",
+  },
+];
+
+const services_links = [
+  {
+    id: 0,
+    title: "MyLOFT (Remote Access Tool) ",
+    link: "https://app.myloft.xyz/user/login",
+  },
+  {
+    id: 1,
+    title: "Library Membership Form ",
+    link: "Membership_Form_faculty_staff_student.doc",
+  },
+  {
+    id: 2,
+    title: "Book Recommendation Form ",
+    link: "Faculty Book Recommendation Form .pdf",
+  },
+  {
+    id: 3,
+    title: "Book Replacement Form ",
+    link: "Form_for_Book_Replacement.pdf",
+  },
+  {
+    id: 4,
+    title: "Book Lost Form",
+    link: "Form_for_Book_Lost.pdf",
   },
 ];
 
@@ -150,13 +152,13 @@ footer.innerHTML += `
         </ul>
       </div>
       <div>
-        <h1 class="footer_heading">Useful Links</h1>
+        <h1 class="footer_heading">Quick links</h1>
         <ul class="footer_items">
           ${usefulLinksHTML}
         </ul>
       </div>
       <div>
-        <h1 class="footer_heading">Useful Links</h1>
+        <h1 class="footer_heading">Quick links</h1>
         <ul class="footer_items">
           ${servicesLinksHTML}
         </ul>
@@ -170,7 +172,7 @@ footer.innerHTML += `
             Indian Institute of Science Education<br />
             & Research Bhopal-462066<br /><br />
             Phone : +91 755 269 2307<br />
-            Email &nbsp; : skpathak@iiserb.ac.in<br /><br />
+            Email &nbsp; : skpathak@iiserb.ac.in / librarian@iiserb.ac.in<br /><br />
             <a href="https://x.com/LibraryIISERB">
               <i class="fa-brands fa-x-twitter"></i></a
             >&nbsp;&nbsp;

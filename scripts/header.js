@@ -1,7 +1,7 @@
 const header_left_items = [
     {
         id: 0, 
-        title: "IISERB ",
+        title: "IISER Bhopal ",
         icon: "fa-building-columns",
         link: "https://iiserb.ac.in/"
     },
@@ -39,7 +39,7 @@ const header_left_items = [
         id: 6, 
         title: "Virtual Tour",
         icon: "fa-circle-play",
-        link: "../../dropdown-pages-html/services/video_guides.html"
+        link: "../../dropdown/services/video_guides.html"
     },
  
    
@@ -49,7 +49,7 @@ const header_right_items = [
     {
         id: 0, 
         icon: "fa-solid fa-address-book",
-        link: "../../dropdown-pages-html/about-us/Library-team.html"
+        link: "../../dropdown/about-us/Library-team.html"
     },
     {
         id: 1, 

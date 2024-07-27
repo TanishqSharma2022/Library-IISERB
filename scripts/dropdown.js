@@ -12,31 +12,31 @@
       options: [
         {
           label: "About Us",
-          link: "../../dropdown-pages-html/about-us/about-us.html",
+          link: "../../dropdown/about-us/about-us.html",
         },
         {
           label: "Vision & Mission",
-          link: "../../dropdown-pages-html/about-us/vission-mission.html",
+          link: "../../dropdown/about-us/vission-mission.html",
         },
         {
           label: "Library Team",
-          link: "../../dropdown-pages-html/about-us/Library-team.html",
+          link: "../../dropdown/about-us/Library-team.html",
         },
         {
           label: "Library Timings",
-          link: "../../dropdown-pages-html/about-us/library-timings.html",
+          link: "../../dropdown/about-us/library-timings.html",
         },
         {
           label: "Library Rules",
-          link: "../../dropdown-pages-html/about-us/library-rules.html",
+          link: "../../dropdown/about-us/library-rules.html",
         },
         {
           label: "Library Committee",
-          link: "../../dropdown-pages-html/about-us/Committee.html",
+          link: "../../dropdown/about-us/Committee.html",
         },
         {
           label: "FAQs",
-          link: "../../dropdown-pages-html/about-us/faq.html",
+          link: "../../dropdown/about-us/faq.html",
         }
       ],
     },
@@ -53,7 +53,7 @@
         },
         {
           label: "Borrowing Facilities",
-          link: "../../dropdown-pages-html/services/Borrowing_facilities.html",
+          link: "../../dropdown/services/Borrowing_facilities.html",
         },
         {
           label: "Discussion Room Booking",
@@ -61,15 +61,15 @@
         },
         {
           label: "Inter Library Loan",
-          link: "../../dropdown-pages-html/services/Inter_library_loan.html",
+          link: "../../dropdown/services/Inter_library_loan.html",
         },
         {
           label: "Photocopy Facility",
-          link: "../../dropdown-pages-html/services/Photocopy_facility.html",
+          link: "../../dropdown/services/Photocopy_facility.html",
         },
         {
           label: "Library Orientation",
-          link: "../../dropdown-pages-html/services/library_orientation.html",
+          link: "../../dropdown/services/library_orientation.html",
         },
         {
           label: "Recommend A Book",
@@ -81,7 +81,7 @@
         },
         {
           label: "Arrival of New Books",
-          link: "../../dropdown-pages-html/services/arrival_of_new_books.html",
+          link: "../../dropdown/services/arrival_of_new_books.html",
         },
         {
           label: "MyLOFT - Remote Login Access",
@@ -89,7 +89,7 @@
         },
         {
           label: "Video Guides",
-          link: "../../dropdown-pages-html/services/video_guides.html",
+          link: "../../dropdown/services/video_guides.html",
         },
       ],
     },
@@ -109,35 +109,35 @@
         },
         {
           label: "Full Text Databases",
-          link: "../../dropdown-pages-html/online-resources/full_text_databses.html",
+          link: "../../dropdown/online-resources/full_text_databses.html",
         },
         {
           label: "A-Z List of Subscribed E-Resources",
-          link: "../../dropdown-pages-html/online-resources/az_list_of_subs_e_resources.html",
+          link: "../../dropdown/online-resources/az_list_of_subs_e_resources.html",
         },
         {
           label: "Biblographic Resources",
-          link: "../../dropdown-pages-html/online-resources/bibliographic_resources.html",
+          link: "../../dropdown/online-resources/bibliographic_resources.html",
         },
         {
           label: "Theses & Dissertations",
-          link: "../../dropdown-pages-html/online-resources/thesis_database.html",
+          link: "../../dropdown/online-resources/thesis_database.html",
         },
         {
           label: "Video Resources",
-          link: "../../dropdown-pages-html/services/video_guides.html",
+          link: "../../dropdown/services/video_guides.html",
         },
         {
           label: "CD-ROM Database",
-          link: "../../dropdown-pages-html/online-resources/cd_rom_database.html",
+          link: "../../dropdown/online-resources/cd_rom_database.html",
         },
         {
           label: "Open Educational Resources",
-          link: "../../dropdown-pages-html/online-resources/open_access_resources.html",
+          link: "../../dropdown/online-resources/open_access_resources.html",
         },
         {
           label: "E-Resource Usage Policy",
-          link: "../../dropdown-pages-html/online-resources/e-resources_usage_policy.html",
+          link: "../../dropdown/online-resources/e-resources_usage_policy.html",
         },
       ],
     },
@@ -153,15 +153,15 @@
         },
         {
           label: "Reference Management Tools",
-          link: "../../dropdown-pages-html/research-support/reference_management_tools.html",
+          link: "../../dropdown/research-support/reference_management_tools.html",
         },
         {
           label: "Data Analysis Tools",
-          link: "../../dropdown-pages-html/research-support/data_analysis.html",
+          link: "../../dropdown/research-support/data_analysis.html",
         },
         {
           label: "Research ID Creation",
-          link: "../../dropdown-pages-html/research-support/research_id_creaction.html",
+          link: "../../dropdown/research-support/research_id_creaction.html",
         },
         {
           label: "Grammarly",
