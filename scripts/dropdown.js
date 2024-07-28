@@ -267,7 +267,7 @@
       ${
         item.options !== null ?
         `
-        <div class="absolute z-[999999]  dropdownWebContent-${index} hidden w-[200px] group-hover:flex top-0  mt-9 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" >
+        <div class="absolute z-[999999]  dropdownWebContent-${index} hidden w-[250px] group-hover:flex top-0 right-0 mt-9 w-56 origin-top-left rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" >
           <div class="py-1 " role="none">
             ${
               item.options !== null  &&
@@ -275,7 +275,7 @@
                 .map(
                   (option) =>
                     `
-                <a href="${option.link}" target="_blank" class="w-[200px] hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-2">
+                <a href="${option.link}" target="_blank" class="w-[250px] hover:bg-gray-200 block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-2">
                 ${option.label}
                 </a>
                 `

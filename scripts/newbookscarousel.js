@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     books.forEach((book) => {
       const bookItem = document.createElement('div');
       bookItem.className = 'book';
-      bookItem.innerHTML = `<img src="${book.img}" alt="Book Image" class="w-full h-auto" />`;
+      bookItem.innerHTML = `<img src="${book.img}" alt="Book Image" class="w-full h-auto aspect-[3/4] object-cover" />`;
       bookItem.addEventListener('click', () => {
         const queryParams = new URLSearchParams({
           img: book.img,

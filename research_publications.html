@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../../css/navbar.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/dropdown.css" />
+    <link rel="stylesheet" href="../../css/countdown.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/splide.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../scripts/splide.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <title>Research Publications | Library IISERB</title>
+    <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
+  <body class="overflow-x-hidden bg-gray-100">
+    <!-- CAROUSEL BACKGROUND -->
+
+    <div
+      class="w-full relative bg-[url(../../images/library/bg2.png)] bg-cover"
+    >
+      <!-- Navbar -->
+      <nav class="top-0 py-4 left-0 w-full relative">
+        <div
+          class="w-full hidden overflow-x-hidden lg:flex relative items-center justify-center"
+        >
+          <div
+            class="w-[85%] flex items-center text-white text-sm relative justify-between header_container"
+          ></div>
+        </div>
+
+        <div class="w-full py-4 flex items-center justify-center">
+          <div class="w-[85%] relative flex items-center justify-between">
+            <div class="flex relative gap-2 justify-center items-center">
+              <img
+                src="../../logo-iiserb.png"
+                class="h-12 md:h-24"
+                style="
+                  box-shadow: rgb(0, 0, 0) 1px -1px 1px !important;
+                  border-radius: 50%;
+                "
+              />
+
+              <div
+                class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full"
+              >
+                <h3>
+                  Central Library,<br />
+                  IISER Bhopal
+                </h3>
+                <h3 class="ioe">
+                  Indian Institute of Science
+                  Education&nbsp;&&nbsp;Research&nbsp;Bhopal
+                </h3>
+                <h3 class="ar-fontfamily">
+                  केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
+                </h3>
+              </div>
+            </div>
+
+            <div
+              class="lg:hidden flex ham_menu text-white z-[9999999] cursor-pointer"
+              onclick="menubar_toggle()"
+            >
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
+
+            <div class="dropdown_web_view lg:flex hidden"></div>
+          </div>
+        </div>
+
+        <div
+          class="z-[999999] w-full min-h-screen absolute overflow-scroll transition-all -top-[1000px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_mobile_view_container"
+        >
+          <span
+            class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100 z-[9999]"
+            onclick="menubar_toggle()"
+          >
+            <i class="fa-solid fa-xmark fa-xl"></i>
+          </span>
+
+          <div
+            class="dropdown_mobile_view_option_container z-[999] min-h-screen overflow-scroll relative"
+          ></div>
+        </div>
+
+        <h1
+          class="text-4xl text-white font-bold m-6 p-6 text-center flex flex-col gap-1 drop-shadow-lg"
+          style="
+            z-index: 5;
+            white-space: normal;
+            color: white;
+            visibility: inherit;
+            border-width: 0px;
+            letter-spacing: 0px;
+            font-weight: 700;
+            min-height: 0px;
+            min-width: 128px;
+            max-height: none;
+            opacity: 1;
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+          "
+        >
+          Research Publications
+        </h1>
+      </nav>
+    </div>
+
+    <div class="min-h-screen relative p-24">
+      <div
+        class="absolute z-[-1] w-full h-full bg-cover bg-center"
+        style="background-image: url('../../images/page_elements/secbg.png')"
+      ></div>
+      <div class="z-[10] w-full border min-h-screen grid grid-cols-10">
+        
+        
+        <div class="col-span-3 border w-full h-full">
+          <!-- <h1>Sort By Year</h1> -->
+          <h1 class="text-2xl font-bold mt-4  mb-4">Filter by Year</h1>
+
+          <div id="year-checkboxes" class="text-sm flex flex-col z-[99999]">
+            <label><input type="checkbox" value="2024" checked /> 2024</label>
+            <label><input type="checkbox" value="2023" /> 2023</label>
+            <label><input type="checkbox" value="2022" /> 2022</label>
+            <label><input type="checkbox" value="2021" /> 2021</label>
+            <label><input type="checkbox" value="2020" /> 2020</label>
+          </div>
+          <div class="db flex flex-col text-sm gap-1 justify-center ">
+            <h1 class="text-2xl font-bold mt-4  mb-4">WoS Database Abbrevation</h1>
+            <label class="flex items-center gap-2"><input type="radio" name="same" value="WOS" /> Web of Science Core collection</label>
+            <label class="flex items-center gap-2"><input type="radio" name="same" value="BIOABS" /> Biological Abstracts</label>
+            <label class="flex items-center gap-2"><input type="radio" name="same" value="BCI" /> BIOSIS Citation Index</label>
+            <label class="flex items-center gap-2"><input type="radio" name="same" value="BIOSIS" /> BIOSIS Previews</label>
+            <label class="flex items-center gap-2"><input type="radio" name="same" value="CCC" /> Current Contents Connect</label>
+            <label class="flex items-center gap-2"><input type="radio" name="same" value="DIIDW" /> Derwent Innovations Index</label>
+            <label class="flex items-center gap-2"><input type="radio" name="same" value="DRCI" /> Data Citation Index</label>
+            <label class="flex items-center gap-2"><input type="radio" name="same" value="MEDLINE" /> MEDLINE </label>
+            <label class="flex items-center gap-2"><input type="radio" name="same" value="ZOOREC" /> Zoological Records</label>
+            <label class="flex items-center gap-2"><input type="radio" name="same" value="PPRN" /> Preprint Citation Index</label>
+            <label class="flex items-center gap-2"><input type="radio" name="same" value="WOK" checked/> All databases</label>
+          </div>
+        </div>
+        <div class="col-span-7">
+          <div class="border flex px-4 py-2 ">
+            <div id="pagination-container" class="flex gap-2 items-center justify-center my-4">
+             <button class="prev-page">Prev</button>
+             <button class="next-page">Next</button>
+             <p class="page-number">Page: 1</p>
+             <p class="total_records"></p>
+          </div>
+        </div>
+          <div class="p-4 grid grid-cols-1 gap-4  loadingDiv">
+            <div
+              class="w-full h-[60px] bg-gray-200 rounded-xl animate-pulse"
+            ></div>
+            <div
+              class="w-full h-[60px] bg-gray-200 rounded-xl animate-pulse"
+            ></div>
+            <div
+              class="w-full h-[60px] bg-gray-200 rounded-xl animate-pulse"
+            ></div>
+            <div
+              class="w-full h-[60px] bg-gray-200 rounded-xl animate-pulse"
+            ></div>
+            <div
+              class="w-full h-[60px] bg-gray-200 rounded-xl animate-pulse"
+            ></div>
+            <div
+              class="w-full h-[60px] bg-gray-200 rounded-xl animate-pulse"
+            ></div>
+            <div
+              class="w-full h-[60px] bg-gray-200 rounded-xl animate-pulse"
+            ></div>
+            <div
+              class="w-full h-[60px] bg-gray-200 rounded-xl animate-pulse"
+            ></div>
+          </div>
+          <div id="research-publications" class="p-4">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer"></footer>
+
+    <script src="../../scripts/dropdown.js"></script>
+    <script src="../../scripts/header.js"></script>
+    <script src="../../scripts/countdown.js"></script>
+    <script src="../../scripts/all_research_publications.js"></script>
+    <script src="../../scripts/footer.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>
