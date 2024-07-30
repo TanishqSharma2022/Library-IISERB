@@ -135,44 +135,101 @@
         style="background-image: url('../../images/page_elements/secbg.png')"
       ></div>
       <div class="z-[10] w-full border min-h-screen grid grid-cols-10">
-        
-        
         <div class="col-span-3 border w-full h-full">
           <!-- <h1>Sort By Year</h1> -->
-          <h1 class="text-2xl font-bold mt-4  mb-4">Filter by Year</h1>
+          <h1 class="text-2xl font-bold mt-4 mb-4">Filter by Year</h1>
 
           <div id="year-checkboxes" class="text-sm flex flex-col z-[99999]">
-            <label><input type="checkbox" value="2024" checked /> 2024</label>
+            <label><input type="checkbox"  value="2024" checked /> 2024</label>
             <label><input type="checkbox" value="2023" /> 2023</label>
             <label><input type="checkbox" value="2022" /> 2022</label>
             <label><input type="checkbox" value="2021" /> 2021</label>
             <label><input type="checkbox" value="2020" /> 2020</label>
+            <label><input type="checkbox" value="2019" /> 2019</label>
+            <label><input type="checkbox" value="2018" /> 2018</label>
           </div>
-          <div class="db flex flex-col text-sm gap-1 justify-center ">
-            <h1 class="text-2xl font-bold mt-4  mb-4">WoS Database Abbrevation</h1>
-            <label class="flex items-center gap-2"><input type="radio" name="same" value="WOS" /> Web of Science Core collection</label>
-            <label class="flex items-center gap-2"><input type="radio" name="same" value="BIOABS" /> Biological Abstracts</label>
-            <label class="flex items-center gap-2"><input type="radio" name="same" value="BCI" /> BIOSIS Citation Index</label>
-            <label class="flex items-center gap-2"><input type="radio" name="same" value="BIOSIS" /> BIOSIS Previews</label>
-            <label class="flex items-center gap-2"><input type="radio" name="same" value="CCC" /> Current Contents Connect</label>
-            <label class="flex items-center gap-2"><input type="radio" name="same" value="DIIDW" /> Derwent Innovations Index</label>
-            <label class="flex items-center gap-2"><input type="radio" name="same" value="DRCI" /> Data Citation Index</label>
-            <label class="flex items-center gap-2"><input type="radio" name="same" value="MEDLINE" /> MEDLINE </label>
-            <label class="flex items-center gap-2"><input type="radio" name="same" value="ZOOREC" /> Zoological Records</label>
-            <label class="flex items-center gap-2"><input type="radio" name="same" value="PPRN" /> Preprint Citation Index</label>
-            <label class="flex items-center gap-2"><input type="radio" name="same" value="WOK" checked/> All databases</label>
+          <div class="db flex flex-col text-sm gap-1 justify-center">
+            <h1 class="text-2xl font-bold mt-4 mb-4">
+              WoS Database Abbrevation
+            </h1>
+            <label class="flex items-center gap-2"
+              ><input type="radio" name="same" value="WOS" /> Web of Science
+              Core collection</label
+            >
+            <!-- <label class="flex items-center gap-2"
+              ><input type="radio" name="same" value="BIOABS" /> Biological
+              Abstracts</label
+            >
+            <label class="flex items-center gap-2"
+              ><input type="radio" name="same" value="BCI" /> BIOSIS Citation
+              Index</label
+            >
+            <label class="flex items-center gap-2"
+              ><input type="radio" name="same" value="BIOSIS" /> BIOSIS
+              Previews</label
+            >
+            <label class="flex items-center gap-2"
+              ><input type="radio" name="same" value="CCC" /> Current Contents
+              Connect</label
+            >
+            <label class="flex items-center gap-2"
+              ><input type="radio" name="same" value="DIIDW" /> Derwent
+              Innovations Index</label
+            >
+            <label class="flex items-center gap-2"
+              ><input type="radio" name="same" value="DRCI" /> Data Citation
+              Index</label
+            >
+            <label class="flex items-center gap-2"
+              ><input type="radio" name="same" value="MEDLINE" /> MEDLINE
+            </label>
+            <label class="flex items-center gap-2"
+              ><input type="radio" name="same" value="ZOOREC" /> Zoological
+              Records</label
+            > -->
+            <label class="flex items-center gap-2"
+              ><input type="radio" name="same" value="PPRN" /> Preprint Citation
+              Index</label
+            >
+            <label class="flex items-center gap-2"
+              ><input type="radio"  name="same" value="WOK" checked /> All
+              databases</label
+            >
           </div>
+          <button
+            class="text-white bg-blue-500 rounded-xl px-4 py-2 mt-6 search-button"
+          >
+            Search
+          </button>
+          <button
+            class="text-white bg-blue-500 rounded-xl px-4 py-2 mt-6 clear-button"
+          >
+            Clear
+          </button>
         </div>
         <div class="col-span-7">
-          <div class="border flex px-4 py-2 ">
-            <div id="pagination-container" class="flex gap-2 items-center justify-center my-4">
-             <button class="prev-page">Prev</button>
-             <button class="next-page">Next</button>
-             <p class="page-number">Page: 1</p>
-             <p class="total_records"></p>
+          <div class="border flex px-4 py-2">
+            <div
+              id="pagination-container"
+              class="flex w-full gap-2 items-center justify-between my-4"
+            >
+              <div class="flex gap-4">
+                <button class="prev-page">Prev</button>
+                <button class="next-page">Next</button>
+                <p class="page-number">Page: 1</p>
+              </div>
+
+              <div class="flex gap-4">
+                <input
+                  type="number"
+                  class="w-12 overflow-none scrollbar-none page-number-input"
+                />
+                / 1500
+                <p class="total_records"></p>
+              </div>
+            </div>
           </div>
-        </div>
-          <div class="p-4 grid grid-cols-1 gap-4  loadingDiv">
+          <div class="p-4 grid grid-cols-1 gap-4 loadingDiv">
             <div
               class="w-full h-[60px] bg-gray-200 rounded-xl animate-pulse"
             ></div>
@@ -198,8 +255,7 @@
               class="w-full h-[60px] bg-gray-200 rounded-xl animate-pulse"
             ></div>
           </div>
-          <div id="research-publications" class="p-4">
-          </div>
+          <div id="research-publications" class="p-4"></div>
         </div>
       </div>
     </div>
