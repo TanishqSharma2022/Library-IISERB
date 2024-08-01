@@ -120,39 +120,44 @@ class="w-full relative  bg-[url(../../images/library/bg2.png)] bg-cover "
 </div>
 
 
-<div class="w-full h-full bg-cover bg-center" style="background-image: url('../../images/page_elements/secbg.png');">
-<!-- ABOUT  -->
-<div class="w-full md:pl-24  flex mt-8 mb-12 items-center">
+<div class="justify-center bg-fixed  bg-center" style="background-image: url('../../images/library/bg.png');  ">
+  <!-- ABOUT  -->
+  <div class="w-full md:pl-24  flex mt-8 mb-12 items-center">
     <div class="flex flex-col md:flex-row w-full items-center space-y-4 md:space-y-0 md:space-x-8 p-6 md:p-12  rounded-lg">
       <img id="book-img" class="md:w-56 w-40 object-cover rounded-lg" src="" alt="Book Image">
       <div class="text-center md:text-left w-full">
         <h1 id="book-title" class="text-2xl font-bold mb-2"></h1>
-        <h2 id="book-author" class="text-xl font-semibold text-gray-600 mb-4">Author:</h2>
-        <p id="book-publisher"></p>
-        <p id="book-accession-number"></p>
-         <p id="book-class-number"></p>
+        <h2 id="book-author" class="text-xl font-semibold text-gray-600 mb-4"></h2>
+        <p id="book-publisher" class="mb-2"></p>
+        <p id="book-accession-number" class="mb-2"></p>
+        <p id="book-class-number" class="mb-4"></p>
         <a id="book-link" href="#" target="_blank" class="text-blue-500 hover:underline">Read Book</a>
       </div>
     </div>
   </div>
-  
-  
+</div>
   <!-- FOOTER -->
   <footer class="footer"></footer>
   
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const params = new URLSearchParams(window.location.search);
+   document.addEventListener('DOMContentLoaded', function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const bookImg = document.getElementById('book-img');
+  const bookTitle = document.getElementById('book-title');
+  const bookAuthor = document.getElementById('book-author');
+  const bookPublisher = document.getElementById('book-publisher');
+  const bookAccessionNumber = document.getElementById('book-accession-number');
+  const bookClassNumber = document.getElementById('book-class-number');
+  const bookLink = document.getElementById('book-link');
 
-      document.getElementById('book-img').src = params.get('img');
-      document.getElementById('book-title').textContent = params.get('title');
-      document.getElementById('book-author').textContent = 'Author(s): ' + params.get('author');
-      document.getElementById('book-about').textContent = 'About the book: ' + params.get('about');
-      document.getElementById('book-publisher').textContent = 'Publisher: ' + params.get('publisher');
-      document.getElementById('book-accession-number').textContent = 'Accession Number: ' + params.get('accessionNumber');
-      document.getElementById('book-class-number').textContent = 'Class Number: ' + params.get('classNumber');
-      document.getElementById('book-link').href = params.get('readingLink');
-    });
+  bookImg.src = urlParams.get('img');
+  bookTitle.textContent = urlParams.get('title');
+  bookAuthor.textContent = `Author: ${urlParams.get('author')}`;
+  bookPublisher.textContent = `Publisher: ${urlParams.get('publisher')}`;
+  bookAccessionNumber.textContent = `Accession Number: ${urlParams.get('accessionNumber')}`;
+  bookClassNumber.textContent = `Class Number: ${urlParams.get('classNumber')}`;
+  bookLink.href = urlParams.get('readingLink');
+});
   </script>
   
   <script src="../../scripts/dropdown.js"></script>

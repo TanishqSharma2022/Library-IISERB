@@ -37,6 +37,10 @@
         {
           label: "FAQs",
           link: "../../dropdown/about-us/faq.html",
+        },
+        {
+          label: "Gallery",
+          link: "../../dropdown/about-us/gallery.html",
         }
       ],
     },
@@ -50,6 +54,10 @@
         {
           label: "OPAC / Book Searching",
           link: "https://webopac.iiserb.ac.in/",
+        },
+        {
+          label: "Library Membership",
+          link: "../../dropdown/services/library_mem.html",
         },
         {
           label: "Borrowing Facilities",
@@ -73,7 +81,7 @@
         },
         {
           label: "Recommend A Book",
-          link: "Faculty_Book_Recommendation_Form.pdf",
+          link: "../../Faculty Book Recommendation Form .pdf",
         },
         {
           label: "Faculty Publication Details",

@@ -34,10 +34,10 @@
     
     function showImage(index) {
       carouselContainer.innerHTML = `
-        <div class="carousel-item">
-          <img src="${images[index].src}" alt="Carousel Image ${index + 1}" class="w-full object-cover">
+      <a href="../../dropdown/about-us/gallery.html">     <div class="carousel-item">
+        <img src="${images[index].src}" alt="Carousel Image ${index + 1}" class="w-full object-cover">
           <div class="font-semibold mb-2">${images[index].caption}</div>
-        </div>
+        </div></a>
       `;
     }
 
