@@ -7,7 +7,7 @@ const header_left_items = [
     },
     {
         id: 1, 
-        title: "Institutional Digital Repository ",
+        title: "IDR ",
         icon: "fa-tachograph-digital",
         link: "http://idr.iiserb.ac.in:8080/jspui/"
     },

@@ -130,7 +130,8 @@ class="w-full relative  bg-[url(../../images/library/bg2.png)] bg-cover "
         <h2 id="book-author" class="text-xl font-semibold text-gray-600 mb-4"></h2>
         <p id="book-publisher" class="mb-2"></p>
         <p id="book-accession-number" class="mb-2"></p>
-        <p id="book-class-number" class="mb-4"></p>
+        <p id="book-About" class="mb-4"></p>
+        <p id="book-Remark" class="mb-4"></p>
         <a id="book-link" href="#" target="_blank" class="text-blue-500 hover:underline">Read Book</a>
       </div>
     </div>
@@ -147,15 +148,17 @@ class="w-full relative  bg-[url(../../images/library/bg2.png)] bg-cover "
   const bookAuthor = document.getElementById('book-author');
   const bookPublisher = document.getElementById('book-publisher');
   const bookAccessionNumber = document.getElementById('book-accession-number');
-  const bookClassNumber = document.getElementById('book-class-number');
+  const bookAbout = document.getElementById('book-About');
+  const bookRemark = document.getElementById('book-Remark');
   const bookLink = document.getElementById('book-link');
 
   bookImg.src = urlParams.get('img');
-  bookTitle.textContent = urlParams.get('title');
-  bookAuthor.textContent = `Author: ${urlParams.get('author')}`;
-  bookPublisher.textContent = `Publisher: ${urlParams.get('publisher')}`;
-  bookAccessionNumber.textContent = `Accession Number: ${urlParams.get('accessionNumber')}`;
-  bookClassNumber.textContent = `Class Number: ${urlParams.get('classNumber')}`;
+  bookTitle.textContent = urlParams.get('title') || 'N/A';
+  bookAuthor.textContent = `Author: ${urlParams.get('author') || 'N/A'}`;
+  bookPublisher.textContent = `Publisher: ${urlParams.get('publisher') || 'N/A'}`;
+  bookAccessionNumber.textContent = `Subject(s):${urlParams.get('subject') || 'N/A'}`;
+  bookAbout .textContent = `About:${urlParams.get('about') || 'N/A'}`;
+  bookRemark.textContent = `Remark: ${urlParams.get('remark') || 'N/A'}`;
   bookLink.href = urlParams.get('readingLink');
 });
   </script>

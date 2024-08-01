@@ -200,7 +200,7 @@ const mainCarousel = (function() {
   });
 
   window.addEventListener('resize', updateCarousel);
-  setInterval(showNextSlide, 3000);
+  setInterval(showNextSlide, 5000);
 })();
 
 function generateCarouselSlides(activities) {

@@ -73,7 +73,13 @@ const testimonialCarousel = (function() {
   let currentIndex = 0;
 
   function getSlidesToShow() {
-    return window.innerWidth < 768 ? 1 : 3;
+    if (window.innerWidth < 768) {
+      return 1; // Mobile devices
+    } else if (window.innerWidth < 1024) {
+      return 2; // Tablets
+    } else {
+      return 3; // Desktop
+    }
   }
 
   function updateCarousel() {
@@ -111,7 +117,7 @@ const testimonialCarousel = (function() {
   });
 
   window.addEventListener('resize', updateCarousel);
-  setInterval(showNextSlide, 3000);
+  setInterval(showNextSlide, 5000);
 
   updateCarousel(); // Initialize carousel position
 })();

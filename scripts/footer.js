@@ -161,7 +161,7 @@ const contactHTML = contact_us_footer
     <div>
       <h1 class="footer_heading">${contact.title}</h1>
       <ul>
-        <li>
+        <li class="media">
           ${contact.content}<br /><br />
           Phone: ${contact.phone}<br />
           Email: ${contact.email}<br /><br />
@@ -200,16 +200,25 @@ footer.innerHTML += `
       </ul>
     </div>
     ${contactHTML}
-    <div class="absolute w-full py-4 opacity-[0.6] bottom-0 border-t border-white/50 md:col-span-4">
+    <div class="md:absolute w-full py-4 opacity-[0.6] bottom-0 border-t border-white/50 md:col-span-4">
       <p class="text-center text-sm">
-        © 2024 Central Library, IISER Bhopal | All Rights Reserved
+        © 2024 Central Library, IISER Bhopal | All&nbsp;Rights&nbsp;Reserved
       </p>
-      <div class="visitors-counter pl-6">
-        <i class="fa-solid fa-eye"></i> Visitors Count: <span id="visitors-count">0</span>
-      </div>
+      <div class="flex justify-between items-center  ">
+      <div class="visitors-counter md:pl-6 text-left flex items-center">
+       <i class="fa-solid fa-eye"></i> 
+         <span class="ml-2">Visitors Count: <span id="visitors-count">0</span></span>
+       </div>
+  <div class="developer md:pr-16 text-right flex items-center">
+  <i class="fa-solid fa-code"></i>
+    <a href="" id="mylink" class="ml-2 text-center text-sm">Developed by</a>
+  </div>
+</div>
+
     </div>
   </div>
   <button id="scroll-to-top" class="scroll-to-top rounded-full">↑</button>
+  
 `;
 
 // Scroll-to-Top Functionality

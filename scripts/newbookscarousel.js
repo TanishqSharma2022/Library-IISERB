@@ -5,136 +5,136 @@ document.addEventListener('DOMContentLoaded', function() {
   const books = [
     // Book 1
     {
-        img: '../../images/newbook/1.jpg',
-        title: 'Linear Algebra',
-        author: 'Stephen H. Friedberg, Arnold J. Insel, Lawrence E. Spence',
-        readingLink: 'https://books.google.com/books/about/Linear_Algebra.html?id=KyB0DAAAQBAJ',
-        about: 'A comprehensive introduction to linear algebra.',
-        publisher: 'Prentice Hall',
-        accessionNumber: '123456',
-        classNumber: 'QA184.2.F75 2020'
+        img: '../../images/newbook/aug1.jpg',
+        title: 'Principles of Communications: Systems, Modulation, and Noise',
+        author: 'Ziemer, Rodger E ; Tranter, William H.',
+        readingLink: 'https://webopac.iiserb.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=10283',
+        about: 'The updated 7th edition of Principles of Communications presents the reader with more in-chapter examples, providing for a more supportive framework for learning.',
+        publisher: 'Boston : John Wiley & Sons, 2015',
+        subject: 'Telecommunication | Signal theory (Telecommunication)',
+        remark: ''
     },
     // Book 2
     {
-        img: '../../images/newbook/book_1716358722.jpg',
-        title: 'Book 2',
-        author: 'Author 2',
-        readingLink: 'https://example.com/read/book2',
-        about: 'Details about Book 2.',
-        publisher: 'Publisher 2',
-        accessionNumber: '654321',
-        classNumber: 'QA184.2.B2'
+        img: '../../images/newbook/aug2.jpeg',
+        title: 'Deep Learning in Natural Language Processing',
+        author: 'Deng, Li [editor.]; Liu, Yang [editor.].',
+        readingLink: 'https://webopac.iiserb.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=10360&query_desc=kw%2Cwrdl%3A%20Deep%20Learning%20in%20Natural%20Language%20Processing',
+        about: 'This book reviews the state of the art of deep learning research and its successful applications to major NLP tasks, including speech recognition and understanding, dialogue systems, lexical analysis, parsing, knowledge graphs, machine translation, question answering, sentiment analysis, social computing, and natural language generation from images. Outlining and analyzing various research frontiers of NLP in the deep learning era, it features self-contained, comprehensive chapters written by leading researchers in the field. A glossary of technical terms and commonly used acronyms in the intersection of deep learning and NLP is also provided.',
+        publisher: 'Singapore: Springer-Nature, 2018',
+        subject: 'Artificial intelligence | Mathematical statistics | Natural language processing (Computer science) | Artificial Intelligence | Natural Language Processing (NLP) | Natural Language Processing (NLP) | Probability and Statistics in Computer Science',
+        remark: ''
     },
     // Book 3
     {
-        img: '../../images/newbook/3.jpeg',
-        title: 'Concepts of Biology',
-        author: 'Samantha Fowler, Rebecca Roush, James Wise',
-        readingLink: 'https://www.google.co.in/books/edition/Concepts_of_Biology/sUZRswEACAAJ?hl=en',
-        about: 'A comprehensive introduction to biology.',
-        publisher: 'Prentice Hall',
-        accessionNumber: '123456',
-        classNumber: 'QA184.2.F75 2020'
+        img: '../../images/newbook/aug3.jpg',
+        title: 'Time series analysis',
+        author: 'Hamilton, James D.',
+        readingLink: 'https://webopac.iiserb.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=10362',
+        about: '',
+        publisher: 'Princeton, N.J. : Kolkata : Princeton University Press, Levant Books, 2012',
+        subject: 'Time-series analysis',
+        remark: ''
     },
     // Book 4
     {
-        img: '../../images/newbook/4.jpeg',
-        title: 'Inorganic Chemistry',
-        author: 'Balaram Sahoo, Nimai Charan Nayak, Asutosh Samantaray, Prafulla Kumar Pujapanda',
-        readingLink: 'https://www.google.co.in/books/edition/Inorganic_Chemistry/8KAemlQzOj8C?hl=en&gbpv=0',
-        about: 'Details about Inorganic Chemistry.',
-        publisher: 'Publisher 2',
-        accessionNumber: '654321',
-        classNumber: 'QA184.2.B2'
+        img: '../../images/newbook/aug4.jpeg',
+        title: '',
+        author: '',
+        readingLink: 'https://webopac.iiserb.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=10385 ',
+        about: '',
+        publisher: '',
+        subject: '',
+        remark: ''
     },
     // Book 5
     {
-        img: '../../images/newbook/5.jpeg',
-        title: 'Linear Algebra',
-        author: 'Stephen H. Friedberg, Arnold J. Insel, Lawrence E. Spence',
-        readingLink: 'https://books.google.com/books/about/Linear_Algebra.html?id=KyB0DAAAQBAJ',
-        about: 'A comprehensive introduction to linear algebra.',
-        publisher: 'Prentice Hall',
-        accessionNumber: '123456',
-        classNumber: 'QA184.2.F75 2020'
+      img: '../../images/newbook/aug5.jpeg',
+      title: '',
+      author: '',
+      readingLink: 'https://webopac.iiserb.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=10371',
+      about: '',
+      publisher: '',
+      subject: '',
+      remark: ''
     },
     // Book 6
     {
-        img: '../../images/newbook/6.jpg',
-        title: 'Introduction to Environmental Science',
-        author: 'Author 2',
-        readingLink: 'https://example.com/read/book2',
-        about: 'Details about Introduction to Environmental Science.',
-        publisher: 'Publisher 2',
-        accessionNumber: '654321',
-        classNumber: 'QA184.2.B2'
+        img: '../../images/newbook/aug6.jpeg',
+        title: '',
+        author: '',
+        readingLink: 'https://webopac.iiserb.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=10372',
+        about: '',
+        publisher: '',
+        subject: '',
+        remark: ''
     },
-    // Repeated Books
-    // Book 1 (Repeated)
+   
+    // Book 7
     {
-        img: '../../images/newbook/1.jpg',
-        title: 'Linear Algebra',
-        author: 'Stephen H. Friedberg, Arnold J. Insel, Lawrence E. Spence',
-        readingLink: 'https://books.google.com/books/about/Linear_Algebra.html?id=KyB0DAAAQBAJ',
-        about: 'A comprehensive introduction to linear algebra.',
-        publisher: 'Prentice Hall',
-        accessionNumber: '123456',
-        classNumber: 'QA184.2.F75 2020'
+      img: '../../images/newbook/aug7.jpeg',
+      title: '',
+      author: '',
+      readingLink: 'https://webopac.iiserb.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=10401',
+      about: '',
+      publisher: '',
+      subject: '',
+      remark: ''
     },
-    // Book 2 (Repeated)
+    // Book 8
     {
-        img: '../../images/newbook/book_1716358722.jpg',
-        title: 'Book 2',
-        author: 'Author 2',
-        readingLink: 'https://example.com/read/book2',
-        about: 'Details about Book 2.',
-        publisher: 'Publisher 2',
-        accessionNumber: '654321',
-        classNumber: 'QA184.2.B2'
+      img: '../../images/newbook/aug8.jpeg',
+      title: '',
+      author: '',
+      readingLink: 'https://webopac.iiserb.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=10364',
+      about: '',
+      publisher: '',
+      subject: '',
+      remark: ''
     },
-    // Book 3 (Repeated)
+    // Book 9
     {
-        img: '../../images/newbook/3.jpeg',
-        title: 'Concepts of Biology',
-        author: 'Samantha Fowler, Rebecca Roush, James Wise',
-        readingLink: 'https://www.google.co.in/books/edition/Concepts_of_Biology/sUZRswEACAAJ?hl=en',
-        about: 'A comprehensive introduction to biology.',
-        publisher: 'Prentice Hall',
-        accessionNumber: '123456',
-        classNumber: 'QA184.2.F75 2020'
+      img: '../../images/newbook/aug9.jpeg',
+      title: '',
+      author: '',
+      readingLink: 'https://webopac.iiserb.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=10399',
+      about: '',
+      publisher: '',
+      subject: '',
+      remark: ''
     },
-    // Book 4 (Repeated)
+    // Book 10
     {
-        img: '../../images/newbook/4.jpeg',
-        title: 'Inorganic Chemistry',
-        author: 'Balaram Sahoo, Nimai Charan Nayak, Asutosh Samantaray, Prafulla Kumar Pujapanda',
-        readingLink: 'https://www.google.co.in/books/edition/Inorganic_Chemistry/8KAemlQzOj8C?hl=en&gbpv=0',
-        about: 'Details about Inorganic Chemistry.',
-        publisher: 'Publisher 2',
-        accessionNumber: '654321',
-        classNumber: 'QA184.2.B2'
+      img: '../../images/newbook/aug10.jpeg',
+      title: '',
+      author: '',
+      readingLink: 'https://webopac.iiserb.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=10378',
+      about: '',
+      publisher: '',
+      subject: '',
+      remark: ''
     },
-    // Book 5 (Repeated)
+    // Book 11)
     {
-        img: '../../images/newbook/5.jpeg',
-        title: 'Linear Algebra',
-        author: 'Stephen H. Friedberg, Arnold J. Insel, Lawrence E. Spence',
-        readingLink: 'https://books.google.com/books/about/Linear_Algebra.html?id=KyB0DAAAQBAJ',
-        about: 'A comprehensive introduction to linear algebra.',
-        publisher: 'Prentice Hall',
-        accessionNumber: '123456',
-        classNumber: 'QA184.2.F75 2020'
+      img: '../../images/newbook/aug11.jpeg',
+      title: '',
+      author: '',
+      readingLink: '',
+      about: '',
+      publisher: '',
+      subject: '',
+      remark: ''
     },
-    // Book 6 (Repeated)
+    // Book 12
     {
-        img: '../../images/newbook/6.jpg',
-        title: 'Introduction to Environmental Science',
-        author: 'Author 2',
-        readingLink: 'https://example.com/read/book2',
-        about: 'Details about Introduction to Environmental Science.',
-        publisher: 'Publisher 2',
-        accessionNumber: '654321',
-        classNumber: 'QA184.2.B2'
+      img: '../../images/newbook/aug12.jpeg',
+      title: '',
+      author: '',
+      readingLink: '',
+      about: '',
+      publisher: '',
+      subject: '',
+      remark: ''
     }
 ];
 
@@ -153,8 +153,8 @@ function createBookItems() {
         readingLink: book.readingLink,
         about: book.about,
         publisher: book.publisher,
-        accessionNumber: book.accessionNumber,
-        classNumber: book.classNumber
+        subject: book.subject,
+        remark: book.remark,
       }).toString();
       window.location.href = `bookDetails.html?${queryParams}`;
     });
@@ -180,19 +180,19 @@ function moveCarousel() {
 createBookItems();
 moveCarousel();
 
-let autoSlide = setInterval(moveCarousel, 3000);
+let autoSlide = setInterval(moveCarousel, 5000);
 
 prevButton.addEventListener('click', () => {
   clearInterval(autoSlide);
   currentIndex = (currentIndex <= 0) ? books.length - 1 : currentIndex - 1;
   moveCarousel();
-  autoSlide = setInterval(moveCarousel, 3000);
+  autoSlide = setInterval(moveCarousel, 5000);
 });
 
 nextButton.addEventListener('click', () => {
   clearInterval(autoSlide);
   currentIndex = (currentIndex >= books.length - 1) ? 0 : currentIndex + 1;
   moveCarousel();
-  autoSlide = setInterval(moveCarousel, 3000);
+  autoSlide = setInterval(moveCarousel, 5000);
 });
 });
