@@ -15,7 +15,7 @@ const faqs = [
     id: 4,
     question: "Are food and beverages allowed in the Library?",
     answer:
-      "Outside food and beverages are allowed inside the Library. You may carry your water bottle. Library provides hot water and green tea bags for the users. One must carry their mug for prevailing this service.",
+      "No",
   },
   {
     id: 5,

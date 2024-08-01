@@ -7,9 +7,9 @@ const header_left_items = [
     },
     {
         id: 1, 
-        title: "Book-Discussion Room ",
-        icon: "fa-comments",
-        link: "https://web.iiserb.ac.in/crbs/clsbooking.php"
+        title: "Institutional Digital Repository ",
+        icon: "fa-tachograph-digital",
+        link: "http://idr.iiserb.ac.in:8080/jspui/"
     },
     {
         id: 2, 

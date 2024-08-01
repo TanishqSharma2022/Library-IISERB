@@ -42,7 +42,6 @@ const testimonials = [
     batch: 'Batch F'
   },
 ];
-
 function generateTestimonialSlides(testimonials) {
   const testimonialTrack = document.querySelector('.testimonial-carousel-track');
   testimonials.forEach(testimonial => {
@@ -73,8 +72,13 @@ const testimonialCarousel = (function() {
   const nextButton = document.querySelector('.testimonial-next');
   let currentIndex = 0;
 
+  function getSlidesToShow() {
+    return window.innerWidth < 768 ? 1 : 3;
+  }
+
   function updateCarousel() {
-    const slideWidth = testimonialTrack.clientWidth / 3; // Display 3 testimonials at a time
+    const slidesToShow = getSlidesToShow();
+    const slideWidth = testimonialTrack.clientWidth / slidesToShow;
     testimonialSlides.forEach(slide => {
       slide.style.minWidth = `${slideWidth}px`;
     });
@@ -82,7 +86,8 @@ const testimonialCarousel = (function() {
   }
 
   function showNextSlide() {
-    if (currentIndex < testimonialSlides.length - 3) {
+    const slidesToShow = getSlidesToShow();
+    if (currentIndex < testimonialSlides.length - slidesToShow) {
       currentIndex++;
     } else {
       currentIndex = 0;
@@ -98,7 +103,8 @@ const testimonialCarousel = (function() {
   });
 
   nextButton.addEventListener('click', () => {
-    if (currentIndex < testimonialSlides.length - 3) {
+    const slidesToShow = getSlidesToShow();
+    if (currentIndex < testimonialSlides.length - slidesToShow) {
       currentIndex++;
       updateCarousel();
     }

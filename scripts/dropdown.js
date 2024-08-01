@@ -81,7 +81,7 @@
         },
         {
           label: "Recommend A Book",
-          link: "../../Faculty Book Recommendation Form .pdf",
+          link: "../../FacultyBookRecommendationForm.pdf",
         },
         {
           label: "Faculty Publication Details",
@@ -160,7 +160,7 @@
 
       options: [
         {
-          label: "About Turnitin",
+          label: "Turnitin:  Plagiarism checker tool",
           link: "https://in.turnitin.com/",
         },
         {

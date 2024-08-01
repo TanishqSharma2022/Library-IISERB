@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../../css/navbar.css" />
+<link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/dropdown.css" />
+    <link rel="stylesheet" href="../../css/countdown.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/splide.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../scripts/splide.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <title>Forms|Library IISERB</title>
+    <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
+  </head>
+  <body class="overflow-x-hidden bg-gray-100">
+    <div class="">
+    <!-- CAROUSEL BACKGROUND -->
+    <div
+      class="w-full relative py-4 bg-[url(../../images/library/bg2.png)] bg-cover "
+    >
+      <!-- Navbar -->
+      <nav class="top-0 left-0 w-full relative">
+        <div
+          class="w-full  hidden  overflow-x-hidden lg:flex relative items-center justify-center"
+        >
+          <div
+            class="w-[85%]  flex items-center text-white text-sm relative justify-between header_container"
+          ></div>
+        </div>
+
+        <div class="w-full py-4 flex items-center justify-center">
+          <div class="w-[85%] relative flex items-center justify-between">
+            <div class="flex relative gap-2 justify-center items-center">
+              <img
+                src="../../logo-iiserb.png"
+                class="h-12 md:h-24"
+                style="
+                  box-shadow: rgb(0, 0, 0) 1px -1px 1px !important;
+                  border-radius: 50%;
+                "
+              />
+
+              <div
+                class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full"
+              >
+                <h3>
+                  Central Library,<br />
+                  IISER Bhopal
+                </h3>
+                <h3 class="ioe">
+                  Indian Institute of Science
+                  Education&nbsp;&&nbsp;Research&nbsp;Bhopal
+                </h3>
+                <h3 class="ar-fontfamily">
+                  केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
+                </h3>
+              </div>
+            </div>
+
+            <div
+              class="lg:hidden flex ham_menu text-white z-[9999999] cursor-pointer"
+              onclick="menubar_toggle()"
+            >
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
+
+            <div class="dropdown_web_view lg:flex hidden"></div>
+          </div>
+        </div>
+
+        <div
+          class="z-[999999] w-full min-h-screen absolute  overflow-scroll transition-all -top-[1000px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_mobile_view_container"
+        >
+          <span
+            class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100 z-[9999]"
+            onclick="menubar_toggle()"
+          >
+            <i class="fa-solid fa-xmark fa-xl"></i>
+          </span>
+
+          <div
+            class="dropdown_mobile_view_option_container z-[999] min-h-screen overflow-scroll relative"
+          ></div>
+        </div>
+
+        <h1
+          class="text-4xl text-white font-bold m-6 p-6 text-center flex flex-col gap-1 drop-shadow-lg"
+          style="
+            z-index: 5;
+            white-space: normal;
+            color: white;
+            visibility: inherit;
+            border-width: 0px;
+            letter-spacing: 0px;
+            font-weight: 700;
+            min-height: 0px;
+            min-width: 128px;
+            max-height: none;
+            opacity: 1;
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+          "
+        >
+          Forms
+        </h1>
+      </nav>
+    </div>
+
+
+    
+    
+    
+    <div
+      class="w-full h-full bg-cover bg-center"
+      style="background-image: url('../../images/page_elements/secbg.png')"
+    >
+      <!-- ABOUT  -->
+      <div class="w-full flex justify-center items-center">
+        <div class="container mx-auto py-8 px-8 lg:px-36">
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden sm:mt-32 lg:mt-2"
+          >
+          <table class="min-w-full bg-white shadow-md rounded-lg">
+            <thead>
+                <tr class="bg-gray-200 text-gray-700 text-left">
+                    <th class="py-3 px-4">S.no.</th>
+                    <th class="py-3 px-4">Form Name</th>
+                    <th class="py-3 px-4">English</th>
+                    <th class="py-3 px-4">Hindi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-gray-200 hover:bg-gray-50">
+                    <td class="py-3 px-4">1</td>
+                    <td class="py-3 px-4">Book Requisition Form</td>
+                    <td class="py-3 px-4">
+                        <a href="../../pdfs/E_Book_ Indent_Form.docx" class="text-blue-500 hover:underline">DOCX</a>
+                    </td>
+                    <td class="py-3 px-4">
+                        <a href="pdfs\HINDI_E_Book_Indent_Form.pdf" class="text-blue-500 hover:underline">PDF</a>
+                    </td>
+                </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-50">
+                    <td class="py-3 px-4">2</td>
+                    <td class="py-3 px-4">Library Membership (Faculty, Staff & Student)</td>
+                    <td class="py-3 px-4">
+                        <a href="pdfs\Membership_Form_faculty_staff_student (1).doc" class="text-blue-500 hover:underline">DOCX</a>
+                    </td>
+                    <td class="py-3 px-4">
+                        <a href="pdfs\HINDI_Membership_Form_faculty_staff_student.pdf" class="text-blue-500 hover:underline">PDF</a>
+                    </td>
+                </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-50">
+                    <td class="py-3 px-4">3</td>
+                    <td class="py-3 px-4">Book Lost Form</td>
+                    <td class="py-3 px-4">
+                        <a href="pdfs\Form_for_Book_Lost.pdf" class="text-blue-500 hover:underline">PDF</a>
+                    </td>
+                    <td class="py-3 px-4">
+                        <a href="pdfs\hindi_Form_for_Book_Replacement.pdf" class="text-blue-500 hover:underline">PDF</a>
+                    </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td class="py-3 px-4">4</td>
+                    <td class="py-3 px-4">Book Replacement Form</td>
+                    <td class="py-3 px-4">
+                        <a href="pdfs\Form_for_Book_Replacement.pdf" class="text-blue-500 hover:underline">PDF</a>
+                    </td>
+                    <td class="py-3 px-4">
+                        <a href="pdfs\hindi_Form_for_Book_Replacement.pdf" class="text-blue-500 hover:underline">PDF</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+      <!-- FOOTER -->
+      <footer class="footer"></footer>
+      <script src="../../scripts/footer.js"></script>
+    <script src="../../scripts/carousel.js"></script>
+    <script src="../../scripts/dropdown.js"></script>
+    <script src="../../scripts/header.js"></script>
+    <script src="../../scripts/countdown.js"></script>
+    <script src="../../scripts/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script>
+      var splide = new Splide(".splide", {
+        type: "fade",
+        autoplay: "play",
+        perPage: 1,
+        arrows: false,
+        rewind: true,
+      });
+
+      splide.mount();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>
