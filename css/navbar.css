@@ -1,5 +1,8 @@
 /* background of all pages */
-
+.fixed-bg {
+	background-attachment: fixed;
+  }
+  
 
 .bg-cover-except-header-footer {
       background-image: url('');

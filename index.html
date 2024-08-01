@@ -35,7 +35,7 @@
     <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
   </head>
 
-  <body class="overflow-x-hidden bg-gray-100 bg-cover-except-header-footer">
+  <body class="overflow-x-hidden bg-cover-except-header-footer">
     <div
       class="min-h-screen overflow-hidden grid place-items-center w-full relative z-0 transition-all duration-[5s]"
     >
@@ -239,231 +239,155 @@
       </a>
     </div>
     
-    
+    <div class="justify-center bg-fixed  bg-center" style="background-image: url('../../images/library/bg.png');  ">
+
+  
     <!-- ABOUT LIBRARY -->
-
-    <div class="mx-auto h-[1.5px] w-[60%] bg-zinc-200"></div>
-    <div class="h-full w-full p-4 lg:py-12 lg:px-24 justify-center">
-      <div
-        class="w-full flex lg:flex-row flex-col  items-start gap-12 justify-center "
-      >
-        <div class="w-full lg:w-[80%] mx-auto ">
-          <h1 class="font-bold mb-3 text-3xl">About Library</h1>
-          <div class="w-[20%] h-[1px] bg-zinc-300 mb-6 " ></div>
-          <div class="mt-6 ">
-            <div class="relative mr-4 mb-4 float-left w-full lg:w-[100%]">
-              <!-- Carousel Container -->
-              <div
-                id="about-carousel"
-                class="relative overflow-hidden aspect-video shadow-lg rounded-lg"
-              >
-                <!-- Images and captions will be dynamically added here -->
-              </div>
-              <button
-                id="about-prev"
-                class="absolute top-1/2 left-5 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
-              >
-                &#10094;
-              </button>
-              <button
-                id="about-next"
-                class="absolute top-1/2 right-5 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
-              >
-                &#10095;
-              </button>
-              <!-- Navigation Buttons -->
-            </div>
-            <p class="col-span-3">
-              Welcome to Central Library, IISER Bhopal a very special place in
-              the IISER Campus with its rich collection of books and journals in
-              the field of Basic Sciences and related areas.<br><br> Currently houses
-              around 15,000 books, comprises of collection includes textbooks
-              for the BS/BS-MS, M.Sc. and iPh.D/Ph.D curriculum in 
-              Biological Sciences,
-              Chemistry,
-              Earth and Environmental Sciences,
-              Mathematics,
-              Physics,
-              Humanities and Social Sciences,
-              Electrical Engineering & Computer Science,
-               Data Science & Engineering,
-              Chemical Engineering &
-              Economic Sciences.<br><br>
-              Library collection also includes
-              documents in Computer Science, History of Science, light reading
-              materials, Fictions, Stories, General books, Encyclopaedias and
-              Dictionaries, Magazines etc. Research books & Monographs are also
-              included in the collection for labs & research purpose.
-            </p>
-          </div>
-         
-
-        </div>
-        <!-- <div class="w-[2px] mt-4 h-[100vh] bg-zinc-300"></div> -->
-        <div class="w-full lg:w-[40%]">
-          <h1 class="font-semibold text-2xl mb-3">News & Updates</h1>
-          <div class="w-[50%] h-[1px] bg-zinc-300 mb-6"></div>
-          <div id="news-container" class="h-800">
-            <!-- News will be dynamically added here -->
-          </div>
-
-          <h1 class="font-semibold text-2xl mb-3 mt-12">
-            Latest Research Publications
-          </h1>
-          <div class="w-[50%] h-[1px] bg-zinc-300 mb-6"></div>
-          <div id="research-publications" class="h-800">
-            <div class="w-full h-[70px] mb-3 animate-pulse bg-gray-200 rounded-xl"></div>
-            <div class="w-full h-[70px] mb-3 animate-pulse bg-gray-200 rounded-xl"></div>
-            <div class="w-full h-[70px] mb-3 animate-pulse bg-gray-200 rounded-xl"></div>
-            <div class="w-full h-[70px] mb-3 animate-pulse bg-gray-200 rounded-xl"></div>
-            <div class="w-full h-[70px] mb-3 animate-pulse bg-gray-200 rounded-xl"></div>
-            <!-- News will be dynamically added here -->
-          </div>
-          <a 
-          href="/research_publications.html"
-          class="text-blue-500 hover:underline cursor-pointer">View All -></a>
-        </div>
-      </div>
-    </div>
-  <!-- New book carousel -->     
-  <div class="md:px-24 py-6">
-    <h1 class="font-bold text-4xl mb-3 mt-6 text-center">Featured Books    </h1>  
-    <div class="w-[20%] h-[1px] bg-zinc-300 mb-6 mx-auto" ></div>
-       <div class="px-4 container mx-auto">
-          <div class="bookcarousel-container relative overflow-hidden">
-            <button class="prevbook absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10"> &#9664; </button>
-               <div class="newbookcarousel-track flex ">
-                  <!-- carousel images will be dynamically added here -->
-                </div>
-             <button class="nextbook absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10"> &#9654; </button>
-          </div>
-       </div>
-   </div>
-       <!--end New book carousel -->  
-    <!-- search any documents
-
-    <div
-      class="w-full grid grid-cols-1 place-items-center bg-zinc-200 py-12 justify-center"
-    >
-      <h1 class="font-bold text-4xl p-6 text-center">
-        Search for any documents
-      </h1>
-      <div
-        class="flex flex-col md:flex-row items-center p-4 justify-center gap-4"
-      >
-        <div class="grid-cols-2 grid items-center gap-4">
-          <select name="" id="" class="px-4 py-2 rounded-md">
-            <option>Title</option>
-            <option>Author</option>
-            <option>Subject</option>
-            <option>Issue</option>
-            <option>Volume</option>
-          </select>
-          <select name="" id="" class="px-4 py-2 rounded-md">
-            <option>All Item types</option>
-            <option>Article</option>
-            <option>Bibliography</option>
-            <option>Book</option>
-            <option>Volume</option>
-          </select>
-        </div>
-        <input
-          type="search"
-          class="px-4 py-2 rounded-md"
-          placeholder="Enter any document.."
-        />
-        <button
-          type="submit"
-          class="px-4 py-2 rounded-md text-white bg-blue-500"
-        >
-          Search
-        </button>
-      </div>
-    </div> -->
-
-    <!-- Start of Activity-Slider -->
-    <div class="md:px-24 py-12">
+<div class="mx-auto h-[1.5px] w-[60%] bg-zinc-200"></div>
+<div class=" p-4 lg:py-12 lg:px-24 justify-center">
+  <div class="w-full flex lg:flex-row flex-col items-start gap-12 justify-center">
+    <div class="w-full lg:w-[80%] mx-auto">
       <h1 class="font-bold text-4xl mt-6 mb-3 text-center">
-        Recent Activities
+        About Library
       </h1>
-      <div class="w-[20%] h-[1px] bg-zinc-300 mb-6 mx-auto" ></div>
-      <div class="px-4 container mx-auto">
-        <div class="carousel-container">
-          <button
-            class="prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10"
-          >
-            &#9664;
-          </button>
-          <div class="carousel-track"></div>
-          <button
-            class="next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10"
-          >
-            &#9654;
-          </button>
+      <div class="w-[20%] h-[1px] bg-zinc-300 mb-6 mx-auto"></div>
+
+      <div class="mt-6">
+        <div class="flex justify-center mb-4 w-full">
+          <div class="relative flex w-full lg:w-[60%]">
+            <!-- Carousel Container -->
+            <div id="about-carousel" class="relative overflow-hidden aspect-video shadow-lg rounded-lg">
+              <!-- Images and captions will be dynamically added here -->
+            </div>
+            <button id="about-prev" class="absolute top-1/2 left-5 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+              &#10094;
+            </button>
+            <button id="about-next" class="absolute top-1/2 right-5 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+              &#10095;
+            </button>
+            <!-- Navigation Buttons -->
+          </div>
         </div>
+
+        <p class="col-span-3  bg-opacity-90 p-4 rounded-lg shadow-md">
+          Welcome to Central Library, IISER Bhopal, a very special place in the IISER Campus with its rich collection of books and journals in the field of Basic Sciences and related areas.<br><br> Currently houses around 15,000 books, comprises of a collection includes textbooks for the BS/BS-MS, M.Sc. and iPh.D/Ph.D curriculum in Biological Sciences, Chemistry, Earth and Environmental Sciences, Mathematics, Physics, Humanities and Social Sciences, Electrical Engineering & Computer Science, Data Science & Engineering, Chemical Engineering & Economic Sciences.<br><br> Library collection also includes documents in Computer Science, History of Science, light reading materials, Fictions, Stories, General books, Encyclopaedias and Dictionaries, Magazines etc. Research books & Monographs are also included in the collection for labs & research purpose.
+        </p>
       </div>
     </div>
-    <!-- End of Activity-Slider -->
-
-    <!-- Testimonial -start -->
-
-    <div class="container mx-auto lg:p-24">
-      <h1 class="text-4xl font-bold text-center mb-12">Library Testimonials</h1>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        <!-- Testimonial 1 -->
-        <div class="bg-white rounded-lg shadow-lg p-4">
-          <div class="aspect-w-16 aspect-h-9 mb-4">
-            <iframe
-              class="w-full h-full"
-              src="https://www.youtube.com/embed/example1"
-              title="Testimonial 1"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="text-center">
-            <p class="text-xl font-semibold">Student Name 1</p>
-            <p class="text-gray-600">Batch 2021</p>
-          </div>
-        </div>
-        <!-- Testimonial 1 -->
-        <div class="bg-white rounded-lg shadow-lg p-4">
-          <div class="aspect-w-16 aspect-h-9 mb-4">
-            <iframe
-              class="w-full h-full"
-              src="https://www.youtube.com/embed/example1"
-              title="Testimonial 1"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="text-center">
-            <p class="text-xl font-semibold">Student Name 1</p>
-            <p class="text-gray-600">Batch 2021</p>
-          </div>
-        </div>
-        <!-- Testimonial 1 -->
-        <div class="bg-white rounded-lg shadow-lg p-4">
-          <div class="aspect-w-16 aspect-h-9 mb-4">
-            <iframe
-              class="w-full h-full"
-              src="https://www.youtube.com/embed/example1"
-              title="Testimonial 1"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="text-center">
-            <p class="text-xl font-semibold">Student Name 1</p>
-            <p class="text-gray-600">Batch 2021</p>
-          </div>
-        </div>
-
-        <!-- </a> -->
+    <!-- <div class="w-[2px] mt-4 h-[100vh] bg-zinc-300"></div> -->
+    <div class="w-full lg:w-[40%]">
+      <h1 class="font-semibold text-2xl mb-3">News & Updates</h1>
+      <div class="w-[50%] h-[1px] bg-zinc-300 mb-6"></div>
+      <div id="news-container" class="h-800">
+        <!-- News will be dynamically added here -->
       </div>
-    </div>
 
-    <!-- end -Testimonials  -->
+      <h1 class="font-semibold text-2xl mb-3 mt-12">
+        Latest Research Publications
+      </h1>
+      <div class="w-[50%] h-[1px] bg-zinc-300 mb-6"></div>
+      <div id="research-publications" class="h-800">
+        <div class="w-full h-[70px] mb-3 animate-pulse bg-gray-200 rounded-xl"></div>
+        <div class="w-full h-[70px] mb-3 animate-pulse bg-gray-200 rounded-xl"></div>
+        <div class="w-full h-[70px] mb-3 animate-pulse bg-gray-200 rounded-xl"></div>
+        <div class="w-full h-[70px] mb-3 animate-pulse bg-gray-200 rounded-xl"></div>
+        <div class="w-full h-[70px] mb-3 animate-pulse bg-gray-200 rounded-xl"></div>
+        <!-- News will be dynamically added here -->
+      </div>
+      <a href="/research_publications.html" class="text-blue-500 hover:underline cursor-pointer">View All -></a>
+    </div>
+  </div>
+</div>
+<!-- New book carousel -->
+<div class="md:px-24 py-6">
+  <h1 class="font-bold text-4xl mb-3 mt-6 text-center">Featured Books</h1>
+  <div class="w-[20%] h-[1px] bg-zinc-300 mb-6 mx-auto"></div>
+  <div class="px-4 container mx-auto">
+    <div class="bookcarousel-container relative overflow-hidden">
+      <button class="prevbook absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10"> &#9664; </button>
+      <div class="newbookcarousel-track flex">
+        <!-- carousel images will be dynamically added here -->
+      </div>
+      <button class="nextbook absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10"> &#9654; </button>
+    </div>
+  </div>
+</div>
+<!--end New book carousel -->
+<!-- search any documents -->
+<!--
+<div class="w-full grid grid-cols-1 place-items-center bg-zinc-200 py-12 justify-center">
+  <h1 class="font-bold text-4xl p-6 text-center">
+    Search for any documents
+  </h1>
+  <div class="flex flex-col md:flex-row items-center p-4 justify-center gap-4">
+    <div class="grid-cols-2 grid items-center gap-4">
+      <select name="" id="" class="px-4 py-2 rounded-md">
+        <option>Title</option>
+        <option>Author</option>
+        <option>Subject</option>
+        <option>Issue</option>
+        <option>Volume</option>
+      </select>
+      <select name="" id="" class="px-4 py-2 rounded-md">
+        <option>All Item types</option>
+        <option>Article</option>
+        <option>Bibliography</option>
+        <option>Book</option>
+        <option>Volume</option>
+      </select>
+    </div>
+    <input type="search" class="px-4 py-2 rounded-md" placeholder="Enter any document.."/>
+    <button type="submit" class="px-4 py-2 rounded-md text-white bg-blue-500">
+      Search
+    </button>
+  </div>
+</div>
+-->
+<!-- Start of Activity-Slider -->
+<div class="md:px-24 py-12">
+  <h1 class="font-bold text-4xl mt-6 mb-3 text-center">
+    Recent Activities
+  </h1>
+  <div class="w-[20%] h-[1px] bg-zinc-300 mb-6 mx-auto"></div>
+  <div class="px-4 container mx-auto">
+    <div class="carousel-container">
+      <button class="prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10">
+        &#9664;
+      </button>
+      <div class="carousel-track"></div>
+      <button class="next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10">
+        &#9654;
+      </button>
+    </div>
+  </div>
+</div>
+<!-- End of Activity-Slider -->
+
+<!-- Start of Testimonial-Slider -->
+<!-- Start of Testimonial-Slider -->
+<div class="md:px-24 py-12">
+  <h1 class="font-bold text-4xl mt-6 mb-3 text-center">
+   Testimonials
+  </h1>
+  <div class="w-[20%] h-[1px] bg-zinc-300 mb-6 mx-auto"></div>
+  <div class="px-4 container mx-auto" >
+    <div class="testimonial-carousel-container relative overflow-hidden ">
+      <button class="testimonial-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10">
+        &#9664;
+      </button>
+      <div class="testimonial-carousel-track flex transition-transform duration-300 ease-in-out "></div>
+      <button class="testimonial-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 z-10">
+        &#9654;
+      </button>
+    </div>
+  </div>
+</div>
+<!-- End of Testimonial-Slider -->
+
+<!-- End of Testimonial-Slider -->
+
+
+</div>
     <!-- FOOTER -->
     <footer class="footer"></footer>
     <script src="scripts/newbookscarousel.js"></script>
