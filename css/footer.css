@@ -27,3 +27,23 @@
     background-color: #1B72B2;;
 
 }
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1B72B2;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 100%;
+    display: none;
+    z-index: 1000;
+    
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #555;
+  }
+  

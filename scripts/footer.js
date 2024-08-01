@@ -141,66 +141,93 @@ const quickLinksHTML = quick_links
   .join("");
 
 
-footer.innerHTML += `
-<div
-      class="w-full relative bg-zinc-900 grid grid-cols-1 md:grid-cols-4 p-8 md:p-24 gap-6 text-white"
-    >
-      <div>
-      <h1 class="footer_heading">Quick Links</h1>
-        <ul class="footer_items">
-          ${quickLinksHTML}
-        </ul>
+  footer.innerHTML += `
+  <div
+        class="w-full relative bg-zinc-900 grid grid-cols-1 md:grid-cols-4 p-8 md:p-24 gap-6 text-white"
+      >
+        <div>
+        <h1 class="footer_heading">Quick Links</h1>
+          <ul class="footer_items">
+            ${quickLinksHTML}
+          </ul>
+        </div>
+        <div>
+          <h1 class="footer_heading">Quick links</h1>
+          <ul class="footer_items">
+            ${usefulLinksHTML}
+          </ul>
+        </div>
+        <div>
+          <h1 class="footer_heading">Quick links</h1>
+          <ul class="footer_items">
+            ${servicesLinksHTML}
+          </ul>
+        </div>
+        <div>
+          <h1 class="footer_heading">Contact Us</h1>
+          <ul>
+            <li>
+              The Librarian<br />
+              Central Library,<br />
+              Indian Institute of Science Education<br />
+              & Research Bhopal-462066<br /><br />
+              Phone : +91 755 269 2307<br />
+              Email &nbsp; : skpathak@iiserb.ac.in / librarian@iiserb.ac.in<br /><br />
+              <a href="https://x.com/LibraryIISERB">
+                <i class="fa-brands fa-x-twitter"></i></a
+              >&nbsp;&nbsp;
+              <a href="https://www.facebook.com/cliiserb/">
+                <i class="fa-brands fa-facebook-f"></i></a
+              >&nbsp;&nbsp;
+              <!-- <a href="https://x.com/LibraryIISERB">-->
+              <i class="fa-brands fa-linkedin-in"></i>
+              <!-- </a> -->
+              &nbsp;&nbsp;
+              <!-- <a href="https://x.com/LibraryIISERB"> -->
+              <i class="fa-brands fa-brands fa-youtube"></i>
+              <!-- </a> -->
+              &nbsp;&nbsp;
+              <a
+                href="https://play.google.com/store/apps/details?id=android1.example1.com.libraryapp&hl=en_IN"
+              >
+                <i class="fa-brands fa-google-play"></i></a
+              >&nbsp;&nbsp;
+            </li>
+          </ul>
+        </div>
+        <div class="absolute w-full py-4 opacity-[0.6] bottom-0 border-t border-white/50 md:col-span-4">
+          <p class="text-center text-sm">
+            © 2024 Central Library, IISER Bhopal | All Rights Reserved
+          </p>
+          <div class="visitors-counter pl-6">
+            Visitors Count: <span id="visitors-count">0</span>
+          </div>
+        </div>
       </div>
-      <div>
-        <h1 class="footer_heading">Quick links</h1>
-        <ul class="footer_items">
-          ${usefulLinksHTML}
-        </ul>
-      </div>
-      <div>
-        <h1 class="footer_heading">Quick links</h1>
-        <ul class="footer_items">
-          ${servicesLinksHTML}
-        </ul>
-      </div>
-      <div>
-        <h1 class="footer_heading">Contact Us</h1>
-        <ul>
-          <li>
-            The Librarian<br />
-            Central Library,<br />
-            Indian Institute of Science Education<br />
-            & Research Bhopal-462066<br /><br />
-            Phone : +91 755 269 2307<br />
-            Email &nbsp; : skpathak@iiserb.ac.in / librarian@iiserb.ac.in<br /><br />
-            <a href="https://x.com/LibraryIISERB">
-              <i class="fa-brands fa-x-twitter"></i></a
-            >&nbsp;&nbsp;
-            <a href="https://www.facebook.com/cliiserb/">
-              <i class="fa-brands fa-facebook-f"></i></a
-            >&nbsp;&nbsp;
-            <!-- <a href="https://x.com/LibraryIISERB">-->
-            <i class="fa-brands fa-linkedin-in"></i>
-            <!-- </a> -->
-            &nbsp;&nbsp;
-            <!-- <a href="https://x.com/LibraryIISERB"> -->
-            <i class="fa-brands fa-brands fa-youtube"></i>
-            <!-- </a> -->
-            &nbsp;&nbsp;
-            <a
-              href="https://play.google.com/store/apps/details?id=android1.example1.com.libraryapp&hl=en_IN"
-            >
-              <i class="fa-brands fa-google-play"></i></a
-            >&nbsp;&nbsp;
-          </li>
-        </ul>
-      </div>
-      <div class="absolute w-full py-4 opacity-[0.6] bottom-0 border-t border-white/50 md:col-span-4">
-        <p class="text-center text-sm">
-          © 2024 Central Library, IISER Bhopal | All Rights Reserved
-        </p>
-      </div>
-    </div>
-    `;
-
+      <button id="scroll-to-top" class="scroll-to-top rounded-full">↑</button>
+      `;
 // API_KEY = re_fEoX1mpZ_M8CycKG1fhCeGHmtsJu3wnHn
+
+// Scroll-to-Top Functionality
+const scrollToTopButton = document.getElementById("scroll-to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    scrollToTopButton.style.display = "block";
+  } else {
+    scrollToTopButton.style.display = "none";
+  }
+});
+
+scrollToTopButton.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
+// Visitors Counter
+document.addEventListener("DOMContentLoaded", () => {
+  let count = localStorage.getItem("visitorsCount") || 0;
+  count++;
+  localStorage.setItem("visitorsCount", count);
+  document.getElementById("visitors-count").textContent = count;
+});
