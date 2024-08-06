@@ -10,13 +10,21 @@
   height: 60px;
   z-index: 999;
 }
+.dropdown-1, 
+.dropdown-2, 
+.dropdown-3, 
+.dropdown-4{
+  height: 60px;
+  transition: all 0.5s ease;
+
+} 
 
 .dropdown span:hover {
   text-decoration: underline;
 }
 
 .active {
-  height: 100%;
+  height: calc(100%);
 }
 
 .dropdown span {
@@ -37,12 +45,15 @@
 
 .dropdown_mobile_view_container {
   transition: all 0.7s ease-in-out;
+  width: 100%;
+  border: 1px solid blue;
 }
 
 .dropdown_mobile_view_option_container {
   position: absolute;
   transition: all 0.7s ease-in-out;
-  top: 20%;
+  border: 1px solid red;
+  width: 100%;
 }
 
 .showHide {

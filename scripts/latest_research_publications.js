@@ -1,6 +1,9 @@
-const url = "http://localhost:3000/api/documents";
+const url = "https://library-iiserb-backend.vercel.app/api/documents";
 
-fetch(url)
+fetch(url, {
+  method: 'GET',
+  credentials: 'include' // Include cookies and other credentials
+})
   .then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
@@ -8,7 +11,6 @@ fetch(url)
     return response.json();
   })
   .then((data) => {
-    console.log(data.hits)
     const publicationsDiv = document.getElementById("research-publications");
 
     const publications = data.hits

@@ -203,8 +203,8 @@
     dropDownItem.classList.add(`dropdown-${index}`);
 
     dropDownItem.innerHTML = `
-      <span class="flex z-[99999] shadow-sm py-4  w-full border-b border-zinc-400 hover:bg-gray-300 items-center justify-between cursor-pointer  gap-4 " onclick="toggleMobileDropdown(${index})">
-        <div class="flex gap-2  items-center text-xl ">
+      <span class="flex z-[99999] shadow-sm p-4  w-full border-b border-zinc-400 hover:bg-gray-300 items-center justify-between cursor-pointer  gap-4 " onclick="toggleMobileDropdown(${index})">
+        <div class="flex gap-2  items-center text-md ">
           <img src="${item.icon}" alt="icon" class="w-5 h-5" />
           ${item.label}
         </div>

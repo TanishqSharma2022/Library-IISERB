@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/api/documents";
+const url = "https://library-iiserb-backend.vercel.app/api/documents";
 const loadingDiv = document.querySelector(".loadingDiv");
 const publicationsDiv = document.getElementById("research-publications");
 const pageContainer = document.querySelector(".page-number");
@@ -135,7 +135,10 @@ function fetchData() {
   updatePrevButtonState();
   updatePageNumber();
 
-  fetch(query)
+  fetch(query, {
+    method: 'GET',
+    credentials: 'include' // Include cookies and other credentials
+  })
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
