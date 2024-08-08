@@ -102,7 +102,7 @@ const contact_us_footer = [
     title: "CONTACT US",
     content: `The Librarian <br /> Central Library, Indian Institute of Science Education & Research Bhopal-462066`,
     phone: "+91 755 269 2307",
-    email: "skpathak@iiserb.ac.in / librarian@iiserb.ac.in",
+    email: "skpathak[at]iiserb.ac.in / librarian[at]iiserb.ac.in",
     twitter: "https://x.com/LibraryIISERB",
     facebook: "https://www.facebook.com/cliiserb/",
     linkedin: "#",
