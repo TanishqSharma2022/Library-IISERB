@@ -115,12 +115,12 @@
           label: "List of Archives of Subscribed E-Resources",
           link: "IISERB_Archive_Collection.pdf",
         },
+        // {
+        //   label: "Full Text Databases",
+        //   link: "../../dropdown/online-resources/full_text_databses.html",
+        // },
         {
-          label: "Full Text Databases",
-          link: "../../dropdown/online-resources/full_text_databses.html",
-        },
-        {
-          label: "A-Z List of Subscribed E-Resources",
+          label: "Subscribed e-Resources 2024 (A-Z List)",
           link: "../../dropdown/online-resources/az_list_of_subs_e_resources.html",
         },
         {
