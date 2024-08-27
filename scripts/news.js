@@ -2,17 +2,22 @@ document.addEventListener("DOMContentLoaded", function () {
   var newsContainer = document.getElementById("news-container");
   var newsData = [
     {
+      text: "Library website will inaugurated on 5th Sepetember 2024.",
+      link: "#",
+      icon: "➤",
+    },
+    {
       text: "Library Orientation Program for 24 Batch will be held very soon.",
       link: "#",
       icon: "➤",
     },
     {
-      text: "IRINS Project will be launched very soon at IISER Bhopal",
+      text: "IRINS Project will be launched on 5th Sepetember 2024 at IISER Bhopal",
       link: "#",
       icon: "➤",
     },
     {
-      text: "MyLOFT (Remote Login Access Software) will be launched very soon at IISER Bhopal",
+      text: "MyLOFT (Remote Login Access Software) will be launched on 5th Sepetember 2024 at IISER Bhopal",
       link: "#",
       icon: "➤",
     },
