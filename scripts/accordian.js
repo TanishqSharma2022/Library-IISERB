@@ -3,7 +3,7 @@ const faqs = [
     id: 2,
     question: "What are the Library hours?",
     answer:
-      "Find the Library hours here. This is subject to change based on the severity of the pandemic prevalent at any given time and the Institute Regulations in force from time to time.",
+      "The Regular timings of Library are: <br /><b>Monday - Saturday:</b> 9:00 AM - 1:00 AM <br /><b>Sunday/Holiday:</b> 9:00 AM - 5:30 PM. <br /> These timings can change based on the Exam Schedules or on Official Holidays.",
   },
   {
     id: 3,

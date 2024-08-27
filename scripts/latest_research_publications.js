@@ -1,4 +1,4 @@
-const url = "https://library-iiserb-backend.vercel.app/api/documents";
+const url = "http://localhost:3000/api/documents";
 
 fetch(url, {
   method: 'GET',
@@ -17,10 +17,10 @@ fetch(url, {
       .map(
         (record) => {
           const authors = record.names.authors.map(author => author.displayName);
-                    const displayAuthors = authors.length > 2 
-                        ? `${authors.slice(0, 2).join(", ")}, et al.`
-                        : authors.join(", ");
-          
+          const displayAuthors = authors.length > 2
+            ? `${authors.slice(0, 2).join(", ")}, et al.`
+            : authors.join(", ");
+
           return `
                     <div class="text-sm mb-2">
                       ➤ ${displayAuthors},<br />

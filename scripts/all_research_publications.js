@@ -1,4 +1,4 @@
-const url = "https://library-iiserb-backend.vercel.app/api/documents";
+const url = "http://localhost:3000/api/documents";
 const loadingDiv = document.querySelector(".loadingDiv");
 const publicationsDiv = document.getElementById("research-publications");
 const pageContainer = document.querySelector(".page-number");
@@ -24,7 +24,7 @@ function addEventListeners() {
   });
 }
 
- 
+
 
 
 
