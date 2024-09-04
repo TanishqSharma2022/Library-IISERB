@@ -270,7 +270,7 @@
 
             <p class="col-span-3  bg-opacity-90 p-4 rounded-lg ">
               Welcome to Central Library, IISER Bhopal, a very special place in the IISER Campus with its rich
-              collection of books and journals in the field of Basic Sciences, Engineering, Humanities, Economic Sciences and related areas.<br><br> Currently
+              collection of books and journals in the field of Basic Sciences Basic Sciences, Engineering, Humanities, Economic Sciences.and related areas.<br><br> Currently
               houses around 15,000 books, comprises of a collection includes textbooks for the BS/BS-MS, M.Sc. and
               iPh.D/Ph.D curriculum in Biological Sciences, Chemistry, Earth and Environmental Sciences, Mathematics,
               Physics, Humanities and Social Sciences, Electrical Engineering & Computer Science, Data Science &
