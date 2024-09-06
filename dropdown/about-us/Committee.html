@@ -1,362 +1,220 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="../../css/navbar.css" />
-<link rel="stylesheet" href="../../css/style.css" />
-    <link rel="stylesheet" href="../../css/dropdown.css" />
-    <link rel="stylesheet" href="../../css/countdown.css" />
-    <link rel="stylesheet" href="../../css/footer.css" />
-    <link rel="stylesheet" href="../../css/splide.min.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="../../scripts/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-    />
-    <title>Committee|Library IISERB</title>
-    <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
-  </head>
-  <body class="overflow-x-hidden bg-gray-100">
-    <div class="">
-    <!-- CAROUSEL BACKGROUND -->
-    <div
-      class="w-full relative py-4 bg-[url(../../images/library/bg2.png)] bg-cover "
-    >
-      <!-- Navbar -->
-      <nav class="top-0 left-0 w-full relative">
-        <div
-          class="w-full  hidden  overflow-x-hidden lg:flex relative items-center justify-center"
-        >
-          <div
-            class="w-[85%]  flex items-center text-white text-sm relative justify-between header_container"
-          ></div>
-        </div>
+  <link rel="stylesheet" href="../../css/navbar.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/dropdown.css" />
+  <link rel="stylesheet" href="../../css/countdown.css" />
+  <link rel="stylesheet" href="../../css/footer.css" />
+  <link rel="stylesheet" href="../../css/splide.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="../../scripts/splide.min.js"></script>
 
-        <div class="w-full py-4 flex items-center justify-center">
-          <div class="w-[85%] relative flex items-center justify-between">
-            <div class="flex relative gap-2 justify-center items-center">
-              <img
-                src="../../logo-iiserb.png"
-                class="h-12 md:h-24"
-                style="
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  <title>Committee|Library IISERB</title>
+  <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
+</head>
+
+<body class="overflow-x-hidden bg-gray-100">
+
+  <!-- CAROUSEL BACKGROUND -->
+  <div class="w-full relative py-4 bg-[url(../../images/library/bg2.png)] h-fit  bg-cover ">
+    <!-- Navbar -->
+    <!-- SECTION 1 -->
+    <nav class="top-0 left-0 w-full">
+      <div class="w-full py-4 hidden lg:flex items-center justify-center z-[10]">
+        <div class="w-[85%] flex items-center text-white text-sm justify-between header_container"></div>
+      </div>
+
+      <!-- SECTION 2 -->
+
+      <div class="w-full py-4 flex items-center justify-center">
+        <div class="w-[85%] relative flex items-center justify-between">
+          <div class="flex relative gap-2 justify-center items-center">
+            <img src="../../logo-iiserb.png" class="h-12 md:h-24" style="
                   box-shadow: rgb(0, 0, 0) 1px -1px 1px !important;
                   border-radius: 50%;
-                "
-              />
+                " />
 
-              <div
-                class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full"
-              >
-                <h3>
-                  Central Library,<br />
-                  IISER Bhopal
-                </h3>
-                <h3 class="ioe">
-                  Indian Institute of Science
-                  Education&nbsp;&&nbsp;Research&nbsp;Bhopal
-                </h3>
-                <h3 class="ar-fontfamily">
-                  केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
-                </h3>
-              </div>
+            <div class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full">
+              <h3>
+                Central Library,<br />
+                IISER Bhopal
+              </h3>
+              <h3 class="ioe">
+                Indian&nbsp;Institute&nbsp;of&nbsp;Science
+                Education and Research Bhopal
+              </h3>
+
+              <h3 class="ar-fontfamily">
+                केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
+              </h3>
             </div>
-
-            <div
-              class="lg:hidden flex ham_menu text-white z-[9999999] cursor-pointer"
-              onclick="menubar_toggle()"
-            >
-              <i class="fa-solid fa-bars fa-xl"></i>
-            </div>
-
-            <div class="dropdown_web_view lg:flex hidden"></div>
           </div>
-        </div>
-
-        <div
-          class="z-[999999] w-full min-h-screen absolute  overflow-scroll transition-all -top-[1000px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_mobile_view_container"
-        >
-          <span
-            class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100 z-[9999]"
-            onclick="menubar_toggle()"
-          >
-            <i class="fa-solid fa-xmark fa-xl"></i>
-          </span>
-
-          <div
-            class="dropdown_mobile_view_option_container z-[999] min-h-screen overflow-scroll relative"
-          ></div>
-        </div>
-
-        <h1
-          class="text-4xl text-white font-bold m-6 p-6 text-center flex flex-col gap-1 drop-shadow-lg"
-          style="
-            z-index: 5;
-            white-space: normal;
-            color: white;
-            visibility: inherit;
-            border-width: 0px;
-            letter-spacing: 0px;
-            font-weight: 700;
-            min-height: 0px;
-            min-width: 128px;
-            max-height: none;
-            opacity: 1;
-            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-          "
-        >
-          Library Management & Advisory Committee
-        </h1>
-      </nav>
-    </div>
 
 
-    
-    
-    
-    <div
-      class="w-full h-full bg-cover bg-center"
-      style="background-image: url('../../images/page_elements/secbg.png')"
-    >
-      <!-- ABOUT  -->
-      <div class="min-h-screen w-full flex justify-center items-center">
-        <div class="container mx-auto py-8 px-8 lg:px-36">
-          <div
-            class="bg-white shadow-md rounded-lg overflow-hidden sm:mt-32 lg:mt-2"
-          >
-            <table class="w-full bg-white">
-              <thead>
-                <tr>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-300 text-left leading-4 text-gray-700 tracking-wider"
-                  >
-                    Committee
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-300 text-left leading-4 text-gray-700 tracking-wider"
-                  >
-                    Designations
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      
-                      target="_blank"
-                      class="text-gray-600 hover:underline"
-                      >Dean, Academic Affairs</a
-                    >
-                  </td>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      class="text-gray-600 hover:underline"
-                      >Chairperson</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      target="_blank"
-                      class="text-gray-600 hover:underline"
-                      >Associate Dean, Academic Affairs</a
-                    >
-                  </td>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      target="_blank"
-                      class="text-gray-600 hover:underline"
-                      >Member</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      target="_blank"
-                      class="text-gray-600 hover:underline"
-                      >Dean, Research and Development</a
-                    >
-                  </td>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      target="_blank"
-                      class="text-gray-600 hover:underline"
-                      >Member</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      target="_blank"
-                      class="text-gray-600 hover:underline"
-                      >Dean, Faculty Affairs</a
-                    >
-                  </td>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      class="text-gray-600 hover:underline"
-                      >Member</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      target="_blank"
-                      class="text-gray-600 hover:underline"
-                      >Prof. Sanjit Kumar, Dept. of Chemistry</a
-                    >
-                  </td>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      class="text-gray-600 hover:underline"
-                      >Member</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      target="_blank"
-                      class="text-gray-600 hover:underline"
-                      >Dr. Sebastian Wuster, Dept. of Physics</a
-                    >
-                  </td>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      class="text-gray-600 hover:underline"
-                      >Member</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      target="_blank"
-                      class="text-gray-600 hover:underline"
-                      >Dr. Ajit Chande, Dept. of Biological Sciences</a
-                    >
-                  </td>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      class="text-gray-600 hover:underline"
-                      >Member</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      target="_blank"
-                      class="text-gray-600 hover:underline"
-                      >Deputy Registrar, Finance and Accounts</a
-                    >
-                  </td>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      class="text-gray-600 hover:underline"
-                      >Member</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      target="_blank"
-                      class="text-gray-600 hover:underline"
-                      >Librarian</a
-                    >
-                  </td>
-                  <td
-                    class="px-6 py-4 whitespace-no-wrap border-b border-gray-200"
-                  >
-                    <a
-                      class="text-gray-600 hover:underline"
-                      >Member Secretary</a
-                    >
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+
+          <!-- DROP DOWN NAV OPTIONS -->
+          <div class="lg:hidden flex ham_menu z-[99999] text-white cursor-pointer" onclick="menubar_toggle()">
+            <i class="fa-solid fa-bars fa-xl"></i>
           </div>
+
+          <div class="dropdown_web_view lg:flex hidden"></div>
         </div>
       </div>
-      <!-- FOOTER -->
-    </div>
+      <h1 class="mx-auto text-center text-white font-bold py-4 text-3xl">Library Advisory Committee</h1>
+
+    </nav>
+
+    <!-- DROPDOWN SECTION -->
+    <!-- -scripts\dropdown.js -->
+    <!-- Mobile View DropDOwn Section -->
+
   </div>
-      <footer class="footer"></footer>
-      <script src="../../scripts/footer.js"></script>
-    <script src="../../scripts/carousel.js"></script>
-    <script src="../../scripts/dropdown.js"></script>
-    <script src="../../scripts/header.js"></script>
-    <script src="../../scripts/countdown.js"></script>
-    <script src="../../scripts/splide.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
-    <script>
-      var splide = new Splide(".splide", {
-        type: "fade",
-        autoplay: "play",
-        perPage: 1,
-        arrows: false,
-        rewind: true,
-      });
+  <div
+    class="z-[9999] w-full min-h-screen absolute overflow-scroll font-sans flex items-center  -top-[100%] mx-auto   gap-6 dropdown_mobile_view_container">
+    <!-- <h1 class="font-bold text-2xl left-6 top-6 absolute ">Central Library</h1> -->
+    <span class="absolute border right-6 top-6 z-[999999]  cursor-pointer border opacity-90 hover:opacity-100"
+      onclick="menubar_toggle()">
+      <i class="fa-solid fa-xmark fa-xl"></i>
+    </span>
+  </div>
 
-      splide.mount();
-    </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-  </body>
+
+
+
+
+  <div class="w-full h-full bg-cover bg-center" style="background-image: url('../../images/page_elements/secbg.png')">
+    <!-- ABOUT  -->
+    <div class="min-h-screen w-full flex justify-center items-center">
+      <div class="container mx-auto py-8 px-8 lg:px-36">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden sm:mt-32 lg:mt-2">
+          <table class="w-full bg-white">
+            <thead>
+              <tr>
+                <th class="px-6 py-3 border-b-2 border-gray-300 text-left leading-4 text-gray-700 tracking-wider">
+                  Committee
+                </th>
+                <th class="px-6 py-3 border-b-2 border-gray-300 text-left leading-4 text-gray-700 tracking-wider">
+                  Designations
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a target="_blank" class="text-gray-600 hover:underline">Dean, Academic Affairs</a>
+                </td>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a class="text-gray-600 hover:underline">Chairperson</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a target="_blank" class="text-gray-600 hover:underline">Associate Dean, Academic Affairs</a>
+                </td>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a target="_blank" class="text-gray-600 hover:underline">Member</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a target="_blank" class="text-gray-600 hover:underline">Dean, Research and Development</a>
+                </td>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a target="_blank" class="text-gray-600 hover:underline">Member</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a target="_blank" class="text-gray-600 hover:underline">Dean, Faculty Affairs</a>
+                </td>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a class="text-gray-600 hover:underline">Member</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a target="_blank" class="text-gray-600 hover:underline">Prof. Sanjit Kumar, Dept. of Chemistry</a>
+                </td>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a class="text-gray-600 hover:underline">Member</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a target="_blank" class="text-gray-600 hover:underline">Dr. Sebastian Wuster, Dept. of Physics</a>
+                </td>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a class="text-gray-600 hover:underline">Member</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a target="_blank" class="text-gray-600 hover:underline">Dr. Ajit Chande, Dept. of Biological
+                    Sciences</a>
+                </td>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a class="text-gray-600 hover:underline">Member</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a target="_blank" class="text-gray-600 hover:underline">Deputy Registrar, Finance and Accounts</a>
+                </td>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a class="text-gray-600 hover:underline">Member</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a target="_blank" class="text-gray-600 hover:underline">Librarian</a>
+                </td>
+                <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                  <a class="text-gray-600 hover:underline">Member Secretary</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+  </div>
+  </div>
+  <footer class="footer"></footer>
+  <script src="../../scripts/footer.js"></script>
+  <script src="../../scripts/carousel.js"></script>
+  <script src="../../scripts/dropdown.js"></script>
+  <script src="../../scripts/header.js"></script>
+  <script src="../../scripts/countdown.js"></script>
+  <script src="../../scripts/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+  <script>
+    var splide = new Splide(".splide", {
+      type: "fade",
+      autoplay: "play",
+      perPage: 1,
+      arrows: false,
+      rewind: true,
+    });
+
+    splide.mount();
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
 </html>

@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,274 +12,304 @@
   <link rel="stylesheet" href="../../css/countdown.css">
   <link rel="stylesheet" href="../../css/footer.css">
   <link rel="stylesheet" href="../../css/splide.min.css">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="../../scripts/splide.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <title> Rules|Library IISERB</title>
-    <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
+  <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"  rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <style>
 
 
   </style>
 </head>
+
 <body class="overflow-x-hidden bg-gray-100">
-<!-- CAROUSEL BACKGROUND -->
-<div
-class="w-full relative  bg-[url(../../images/library/bg2.png)] bg-cover "
->
-<!-- Navbar -->
-<nav class="top-0 py-4 left-0 w-full relative">
-  <div
-    class="w-full  hidden  overflow-x-hidden lg:flex relative items-center justify-center"
-  >
-    <div
-      class="w-[85%]  flex items-center text-white text-sm relative justify-between header_container"
-    ></div>
-  </div>
 
-  <div class="w-full py-4 flex items-center justify-center">
-    <div class="w-[85%] relative flex items-center justify-between">
-      <div class="flex relative gap-2 justify-center items-center">
-        <img
-          src="../../logo-iiserb.png"
-          class="h-12 md:h-24"
-          style="
-            box-shadow: rgb(0, 0, 0) 1px -1px 1px !important;
-            border-radius: 50%;
-          "
-        />
 
-        <div
-          class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full"
-        >
-          <h3>
-            Central Library,<br />
-            IISER Bhopal
-          </h3>
-          <h3 class="ioe">
-            Indian Institute of Science
-            Education&nbsp;&&nbsp;Research&nbsp;Bhopal
-          </h3>
-          <h3 class="ar-fontfamily">
-            केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
-          </h3>
+  <!-- CAROUSEL BACKGROUND -->
+  <div class="w-full relative py-4 bg-[url(../../images/library/bg2.png)] h-fit  bg-cover ">
+    <!-- Navbar -->
+    <!-- SECTION 1 -->
+    <nav class="top-0 left-0 w-full">
+      <div class="w-full py-4 hidden lg:flex items-center justify-center z-[10]">
+        <div class="w-[85%] flex items-center text-white text-sm justify-between header_container"></div>
+      </div>
+
+      <!-- SECTION 2 -->
+
+      <div class="w-full py-4 flex items-center justify-center">
+        <div class="w-[85%] relative flex items-center justify-between">
+          <div class="flex relative gap-2 justify-center items-center">
+            <img src="../../logo-iiserb.png" class="h-12 md:h-24" style="
+                  box-shadow: rgb(0, 0, 0) 1px -1px 1px !important;
+                  border-radius: 50%;
+                " />
+
+            <div class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full">
+              <h3>
+                Central Library,<br />
+                IISER Bhopal
+              </h3>
+              <h3 class="ioe">
+                Indian&nbsp;Institute&nbsp;of&nbsp;Science
+                Education and Research Bhopal
+              </h3>
+
+              <h3 class="ar-fontfamily">
+                केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
+              </h3>
+            </div>
+          </div>
+
+
+
+          <!-- DROP DOWN NAV OPTIONS -->
+          <div class="lg:hidden flex ham_menu z-[99999] text-white cursor-pointer" onclick="menubar_toggle()">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          </div>
+
+          <div class="dropdown_web_view lg:flex hidden"></div>
         </div>
       </div>
+      <h1 class="mx-auto text-center text-white font-bold py-4 text-3xl">Library Rules</h1>
 
-      <div
-        class="lg:hidden flex ham_menu text-white z-[9999999] cursor-pointer"
-        onclick="menubar_toggle()"
-      >
-        <i class="fa-solid fa-bars fa-xl"></i>
-      </div>
+    </nav>
 
-      <div class="dropdown_web_view lg:flex hidden"></div>
-    </div>
+    <!-- DROPDOWN SECTION -->
+    <!-- -scripts\dropdown.js -->
+    <!-- Mobile View DropDOwn Section -->
+
   </div>
 
   <div
-    class="z-[999999] w-full min-h-screen absolute  overflow-scroll transition-all -top-[1000px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_mobile_view_container"
-  >
-    <span
-      class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100 z-[9999]"
-      onclick="menubar_toggle()"
-    >
+    class="z-[9999] w-full min-h-screen absolute overflow-scroll font-sans flex items-center  -top-[100%] mx-auto   gap-6 dropdown_mobile_view_container">
+    <!-- <h1 class="font-bold text-2xl left-6 top-6 absolute ">Central Library</h1> -->
+    <span class="absolute border right-6 top-6 z-[999999]  cursor-pointer border opacity-90 hover:opacity-100"
+      onclick="menubar_toggle()">
       <i class="fa-solid fa-xmark fa-xl"></i>
     </span>
-
-    <div
-      class="dropdown_mobile_view_option_container z-[999] min-h-screen overflow-scroll relative"
-    ></div>
   </div>
 
-  <h1
-    class="text-4xl text-white font-bold m-6 p-6 text-center flex flex-col gap-1 drop-shadow-lg"
-    style="
-      z-index: 5;
-      white-space: normal;
-      color: white;
-      visibility: inherit;
-      border-width: 0px;
-      letter-spacing: 0px;
-      font-weight: 700;
-      min-height: 0px;
-      min-width: 128px;
-      max-height: none;
-      opacity: 1;
-      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    "
-  >
-    Library Rules
-  </h1>
-</nav>
-</div>
 
 
-<div class="w-full h-full bg-cover bg-center" style="background-image: url('../../images/page_elements/secbg.png');">
-  <!-- ABOUT  -->
-  <div class="min-h-screen w-full p-4 mt-2 lg:py-4 lg:px-12 justify-center">
-   
-    <div class="min-h-screen w-full p-4 justify-center">
-      <section class="  text-gray-900" >
-        <div class="container mx-auto  py-2">
-  
-          
-           
-  
-  
-          
+  <div class="w-full h-full bg-cover bg-center" style="background-image: url('../../images/page_elements/secbg.png');">
+    <!-- ABOUT  -->
+    <div class="min-h-screen w-full p-4 mt-2 lg:py-4 lg:px-12 justify-center">
+
+      <div class="min-h-screen w-full p-4 justify-center">
+        <section class="  text-gray-900">
+          <div class="container mx-auto  py-2">
+
+
+
+
+
+
             <section class="mb-8">
-               
-                <div class="flex flex-col md:flex-row items-left">
-                   
-                    <div class="  py-6 px-6 mt-12 border-b-4  rounded-lg " 
-                    style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important; border-color: #1B72B2; ">
-                    <h2 class="text-2xl font-bold mb-4 px-6 text-center">General Rules</h2>
 
-                    <ul class="text-0.1xl ">
-                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Entry to the Library is restricted to the bona fide members on production of Institute I-Card only.
-                      </li><br>
-                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;All members are requested to keep their personal belongings at the Property Counter at their risks. Library is not responsible for loss of or damage
-                      </li><br>
-                      
-                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;No Library material including books, CDs, newspapers, magazines etc. should be taken out of the Library until it is issued.
-                      </li><br>
-      
-                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Members are requested to handle the Library reading materials with utmost care. Mutilation, writing, scribbling, marking, cutting pages will be severely dealt with.
-                      </li><br>
-      
-                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;The use of personal stereos, music sets, walkmans in the Library is not permitted.
-                      </li><br>
-      
-                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp; The audible use of mobile phones is not permitted in the Library Study Room.
-                      </li><br>
-      
-                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Suggestions for procurement of new books & other reading materials, if any, from student members may be sent to the Librarian.
-                      </li><br>
-      
-                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Members are requested to leave the reading materials on the reading tables. The Library staff will shelve these materials.
-                      </li><br>
-      
-                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Smoking, food and drinks are not allowed in the Library Reading Room.
-                      </li><br>
-      
-                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Members are required to show the Institute I-Card to Library staff at the Circulation Desk the items being taken out, when requested.
-                      </li><br>
-                      <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Members are allowed to bring in their personal books and other reading materials inside the Library. These items should bear the respective 
-                        members name and ID Number. Members will have to produce these items at the Circulation Desk/Property Counter every time while entering in, and leaving the Library.
-                      </li>
-       
-                          </ul>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="mb-8">
-               
               <div class="flex flex-col md:flex-row items-left">
-                 
-                  <div class="  py-6 px-6 mt-12 border-b-4  rounded-lg " 
+
+                <div class="  py-6 px-6 mt-12 border-b-4  rounded-lg "
+                  style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important; border-color: #1B72B2; ">
+                  <h2 class="text-2xl font-bold mb-4 px-6 text-center">General Rules</h2>
+
+                  <ul class="text-0.1xl ">
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Entry to the Library is restricted to the
+                      bona fide members on production of Institute I-Card only.
+                    </li><br>
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;All members are requested to keep their
+                      personal belongings at the Property Counter at their risks. Library is not responsible for loss of
+                      or damage
+                    </li><br>
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;No Library material including books, CDs,
+                      newspapers, magazines etc. should be taken out of the Library until it is issued.
+                    </li><br>
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Members are requested to handle the Library
+                      reading materials with utmost care. Mutilation, writing, scribbling, marking, cutting pages will
+                      be severely dealt with.
+                    </li><br>
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;The use of personal stereos, music sets,
+                      walkmans in the Library is not permitted.
+                    </li><br>
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp; The audible use of mobile phones is not
+                      permitted in the Library Study Room.
+                    </li><br>
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Suggestions for procurement of new books &
+                      other reading materials, if any, from student members may be sent to the Librarian.
+                    </li><br>
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Members are requested to leave the reading
+                      materials on the reading tables. The Library staff will shelve these materials.
+                    </li><br>
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Smoking, food and drinks are not allowed in
+                      the Library Reading Room.
+                    </li><br>
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Members are required to show the Institute
+                      I-Card to Library staff at the Circulation Desk the items being taken out, when requested.
+                    </li><br>
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Members are allowed to bring in their
+                      personal books and other reading materials inside the Library. These items should bear the
+                      respective
+                      members name and ID Number. Members will have to produce these items at the Circulation
+                      Desk/Property Counter every time while entering in, and leaving the Library.
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section class="mb-8">
+
+              <div class="flex flex-col md:flex-row items-left">
+
+                <div class="  py-6 px-6 mt-12 border-b-4  rounded-lg "
                   style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important;border-color: #1B72B2; ">
                   <h2 class="text-2xl font-bold mb-4 px-6 text-center">Circulation Rules</h2>
 
                   <ul class="text-0.1xl ">
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Circulation of Library materials will be handled from the Circulation Desk during its working hours.
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Circulation of Library materials will be
+                      handled from the Circulation Desk during its working hours.
                     </li><br>
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Borrowers are requested to make sure that the books are properly issued or returned.
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Borrowers are requested to make sure that the
+                      books are properly issued or returned.
                     </li><br>
-                    
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Library users are requested to bring their I Card while coming to the Library.
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Library users are requested to bring their I
+                      Card while coming to the Library.
                     </li><br>
-    
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;The borrowers are advised to check the books & other reading materials thoroughly for missing pages, chapters, any damages, markings etc. before borrowing. No book in damaged conditions will be accepted from the borrower at the time of return. Mutilated or spoiled books may have to be replaced by the borrower.
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;The borrowers are advised to check the books
+                      & other reading materials thoroughly for missing pages, chapters, any damages, markings etc.
+                      before borrowing. No book in damaged conditions will be accepted from the borrower at the time of
+                      return. Mutilated or spoiled books may have to be replaced by the borrower.
                     </li><br>
-    
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Library materials will be issued/returned, only if borrower shows the I Card at the circulation Desk. The Institute ID Card used for borrowing Library materials is not transferable and must be produced whenever requested by Library staff.
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Library materials will be issued/returned,
+                      only if borrower shows the I Card at the circulation Desk. The Institute ID Card used for
+                      borrowing Library materials is not transferable and must be produced whenever requested by Library
+                      staff.
                     </li><br>
-    
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Materials designated as Newspapers are not issued out.
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Materials designated as Newspapers are not
+                      issued out.
                     </li><br>
-    
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Faculty and staff going on long leave, with or without salary, deputation, study leave, or extraordinary leave will have to return all borrowed materials before leaving the institute.
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Faculty and staff going on long leave, with
+                      or without salary, deputation, study leave, or extraordinary leave will have to return all
+                      borrowed materials before leaving the institute.
                     </li><br>
-    
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;No material from the Library should be taken out without proper issue/ recording. Any type of violation may lead to a disciplinary action.
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;No material from the Library should be taken
+                      out without proper issue/ recording. Any type of violation may lead to a disciplinary action.
                     </li><br>
-    
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Print books are issued to a user for a specified time period, for example BS-MS students are entitled to have issue period for 15 days. Users has to returned the concerned book within 15 days otherwise fine @ Rs. 2/- per day, per book till the date they are returned.
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Print books are issued to a user for a
+                      specified time period, for example BS-MS students are entitled to have issue period for 15 days.
+                      Users has to returned the concerned book within 15 days otherwise fine @ Rs. 2/- per day, per book
+                      till the date they are returned.
                     </li><br>
-    
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;As the overdue charges calculation formula is already shared with you, you are also requested to bring the change for submission of overdue charges/late return fine.
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;As the overdue charges calculation formula is
+                      already shared with you, you are also requested to bring the change for submission of overdue
+                      charges/late return fine.
                     </li><br>
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Membership shall be suspended for repeated delay in returning the books.
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Membership shall be suspended for repeated
+                      delay in returning the books.
                     </li><br>
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Book can be reissue to the borrower, if hold request is not put by any other user on the same.
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Book can be reissue to the borrower, if hold
+                      request is not put by any other user on the same.
                     </li>
-     
-                        </ul>
-                  </div>
+
+                  </ul>
+                </div>
               </div>
-          </section>
+            </section>
             <!-- Objective Section -->
             <section class="mb-8">
-               
+
               <div class="flex flex-col md:flex-row items-left">
-                 
-                  <div class="  py-6 px-6 mt-12 border-b-4  rounded-lg"
+
+                <div class="  py-6 px-6 mt-12 border-b-4  rounded-lg"
                   style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important; border-color: #1B72B2;">
                   <h2 class="text-2xl font-bold mb-4 px-6 text-center">Book Lost Cases</h2>
 
                   <ul class="text-0.1xl ">
-                    <li>If a user loses a library book, then he/she has to make an application informing the Librarian about the lost of the book and comply with the library rules, as follow:
+                    <li>If a user loses a library book, then he/she has to make an application informing the Librarian
+                      about the lost of the book and comply with the library rules, as follow:
                     </li><br>
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Replace the lost book by a new copy (latest one), and pay a processing fee of Rs. 100/- and overdue charges, if any, as per the library rules.
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Replace the lost book by a new copy (latest
+                      one), and pay a processing fee of Rs. 100/- and overdue charges, if any, as per the library rules.
                     </li><br>
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;If you are not able to replace the new book then pay the double amount of the procured price of the lost book and an amount of Rs. 100/- as processing fee and the overdue charges, if any.
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;If you are not able to replace the new book
+                      then pay the double amount of the procured price of the lost book and an amount of Rs. 100/- as
+                      processing fee and the overdue charges, if any.
                     </li><br>
-                    
+
                     <h2 class="text-2xl font-bold mb-0 px-6 text-center">Rules related to borrowing of books</h2>
 
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Library borrowed books are not transferable and hence should not be lent to others.
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Library borrowed books are not transferable
+                      and hence should not be lent to others.
                     </li><br>
-    
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;If the damaged book belongs to a set, then the user is responsible for the entire set.
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;If the damaged book belongs to a set, then
+                      the user is responsible for the entire set.
                     </li><br>
-    
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Users should check the physical condition of a book while borrowing the same.
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Users should check the physical condition of
+                      a book while borrowing the same.
                     </li><br>
-    
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Immediately after the issue of a book, the user is required to take out the same from the library.
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Immediately after the issue of a book, the
+                      user is required to take out the same from the library.
                     </li><br>
-    
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;While going out of the library, users should ensure that they do not carry book(s) that are duly not issued on their name(s), failing which disciplinary action will be taken against them.
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;While going out of the library, users should
+                      ensure that they do not carry book(s) that are duly not issued on their name(s), failing which
+                      disciplinary action will be taken against them.
                     </li><br>
-    
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Every user is requested to check the status of book(s) outstanding against his/her name soon after a transaction is over at the counter. Discrepancy, if any, should be brought to the notice of the counter person immediately. Any complaint thereafter is not likely to be entertained.
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Every user is requested to check the status
+                      of book(s) outstanding against his/her name soon after a transaction is over at the counter.
+                      Discrepancy, if any, should be brought to the notice of the counter person immediately. Any
+                      complaint thereafter is not likely to be entertained.
                     </li><br>
-    
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;When there is demand for a borrowed book, the same must be returned to the Library.
+
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;When there is demand for a borrowed book, the
+                      same must be returned to the Library.
                     </li><br>
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Users are responsible for complying with copyright act while photocopying library document.
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Users are responsible for complying with
+                      copyright act while photocopying library document.
                     </li><br>
-                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;All outstanding dues in form of overdue charges or lost book must be cleared within the current academic year falling which membership will be treated as delinquency.
+                    <li><i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;All outstanding dues in form of overdue
+                      charges or lost book must be cleared within the current academic year falling which membership
+                      will be treated as delinquency.
                     </li>
-     
-                        </ul>
-                  </div>
+
+                  </ul>
+                </div>
               </div>
-          </section>
-        </div>
-      </section>
+            </section>
+          </div>
+        </section>
+      </div>
     </div>
-   </div>
   </div>
 
   <footer class="footer"></footer>
-  
+
   <script src="../../scripts/dropdown.js"></script>
   <script src="../../scripts/header.js"></script>
   <script src="../../scripts/footer.js"></script>
@@ -300,4 +331,5 @@ class="w-full relative  bg-[url(../../images/library/bg2.png)] bg-cover "
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
+
 </html>

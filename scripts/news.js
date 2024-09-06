@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var newsContainer = document.getElementById("news-container");
   var newsData = [
     {
-      text: "Library website will inaugurated on 5th Sepetember 2024.",
+      text: "Library website will inaugurated on 5th September 2024.",
       link: "#",
       icon: "➤",
     },

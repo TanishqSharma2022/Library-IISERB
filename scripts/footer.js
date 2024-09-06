@@ -1,5 +1,5 @@
 const quick_links = [
-  { 
+  {
     id: 0,
     title: "Discussion Room Booking ",
     link: "https://web.iiserb.ac.in/crbs/index.php",
@@ -102,12 +102,12 @@ const contact_us_footer = [
     title: "CONTACT US",
     content: `The Librarian <br /> Central Library, Indian Institute of Science Education & Research Bhopal-462066`,
     phone: "+91 755 269 2307",
-    email: "skpathak[at]iiserb.ac.in / librarian[at]iiserb.ac.in",
+    email: "skpathak@iiserb.ac.in / librarian@iiserb.ac.in",
     twitter: "https://x.com/LibraryIISERB",
     facebook: "https://www.facebook.com/cliiserb/",
     linkedin: "#",
     youtube: "#",
-    app:"https://play.google.com/store/apps/details?id=android1.example1.com.libraryapp&hl=en_IN",
+    app: "https://play.google.com/store/apps/details?id=android1.example1.com.libraryapp&hl=en_IN",
   },
 ];
 
@@ -211,7 +211,7 @@ footer.innerHTML += `
        </div>
   <div class="developer md:pr-16 text-right flex items-center">
   <i class="fa-solid fa-code"></i>
-    <a href="" id="mylink" class="ml-2 text-center text-sm">Developed by</a>
+    <a href="https://devduo-indol.vercel.app/" target="_blank" id="mylink" class="ml-2 text-center text-sm">Developed by</a>
   </div>
 </div>
 
@@ -283,7 +283,7 @@ function resetVisitorsCount() {
 //     console.error("An error occurred while fetching the visitors count:", error);
 //   }
 // });
-{/* <h1>Visitor Count: <span id="visitors-count">Loading...</span></h1> */}
+{/* <h1>Visitor Count: <span id="visitors-count">Loading...</span></h1> */ }
 // models/Visitor.js
 // const mongoose = require('mongoose');
 

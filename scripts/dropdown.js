@@ -203,7 +203,7 @@ dropDown.forEach((item, index) => {
   dropDownItem.classList.add(`dropdown-${index}`);
 
   dropDownItem.innerHTML = `
-      <span class="flex z-[99999] shadow-sm p-4  w-full border-b border-zinc-400 hover:bg-gray-300 items-center justify-between cursor-pointer  gap-4 " onclick="toggleMobileDropdown(${index})">
+      <span class="flex z-[99999] shadow-sm p-4 transition duration-500ms   w-full border-b border-zinc-400 hover:bg-gray-300 items-center justify-between text-white cursor-pointer  gap-4 " onclick="toggleMobileDropdown(${index})">
         <div class="flex gap-2  items-center text-md ">
           <img src="${item.icon}" alt="icon" class="w-5 h-5" />
           ${item.label}
@@ -217,7 +217,7 @@ dropDown.forEach((item, index) => {
       .map(
         (option) =>
           `<a href="${option.link}" target="_blank">
-            <li class="dropdown_option rounded-md flex items-center p-2 hover:underline">
+            <li class="dropdown_option rounded-md flex ml-6  items-center p-2 hover:underline">
             ${option.label}</li></a>`
       )
       .join("")

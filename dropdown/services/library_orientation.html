@@ -1,211 +1,158 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
 
-    <link rel="stylesheet" href="../../css/navbar.css" />
-<link rel="stylesheet" href="../../css/style.css" />
-    <link rel="stylesheet" href="../../css/dropdown.css" />
-    <link rel="stylesheet" href="../../css/countdown.css" />
-    <link rel="stylesheet" href="../../css/footer.css" />
-    <link rel="stylesheet" href="../../css/splide.min.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="../../scripts/splide.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-    />
-    <title>Orientation | Library IISERB</title>
-    <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
-  </head>
-  <body class="overflow-x-hidden bg-gray-100">
-    <!-- CAROUSEL BACKGROUND -->
-    <div
-    class="w-full relative  bg-[url(../../images/library/bg2.png)] bg-cover "
-  >
+  <link rel="stylesheet" href="../../css/navbar.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/dropdown.css" />
+  <link rel="stylesheet" href="../../css/countdown.css" />
+  <link rel="stylesheet" href="../../css/footer.css" />
+  <link rel="stylesheet" href="../../css/splide.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="../../scripts/splide.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  <title>Orientation | Library IISERB</title>
+  <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
+</head>
+
+<body class="overflow-x-hidden bg-gray-100">
+
+
+
+  <!-- CAROUSEL BACKGROUND -->
+  <div class="w-full relative py-4 bg-[url(../../images/library/bg2.png)] h-fit  bg-cover ">
     <!-- Navbar -->
-    <nav class="top-0 py-4 left-0 w-full relative">
-      <div
-        class="w-full  hidden  overflow-x-hidden lg:flex relative items-center justify-center"
-      >
-        <div
-          class="w-[85%]  flex items-center text-white text-sm relative justify-between header_container"
-        ></div>
+    <!-- SECTION 1 -->
+    <nav class="top-0 left-0 w-full">
+      <div class="w-full py-4 hidden lg:flex items-center justify-center z-[10]">
+        <div class="w-[85%] flex items-center text-white text-sm justify-between header_container"></div>
       </div>
 
-  
-<div class="w-full py-4 flex items-center justify-center">
+      <!-- SECTION 2 -->
+
+      <div class="w-full py-4 flex items-center justify-center">
         <div class="w-[85%] relative flex items-center justify-between">
           <div class="flex relative gap-2 justify-center items-center">
-            <img
-              src="../../logo-iiserb.png"
-              class="h-12 md:h-24"
-              style="
-                box-shadow: rgb(0, 0, 0) 1px -1px 1px !important;
-                border-radius: 50%;
-              "
-            />
+            <img src="../../logo-iiserb.png" class="h-12 md:h-24" style="
+                  box-shadow: rgb(0, 0, 0) 1px -1px 1px !important;
+                  border-radius: 50%;
+                " />
 
-            <div
-              class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full"
-            >
+            <div class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full">
               <h3>
                 Central Library,<br />
                 IISER Bhopal
               </h3>
               <h3 class="ioe">
-                Indian Institute of Science
-                Education&nbsp;&&nbsp;Research&nbsp;Bhopal
+                Indian&nbsp;Institute&nbsp;of&nbsp;Science
+                Education and Research Bhopal
               </h3>
+
               <h3 class="ar-fontfamily">
                 केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
               </h3>
             </div>
           </div>
 
-          <div
-            class="lg:hidden flex ham_menu text-white z-[9999999] cursor-pointer"
-            onclick="menubar_toggle()"
-          >
+
+
+          <!-- DROP DOWN NAV OPTIONS -->
+          <div class="lg:hidden flex ham_menu z-[99999] text-white cursor-pointer" onclick="menubar_toggle()">
             <i class="fa-solid fa-bars fa-xl"></i>
           </div>
 
           <div class="dropdown_web_view lg:flex hidden"></div>
         </div>
       </div>
+      <h1 class="mx-auto text-center text-white font-bold py-4 text-3xl">Library Orientation</h1>
 
-
-      <div
-        class="z-[999999] w-full min-h-screen absolute  overflow-scroll transition-all -top-[1000px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_mobile_view_container"
-      >
-        <span
-          class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100 z-[9999]"
-          onclick="menubar_toggle()"
-        >
-          <i class="fa-solid fa-xmark fa-xl"></i>
-        </span>
-
-        <div
-          class="dropdown_mobile_view_option_container z-[999] min-h-screen overflow-scroll relative"
-        ></div>
-      </div>
-
-      <h1
-        class="text-4xl text-white font-bold m-6 p-6 text-center flex flex-col gap-1 drop-shadow-lg"
-        style="
-          z-index: 5;
-          white-space: normal;
-          color: white;
-          visibility: inherit;
-          border-width: 0px;
-          letter-spacing: 0px;
-          font-weight: 700;
-          min-height: 0px;
-          min-width: 128px;
-          max-height: none;
-          opacity: 1;
-          transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-        "
-      >
-        Library Orientation
-      </h1>
     </nav>
   </div>
 
-    <div
-      class="w-full h-full bg-cover bg-center"
-      style="background-image: url('../../images/page_elements/secbg.png')"
-    >
-      <!-- ABOUT  -->
-      <section class="text-gray-900 w-full p-4 mt-12">
-        <section class="mb-8">
-          <div class="flex flex-col md:flex-row items-center">
-            <div class="md:w-1/3 mb-0 md:mb-0">
-              <img
-                src="../../images/page_elements/orientation.gif"
-                alt="Vision Image"
-                class="w-full h-auto rounded-lg mr-6"
-              />
-            </div>
-            <div
-              class="md:w-1/2 md:pl-2 py-6 px-2 ml-6 border-r-4 border-b-4 rounded-lg"
-              style="border-color: #1b72b2"
-            >
-              <p class="text-lg">
-                Central Library offers the orientation program to the students
-                and others in the beginning of every academic year. Through this
-                program, an effort is made to familiarize every new member with
-                the resources, services, and facilities offered by Central
-                Library and its policies to use the same. Central Library will
-                be happy to design and offer training programs to assist users
-                to develop the ability to locate, identify, use, and interpret
-                information effectively. Central Library would like to promote
-                the role of the library as a resource for lifelong learning,
-                through this program.
-              </p>
-              <br />
 
-              <a
-                target="_blank"
-                href="../../Library_Guide.pdf"
-                class="block rounded-lg"
-              >
-                <div class="shadow-lg rounded-xl p-2">
-                  <div class="flex flex-col items-center justify-center gap-2">
-                    <p
-                      class="font-semibold text-lg text-white bg-transparent hover:text-white transition-colors p-2 rounded"
-                      style="color: #1b72b2"
-                    >
-                      View our Library Guide
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
+
+  <div
+    class="z-[9999] w-full min-h-screen absolute overflow-scroll font-sans flex items-center  -top-[100%] mx-auto   gap-6 dropdown_mobile_view_container">
+    <!-- <h1 class="font-bold text-2xl left-6 top-6 absolute ">Central Library</h1> -->
+    <span class="absolute border right-6 top-6 z-[999999]  cursor-pointer border opacity-90 hover:opacity-100"
+      onclick="menubar_toggle()">
+      <i class="fa-solid fa-xmark fa-xl"></i>
+    </span>
+  </div>
+
+
+  <div class="w-full h-full bg-cover bg-center" style="background-image: url('../../images/page_elements/secbg.png')">
+    <!-- ABOUT  -->
+    <section class="text-gray-900 w-full p-4 mt-12">
+      <section class="mb-8">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/3 mb-0 md:mb-0">
+            <img src="../../images/page_elements/orientation.gif" alt="Vision Image"
+              class="w-full h-auto rounded-lg mr-6" />
           </div>
-        </section>
+          <div class="md:w-1/2 md:pl-2 py-6 px-2 ml-6 border-r-4 border-b-4 rounded-lg" style="border-color: #1b72b2">
+            <p class="text-lg">
+              Central Library offers the orientation program to the students
+              and others in the beginning of every academic year. Through this
+              program, an effort is made to familiarize every new member with
+              the resources, services, and facilities offered by Central
+              Library and its policies to use the same. Central Library will
+              be happy to design and offer training programs to assist users
+              to develop the ability to locate, identify, use, and interpret
+              information effectively. Central Library would like to promote
+              the role of the library as a resource for lifelong learning,
+              through this program.
+            </p>
+            <br />
+
+            <a target="_blank" href="../../Library_Guide.pdf" class="block rounded-lg">
+              <div class="shadow-lg rounded-xl p-2">
+                <div class="flex flex-col items-center justify-center gap-2">
+                  <p class="font-semibold text-lg text-white bg-transparent hover:text-white transition-colors p-2 rounded"
+                    style="color: #1b72b2">
+                    View our Library Guide
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </section>
+    </section>
 
-      <!-- FOOTER -->
-      <footer class="footer">
-        <!-- Footer will be dynamically added here -->
-      </footer>
-    </div>
-    <script src="../../scripts/footer.js"></script>
-    <script defer async src="../../scripts/dropdown.js"></script>
-    <script defer async src="../../scripts/countdown.js"></script>
-    <script defer async src="../../scripts/splide.min.js"></script>
-    <script defer async src="../../scripts/header.js"></script>
-    <script
-      defer
-      async
-      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
-    ></script>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <!-- Footer will be dynamically added here -->
+    </footer>
+  </div>
+  <script src="../../scripts/footer.js"></script>
+  <script defer async src="../../scripts/dropdown.js"></script>
+  <script defer async src="../../scripts/countdown.js"></script>
+  <script defer async src="../../scripts/splide.min.js"></script>
+  <script defer async src="../../scripts/header.js"></script>
+  <script defer async src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
-    <script>
-      var splide = new Splide(".splide", {
-        type: "fade",
-        autoplay: "play",
-        perPage: 1,
-        arrows: false,
-        rewind: true,
-      });
+  <script>
+    var splide = new Splide(".splide", {
+      type: "fade",
+      autoplay: "play",
+      perPage: 1,
+      arrows: false,
+      rewind: true,
+    });
 
-      splide.mount();
-    </script>
+    splide.mount();
+  </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
 </html>

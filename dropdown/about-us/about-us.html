@@ -1,289 +1,233 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
 
-    <link rel="stylesheet" href="../../css/navbar.css" />
-<link rel="stylesheet" href="../../css/style.css" />
-    <link rel="stylesheet" href="../../css/dropdown.css" />
-    <link rel="stylesheet" href="../../css/countdown.css" />
-    <link rel="stylesheet" href="../../css/footer.css" />
-    <link rel="stylesheet" href="../../css/splide.min.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-    <title>About US | Library IISERB</title>
-    <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
-  </head>
-  <body class=" bg-gray-100 ">
-    <!-- CAROUSEL BACKGROUND -->
-    <div
-      class="w-full relative py-4 bg-[url(../../images/library/bg2.png)] bg-cover "
-    >
-      <!-- Navbar -->
-      <nav class="top-0   left-0 w-full relative">
-        <div
-          class="w-full  hidden  overflow-x-hidden lg:flex relative items-center justify-center"
-        >
-          <div
-            class="w-[85%]  flex items-center text-white text-sm relative justify-between header_container"
-          ></div>
-        </div>
+  <link rel="stylesheet" href="../../css/navbar.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/dropdown.css" />
+  <link rel="stylesheet" href="../../css/countdown.css" />
+  <link rel="stylesheet" href="../../css/footer.css" />
+  <link rel="stylesheet" href="../../css/splide.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-        <div class="w-full py-4 flex items-center justify-center">
-          <div class="w-[85%] relative flex items-center justify-between">
-            <div class="flex relative gap-2 justify-center items-center">
-              <img
-                src="../../logo-iiserb.png"
-                class="h-12 md:h-24"
-                style="
+  <title>About US | Library IISERB</title>
+  <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
+</head>
+
+<body class=" bg-gray-100 w-full">
+
+  <!-- CAROUSEL BACKGROUND -->
+  <div class="w-full relative py-4 bg-[url(../../images/library/bg2.png)] h-fit  bg-cover ">
+    <!-- Navbar -->
+    <!-- SECTION 1 -->
+    <nav class="top-0 left-0 w-full">
+      <div class="w-full py-4 hidden lg:flex items-center justify-center z-[10]">
+        <div class="w-[85%] flex items-center text-white text-sm justify-between header_container"></div>
+      </div>
+
+      <!-- SECTION 2 -->
+
+      <div class="w-full py-4 flex items-center justify-center">
+        <div class="w-[85%] relative flex items-center justify-between">
+          <div class="flex relative gap-2 justify-center items-center">
+            <img src="../../logo-iiserb.png" class="h-12 md:h-24" style="
                   box-shadow: rgb(0, 0, 0) 1px -1px 1px !important;
                   border-radius: 50%;
-                "
-              />
+                " />
 
-              <div
-                class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full"
-              >
-                <h3>
-                  Central Library,<br />
-                  IISER Bhopal
-                </h3>
-                <h3 class="ioe">
-                  Indian Institute of Science
-                  Education&nbsp;&&nbsp;Research&nbsp;Bhopal
-                </h3>
-                <h3 class="ar-fontfamily">
-                  केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
-                </h3>
-              </div>
+            <div class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full">
+              <h3>
+                Central Library,<br />
+                IISER Bhopal
+              </h3>
+              <h3 class="ioe">
+                Indian&nbsp;Institute&nbsp;of&nbsp;Science
+                Education and Research Bhopal
+              </h3>
+
+              <h3 class="ar-fontfamily">
+                केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
+              </h3>
             </div>
-
-            <div
-              class="lg:hidden flex ham_menu text-white z-[9999999] cursor-pointer"
-              onclick="menubar_toggle()"
-            >
-              <i class="fa-solid fa-bars fa-xl"></i>
-            </div>
-
-            <div class="dropdown_web_view lg:flex hidden"></div>
           </div>
-        </div>
-
-        <div
-          class="z-[999999] w-full min-h-screen absolute  overflow-scroll transition-all -top-[1000px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_mobile_view_container"
-        >
-          <span
-            class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100 z-[9999]"
-            onclick="menubar_toggle()"
-          >
-            <i class="fa-solid fa-xmark fa-xl"></i>
-          </span>
-
-          <div
-            class="dropdown_mobile_view_option_container z-[999] min-h-screen overflow-scroll relative"
-          ></div>
-        </div>
-
-        <h1
-          class="text-4xl text-white font-bold m-6 p-6 text-center flex flex-col gap-1 drop-shadow-lg"
-          style="
-            z-index: 5;
-            white-space: normal;
-            color: white;
-            visibility: inherit;
-            border-width: 0px;
-            letter-spacing: 0px;
-            font-weight: 700;
-            min-height: 0px;
-            min-width: 128px;
-            max-height: none;
-            opacity: 1;
-            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-          "
-        >
-          About Us
-        </h1>
-      </nav>
-    </div>
 
 
 
+          <!-- DROP DOWN NAV OPTIONS -->
+          <div class="lg:hidden flex ham_menu z-[99999] text-white cursor-pointer" onclick="menubar_toggle()">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          </div>
 
-
-
-
-    <!-- ABOUT  -->
-    <div
-      class="w-full h-full bg-cover relative z-[0] bg-center"
-      style="background-image: url('../../images/page_elements/secbg.png')"
-    >
-      <div class="min-h-screen w-full p-4 relative mt-12 justify-center">
-        <div class="h-100 w-full md:p-4 justify-center">
-          <section class="lg:m-8">
-            <div
-              class="flex flex-col gap-12 items-start justify-center md:flex-row"
-            >
-              <div class="lg:w-1/3">
-                <img
-                  src="../../images\carousal_img\carousel3b.JPG"
-                  alt="Mission Image"
-                  class="w-full shadow-lg rounded-md"
-                />
-              </div>
-              <div class="lg:w-1/2">
-                <h1 class="text-xl lg:text-3xl font-bold mb-4 ">
-                  Welcome to Central Library
-                </h1>
-                <p class="text-sm lg:text-lg">
-                  Welcome to Central Library, IISER Bhopal currently houses
-                  around 15,000 books, comprises of collection includes textbooks
-                  for the BS/BS-MS, M.Sc. and iPh.D/Ph.D curriculum in  all
-                  <a class="text-blue-500"
-                    href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&group=main&profile=eds"
-                  >
-                  10 Departments
-                  </a> at IISER Bhopal.Library collection also includes
-                  documents in Computer Science, History of Science, light reading
-                  materials, Fictions, Stories, General books, Encyclopaedias and
-                  Dictionaries, Magazines etc. Research books & Monographs are also
-                  included in the collection for labs & research purpose
-                  
-                  <a
-                    href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&group=main&profile=eds"
-                  >
-                    <p class="text-muted mt-3">
-                      EBSCO Discovery Service @ IISERB Library
-                    </p>
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="flex flex-col-reverse justify-center gap-12 md:flex-row items-start mt-24"
-            >
-              <div class="md:w-1/2">
-                <h1 class="text-xl lg:text-3xl font-bold mb-4">
-                  Commitment to Access and Services
-                </h1>
-                <p class="text-sm lg:text-lg">
-                  Library is committeed to providing widest possible access to
-                  information and this commitment is reflected in the range of
-                  services provided by it. Library website is linked to various
-                  online databases that are available from any networked PC
-                  within the library and the Institute. The Library spares no
-                  efforts to fulfill its mission by selecting, acquiring,
-                  organizing, reserving, maintaining, and providing access to a
-                  collection of materials and electronic resources that address
-                  the needs of the academic community.
-                </p>
-              </div>
-              <div class="md:w-1/3">
-                <img
-                  src="../../images\library\IMG_4769.JPG"
-                  alt="Mission Image"
-                  class="w-full shadow-lg h-auto rounded-md"
-                />
-              </div>
-            </div>
-
-            <div
-              class="flex flex-col justify-center mt-24 gap-12 md:flex-row items-start"
-            >
-              <div class="md:w-1/3">
-                <img
-                  src="../../images\library\library51.JPG"
-                  alt="Mission Image"
-                  class="w-full h-auto shadow-lg rounded-md"
-                />
-              </div>
-              <div class="md:w-1/2">
-                <h1 class="text-xl lg:text-3xl font-bold mb-4">
-                  Online Access
-                </h1>
-                <p class="text-sm lg:text-lg">
-                  On-line access to full text as well as bibliographic databases
-                  are being subscribed to facilitate research & teaching. Plans
-                  for library expansion includes subscription to all major
-                  scientific research journals as well as e-books, e-journals &
-                  bibliographic databases etc. Library operations are automated
-                  using KOHA Library Management Software. Central Library is now
-                  fully automated with all posible modern facilities. Web-OPAC
-                  (Online Public Access Catalogue) is accessible at URL:
-                  <a
-                    href="http://webopac.iiserb.ac.in/"
-                    class="text-blue-500 hover:underline"
-                    >'http://webopac.iiserb.ac.in/'
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex flex-col-reverse mt-24 gap-12 justify-center md:flex-row items-start"
-            >
-              <div class="md:w-1/2 rounded-lg">
-                <h1 class="text-xl lg:text-3xl font-bold mb-4">
-                  Library Services
-                </h1>
-                <p class="text-sm lg:text-lg">
-                  At present, the Library offers services as Lending facility;
-                  Claims/Reservations; Renewals; Reading Room; Inter Library
-                  Loan; Document Delivery Services; SDI Services; CAS Services;
-                  Library website; Reprography Services; Orientation Program
-                  etc. In addition to the services mentined above, the Library
-                  has started various Lib 2.0 initiatives in order to overcome
-                  the space and time constraints faced by all Libraries when
-                  offering traditional services. The Library organizes various
-                  training programs / informative sessions for e-resources and
-                  also for print resources.
-                </p>
-              </div>
-              <div class="md:w-1/3 mb-1 px-2 md:mb-0">
-                <img
-                  src="../../images\library\library52.JPG"
-                  alt="Mission Image"
-                  class="w-full h-auto shadow-lg rounded-md"
-                />
-              </div>
-            </div>
-          </section>
+          <div class="dropdown_web_view lg:flex hidden"></div>
         </div>
       </div>
+      <h1 class="mx-auto text-center text-white font-bold py-4 text-3xl">About Us</h1>
+
+    </nav>
+
+    <!-- DROPDOWN SECTION -->
+    <!-- -scripts\dropdown.js -->
+    <!-- Mobile View DropDOwn Section -->
+
+  </div>
+
+  <div
+    class="z-[9999] w-full min-h-screen absolute overflow-scroll font-sans flex items-center  -top-[100%] mx-auto   gap-6 dropdown_mobile_view_container">
+    <!-- <h1 class="font-bold text-2xl left-6 top-6 absolute ">Central Library</h1> -->
+    <span class="absolute border right-6 top-6 z-[999999]  cursor-pointer border opacity-90 hover:opacity-100"
+      onclick="menubar_toggle()">
+      <i class="fa-solid fa-xmark fa-xl"></i>
+    </span>
+  </div>
+
+
+
+
+
+
+  <!-- ABOUT  -->
+
+
+  <div class="w-full h-full bg-cover relative z-[0] bg-center"
+    style="background-image: url('../../images/page_elements/secbg.png')">
+    <div class="min-h-screen w-full p-4 relative mt-12 justify-center">
+      <div class="h-100 w-full md:p-4 justify-center">
+        <section class="lg:m-8">
+          <div class="flex flex-col gap-12 items-start justify-center md:flex-row">
+            <div class="lg:w-1/3">
+              <img src="../../images/carousal/1.JPG" alt="Mission Image" class="w-full shadow-lg rounded-md" />
+            </div>
+            <div class="lg:w-1/2">
+              <h1 class="text-xl lg:text-3xl font-bold mb-4 ">
+                Welcome to Central Library
+              </h1>
+              <p class="text-sm lg:text-lg">
+                Welcome to Central Library, IISER Bhopal currently houses
+                around 15,000 books, comprises of collection includes textbooks
+                for the BS/BS-MS, M.Sc. and iPh.D/Ph.D curriculum in all
+                <a class="text-blue-500"
+                  href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&group=main&profile=eds">
+                  10 Departments
+                </a> at IISER Bhopal.Library collection also includes
+                documents in Computer Science, History of Science, light reading
+                materials, Fictions, Stories, General books, Encyclopaedias and
+                Dictionaries, Magazines etc. Research books & Monographs are also
+                included in the collection for labs & research purpose
+
+                <a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&group=main&profile=eds">
+                  <p class="text-muted mt-3">
+                    EBSCO Discovery Service @ IISERB Library
+                  </p>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col-reverse justify-center gap-12 md:flex-row items-start mt-24">
+            <div class="md:w-1/2">
+              <h1 class="text-xl lg:text-3xl font-bold mb-4">
+                Commitment to Access and Services
+              </h1>
+              <p class="text-sm lg:text-lg">
+                Library is committeed to providing widest possible access to
+                information and this commitment is reflected in the range of
+                services provided by it. Library website is linked to various
+                online databases that are available from any networked PC
+                within the library and the Institute. The Library spares no
+                efforts to fulfill its mission by selecting, acquiring,
+                organizing, reserving, maintaining, and providing access to a
+                collection of materials and electronic resources that address
+                the needs of the academic community.
+              </p>
+            </div>
+            <div class="md:w-1/3">
+              <img src="../../images/library/IMG_4769.JPG" alt="Mission Image"
+                class="w-full shadow-lg h-auto rounded-md" />
+            </div>
+          </div>
+
+          <div class="flex flex-col justify-center mt-24 gap-12 md:flex-row items-start">
+            <div class="md:w-1/3">
+              <img src="../../images\library\library51.JPG" alt="Mission Image"
+                class="w-full h-auto shadow-lg rounded-md" />
+            </div>
+            <div class="md:w-1/2">
+              <h1 class="text-xl lg:text-3xl font-bold mb-4">
+                Online Access
+              </h1>
+              <p class="text-sm lg:text-lg">
+                On-line access to full text as well as bibliographic databases
+                are being subscribed to facilitate research & teaching. Plans
+                for library expansion includes subscription to all major
+                scientific research journals as well as e-books, e-journals &
+                bibliographic databases etc. Library operations are automated
+                using KOHA Library Management Software. Central Library is now
+                fully automated with all posible modern facilities. Web-OPAC
+                (Online Public Access Catalogue) is accessible at URL:
+                <a href="http://webopac.iiserb.ac.in/"
+                  class="text-blue-500 hover:underline">'http://webopac.iiserb.ac.in/'
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col-reverse mt-24 gap-12 justify-center md:flex-row items-start">
+            <div class="md:w-1/2 rounded-lg">
+              <h1 class="text-xl lg:text-3xl font-bold mb-4">
+                Library Services
+              </h1>
+              <p class="text-sm lg:text-lg">
+                At present, the Library offers services as Lending facility;
+                Claims/Reservations; Renewals; Reading Room; Inter Library
+                Loan; Document Delivery Services; SDI Services; CAS Services;
+                Library website; Reprography Services; Orientation Program
+                etc. In addition to the services mentined above, the Library
+                has started various Lib 2.0 initiatives in order to overcome
+                the space and time constraints faced by all Libraries when
+                offering traditional services. The Library organizes various
+                training programs / informative sessions for e-resources and
+                also for print resources.
+              </p>
+            </div>
+            <div class="md:w-1/3 mb-1 px-2 md:mb-0">
+              <img src="../../images\library\library52.JPG" alt="Mission Image"
+                class="w-full h-auto shadow-lg rounded-md" />
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
+  </div>
 
-    <!-- FOOTER -->
-    <footer class="footer"></footer>
+  <!-- FOOTER -->
+  <footer class="footer"></footer>
 
-    <script src="../../scripts/carousel.js"></script>
-    <script src="../../scripts/header.js"></script>
-    <script src="../../scripts/dropdown.js"></script>
-    <script src="../../scripts/countdown.js"></script>
-    <script src="../../scripts/footer.js"></script>
-    <script src="../../scripts/splide.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="../../scripts/carousel.js"></script>
+  <script src="../../scripts/header.js"></script>
+  <script src="../../scripts/dropdown.js"></script>
+  <script src="../../scripts/countdown.js"></script>
+  <script src="../../scripts/footer.js"></script>
+  <script src="../../scripts/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
-    <script>
-      var splide = new Splide(".splide", {
-        type: "fade",
-        autoplay: "play",
-        perPage: 1,
-        arrows: false,
-        rewind: true,
-      });
+  <script>
+    var splide = new Splide(".splide", {
+      type: "fade",
+      autoplay: "play",
+      perPage: 1,
+      arrows: false,
+      rewind: true,
+    });
 
-      splide.mount();
-    </script>
+    splide.mount();
+  </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
 </html>

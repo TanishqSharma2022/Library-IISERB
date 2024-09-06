@@ -1,327 +1,274 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
 
-    <link rel="stylesheet" href="../../css/navbar.css" />
-<link rel="stylesheet" href="../../css/style.css" />
-    <link rel="stylesheet" href="../../css/dropdown.css" />
-    <link rel="stylesheet" href="../../css/countdown.css" />
-    <link rel="stylesheet" href="../../css/footer.css" />
-    <link rel="stylesheet" href="../../css/splide.min.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="../../scripts/splide.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-    />
-    <title>Borrowing Facility|Library IISERB</title>
-    <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
+  <link rel="stylesheet" href="../../css/navbar.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/dropdown.css" />
+  <link rel="stylesheet" href="../../css/countdown.css" />
+  <link rel="stylesheet" href="../../css/footer.css" />
+  <link rel="stylesheet" href="../../css/splide.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="../../scripts/splide.min.js"></script>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-    </style>
-  </head>
-  <body class="overflow-x-hidden bg-gray-100">
-    <!-- CAROUSEL BACKGROUND -->
-    <div
-    class="w-full relative  bg-[url(../../images/library/bg2.png)] bg-cover "
-  >
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  <title>Borrowing Facility|Library IISERB</title>
+  <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+  </style>
+</head>
+
+<body class="overflow-x-hidden bg-gray-100">
+
+
+
+
+  <!-- CAROUSEL BACKGROUND -->
+  <div class="w-full relative py-4 bg-[url(../../images/library/bg2.png)] h-fit  bg-cover ">
     <!-- Navbar -->
-    <nav class="top-0 py-4 left-0 w-full relative">
-      <div
-        class="w-full  hidden  overflow-x-hidden lg:flex relative items-center justify-center"
-      >
-        <div
-          class="w-[85%]  flex items-center text-white text-sm relative justify-between header_container"
-        ></div>
+    <!-- SECTION 1 -->
+    <nav class="top-0 left-0 w-full">
+      <div class="w-full py-4 hidden lg:flex items-center justify-center z-[10]">
+        <div class="w-[85%] flex items-center text-white text-sm justify-between header_container"></div>
       </div>
 
-  
-<div class="w-full py-4 flex items-center justify-center">
+      <!-- SECTION 2 -->
+
+      <div class="w-full py-4 flex items-center justify-center">
         <div class="w-[85%] relative flex items-center justify-between">
           <div class="flex relative gap-2 justify-center items-center">
-            <img
-              src="../../logo-iiserb.png"
-              class="h-12 md:h-24"
-              style="
-                box-shadow: rgb(0, 0, 0) 1px -1px 1px !important;
-                border-radius: 50%;
-              "
-            />
+            <img src="../../logo-iiserb.png" class="h-12 md:h-24" style="
+                  box-shadow: rgb(0, 0, 0) 1px -1px 1px !important;
+                  border-radius: 50%;
+                " />
 
-            <div
-              class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full"
-            >
+            <div class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full">
               <h3>
                 Central Library,<br />
                 IISER Bhopal
               </h3>
               <h3 class="ioe">
-                Indian Institute of Science
-                Education&nbsp;&&nbsp;Research&nbsp;Bhopal
+                Indian&nbsp;Institute&nbsp;of&nbsp;Science
+                Education and Research Bhopal
               </h3>
+
               <h3 class="ar-fontfamily">
                 केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
               </h3>
             </div>
           </div>
 
-          <div
-            class="lg:hidden flex ham_menu text-white z-[9999999] cursor-pointer"
-            onclick="menubar_toggle()"
-          >
+
+
+          <!-- DROP DOWN NAV OPTIONS -->
+          <div class="lg:hidden flex ham_menu z-[99999] text-white cursor-pointer" onclick="menubar_toggle()">
             <i class="fa-solid fa-bars fa-xl"></i>
           </div>
 
           <div class="dropdown_web_view lg:flex hidden"></div>
         </div>
       </div>
+      <h1 class="mx-auto text-center text-white font-bold py-4 text-3xl">Borrowing Facilities</h1>
 
-
-      <div
-        class="z-[999999] w-full min-h-screen absolute  overflow-scroll transition-all -top-[1000px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_mobile_view_container"
-      >
-        <span
-          class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100 z-[9999]"
-          onclick="menubar_toggle()"
-        >
-          <i class="fa-solid fa-xmark fa-xl"></i>
-        </span>
-
-        <div
-          class="dropdown_mobile_view_option_container z-[999] min-h-screen overflow-scroll relative"
-        ></div>
-      </div>
-
-      <h1
-        class="text-4xl text-white font-bold m-6 p-6 text-center flex flex-col gap-1 drop-shadow-lg"
-        style="
-          z-index: 5;
-          white-space: normal;
-          color: white;
-          visibility: inherit;
-          border-width: 0px;
-          letter-spacing: 0px;
-          font-weight: 700;
-          min-height: 0px;
-          min-width: 128px;
-          max-height: none;
-          opacity: 1;
-          transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-        "
-      >
-        Borrowing Facilities
-      </h1>
     </nav>
   </div>
 
-    <!-- ABOUT -->
 
-    <div class="min-h-screen w-full p-4 mt-0 mb-2 justify-center">
-      <div class="min-h-screen w-full p-4 mt-12 justify-center">
-        <div class="min-h-screen w-full p-4 justify-center">
-          <section class="px-6 text-gray-900">
-            <div class="container mx-auto px-4 py-8">
-              <!-- Circulation Policies Section -->
-              <section class="mb-8">
-                <h2 class="text-2xl font-bold mb-1 px-6 mb-4">
-                  Circulation Policies
-                </h2>
-                <div class="flex flex-col md:flex-row items-center">
-                  <div class="md:w-1/2 mb-0 md:mb-0">
-                    <img
-                      src="../../images/page_elements/policies.png"
-                      alt="Vision Image"
-                      class="w-full h-auto"
-                    />
-                  </div>
-                  <div
-                    class="md:w-1/1 md:pl-2 py-6 px-2 border-r-4 border-b-4 rounded-lg"
-                    style="border-color: #1b72b2"
-                    style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important"
-                  >
-                    <p class="text-lg p-4">
-                      <i class="fa-arrow-right fa-solid"></i
-                      >&nbsp;&nbsp;Only Registered Members can borrow general, text books, 
-                      reference and teacher reference from Central Library on production of
-                       their individual Identity Card issued by the institute at the 
-                       circulation desk. Each book issued to the user(s) must get proper 
-                       gate pass which they have to surrender at the check-point to the 
-                       security. The following circulation services have been provided by
-                        the Central Library:</p>
+
+  <div
+    class="z-[9999] w-full min-h-screen absolute overflow-scroll font-sans flex items-center  -top-[100%] mx-auto   gap-6 dropdown_mobile_view_container">
+    <!-- <h1 class="font-bold text-2xl left-6 top-6 absolute ">Central Library</h1> -->
+    <span class="absolute border right-6 top-6 z-[999999]  cursor-pointer border opacity-90 hover:opacity-100"
+      onclick="menubar_toggle()">
+      <i class="fa-solid fa-xmark fa-xl"></i>
+    </span>
+  </div>
+
+
+  <!-- ABOUT -->
+
+  <div class="min-h-screen w-full p-4 mt-0 mb-2 justify-center">
+    <div class="min-h-screen w-full p-4 mt-12 justify-center">
+      <div class="min-h-screen w-full p-4 justify-center">
+        <section class="px-6 text-gray-900">
+          <div class="container mx-auto px-4 py-8">
+            <!-- Circulation Policies Section -->
+            <section class="mb-8">
+              <h2 class="text-2xl font-bold mb-1 px-6 mb-4">
+                Circulation Policies
+              </h2>
+              <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-0 md:mb-0">
+                  <img src="../../images/page_elements/policies.png" alt="Vision Image" class="w-full h-auto" />
+                </div>
+                <div class="md:w-1/1 md:pl-2 py-6 px-2 border-r-4 border-b-4 rounded-lg" style="border-color: #1b72b2"
+                  style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important">
+                  <p class="text-lg p-4">
+                    <i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Only Registered Members can borrow general, text
+                    books,
+                    reference and teacher reference from Central Library on production of
+                    their individual Identity Card issued by the institute at the
+                    circulation desk. Each book issued to the user(s) must get proper
+                    gate pass which they have to surrender at the check-point to the
+                    security. The following circulation services have been provided by
+                    the Central Library:
+                  </p>
+                  <br />
+
+                  <ul class="text-0.1xl">
+                    <li>
+                      <h2 class="text-1.5xl font-semibold mb-4">
+                        <i class="fa-regular fa-id-card"></i>&nbsp;&nbsp; Issue/Check-out
+                      </h2>
+                    </li>
+                    <li>
+                      <h2 class="text-1.5xl font-semibold mb-4">
+                        <i class="fa-solid fa-book"></i>&nbsp;&nbsp; Return/Check-in
+                      </h2>
+                    </li>
+
+                    <h2 class="text-1.5xl font-semibold mb-4">
+                      <i class="fa-solid fa-repeat"></i>&nbsp;&nbsp;Renew
+                    </h2>
+                    <h2 class="text-1.5xl font-semibold mb-4">
+                      <i class="fa-solid fa-circle-pause"></i>&nbsp;&nbsp;Reservation/Hold
+                    </h2>
+
+                    <h2 class="text-1.5xl font-semibold mb-4">
+                      <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;E-mail Alerts on every transaction
+                    </h2>
+                    </li>
+
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </section>
+            <!-- Borrowing Privileges Section -->
+            <section class="mb-2">
+              <h2 class="text-2xl font-bold mb-0 px-6 mb-4">
+                Borrowing Privileges
+              </h2>
+              <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/6 mb-1 md:mb-0 ">
+                  <img src="../../images/page_elements/privileges.png" alt="Objective Image"
+                    class="w-full h-auto rounded-lg" />
+                </div>
+                <div class="md:w-1/1 md:pl-2 py-6 px-2 border-r-4 border-b-4 rounded-lg" style="border-color: #1b72b2"
+                  style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important">
+                  <ul class="text-0.1xl">
+                    <li>
+                      <p class="text-lg p-4">
+                        <i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Only registered members can borrow the books,
+                        except books marked for
+                        'Course Reserve' and 'Reference' for stipulated periods as mentioned below:
+                      </p>
                       <br />
-                     
-<ul class="text-0.1xl">
-  <li>
-    <h2 class="text-1.5xl font-semibold mb-4">
-      <i class="fa-regular fa-id-card"></i
-      >&nbsp;&nbsp; Issue/Check-out
-    </h2>
-  </li>
-  <li>
-    <h2 class="text-1.5xl font-semibold mb-4">
-      <i class="fa-solid fa-book"></i
-      >&nbsp;&nbsp; Return/Check-in
-    </h2>
-  </li>
- 
-    <h2 class="text-1.5xl font-semibold mb-4">
-      <i class="fa-solid fa-repeat"></i
-      >&nbsp;&nbsp;Renew
-    </h2>
-    <h2 class="text-1.5xl font-semibold mb-4">
-      <i class="fa-solid fa-circle-pause"></i
-      >&nbsp;&nbsp;Reservation/Hold
-    </h2>
-  
-    <h2 class="text-1.5xl font-semibold mb-4">
-      <i class="fa-solid fa-envelope"></i
-      >&nbsp;&nbsp;E-mail Alerts on every transaction
-    </h2>
-  </li>
- 
-</ul>
-                    </p>
-                  </div>
+                      <table class="min-w-full bg-white shadow-md rounded-lg mr-6 mb-12">
+                        <thead>
+                          <tr class="bg-gray-200 text-gray-700 text-left">
+                            <th class="py-3 px-4">Borrowers</th>
+                            <th class="py-3 px-4">No. of Documents Entitled</th>
+                            <th class="py-3 px-4">Loan Period</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="py-3 px-4">Academic staff</td>
+                            <td class="py-3 px-4">10</td>
+                            <td class="py-3 px-4">6 months</td>
+                          </tr>
+                          <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="py-3 px-4">Non-academic staff*</td>
+                            <td class="py-3 px-4">5</td>
+                            <td class="py-3 px-4">1 month</td>
+                          </tr>
+                          <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="py-3 px-4">Students</td>
+                            <td class="py-3 px-4">5</td>
+                            <td class="py-3 px-4">15 days</td>
+                          </tr>
+                          <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="py-3 px-4">Ph.D. scholars</td>
+                            <td class="py-3 px-4">5</td>
+                            <td class="py-3 px-4">1 month</td>
+                          </tr>
+                          <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="py-3 px-4">Visiting faculty</td>
+                            <td class="py-3 px-4">10</td>
+                            <td class="py-3 px-4">6 months</td>
+                          </tr>
+                          <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="py-3 px-4">Adjunct faculty</td>
+                            <td class="py-3 px-4">10</td>
+                            <td class="py-3 px-4">6 months</td>
+                          </tr>
+                          <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4">Postdoctoral Fellow</td>
+                            <td class="py-3 px-4">10</td>
+                            <td class="py-3 px-4">2 months</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    <li>
+                      <h2 class="text-1.5xl font-semibold mb-4">
+                        <i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Among the Non-academic staff, certain class
+                        of
+                        employees get library facilities at the discretion of the Librarian.
+
+                      </h2>
+                    </li>
+
+                    <h2 class="text-1.5xl font-semibold mb-4">
+                      <i class="fa-arrow-right fa-solid"></i>&nbsp;&nbsp;Borrowing privileges may go on changing from
+                      time to time
+                    </h2>
+                    </li>
+
+                  </ul>
                 </div>
-              </section>
-              <!-- Borrowing Privileges Section -->
-              <section class="mb-2">
-                <h2 class="text-2xl font-bold mb-0 px-6 mb-4">
-                  Borrowing Privileges
-                </h2>
-                <div class="flex flex-col md:flex-row items-center">
-                  <div class="md:w-1/6 mb-1 md:mb-0 " >
-                    <img
-                      src="../../images/page_elements/privileges.png"
-                      alt="Objective Image"
-                      class="w-full h-auto rounded-lg"
-                    />
-                  </div>
-                  <div
-                    class="md:w-1/1 md:pl-2 py-6 px-2 border-r-4 border-b-4 rounded-lg"
-                    style="border-color: #1b72b2"
-                    style="box-shadow: rgb(0, 0, 0) 0px 0px 5px !important"
-                  >
-                    <ul class="text-0.1xl">
-                      <li>
-                        <p class="text-lg p-4">
-                          <i class="fa-arrow-right fa-solid"></i
-                          >&nbsp;&nbsp;Only registered members can borrow the books, except books marked for 
-                          'Course Reserve' and 'Reference' for stipulated periods as mentioned below:
-                        </p>
-                          <br />
-                          <table class="min-w-full bg-white shadow-md rounded-lg mr-6 mb-12">
-                            <thead>
-                                <tr class="bg-gray-200 text-gray-700 text-left">
-                                    <th class="py-3 px-4">Borrowers</th>
-                                    <th class="py-3 px-4">No. of Documents Entitled</th>
-                                    <th class="py-3 px-4">Loan Period</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-b border-gray-200 hover:bg-gray-50">
-                                    <td class="py-3 px-4">Academic staff</td>
-                                    <td class="py-3 px-4">10</td>
-                                    <td class="py-3 px-4">6 months</td>
-                                </tr>
-                                <tr class="border-b border-gray-200 hover:bg-gray-50">
-                                    <td class="py-3 px-4">Non-academic staff*</td>
-                                    <td class="py-3 px-4">5</td>
-                                    <td class="py-3 px-4">1 month</td>
-                                </tr>
-                                <tr class="border-b border-gray-200 hover:bg-gray-50">
-                                    <td class="py-3 px-4">Students</td>
-                                    <td class="py-3 px-4">5</td>
-                                    <td class="py-3 px-4">15 days</td>
-                                </tr>
-                                <tr class="border-b border-gray-200 hover:bg-gray-50">
-                                    <td class="py-3 px-4">Ph.D. scholars</td>
-                                    <td class="py-3 px-4">5</td>
-                                    <td class="py-3 px-4">1 month</td>
-                                </tr>
-                                <tr class="border-b border-gray-200 hover:bg-gray-50">
-                                    <td class="py-3 px-4">Visiting faculty</td>
-                                    <td class="py-3 px-4">10</td>
-                                    <td class="py-3 px-4">6 months</td>
-                                </tr>
-                                <tr class="border-b border-gray-200 hover:bg-gray-50">
-                                    <td class="py-3 px-4">Adjunct faculty</td>
-                                    <td class="py-3 px-4">10</td>
-                                    <td class="py-3 px-4">6 months</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50">
-                                    <td class="py-3 px-4">Postdoctoral Fellow</td>
-                                    <td class="py-3 px-4">10</td>
-                                    <td class="py-3 px-4">2 months</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                         
-                      <li>
-                        <h2 class="text-1.5xl font-semibold mb-4">
-                          <i class="fa-arrow-right fa-solid"></i
-                          >&nbsp;&nbsp;Among the Non-academic staff, certain class of
-                          employees get library facilities at the discretion of the Librarian.
-                          
-                        </h2>
-                      </li>
-                     
-                        <h2 class="text-1.5xl font-semibold mb-4">
-                          <i class="fa-arrow-right fa-solid"></i
-                          >&nbsp;&nbsp;Borrowing privileges may go on changing from time to time
-                        </h2>
-                      </li>
-                      
-                    </ul>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </section>
-        </div>
+              </div>
+            </section>
+          </div>
+        </section>
       </div>
     </div>
+  </div>
 
-    <!-- FOOTER -->
-    <footer class="footer"></footer>
+  <!-- FOOTER -->
+  <footer class="footer"></footer>
 
-    <script src="../../scripts/carousel.js"></script>
-    <script src="../../scripts/dropdown.js"></script>
-    <script src="../../scripts/countdown.js"></script>
-    <script src="../../scripts/footer.js"></script>
-    <script src="../../scripts/splide.min.js"></script>
-    <script src="../../scripts/header.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="../../scripts/carousel.js"></script>
+  <script src="../../scripts/dropdown.js"></script>
+  <script src="../../scripts/countdown.js"></script>
+  <script src="../../scripts/footer.js"></script>
+  <script src="../../scripts/splide.min.js"></script>
+  <script src="../../scripts/header.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
-    <script>
-      var splide = new Splide(".splide", {
-        type: "fade",
-        autoplay: "play",
-        perPage: 1,
-        arrows: false,
-        rewind: true,
-      });
+  <script>
+    var splide = new Splide(".splide", {
+      type: "fade",
+      autoplay: "play",
+      perPage: 1,
+      arrows: false,
+      rewind: true,
+    });
 
-      splide.mount();
-    </script>
+    splide.mount();
+  </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
 </html>

@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,167 +12,149 @@
   <link rel="stylesheet" href="../../css/countdown.css">
   <link rel="stylesheet" href="../../css/footer.css">
   <link rel="stylesheet" href="../../css/splide.min.css">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="../../scripts/splide.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <title> Analysis Tools|Library IISERB</title>
-    <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
+  <link rel="icon" type="images/x-icon" href="../../images/logo-iiserb.png" />
 
- 
+
 </head>
+
 <body class="overflow-x-hidden bg-gray-100">
 
 
-<!-- CAROUSEL BACKGROUND -->
-<div
-class="w-full relative  bg-[url(../../images/library/bg2.png)] bg-cover "
->
-<!-- Navbar -->
-<nav class="top-0 py-4 left-0 w-full relative">
-  <div
-    class="w-full  hidden  overflow-x-hidden lg:flex relative items-center justify-center"
-  >
-    <div
-      class="w-[85%]  flex items-center text-white text-sm relative justify-between header_container"
-    ></div>
-  </div>
+  <!-- CAROUSEL BACKGROUND -->
+  <div class="w-full relative py-4 bg-[url(../../images/library/bg2.png)] h-fit  bg-cover ">
+    <!-- Navbar -->
+    <!-- SECTION 1 -->
+    <nav class="top-0 left-0 w-full">
+      <div class="w-full py-4 hidden lg:flex items-center justify-center z-[10]">
+        <div class="w-[85%] flex items-center text-white text-sm justify-between header_container"></div>
+      </div>
 
-  <div class="w-full py-4 flex items-center justify-center">
-    <div class="w-[85%] relative flex items-center justify-between">
-      <div class="flex relative gap-2 justify-center items-center">
-        <img
-          src="../../logo-iiserb.png"
-          class="h-12 md:h-24"
-          style="
-            box-shadow: rgb(0, 0, 0) 1px -1px 1px !important;
-            border-radius: 50%;
-          "
-        />
+      <!-- SECTION 2 -->
 
-        <div
-          class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full"
-        >
-          <h3>
-            Central Library,<br />
-            IISER Bhopal
-          </h3>
-          <h3 class="ioe">
-            Indian Institute of Science
-            Education&nbsp;&&nbsp;Research&nbsp;Bhopal
-          </h3>
-          <h3 class="ar-fontfamily">
-            केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
-          </h3>
+      <div class="w-full py-4 flex items-center justify-center">
+        <div class="w-[85%] relative flex items-center justify-between">
+          <div class="flex relative gap-2 justify-center items-center">
+            <img src="../../logo-iiserb.png" class="h-12 md:h-24" style="
+                  box-shadow: rgb(0, 0, 0) 1px -1px 1px !important;
+                  border-radius: 50%;
+                " />
+
+            <div class="logo-animation-wrapper relative -mt-12 md:text-2xl text-md h-full drop-shadow-lg w-full">
+              <h3>
+                Central Library,<br />
+                IISER Bhopal
+              </h3>
+              <h3 class="ioe">
+                Indian&nbsp;Institute&nbsp;of&nbsp;Science
+                Education and Research Bhopal
+              </h3>
+
+              <h3 class="ar-fontfamily">
+                केंद्रीय पुस्तकालय, आईआईएसईआर भोपाल
+              </h3>
+            </div>
+          </div>
+
+
+
+          <!-- DROP DOWN NAV OPTIONS -->
+          <div class="lg:hidden flex ham_menu z-[99999] text-white cursor-pointer" onclick="menubar_toggle()">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          </div>
+
+          <div class="dropdown_web_view lg:flex hidden"></div>
         </div>
       </div>
+      <h1 class="mx-auto text-center text-white font-bold py-4 text-3xl">Data Analysis Tools</h1>
 
-      <div
-        class="lg:hidden flex ham_menu text-white z-[9999999] cursor-pointer"
-        onclick="menubar_toggle()"
-      >
-        <i class="fa-solid fa-bars fa-xl"></i>
-      </div>
-
-      <div class="dropdown_web_view lg:flex hidden"></div>
-    </div>
+    </nav>
   </div>
 
+
+
   <div
-    class="z-[999999] w-full min-h-screen absolute  overflow-scroll transition-all -top-[1000px] mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6 dropdown_mobile_view_container"
-  >
-    <span
-      class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100 z-[9999]"
-      onclick="menubar_toggle()"
-    >
+    class="z-[9999] w-full min-h-screen absolute overflow-scroll font-sans flex items-center  -top-[100%] mx-auto   gap-6 dropdown_mobile_view_container">
+    <!-- <h1 class="font-bold text-2xl left-6 top-6 absolute ">Central Library</h1> -->
+    <span class="absolute border right-6 top-6 z-[999999]  cursor-pointer border opacity-90 hover:opacity-100"
+      onclick="menubar_toggle()">
       <i class="fa-solid fa-xmark fa-xl"></i>
     </span>
-
-    <div
-      class="dropdown_mobile_view_option_container z-[999] min-h-screen overflow-scroll relative"
-    ></div>
   </div>
 
-  <h1
-    class="text-4xl text-white font-bold m-6 p-6 text-center flex flex-col gap-1 drop-shadow-lg"
-    style="
-      z-index: 5;
-      white-space: normal;
-      color: white;
-      visibility: inherit;
-      border-width: 0px;
-      letter-spacing: 0px;
-      font-weight: 700;
-      min-height: 0px;
-      min-width: 128px;
-      max-height: none;
-      opacity: 1;
-      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    "
-  >
-    Data Analysis Tools
-  </h1>
-</nav>
-</div>
+
+  <div class="w-full h-full bg-cover bg-center" style="background-image: url('../../images/page_elements/secbg.png');">
+    <!-- ABOUT  -->
+    <div class="min-h-screen w-full p-4 mt-12 justify-center">
+
+      <div class="min-h-screen w-full p-4 justify-center">
+        <section class=" px-6 text-gray-900">
+          <div class="container mx-auto px-4 py-8">
 
 
-<div class="w-full h-full bg-cover bg-center" style="background-image: url('../../images/page_elements/secbg.png');">
-  <!-- ABOUT  -->
-  <div class="min-h-screen w-full p-4 mt-12 justify-center">
-   
-    <div class="min-h-screen w-full p-4 justify-center">
-      <section class=" px-6 text-gray-900" >
-        <div class="container mx-auto px-4 py-8">
-  
-          
-           
-  
-  
+
+
+
             <!-- Chicago Manual of Style Section -->
-            <a  href="https://www.r-project.org/" >
-            <section class="mb-8">
+            <a href="https://www.r-project.org/">
+              <section class="mb-8">
                 <h2 class="text-2xl font-bold mb-0 px-6">
-                    The R Project for Statistical Computing</h2>
+                  The R Project for Statistical Computing</h2>
                 <div class="flex flex-col md:flex-row items-center">
-                    <div class="md:w-1/6 mb-1 md:mb-0 p-6">
-                        <img src="../../images/page_elements/Rlogo.png" alt="Mission Image" class="w-full h-auto rounded-lg ">
-                    </div>
-                    <div class="md:w-1/2 md:pl-2 py-6 px-2 border-r-4 border-b-4  mt-6 rounded-lg " style="border-color: #1B72B2;">
-                 
-                 <p class="text-lg">
-                    R is a free software environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS. To download R, please choose your preferred CRAN mirror.
-                        </p><br>
-                       
-                    </div>
-                    
+                  <div class="md:w-1/6 mb-1 md:mb-0 p-6">
+                    <img src="../../images/page_elements/Rlogo.png" alt="Mission Image"
+                      class="w-full h-auto rounded-lg ">
+                  </div>
+                  <div class="md:w-1/2 md:pl-2 py-6 px-2 border-r-4 border-b-4  mt-6 rounded-lg "
+                    style="border-color: #1B72B2;">
+
+                    <p class="text-lg">
+                      R is a free software environment for statistical computing and graphics. It compiles and runs on a
+                      wide variety of UNIX platforms, Windows and MacOS. To download R, please choose your preferred
+                      CRAN mirror.
+                    </p><br>
+
+                  </div>
+
                 </div>
-            </section>    </a>
-            
-     <!-- Style MLA Section -->
-     <a target="_blank" href="https://www.ibm.com/products/spss-statistics" >
-     <section class="mb-8">
-      <h2 class="text-2xl font-bold mb-1 px-6">IBM SPSS Statistics</h2>
-      <div class="flex flex-col md:flex-row items-center">
-          <div class="md:w-1/6 mb-0 md:mb-0 p-6">
-              <img src="../../images/page_elements/SPSS.png" alt="Vision Image" class="w-full h-auto  ">
+              </section>
+            </a>
+
+            <!-- Style MLA Section -->
+            <a target="_blank" href="https://www.ibm.com/products/spss-statistics">
+              <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-1 px-6">IBM SPSS Statistics</h2>
+                <div class="flex flex-col md:flex-row items-center">
+                  <div class="md:w-1/6 mb-0 md:mb-0 p-6">
+                    <img src="../../images/page_elements/SPSS.png" alt="Vision Image" class="w-full h-auto  ">
+                  </div>
+                  <div class="md:w-1/2 md:pl-2 py-6 px-2 border-r-4 border-b-4  mt-6 rounded-lg "
+                    style="border-color: #1B72B2;">
+                    <p class="text-lg">The IBM® SPSS® Statistics software puts the power of advanced statistical
+                      analysis at your fingertips. Whether you are a beginner, an experienced analyst, a statistician or
+                      a business professional it offers a comprehensive suite of advanced capabilities, flexibility and
+                      usability that are not available in traditional statistical software.</p>
+                  </div>
+
+                </div>
+              </section>
+            </a>
+
           </div>
-          <div class="md:w-1/2 md:pl-2 py-6 px-2 border-r-4 border-b-4  mt-6 rounded-lg " style="border-color: #1B72B2;">
-           <p class="text-lg">The IBM® SPSS® Statistics software puts the power of advanced statistical analysis at your fingertips. Whether you are a beginner, an experienced analyst, a statistician or a business professional it offers a comprehensive suite of advanced capabilities, flexibility and usability that are not available in traditional statistical software.</p>
-        </div>
-     
+        </section>
       </div>
-  </section>    </a>
-         
-        </div>
-      </section>
     </div>
-   </div>
   </div>
 
   <!-- FOOTER -->
-  <footer class="footer">    <!-- Footer will be dynamically added here --></footer>
-    <script src="../../scripts/footer.js"></script>
+  <footer class="footer"> <!-- Footer will be dynamically added here --></footer>
+  <script src="../../scripts/footer.js"></script>
   <script src="../../scripts/dropdown.js"></script>
   <script src="../../scripts/countdown.js"></script>
   <script src="../../scripts/header.js"></script>
@@ -192,4 +175,5 @@ class="w-full relative  bg-[url(../../images/library/bg2.png)] bg-cover "
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
+
 </html>

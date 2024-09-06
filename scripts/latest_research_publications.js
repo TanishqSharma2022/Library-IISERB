@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/api/documents";
+const url = "https://library.iiserb.ac.in/api/documents";
 
 fetch(url, {
   method: 'GET',

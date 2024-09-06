@@ -146,7 +146,7 @@
       class="z-[9999] w-full min-h-screen absolute overflow-scroll font-sans flex items-center  -top-[100%] mx-auto  bg-white text-black gap-6 dropdown_mobile_view_container">
       <!-- <h1 class="font-bold text-2xl left-6 top-6 absolute ">Central Library</h1> -->
       <span
-        class="absolute border right-6 top-6 z-[999999] border-red-500 cursor-pointer border opacity-90 hover:opacity-100"
+        class="absolute border right-6 top-6 z-[999999]  cursor-pointer border opacity-90 hover:opacity-100"
         onclick="menubar_toggle()">
         <i class="fa-solid fa-xmark fa-xl"></i>
       </span>
