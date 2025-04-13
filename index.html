@@ -434,10 +434,12 @@
   <script>
     var splide = new Splide(".splide", {
       type: "fade",
-      autoplay: "play",
       perPage: 1,
+      autoplay: "play",
       arrows: false,
       rewind: true,
+      interval: "8000",
+      easing: "cubic-bezier(0.25, 1, 0.5, 1)",
     });
 
     splide.mount();
